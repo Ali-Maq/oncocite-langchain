@@ -1,35 +1,75 @@
-# CIViC LangGraph Migration
+# OncoCITE — LangGraph / LangChain Extraction Pipeline
 
-This folder contains the LangGraph implementation of the CIViC evidence extraction pipeline, migrated from Claude Agent SDK.
+Companion code for the OncoCITE manuscript
+([Research Square preprint, DOI 10.21203/rs.3.rs-9160944/v1](https://doi.org/10.21203/rs.3.rs-9160944/v1)):
+a multi-agent system for source-grounded extraction and harmonization of
+clinical genomic evidence from full-text oncology publications, intended
+to support reconstruction of the CIViC knowledge base.
 
-## Purpose
+The pipeline is implemented as LangGraph `StateGraph`s orchestrating
+LangChain `@tool` functions, and runs against open models served by
+Fireworks AI (GLM-4 for reasoning, Qwen3-VL for vision over PDF pages).
 
-Migrate from Anthropic's Claude Agent SDK to LangGraph to enable:
-- Use of GLM-4 and Qwen3-VL models via Fireworks AI API
-- Same prompts, tools, and business logic as original implementation
-- Thread-based checkpointing for resume capability
-- Enhanced observability with retry policies and circuit breakers
+## Features
+
+- **Reader**: Qwen3-VL vision model extracts structured content from PDF pages
+- **Planner → Extractor → Critic → Normalizer** agent loop with up to 4 critic-driven revision rounds
+- **Provenance tracking**: every evidence item carries source page, verbatim quote, and a confidence score
+- **Map-Reduce normalization**: parallel entity lookups against MyGene, MyVariant, and the EBI Ontology Lookup Service
+- **Retry + circuit breaker** on LLM calls; SQLite-backed LangGraph checkpointing for resume
+- **Graph visualization** (Mermaid) and full state-history export for debugging
 
 ## Quick Start
 
-```bash
-# Navigate to migration folder
-cd langgraph_migration
+Requires Python 3.12, [`uv`](https://docs.astral.sh/uv/), and a Fireworks AI API key.
 
-# Install dependencies with uv
+```bash
+git clone https://github.com/Ali-Maq/oncocite-langchain.git
+cd oncocite-langchain
+
+# Install dependencies (creates .venv/)
 uv sync
 
-# Run extraction on a paper
-uv run python scripts/run_extraction.py <paper_id>
+# Configure your API key
+cp .env.example .env
+# edit .env and set FIREWORKS_API_KEY=fw_...
 
-# Or directly with client.py
-uv run python client.py <pdf_path>
+# Run extraction on one of the 11 bundled validation papers
+uv run python scripts/run_extraction.py PMID_18528420
+
+# Or point at your own PDF corpus
+uv run python scripts/run_extraction.py <paper_id> \
+    --papers-dir /path/to/papers \
+    --output-dir /path/to/outputs
+```
+
+Outputs land in `outputs/{paper_id}/{YYYYMMDD_HHMMSS}/`.
+
+## Reproducing the Multiple Myeloma validation
+
+The `test_paper/triplet/` directory ships 11 PMID-indexed PDFs with
+matching curator ground-truth JSON — the same corpus used for the
+three-way evaluation framework in the manuscript:
+
+```
+test_paper/triplet/
+  PMID_11050000/  PMID_11050000.pdf  PMID_11050000_ground_truth.json  ...
+  PMID_12483530/  ...
+  ...
+```
+
+To re-run end-to-end extraction across all 11 papers:
+
+```bash
+for pmid in $(ls test_paper/triplet); do
+    uv run python scripts/run_extraction.py "$pmid"
+done
 ```
 
 ## Project Structure
 
 ```
-langgraph_migration/
+oncocite-langchain/
 ├── pyproject.toml          # Project configuration and dependencies
 ├── .python-version         # Python 3.12
 ├── .env                    # Environment configuration (Fireworks API)
@@ -109,34 +149,15 @@ The extraction JSON contains:
 - `critique` - Critic's assessment
 - `summary` - Statistics (item count, coverage, iterations)
 
-## Features
+## Agent Pipeline
 
-### Core Pipeline
-- **Reader**: Qwen3-VL vision model extracts structured content from PDF pages
-- **Planner**: Analyzes paper and creates extraction strategy
-- **Extractor**: Extracts evidence items with provenance metadata
-- **Critic**: Validates items, may request revisions (max 3 iterations)
-- **Normalizer**: Maps entities to standard ontologies (Entrez, DOID, RxNorm, NCIt)
+- **Reader** — Qwen3-VL vision model reads PDF pages and emits structured content
+- **Planner** — analyzes the paper and produces an extraction strategy
+- **Extractor** — emits evidence items with full provenance metadata
+- **Critic** — validates items and may request revisions (up to `MAX_ITERATIONS` rounds)
+- **Normalizer** — maps entities to Entrez / DOID / RxNorm / NCIt via MyGene, MyVariant, and OLS
 
-### Enhanced Features
-- **Retry with Circuit Breaker**: Automatic retries with exponential backoff
-- **Provenance Tracking**: Each evidence item includes source page, verbatim quote, confidence score
-- **Graph Visualization**: Export Mermaid diagrams of pipeline
-- **State History**: Access full execution history for debugging
-- **Map-Reduce Normalization**: Parallel entity lookups with ordering preservation
-- **Human-in-the-Loop**: Optional review checkpoint (commented out by default)
-
-## Migration Status
-
-- [x] Phase 0: Environment Setup
-- [x] Phase 1: Foundation (State, LLM, Checkpointing)
-- [x] Phase 2: Tools Migration
-- [x] Phase 3: Graphs Implementation
-- [x] Phase 4: Client Integration
-- [x] Phase 5: Observability
-- [x] Phase 6: Cleanup & Validation
-
-## Usage Examples
+## Python API
 
 ### Basic Extraction
 ```python
@@ -166,3 +187,24 @@ from runtime.llm import get_llm_retry_stats
 stats = get_llm_retry_stats()
 print(f"Total retries: {stats['total_retries']}")
 ```
+
+## Architecture
+
+See [`ARCHITECTURE.md`](ARCHITECTURE.md) for a detailed design walkthrough of
+the state graphs, tool registry, and checkpointing layer, and
+[`COMPARISON.md`](COMPARISON.md) for a node-by-node comparison with the
+original agent implementation described in the manuscript.
+
+## Citation
+
+If you use this code, please cite the OncoCITE preprint:
+
+> Quidwai M., Thibaud S., Shasha D., Jagannath S., Parekh S., Laganà A.
+> *OncoCITE: Multimodal Multi-Agent Reconstruction of Clinical Oncology
+> Knowledge Bases from Scientific Literature.* Research Square (2026).
+> DOI: [10.21203/rs.3.rs-9160944/v1](https://doi.org/10.21203/rs.3.rs-9160944/v1)
+
+## License
+
+Released under the terms in [`LICENSE`](LICENSE) (CC BY 4.0, matching the
+preprint license).

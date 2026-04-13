@@ -10,17 +10,17 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Load environment variables from .env file in langgraph_migration folder
+# Load environment variables from .env file at the repository root
 _this_dir = Path(__file__).resolve().parent
-_migration_dir = _this_dir.parent
-load_dotenv(_migration_dir / ".env")
+_repo_root = _this_dir.parent
+load_dotenv(_repo_root / ".env")
 
 # =============================================================================
 # PATHS
 # =============================================================================
 
-# Base directory is the original project root (parent of langgraph_migration/)
-BASE_DIR = _migration_dir.parent
+# Base directory is the repository root
+BASE_DIR = _repo_root
 
 def _get_abs_path(env_var: str, default_path: Path) -> Path:
     """Ensure path is absolute, resolving relative paths against BASE_DIR."""
@@ -30,8 +30,10 @@ def _get_abs_path(env_var: str, default_path: Path) -> Path:
         return p if p.is_absolute() else BASE_DIR / p
     return default_path
 
-# Data paths (from environment or defaults)
-PAPERS_DIR = _get_abs_path("PAPERS_DIR", BASE_DIR / "data" / "papers")
+# Data paths (from environment or defaults).
+# PAPERS_DIR defaults to the bundled Multiple Myeloma triplet corpus so the
+# pipeline runs out-of-the-box on a fresh clone.
+PAPERS_DIR = _get_abs_path("PAPERS_DIR", BASE_DIR / "test_paper" / "triplet")
 GROUND_TRUTH_PATH = _get_abs_path(
     "GROUND_TRUTH_PATH",
     BASE_DIR / "data" / "ground_truth" / "all_combined_extracted_data_refined.xlsx"
