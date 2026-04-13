@@ -1,0 +1,107 @@
+{
+  "pmid": "26193344",
+  "source_id": 1687,
+  "title": "NY-ESO-1-specific TCR-engineered T cells mediate sustained antigen-specific antitumor effects in myeloma.",
+  "journal": "Nat Med",
+  "year": 2015.0,
+  "civic_item_count": 2,
+  "tier1_field_completeness": {
+    "evidence_id": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "evidence_description": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "evidence_level": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "evidence_type": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "evidence_direction": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "evidence_significance": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "feature_names": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "variant_names": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "disease_name": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "therapy_names": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "clinical_trial_nct_ids": {
+      "populated": 0,
+      "total": 2,
+      "percentage": 0.0
+    },
+    "source_title": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "source_citation_id": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    }
+  },
+  "evidence_items": [
+    {
+      "evidence_id": 2940,
+      "evidence_description": "Clinical responses to NY-ESO-1/LAGE-1 TCR-engineered T-cells were observed in 16 of 20 patients (80%) with advanced multiple myeloma expressing NY-ESO-1 and/or LAGE-1 in this Phase 1/2a trial showing a median progression free survival of 19.1 months.",
+      "evidence_level": "B",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "SENSITIVITYRESPONSE",
+      "feature_names": "CTAG1B",
+      "variant_names": "Overexpression",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Letetresgene Autoleucel",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "NY-ESO-1-specific TCR-engineered T cells mediate sustained antigen-specific antitumor effects in myeloma.",
+      "source_citation_id": "26193344"
+    },
+    {
+      "evidence_id": 2941,
+      "evidence_description": "Clinical responses to NY-ESO-1/LAGE-1 TCR-engineered T-cells were observed in 16 of 20 patients (80%) with advanced multiple myeloma expressing NY-ESO-1 and/or LAGE-1 in this Phase 1/2a trial showing a median progression free survival of 19.1 months.",
+      "evidence_level": "B",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "SENSITIVITYRESPONSE",
+      "feature_names": "CTAG2",
+      "variant_names": "Overexpression",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Letetresgene Autoleucel",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "NY-ESO-1-specific TCR-engineered T cells mediate sustained antigen-specific antitumor effects in myeloma.",
+      "source_citation_id": "26193344"
+    }
+  ]
+}

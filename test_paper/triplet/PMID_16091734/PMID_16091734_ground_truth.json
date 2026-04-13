@@ -1,0 +1,137 @@
+{
+  "pmid": "16091734",
+  "source_id": 4337,
+  "title": "FGFR3 as a therapeutic target of the small molecule inhibitor PKC412 in hematopoietic malignancies.",
+  "journal": "Oncogene",
+  "year": 2005.0,
+  "civic_item_count": 4,
+  "tier1_field_completeness": {
+    "evidence_id": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_description": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_level": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_type": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_direction": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_significance": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "feature_names": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "variant_names": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "disease_name": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "therapy_names": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "clinical_trial_nct_ids": {
+      "populated": 0,
+      "total": 4,
+      "percentage": 0.0
+    },
+    "source_title": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "source_citation_id": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    }
+  },
+  "evidence_items": [
+    {
+      "evidence_id": 10407,
+      "evidence_description": "PKC412 inhibited the growth of FGFR3 K650E-transformed Ba/F3 cells. Researchers introduced an N540D mutation to FGFR3-transformed Ba/F3 cells, which reduces inhibition of the FGFR3 K650E-transformed cells, confirming that FGFR3 mutants are the critical targets for PKC412-mediated cytotoxicity. t(4;14) positive multiple myeloma cell line OPM-1 expressing FGFR3 K650E were inhibited by PKC412, with relative viability dropping to 0.9/1.0 at 100 nM, 0.8/1.0 at 200 nM, 0.58/1.0 at 400 nM, 0.25/1.0 at 1000 nM with a sudden spike upwards at 0.9/1.0 at 2000 and 5000 nM. Mice were transplanted with bone marrow cells expressing FGFR3 K650E and split into a placebo and treatment group. Mine in the placebo group were all killed by day 25, while the PKC412-treated group continued treatment for an extra week, with 7/8 mice surviving to the endpoint of the study at 32 days. PKC412's efficacy was also confirmed through histopathologic examination that showed a reduction of lymphoid disease in bone marrow, spleen, and liver in the drug-treated mice. These findings were confirmed by flow cytometry of bone marrow cells, as immature B-cells only made up 1% of the population when treated with PKC412, as compared to the placebo which left 73% of the population as immature B-cells. This confirmed PKC412's efficacy in treating immature B-cell lymphoid disease.",
+      "evidence_level": "D",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "SENSITIVITYRESPONSE",
+      "feature_names": "FGFR3",
+      "variant_names": "K650E",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Midostaurin",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "FGFR3 as a therapeutic target of the small molecule inhibitor PKC412 in hematopoietic malignancies.",
+      "source_citation_id": "16091734"
+    },
+    {
+      "evidence_id": 10411,
+      "evidence_description": "Ba/F3 cells transformed with FGFR3 K650E or TEL-FGFR3 had mutation FGFR3 N540D introduced to determine whether the FGFR3 mutants were the critical targets for PKC412-mediated cytotoxicity. The cells transformed with N540D displayed resistance to PKC412, as cells were tested for growth with PKC412 treatment and showed little growth inhibition. The authors concluded that N540D confers resistance to PKC412 and that the FGFR3 mutants are the targets for PKC41-mediated cytotoxicity.",
+      "evidence_level": "D",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "RESISTANCE",
+      "feature_names": "FGFR3",
+      "variant_names": "N540D",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Midostaurin",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "FGFR3 as a therapeutic target of the small molecule inhibitor PKC412 in hematopoietic malignancies.",
+      "source_citation_id": "16091734"
+    },
+    {
+      "evidence_id": 10408,
+      "evidence_description": "t(4;14) positive multiple myeloma cell line OPM-1 and KMS11 expressing FGFR3 Y373C were inhibited by PKC412, with relative viability dropping to 0.9/1.0 at 100 nM, 0.8/1.0 to 200 nM,  0.58/1.0 at 400 nM, and 0.25/1.0 at 1000 nM, with a spike upwards to 0.9/1.0 at 2000 and 5000 nM in the OPM-1 line. In KMS11 cells, relative viability dropped to 0.8/1/0 at 100 nM, 0.7/1.0 at 200 nM, and 0.4/1.0 at 400 nM.",
+      "evidence_level": "D",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "SENSITIVITYRESPONSE",
+      "feature_names": "FGFR3",
+      "variant_names": "Y373C",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Midostaurin",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "FGFR3 as a therapeutic target of the small molecule inhibitor PKC412 in hematopoietic malignancies.",
+      "source_citation_id": "16091734"
+    },
+    {
+      "evidence_id": 10410,
+      "evidence_description": "Cell line LP1 expressing FGFR3 F384L was treated with small molecule inhibitor PKC412, with relative viability rising above 1.1/1.0 at both 50 nM and 100 nM. Relative viability dropped to 0.96/1.0 at 200 nM, 0.6/1.0 at 400 nM, 0.5/1.0 at 1000 nM, 0.3/1.0 at 2000 nM, and 0.2/1.0 at 5000 nM. The authors concluded that this difference in sensitivity to the OPM-1 cell line, which displayed increasingly lower relative viability as the concentration increased, may be due to the FGFR3 F384L having lower expression levels of FGFR3 protein as compared to cell line OPM-1 which overexpresses FGFR3 mutant.",
+      "evidence_level": "D",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "SENSITIVITYRESPONSE",
+      "feature_names": "FGFR3",
+      "variant_names": "F384L",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Midostaurin",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "FGFR3 as a therapeutic target of the small molecule inhibitor PKC412 in hematopoietic malignancies.",
+      "source_citation_id": "16091734"
+    }
+  ]
+}

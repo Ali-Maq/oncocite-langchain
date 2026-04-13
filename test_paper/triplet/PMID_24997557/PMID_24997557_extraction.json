@@ -1,0 +1,253 @@
+{
+  "paper_id": "PMID_24997557",
+  "paper_info": {
+    "author": "J.P. Sharman, J. Chmielecki, D. Morosini, G.A. Palmer, J.S. Ross, P.J. Stephens, J. Stafl, V.A. Miller, S.M. Ali",
+    "year": "2014",
+    "num_pages": 3,
+    "paper_type": "CASE_REPORT"
+  },
+  "extraction": {
+    "items": 3,
+    "iterations": 1,
+    "complete": true,
+    "evidence_items": [
+      {
+        "feature_names": [
+          "BRAF"
+        ],
+        "gene_entrez_id": "673",
+        "variant_names": [
+          "V600E"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "LEVEL_D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "SENSITIVITY/RESPONSE",
+        "therapy_names": [
+          "Vemurafenib"
+        ],
+        "therapy_ncit_id": "NCIT:C64768",
+        "therapy_rxcui": "1147220",
+        "therapy_safety_profile": {
+          "top_adverse_events": [
+            {
+              "term": "PYREXIA",
+              "count": 312
+            },
+            {
+              "term": "RASH",
+              "count": 309
+            },
+            {
+              "term": "DISEASE PROGRESSION",
+              "count": 269
+            },
+            {
+              "term": "DIARRHOEA",
+              "count": 266
+            },
+            {
+              "term": "ARTHRALGIA",
+              "count": 212
+            }
+          ],
+          "source": "FAERS/OpenFDA"
+        },
+        "evidence_description": "Patient 1, a 65-year-old man with posttransplant refractory BRAF V600E-mutated multiple myeloma, experienced rapid clinical response to vemurafenib (960 mg twice daily). Within 4 days, he had significant reduction in pain and discontinued chronic narcotics. Within 1 month, IgG \u03ba fell from 2.5 to 1.3 g/dL (48% reduction) and \u03ba free light chain fell from 41 to 7 mg/dL (83% reduction). Response lasted approximately 7 weeks before CNS progression.",
+        "source_page_numbers": "Case Presentations - Patient 1",
+        "verbatim_quote": "Within 4 days of starting vemurafenib, the patient experienced a clinically significant reduction in pain. Despite prior chronic narcotic use, he was able to discontinue most pain medications within a few weeks and was able to resume manual labor. His IgG \u03ba fell from 2.5 to 1.3 g/dL and his \u03ba free light chain fell from 41 to 7 mg/dL within 1 month.",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "Direct clinical observation from case report showing quantified treatment response with molecular alteration confirmed by clinical NGS sequencing to 868\u00d7 depth. Actionable because knowing BRAF V600E status would support vemurafenib treatment decision in relapsed/refractory multiple myeloma.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": "p.Val600Glu",
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT01524972"
+        ],
+        "clinical_trial_info": null,
+        "cancer_cell_fraction": null,
+        "cohort_size": 1,
+        "source_title": "Vemurafenib Response in 2 Patients With Posttransplant Refractory BRAF V600E-Mutated Multiple Myeloma",
+        "source_publication_year": 2014,
+        "source_journal": "Clinical Lymphoma, Myeloma & Leukemia",
+        "source_pmid": "24997557",
+        "source_pmcid": null
+      },
+      {
+        "feature_names": [
+          "BRAF"
+        ],
+        "gene_entrez_id": "673",
+        "variant_names": [
+          "V600E"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "LEVEL_D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "SENSITIVITY/RESPONSE",
+        "therapy_names": [
+          "Vemurafenib"
+        ],
+        "therapy_ncit_id": "NCIT:C64768",
+        "therapy_rxcui": "1147220",
+        "therapy_safety_profile": {
+          "top_adverse_events": [
+            {
+              "term": "PYREXIA",
+              "count": 312
+            },
+            {
+              "term": "RASH",
+              "count": 309
+            },
+            {
+              "term": "DISEASE PROGRESSION",
+              "count": 269
+            },
+            {
+              "term": "DIARRHOEA",
+              "count": 266
+            },
+            {
+              "term": "ARTHRALGIA",
+              "count": 212
+            }
+          ],
+          "source": "FAERS/OpenFDA"
+        },
+        "evidence_description": "Patient 2, a 54-year-old man with relapsed multiple myeloma after autologous stem cell transplant, experienced dramatic response to vemurafenib (960 mg twice daily) after progression on pomalidomide, carfilzomib, and cyclophosphamide. Within 1 month, \u03ba free light chain level decreased by 90%. After 2 months, \u03ba free light chain normalized and PET scan showed near-resolution of all hypermetabolic lesions. Response ongoing at 4 months.",
+        "source_page_numbers": "Case Presentations - Patient 2",
+        "verbatim_quote": "The patient was started on vemurafenib, 960 mg twice daily. Within 1 month, the \u03ba free light chain level decreased by 90%, and it normalized after 2 months. Repeat PET scan at this time found near-resolution of all hypermetabolic lesions. At the time of this report, the patient's response was ongoing and at 4 months' duration.",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "Direct clinical observation with quantified biomarker response (90% reduction in light chains, normalization at 2 months) and radiographic confirmation. Molecular alteration confirmed by clinical NGS sequencing to 1073\u00d7 depth. Actionable because knowing BRAF V600E status would support vemurafenib treatment decision.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": "p.Val600Glu",
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT01524972"
+        ],
+        "clinical_trial_info": null,
+        "cancer_cell_fraction": null,
+        "cohort_size": 1,
+        "source_title": "Vemurafenib Response in 2 Patients With Posttransplant Refractory BRAF V600E-Mutated Multiple Myeloma",
+        "source_publication_year": 2014,
+        "source_journal": "Clinical Lymphoma, Myeloma & Leukemia",
+        "source_pmid": "24997557",
+        "source_pmcid": null
+      },
+      {
+        "feature_names": [
+          "BRAF"
+        ],
+        "gene_entrez_id": "673",
+        "variant_names": [
+          "V600E"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PROGNOSTIC",
+        "evidence_level": "LEVEL_D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "POOR OUTCOME",
+        "therapy_names": [],
+        "therapy_ncit_id": null,
+        "therapy_rxcui": null,
+        "therapy_safety_profile": null,
+        "evidence_description": "BRAF V600E mutations in multiple myeloma are associated with an aggressive phenotype characterized by prominent extramedullary disease, short duration of response to conventional therapy, and rapid acquisition of resistance after autologous transplant. In a retrospective study of 379 myeloma cases, 7 BRAF V600E-mutated cases showed aggressive phenotype with high frequency of extramedullary disease (4 of 7 patients). Both patients in this case report had extramedullary disease and brief disease control after autologous transplant.",
+        "source_page_numbers": "Abstract, Discussion",
+        "verbatim_quote": "Patients with BRAF V600E-mutated myeloma may have an unusually aggressive clinical course associated with prominent extramedullary disease and a short duration of response to standard therapies. Andrulis et al retrospectively identified 7 of 379 myeloma cases as being mutated for BRAF V600E via mutation-specific immunohistochemistry and noted an aggressive phenotype associated with a short duration of response to conventional therapy and a high frequency of extramedullary disease (4 of 7 patients).",
+        "extraction_confidence": 0.9,
+        "extraction_reasoning": "Multiple independent observations across referenced study (7/379 cases) and current case report (2 patients) consistently showing aggressive phenotype. Actionable because knowing BRAF V600E status would influence treatment intensity decisions and monitoring strategies.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": "p.Val600Glu",
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT01524972"
+        ],
+        "clinical_trial_info": null,
+        "cancer_cell_fraction": null,
+        "cohort_size": 9,
+        "source_title": "Vemurafenib Response in 2 Patients With Posttransplant Refractory BRAF V600E-Mutated Multiple Myeloma",
+        "source_publication_year": 2014,
+        "source_journal": "Clinical Lymphoma, Myeloma & Leukemia",
+        "source_pmid": "24997557",
+        "source_pmcid": null
+      }
+    ]
+  },
+  "plan": {
+    "paper_type": "CASE_REPORT",
+    "expected_items": 3,
+    "key_variants": "BRAF V600E (both patients), MLL1 amplification (patient 1), MDM4 amplification (patient 1), IKBKE amplification (patient 1), CDKN2C homozygous deletion (patient 1), BRCA1 homozygous deletion (patient 2), RB1 homozygous deletion (patient 2), NOTCH2 homozygous deletion (patient 2)",
+    "key_therapies": "Vemurafenib (960 mg twice daily), lenalidomide, bortezomib, dexamethasone, VD-PACE, cyclophosphamide, melphalan, carfilzomib, pomalidomide, RVD, autologous stem cell transplant",
+    "key_diseases": "Multiple myeloma (post-transplant refractory, aggressive phenotype with extramedullary disease)",
+    "focus_sections": "CASE PRESENTATIONS (Patient 1 and Patient 2), DISCUSSION, ABSTRACT, CONCLUSION",
+    "extraction_notes": "This case report presents 2 patients with BRAF V600E-mutated multiple myeloma treated with vemurafenib after failing autologous transplant and conventional therapies.\n\nACTIONABLE EVIDENCE ITEMS (3 expected):\n\n1. BRAF V600E + Vemurafenib (Patient 1 - Predictive/Sensitivity):\n   - Variant: BRAF V600E\n   - Therapy: Vemurafenib\n   - Disease: Multiple myeloma\n   - Evidence: Rapid clinical response within 4 days (pain reduction), IgG \u03ba decreased from 2.5 to 1.3 g/dL, \u03ba free light chain decreased from 41 to 7 mg/dL within 1 month\n   - Evidence Level: Case study (Level D)\n   - Clinical Significance: Positive response but limited by CNS progression at 7 weeks\n   - Evidence Direction: Supports sensitivity\n   - Note: Patient had co-occurring alterations (MLL1, MDM4, IKBKE amplifications; CDKN2C deletion)\n\n2. BRAF V600E + Vemurafenib (Patient 2 - Predictive/Sensitivity):\n   - Variant: BRAF V600E\n   - Therapy: Vemurafenib (960 mg twice daily)\n   - Disease: Multiple myeloma\n   - Evidence: \u03ba free light chain decreased by 90% within 1 month, normalized after 2 months; PET scan showed near-resolution of all hypermetabolic lesions; response ongoing at 4 months\n   - Evidence Level: Case study (Level D)\n   - Clinical Significance: Durable response in heavily pretreated patient\n   - Evidence Direction: Supports sensitivity\n   - Note: Patient had co-occurring deletions (BRCA1, RB1, NOTCH2 homozygous deletions)\n\n3. BRAF V600E - Prognostic (Aggressive Phenotype):\n   - Variant: BRAF V600E\n   - Disease: Multiple myeloma\n   - Evidence: Both patients and literature reference (Andrulis et al: 4 of 7 BRAF V600E patients) showed aggressive phenotype with extramedullary disease, short duration of response to standard therapies, and rapid progression post-transplant\n   - Evidence Level: Case study supported by retrospective analysis\n   - Clinical Significance: Associated with poor prognosis/aggressive disease\n   - Evidence Direction: Supports poor outcome\n   - Note: May inform treatment selection and monitoring strategies\n\nKEY EXTRACTION CONSIDERATIONS:\n- Both patients were heavily pretreated and post-transplant refractory\n- Patient 1 had CNS progression despite systemic response (vemurafenib CNS penetration limitation)\n- Patient 2 developed squamous cell carcinoma during vemurafenib treatment (known adverse effect)\n- BRAF V600E was identified by clinical NGS assays (182-236 gene panels)\n- Both cases showed rapid response onset (days to weeks)\n- References ongoing phase II study (NCT01524972)\n- Additional genomic alterations present but their role in response is unclear per authors\n\nEXTRACTION PRIORITY:\n1. Patient 2 evidence (strongest - durable ongoing response)\n2. Patient 1 evidence (rapid response but early CNS progression)\n3. Prognostic association (supported by external reference)"
+  },
+  "final_critique": {
+    "overall_assessment": "APPROVE",
+    "item_feedback": "**Item 1 (Patient 1 - Predictive):** EXCELLENT - All required fields present and validated. Statistics accurately calculated (48% IgG \u03ba reduction, 83% free light chain reduction) and match paper text exactly. Verbatim quote is exact. Timeline (4 days for pain relief, 1 month for biomarker response, 7 weeks duration) clearly documented. Extended fields (variant_origin, variant_hgvs_p, clinical_trial_nct_ids) appropriately populated. Cohort_size=1 correct for single patient case. No changes needed.\n\n**Item 2 (Patient 2 - Predictive):** EXCELLENT - All required fields present and validated. Statistics match paper exactly (90% light chain reduction at 1 month, normalization at 2 months, near-resolution on PET, 4-month ongoing response). Verbatim quote is exact. Extended fields appropriately populated. Cohort_size=1 correct for single patient case. No changes needed.\n\n**Item 3 (Prognostic):** EXCELLENT - **REVISION SUCCESSFUL**. The cohort_size has been corrected from 2 to 9, which now accurately represents the combined evidence base cited in the evidence_description (7 patients from Andrulis et al. retrospective study + 2 patients from current case report). This resolves the inconsistency identified in Iteration 1. All required fields present, evidence_description accurately synthesizes the Andrulis study findings (7/379 cases with aggressive phenotype, 4/7 with extramedullary disease) and the current case observations. Verbatim quote is exact. Extended fields appropriately populated. Type-significance match correct (PROGNOSTIC/POOR OUTCOME).",
+    "missing_items": "No missing actionable evidence items. The paper comprehensively covers: (1) two individual predictive evidence items for vemurafenib response in BRAF V600E-mutated multiple myeloma, and (2) one prognostic evidence item for aggressive disease phenotype. Other genomic alterations mentioned (MLL1, MDM4, IKBKE, CDKN2C, BRCA1, RB1, NOTCH2) are co-occurring findings without individual outcome data. Prevalence statistics (2-4% BRAF mutation frequency) are not actionable.",
+    "extra_items": "No extra non-actionable items identified. All three evidence items meet CIViC actionability criteria with clear molecular alterations (BRAF V600E confirmed by clinical NGS sequencing) linked to clinical outcomes (treatment response for Items 1-2, disease aggressiveness for Item 3) that would inform clinical decision-making.",
+    "summary": "**ITERATION 2 REVIEW - APPROVED FOR NORMALIZATION**\n\nThe Extractor successfully addressed the single issue identified in Iteration 1. The cohort_size for Item 3 has been corrected from 2 to 9, accurately reflecting the combined evidence base (7 Andrulis cases + 2 current cases) cited in the evidence_description. This was the only inconsistency identified.\n\nAll three evidence items now demonstrate:\n- \u2713 Complete required field coverage (8/8 mandatory fields)\n- \u2713 Accurate statistics verified against paper content\n- \u2713 Exact verbatim quotes from source text\n- \u2713 Appropriate evidence type and significance matching\n- \u2713 Proper extended field population (variant_origin, variant_hgvs_p, clinical_trial_nct_ids)\n- \u2713 Internal consistency (cohort_size now matches evidence_description)\n- \u2713 CIViC actionability criteria met (molecular alterations inform clinical decisions)\n\n**Quality Metrics:**\n- Required field coverage: 100% (all 8 mandatory fields present in all items)\n- Statistics accuracy: 100% (all calculations verified against source)\n- Verbatim quote accuracy: 100% (all quotes exact matches)\n- Type-significance matching: 100% (PREDICTIVE/SENSITIVITY, PROGNOSTIC/POOR OUTCOME)\n- Extended field utilization: Excellent (variant_origin, variant_hgvs_p, clinical_trial_nct_ids, cohort_size)\n\n**Recommendation:** APPROVE - Ready for normalization agent processing. No further extraction iterations needed.",
+    "iteration": 1
+  },
+  "paper_content": {
+    "title": "Vemurafenib Response in 2 Patients With Posttransplant Refractory BRAF V600E-Mutated Multiple Myeloma",
+    "authors": [
+      "J.P. Sharman",
+      "J. Chmielecki",
+      "D. Morosini",
+      "G.A. Palmer",
+      "J.S. Ross",
+      "P.J. Stephens",
+      "J. Stafl",
+      "V.A. Miller",
+      "S.M. Ali"
+    ],
+    "journal": "Clinical Lymphoma, Myeloma & Leukemia",
+    "year": 2014,
+    "paper_type": "CASE_REPORT",
+    "abstract": "This case report describes 2 patients with BRAF V600E-mutation multiple myeloma treated with vemurafenib after autologous bone marrow transplant. Multiple myeloma is commonly associated with genomic alterations that result in hyperactivation of the mitogen-activated protein kinase pathway. BRAF (v-raf murine sarcoma viral oncogene homolog B) V600E activating mutations have been observed in 4% of multiple myeloma cases. Patients with BRAF V600E-mutated myeloma may have an unusually aggressive clinical course associated with prominent extramedullary disease and a short duration of response to standard therapies. Vemurafenib, a BRAF V600E-specific inhibitor and an FDA approved agent for treatment of melanoma, also has clinical activity in BRAF V600E mutation-positive multiple myeloma.",
+    "sections": [
+      {
+        "name": "Full Text",
+        "page_numbers": [],
+        "content": "INTRODUCTION: BRAF (v-raf murine sarcoma viral oncogene homolog B) V600E activating mutations have been observed in melanoma, non-small-cell lung cancer, colorectal carcinoma, and a wide variety of additional malignancies, yet only some of these diseases have been tested for responses to BRAF V600E-specific inhibitors. BRAF V600E and other less potent activating BRAF alterations have also been described in multiple myeloma; however, the clinical response to BRAF-targeted therapy for BRAF V600E-mutated multiple myeloma is largely unknown. This report presents 2 posttransplant/conventional therapy-resistant patients with multiple myeloma with BRAF V600E mutations that were identified by a clinical next-generation sequencing-based assay and were subsequently treated with vemurafenib.\n\nCASE PRESENTATIONS - Patient 1: A 65-year-old man presented with a 5-cm palpable skull lesion. Serum protein electrophoresis found a monoclonal immunoglobulin G (IgG) \u03ba spike of 6 g/dL and 324 mg/dL of serum free \u03ba light chains. Diagnostic workup for myeloma included a 24-hour urine collection (which found excretion of 3.2 g of \u03ba light chain), a bone marrow biopsy (which found a diffuse infiltration with plasma cells notable for coexpression of CD56), normal metaphase cytogenetic analysis, and a normal myeloma fluorescence in situ hybridization (FISH) panel. Based on an albumin of 4.6 g/dL and a \u03b22-microglobulin of 4.9 mg/L, he was diagnosed with stage II myeloma by the International Staging System (ISS) criteria and falls within the standard risk group as per Mayo Clinic Criteria. Skeletal survey found numerous lytic bone lesions and an atypical mediastinal mass. Subsequent computed tomography (CT) confirmed a 6-cm mass within the upper posterior mediastinum consistent with extramedullary plasmacytoma. Initial therapy consisted of lenalidomide, bortezomib, and dexamethasone. After 6 months of therapy, the palpable skull lesion resolved, and repeat CT found disappearance of the mediastinal mass. However, the IgG \u03ba decreased to 1.7 g/dL, suggesting only a partial response to therapy. To minimize disease burden before autologous stem cell transplant, he received 2 cycles of VD-PACE (bortezomib/dexamethasone-cisplatin/doxorubicin/cyclophosphamide/etoposide) followed by cyclophosphamide mobilization. The patient proceeded to transplant with an IgG \u03ba paraprotein level of 0.7 g/dL. He received conditioning melphalan of 200 mg/m\u00b2 and completed his transplant uneventfully. The patient began maintenance lenalidomide therapy on posttransplant day number 60, because his IgG \u03ba remained elevated at 1.3 g/dL. By day 90, he had developed several painful sites, and positron emission tomography (PET) scan found likely multifocal recurrence of myeloma. The patient was switched to carfilzomib but experienced early progression, as evidenced by a rising \u03ba level and worsening bony pain, which necessitated palliative radiotherapy. A pelvic lesion biopsy was performed to obtain tissue for genomic profiling. Sequencing of the coding sequence of 182 cancer-related genes and 37 introns of 14 genes frequently rearranged in cancer to a median depth of 868\u00d7 found that the recurrent myeloma harbored an activating BRAF V600E mutation, as well as MLL1 (myeloid cell leukemia 1), MDM4 (p53 regulator), and IKBKE (inhibitor kappa light polypeptide gene enhancer in B-cells, kinase epsilon) gene amplification (all estimated at 6 copies) and a homozygous deletion of CDKN2C (cyclin-dependent kinase inhibitor 2C p18; inhibits CDK4)]. The patient had experienced considerable decline in functional status (Eastern Cooperative Oncology Group performance status 3) and was largely confined to bed. In light of the aggressive nature of his disease, which was refractory to conventional agents, he was offered vemurafenib, a highly specific inhibitor of BRAF V600E. Within 4 days of starting vemurafenib, the patient experienced a clinically significant reduction in pain. Despite prior chronic narcotic use, he was able to discontinue most pain medications within a few weeks and was able to resume manual labor. His IgG \u03ba fell from 2.5 to 1.3 g/dL and his \u03ba free light chain fell from 41 to 7 mg/dL within 1 month. Repeat PET imaging could not be obtained secondary to previous pathologic fractures. The patient tolerated vemurafenib well. Approximately 7 weeks after initiation of vemurafenib, the patient began experiencing neurologic symptoms. He was admitted to the hospital, and a lumbar puncture found plasma cells within the cerebrospinal fluid. Palliative care was chosen, and he died shortly thereafter.\n\nCASE PRESENTATIONS - Patient 2: A 54-year-old man, a physician, initially presented with persistent rib pain. Chest imaging found a 5.2-cm lesion arising from the left fifth rib. Biopsy of this lesion found infiltrating plasma cells consistent with a plasmacytoma. Serum protein electrophoresis identified 0.1 g/dL IgG \u03ba and 17 mg/dL of free \u03ba light chains, and bone marrow biopsy found a dense infiltrate of malignant plasma cells with normal metaphase cytogenetic data and no FISH abnormalities. Based on a \u03b22-microglobulin level of 5.1 mg/L and an albumin level of 4.8 g/dL, his disease was stage II by ISS criteria. Additional testing found elevated lactate dehydrogenase at 3 times the reference upper limit. Initial therapy consisted of lenalidomide/bortezomib/dexamethasone (RVD). After 8 cycles of therapy, repeat bone marrow biopsy found 6% plasma cell infiltrate. The patient underwent uneventful autologous stem cell transplant, followed by lenalidomide maintenance therapy. He was able to resume working on posttransplant day 100. Nine months after transplant, surveillance of serum free light chains identified a rise in \u03ba free light chain level. Repeat bone marrow sampling identified 5% clonal plasma cells, and PET scan found 2 fluorine-18 fluorodeoxyglucose-avid new lytic bone lesions (Figure 1). He initiated pomalidomide and dexamethasone, but after 3 months of therapy, the regimen was stopped, because \u03ba light chain increased from 54 to 117, and PET imaging identified numerous new lesions. Carfilzomib and dexamethasone were initiated, with the subsequent addition of cyclophosphamide, but progression of disease ensued as repeat bone marrow biopsy found 90% marrow involvement with plasma cells and 2% circulating plasma cells after 5 months. Repeat PET scanning found several new bone lesions, which coincided with increasing pain. The pretreatment biopsy of the rib lesion was submitted for genomic profiling. The coding sequence of 236 cancer-related genes and 47 introns from 19 genes frequently rearranged in cancer were sequenced to a median depth of 1073\u00d7. The myeloma harbored a BRAF V600E mutation as well as homozygous deletions of BRCA1 (breast cancer 1), RB1 (retinoblastoma 1), and NOTCH2 (notch 2). After extensive discussion of risks and unknown benefits, the patient was started on vemurafenib, 960 mg twice daily. Within 1 month, the \u03ba free light chain level decreased by 90%, and it normalized after 2 months. Repeat PET scan at this time found near-resolution of all hypermetabolic lesions. The patient developed grade 1 dermatitis and required treatment of a squamous cell carcinoma that developed during vemurafenib treatment. At the time of this report, the patient's response was ongoing and at 4 months' duration.\n\nDISCUSSION: Activating genomic alterations in the mitogen-activated protein kinase signaling pathway are the most frequent oncogenic driver mutations in multiple myeloma. Whereas mutations in NRAS (neuroblastoma RAS viral (v-ras) oncogene homolog) and KRAS (Kirsten rat sarcoma viral oncogene homolog) may occur in 40% to 50% of myeloma cases, BRAF mutations are less frequent, occurring in approximately 2% to 4% of primary myelomas, with the majority of these alterations consisting of BRAF V600E activating mutations. Andrulis et al retrospectively identified 7 of 379 myeloma cases as being mutated for BRAF V600E via mutation-specific immunohistochemistry and noted an aggressive phenotype associated with a short duration of response to conventional therapy and a high frequency of extramedullary disease (4 of 7 patients). A single patient with BRAF V600E mutation-positive myeloma was treated with vemurafenib and experienced a durable response. In a second study, a patient with BRAF V600E mutation-positive myeloma was also treated with vemurafenib but had early progression of disease. This report describes 2 patients with BRAF V600E-mutation multiple myeloma treated with vemurafenib. For patient 1, the early progression of myeloma within the central nervous system (CNS) that occurred contemporaneously with a dramatic systemic response suggests vemurafenib may have failed to penetrate into the sanctuary site of the CNS, a known limitation of vemurafenib in treating cerebral metastases of melanoma. Although the presence of other genomic alterations in multiple myeloma may also influence the long-term response to vemurafenib in the BRAF V600E-mutated cases, larger studies will be needed to validate the roles of potential therapy response-modifying factors. Both patients had an unusually aggressive phenotype of myeloma associated with extramedullary disease, brief duration of disease control after autologous transplant, and rapid acquisition of resistance to conventional agents. However, upon initiation of vemurafenib treatment, both patients rapidly experienced improved paraprotein levels and improved clinical performance status. For future patients with myeloma, identification of BRAF V600E mutation may provide an option for targeted treatment at the time of relapse after conventional cytotoxic therapy following autologous bone marrow transplant. In that regard, a phase II study testing targeted BRAF therapy in multiple myeloma is ongoing (NCT01524972). In addition, for the majority of relapsed/refractory myelomas that are found to be BRAF wild type, clinical genomic profiling has the potential to identify other genomic alterations that may predict responses to non-BRAF targeted therapies.\n\nCONCLUSION: Patients with BRAF V600E-mutated myeloma may have an unusually aggressive clinical course associated with prominent extramedullary disease and a short duration of response to standard therapies. Vemurafenib has clinical activity in this form of multiple myeloma."
+      }
+    ],
+    "tables": "No tables present in this case report.",
+    "figures": "Figure 1: Positron Emission Tomography Scan of Patient 2, Before (Left) and After (Right) 2 Months of Vemurafenib Treatment. The figure shows two PET scan images labeled A and B, demonstrating the patient's response to vemurafenib treatment with reduction in hypermetabolic lesions.",
+    "statistics": "Patient 1: IgG \u03ba spike of 6 g/dL; serum free \u03ba light chains 324 mg/dL; excretion of 3.2 g of \u03ba light chain in 24-hour urine collection; albumin 4.6 g/dL; \u03b22-microglobulin 4.9 mg/L; stage II myeloma by ISS criteria; IgG \u03ba decreased to 1.7 g/dL after initial therapy; paraprotein level 0.7 g/dL before transplant; conditioning melphalan dose 200 mg/m\u00b2; IgG \u03ba 1.3 g/dL at day 60 post-transplant; sequencing depth 868\u00d7; 182 cancer-related genes and 37 introns of 14 genes sequenced; gene amplifications estimated at 6 copies (MLL1, MDM4, IKBKE); IgG \u03ba fell from 2.5 to 1.3 g/dL on vemurafenib; \u03ba free light chain fell from 41 to 7 mg/dL within 1 month; neurologic symptoms at approximately 7 weeks after vemurafenib initiation; Eastern Cooperative Oncology Group performance status 3.\n\nPatient 2: rib lesion 5.2 cm; serum IgG \u03ba 0.1 g/dL; free \u03ba light chains 17 mg/dL; \u03b22-microglobulin 5.1 mg/L; albumin 4.8 g/dL; stage II by ISS criteria; lactate dehydrogenase 3 times reference upper limit; 6% plasma cell infiltrate after 8 cycles RVD; 5% clonal plasma cells at 9 months post-transplant; \u03ba light chain increased from 54 to 117 mg/dL on pomalidomide/dexamethasone; 90% marrow involvement with plasma cells; 2% circulating plasma cells after 5 months; sequencing of 236 cancer-related genes and 47 introns from 19 genes; sequencing depth 1073\u00d7; vemurafenib dose 960 mg twice daily; \u03ba free light chain level decreased by 90% within 1 month; normalized after 2 months; grade 1 dermatitis; response duration 4 months at time of report.\n\nPopulation statistics: BRAF V600E activating mutations observed in 4% of multiple myeloma cases; BRAF mutations occur in approximately 2% to 4% of primary myelomas; NRAS and KRAS mutations occur in 40% to 50% of myeloma cases; Andrulis et al identified 7 of 379 myeloma cases (1.8%) mutated for BRAF V600E; 4 of 7 patients (57%) with BRAF V600E mutations had extramedullary disease.",
+    "genes": "BRAF, MLL1 (myeloid cell leukemia 1), MDM4 (p53 regulator), IKBKE (inhibitor kappa light polypeptide gene enhancer in B-cells, kinase epsilon), CDKN2C (cyclin-dependent kinase inhibitor 2C p18), CDK4, BRCA1 (breast cancer 1), RB1 (retinoblastoma 1), NOTCH2 (notch 2), NRAS (neuroblastoma RAS viral v-ras oncogene homolog), KRAS (Kirsten rat sarcoma viral oncogene homolog)",
+    "variants": "BRAF V600E (patient 1 and patient 2), MLL1 amplification (patient 1), MDM4 amplification (patient 1), IKBKE amplification (patient 1, estimated at 6 copies), CDKN2C homozygous deletion (patient 1), BRCA1 homozygous deletion (patient 2), RB1 homozygous deletion (patient 2), NOTCH2 homozygous deletion (patient 2)",
+    "diseases": "Multiple myeloma, melanoma, non-small-cell lung cancer, colorectal carcinoma, plasmacytoma, extramedullary plasmacytoma, squamous cell carcinoma",
+    "therapies": "Vemurafenib (960 mg twice daily), lenalidomide, bortezomib, dexamethasone, VD-PACE (bortezomib/dexamethasone-cisplatin/doxorubicin/cyclophosphamide/etoposide), cyclophosphamide, melphalan (200 mg/m\u00b2), carfilzomib, pomalidomide, RVD (lenalidomide/bortezomib/dexamethasone), autologous stem cell transplant, palliative radiotherapy",
+    "clinical_trials": "NCT01524972 (phase II study testing targeted BRAF therapy in multiple myeloma, mentioned as ongoing)"
+  },
+  "timing": {
+    "start": "2025-12-15T02:11:31.407780",
+    "end": "2025-12-15T02:21:03.696890",
+    "seconds": 572.28911
+  },
+  "log_file": "/Users/ali/Downloads/civic/civic_extraction_end_to_end/logs/PMID_24997557_20251215_021131.log"
+}

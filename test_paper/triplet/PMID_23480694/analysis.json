@@ -1,0 +1,363 @@
+{
+    "paper_id": "PMID_23480694",
+    "total_true_items_in_paper_estimate": 6,
+    "ai_evidence_item_count": 4,
+    "gt_evidence_item_count": 1,
+    "alignment": [
+      {
+        "tuple_id": "CRBN|Q99*|Multiple Myeloma|IMiDs (thalidomide, lenalidomide, pomalidomide)",
+        "paper_evidence": {
+          "summary": "In a 37-year-old, heavily pretreated IgG-kappa multiple myeloma patient with extramedullary, multi-drug refractory disease, sequencing of the neck mass revealed a CRBN Q99* truncating mutation. CRBN is previously shown to be essential for the anti-myeloma action of IMiDs. The patient had prior thalidomide and lenalidomide exposure and failed pomalidomide+dexamethasone after biopsy, supporting a role for CRBN mutation in IMiD resistance.",
+          "location": "Results (CRBN mutation description) and Abstract; Table I (Q99* row)",
+          "quantitative_data": "Single case (n=1); no explicit response percentages or hazard ratios. Table lists Q99* as a STOP-gained mutation at chr3:3215822 G>A (hg19).",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "CASE_STUDY",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "RESISTANCE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 0,
+            "fields": {
+              "feature_names": ["CRBN"],
+              "variant_names": ["Q99*"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["Thalidomide", "Lenalidomide"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "CASE_STUDY",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "RESISTANCE",
+              "evidence_description": "A 37-year-old patient with extramedullary multiple myeloma harbored a Q99* truncating mutation in CRBN and demonstrated resistance to immunomodulatory drugs (IMiDs) including thalidomide and lenalidomide. This is the first documented mutation of Cereblon in a primary myeloma sample. The patient was heavily pretreated with IMiDs and experienced progressive, multi-drug refractory disease.",
+              "verbatim_quote": "a Q99* truncating mutation as well as a R283K point mutation were observed in CRBN, that we recently demonstrated as essential for the anti-MM action of IMiDs",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": "51185",
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": {
+                "Thalidomide": "10432",
+                "Lenalidomide": "342369"
+              },
+              "therapy_ncit_id": {
+                "Thalidomide": "NCIT:C870",
+                "Lenalidomide": "NCIT:C2668"
+              },
+              "variant_hgvs_descriptions": ["Q99*"],
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": "p.Q99*",
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": 1,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "EXACT_MATCH_WITH_PAPER",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH"
+            },
+            "notes": "Correctly captures CRBN Q99* as a PREDICTIVE resistance mutation in MM with appropriate case-study framing. However, limiting therapy_names to thalidomide and lenalidomide underplays the paper’s emphasis on pomalidomide+dexamethasone as the most recent failed IMiD regimen. The mechanistic link to IMiD resistance is consistent with the text but slightly more specific than the paper, which frames resistance at the IMiD-class level."
+          }
+        ],
+        "gt_items": [
+          {
+            "gt_index": 1766,
+            "fields": {
+              "feature_names": "CRBN",
+              "variant_names": "Mutation",
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": "Lenalidomide|Pomalidomide",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "C",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "RESISTANCE",
+              "evidence_description": "Aggregates CRBN Q99* and R283K mutations as responsible for resistance to pomalidomide and dexamethasone in this heavily pretreated, extramedullary MM patient.",
+              "clinical_trial_nct_ids": null,
+              "source_title": "Extramedullary myeloma whole genome sequencing reveals novel mutations in Cereblon, proteasome subunit G2 and the glucocorticoid receptor in multi drug resistant disease.",
+              "source_citation_id": "23480694"
+            },
+            "notes": "Ground truth item maps to both CRBN Q99* and R283K but uses generic 'Mutation' and highlights lenalidomide and pomalidomide as therapies. It is more specific to the post-sequencing pomalidomide+dexamethasone non-response than the AI item, but less granular at the variant level."
+          }
+        ]
+      },
+      {
+        "tuple_id": "CRBN|R283K|Multiple Myeloma|IMiDs (thalidomide, lenalidomide, pomalidomide)",
+        "paper_evidence": {
+          "summary": "The same patient harbored a CRBN R283K nonsynonymous mutation, co-occurring with Q99*. CRBN has been shown to be required for IMiD activity. In the setting of prior and ongoing IMiD exposure with refractory disease, this mutation is implicated as part of an IMiD-resistance mechanism.",
+          "location": "Results (CRBN mutations paragraph); Table I (R283K row)",
+          "quantitative_data": "Single case (n=1); Table I lists R283K as a nonsynonymous coding SNV in CRBN.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "CASE_STUDY",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "RESISTANCE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 1,
+            "fields": {
+              "feature_names": ["CRBN"],
+              "variant_names": ["R283K"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["Thalidomide", "Lenalidomide"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "CASE_STUDY",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "RESISTANCE",
+              "evidence_description": "A 37-year-old patient with extramedullary multiple myeloma harbored a R283K point mutation in CRBN and demonstrated resistance to immunomodulatory drugs (IMiDs) including thalidomide and lenalidomide. This mutation was identified alongside a Q99* truncating mutation in the same patient who was heavily pretreated with IMiDs and experienced progressive, multi-drug refractory disease.",
+              "verbatim_quote": "a Q99* truncating mutation as well as a R283K point mutation were observed in CRBN, that we recently demonstrated as essential for the anti-MM action of IMiDs",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": "51185",
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": {
+                "Thalidomide": "10432",
+                "Lenalidomide": "342369"
+              },
+              "therapy_ncit_id": {
+                "Thalidomide": "NCIT:C870",
+                "Lenalidomide": "NCIT:C2668"
+              },
+              "variant_hgvs_descriptions": ["R283K"],
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": "p.R283K",
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": 1,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "EXACT_MATCH_WITH_PAPER",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH"
+            },
+            "notes": "Accurately captures CRBN R283K as a co-occurring mutation in an IMiD-refractory patient. As with Q99*, therapy_names emphasize thalidomide/lenalidomide but omit pomalidomide, which is central to the post-sequencing failure. The evidence description somewhat overstates direct, variant-specific proof of resistance but remains broadly consistent with the paper’s narrative."
+          }
+        ],
+        "gt_items": [
+          {
+            "gt_index": 1766,
+            "fields": {
+              "feature_names": "CRBN",
+              "variant_names": "Mutation",
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": "Lenalidomide|Pomalidomide",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "C",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "RESISTANCE"
+            },
+            "notes": "Same aggregated GT item as for Q99*; it implicitly covers both CRBN mutations without differentiating their individual contributions."
+          }
+        ]
+      },
+      {
+        "tuple_id": "PSMG2|E171K|Multiple Myeloma|Bortezomib",
+        "paper_evidence": {
+          "summary": "The patient biopsy harbored a PSMG2 E171K nonsynonymous mutation. PSMG2 is a proteasome assembly protein involved in 20S proteasome maturation, and mutations in proteasome assembly components have been linked to proteasome inhibitor resistance, 'possibly explaining this patient's bortezomib-refractory disease'.",
+          "location": "Results (PSMG2 paragraph); Table I row for PSMG2 E171K",
+          "quantitative_data": "Single case (n=1); no response metrics beyond 'bortezomib-refractory'.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "CASE_STUDY",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "RESISTANCE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 2,
+            "fields": {
+              "feature_names": ["PSMG2"],
+              "variant_names": ["E171K"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["Bortezomib"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "CASE_STUDY",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "RESISTANCE",
+              "evidence_description": "A 37-year-old patient with extramedullary multiple myeloma harbored a E171K mutation in PSMG2 (proteasome assembly chaperone 2) and demonstrated bortezomib-refractory disease. PSMG2 is involved in mammalian 20S proteasome maturation, and mutations in proteasome assembly components contribute to proteasome inhibitor resistance, possibly explaining this patient's resistance to bortezomib.",
+              "verbatim_quote": "a potentially clinically relevant nonsynonymous point mutation in proteasome assembly chaperone 2, PSMG2 (E171K). PSMG2 is a proteasome assembly protein involved in mammalian 20S proteasome maturation. Mutations in proteasome assembly components contribute to proteasome inhibitor resistance, possibly explaining this patient's bortezomib-refractory disease.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": "56984",
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": {
+                "Bortezomib": "358258"
+              },
+              "therapy_ncit_id": {
+                "Bortezomib": "NCIT:C1851"
+              },
+              "variant_hgvs_descriptions": ["E171K"],
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": "p.E171K",
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": 1,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "EXACT_MATCH_WITH_PAPER",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH"
+            },
+            "notes": "Very faithful rendering of the paper’s language and interpretation: bortezomib-refractory disease and proteasome-inhibitor resistance are described almost verbatim. The only under-specification is the lack of genomic coordinates, which are present in Table I."
+          }
+        ],
+        "gt_items": []
+      },
+      {
+        "tuple_id": "NR3C1|G369A|Multiple Myeloma|Dexamethasone (steroids)",
+        "paper_evidence": {
+          "summary": "The last nonsynonymous point mutation associated with drug resistance was NR3C1 G369A in a glucocorticoid receptor. Mutation of NR3C1 has been associated with resistance to steroid therapy, which this patient received and proved refractory.",
+          "location": "Results (NR3C1 paragraph); Table I row for NR3C1 G369A",
+          "quantitative_data": "Single case (n=1); clinical description 'proved refractory' to steroid therapy.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "CASE_STUDY",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "RESISTANCE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 3,
+            "fields": {
+              "feature_names": ["NR3C1"],
+              "variant_names": ["G369A"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["Dexamethasone"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "CASE_STUDY",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "RESISTANCE",
+              "evidence_description": "A 37-year-old patient with extramedullary multiple myeloma harbored a G369A mutation in NR3C1 (glucocorticoid receptor) and demonstrated resistance to steroid therapy including dexamethasone. Mutation of NR3C1 has been associated with resistance to steroid therapy. The patient received steroids and proved refractory to treatment.",
+              "verbatim_quote": "The last nonsynonymous point mutation associated with drug resistance was identified in NR3C1 (G369A), a glucocorticoid receptor. Mutation of NR3C1 has been associated with resistance to steroid therapy, to which this patient received and proved refractory.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": "2908",
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": {
+                "Dexamethasone": "3264"
+              },
+              "therapy_ncit_id": null,
+              "variant_hgvs_descriptions": ["G369A"],
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": "p.G369A",
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": 1,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "EXACT_MATCH_WITH_PAPER",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH"
+            },
+            "notes": "Excellent alignment with the text. Identifies NR3C1 G369A as a steroid-resistance mutation, and correctly specifies dexamethasone as the steroid in question. Again, only the missing genomic coordinates prevent this from being fully saturated."
+          }
+        ],
+        "gt_items": []
+      },
+      {
+        "tuple_id": "KRAS|G12C|Multiple Myeloma|MEK inhibitors",
+        "paper_evidence": {
+          "summary": "The patient had KRAS G12C and ATM T1985I mutations, both of which affect MEK signaling downstream, making MEK a therapeutic target of interest. MEK inhibitors are discussed as potential therapies, with multiple ongoing clinical trials, including in MM, but the patient did not receive a MEK inhibitor.",
+          "location": "Results, paragraph discussing KRAS, ATM, and MEK signalling; clinical trials statement.",
+          "quantitative_data": "No treatment given; no response data. Only mechanistic rationale and trial landscape.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "PRECLINICAL_OR_HYPOTHESIS",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "POTENTIAL_SENSITIVITY"
+        },
+        "ai_items": [],
+        "gt_items": []
+      },
+      {
+        "tuple_id": "PIK3CA|E542K|Multiple Myeloma|PI3K pathway inhibitors",
+        "paper_evidence": {
+          "summary": "The tumour contains a canonical activating PIK3CA E542K mutation. The authors note that many PIK3CA mutations occur at this site and that a substantial fraction co-occur with KRAS mutations, as in this patient. This is used to argue for targeting the PI3K pathway, with multiple clinical trials of PI3K inhibitors mentioned.",
+          "location": "Results and Discussion, PIK3CA paragraph and PI3K pathway discussion.",
+          "quantitative_data": "No treatment given; no clinical response reported to any PI3K/AKT/mTOR inhibitor in this patient.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "PRECLINICAL_OR_HYPOTHESIS",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "POTENTIAL_SENSITIVITY"
+        },
+        "ai_items": [],
+        "gt_items": []
+      }
+    ],
+    "missing_from_ai": [
+      "KRAS G12C in multiple myeloma as a mechanistic driver of MEK signalling and potential sensitivity to MEK inhibitors. The paper explicitly frames MEK as a therapeutic target and notes >100 MEK inhibitor trials including 3 in MM, but the AI extraction omits any evidence item for this gene–therapy relationship.",
+      "PIK3CA E542K in multiple myeloma as a canonical activating mutation suggesting potential benefit from PI3K-pathway inhibitors. The paper discusses PIK3CA mutation hotspots, co-occurrence with KRAS, and ongoing PI3K inhibitor trials, but no AI evidence item encodes this relationship."
+    ],
+    "ai_hallucinated_items": [],
+    "ai_improvements_over_gt": [
+      "Splitting the CRBN signal into two variant-specific items (Q99* and R283K) with explicit variant names, HGVS_p annotations, and gene identifiers, instead of a single generic 'CRBN Mutation' item.",
+      "Adding PSMG2 E171K → Bortezomib (resistance) as a PREDICTIVE case-study item grounded in the text, where the paper explicitly links this proteasome assembly mutation to bortezomib-refractory disease.",
+      "Adding NR3C1 G369A → Dexamethasone/steroid therapy (resistance) as a PREDICTIVE case-study item, reflecting the paper’s description of NR3C1 mutation-associated steroid resistance in this patient.",
+      "Populating structured ontology fields (Entrez IDs, EFO disease IDs, RxNorm and NCIt therapy identifiers) across items, which are absent in the ground truth but well supported by the paper’s nomenclature."
+    ],
+    "overall_judgement": {
+      "summary": "The AI extraction for PMID 23480694 provides a high-quality, CIViC-ready set of four PREDICTIVE resistance items that closely match the paper’s main clinical narrative: a multi-drug refractory MM patient with CRBN, PSMG2, and NR3C1 mutations explaining resistance to IMiDs, proteasome inhibitors, and steroids. It improves substantially on the existing ground truth by separating CRBN variants and adding PSMG2 and NR3C1, but under-represents pomalidomide in the CRBN therapy mapping and omits the hypothetical MEK/PI3K targeted-therapy opportunities described in the text.",
+      "strengths": [
+        "Accurate capture of all three drug-resistance mechanisms (IMiDs via CRBN, bortezomib via PSMG2, steroids via NR3C1) that define the 'multi-drug resistant' phenotype in this patient.",
+        "Variant-level granularity for CRBN (Q99* and R283K) with appropriate genomic and ontology annotations.",
+        "Correct classification of evidence as PREDICTIVE, case-study level, with direction SUPPORTS and significance RESISTANCE across all four items.",
+        "No hallucinated evidence items in the final extraction set; all four items are clearly anchored in explicit paper text."
+      ],
+      "weaknesses": [
+        "Therapy_names for CRBN items omit pomalidomide, even though the paper and CIViC curation emphasize pomalidomide+dexamethasone as the key post-sequencing failed regimen.",
+        "The IMiD-resistance descriptions for Q99* and R283K slightly over-ascribe variant-specific causality relative to the paper’s more general class-level interpretation and prior functional work.",
+        "No evidence items are created for the MEK- and PI3K-targeting opportunities (KRAS/ATM and PIK3CA mutations), even though the paper dedicates text to these potential therapeutic options.",
+        "Variant-specific genomic coordinates and reference build are left null, despite Table I providing hg19 positions for all listed mutations."
+      ]
+    }
+  }
+  

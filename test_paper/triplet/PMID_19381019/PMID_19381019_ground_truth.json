@@ -1,0 +1,167 @@
+{
+  "pmid": "19381019",
+  "source_id": 3456,
+  "title": "Antibody-based targeting of FGFR3 in bladder carcinoma and t(4;14)-positive multiple myeloma in mice.",
+  "journal": "J Clin Invest",
+  "year": 2009.0,
+  "civic_item_count": 6,
+  "tier1_field_completeness": {
+    "evidence_id": {
+      "populated": 6,
+      "total": 6,
+      "percentage": 100.0
+    },
+    "evidence_description": {
+      "populated": 6,
+      "total": 6,
+      "percentage": 100.0
+    },
+    "evidence_level": {
+      "populated": 6,
+      "total": 6,
+      "percentage": 100.0
+    },
+    "evidence_type": {
+      "populated": 6,
+      "total": 6,
+      "percentage": 100.0
+    },
+    "evidence_direction": {
+      "populated": 6,
+      "total": 6,
+      "percentage": 100.0
+    },
+    "evidence_significance": {
+      "populated": 6,
+      "total": 6,
+      "percentage": 100.0
+    },
+    "feature_names": {
+      "populated": 6,
+      "total": 6,
+      "percentage": 100.0
+    },
+    "variant_names": {
+      "populated": 6,
+      "total": 6,
+      "percentage": 100.0
+    },
+    "disease_name": {
+      "populated": 6,
+      "total": 6,
+      "percentage": 100.0
+    },
+    "therapy_names": {
+      "populated": 4,
+      "total": 6,
+      "percentage": 66.67
+    },
+    "clinical_trial_nct_ids": {
+      "populated": 0,
+      "total": 6,
+      "percentage": 0.0
+    },
+    "source_title": {
+      "populated": 6,
+      "total": 6,
+      "percentage": 100.0
+    },
+    "source_citation_id": {
+      "populated": 6,
+      "total": 6,
+      "percentage": 100.0
+    }
+  },
+  "evidence_items": [
+    {
+      "evidence_id": 10363,
+      "evidence_description": "Pro-B Ba/F3 cells transfected with wild type FGFR3 resulted in Il-3 independence with FGF1 dependence for growth. Monoclonal antibody R3Mab treatment in addition to FGF1 resulted in suppression of proliferation of Ba/F3 cells with wild type FGFR3. R3Mab was then tested on t(4;14)-positive multiple myeloma cell line UTMC-2 which has wild type FGFR3. The R3Mab treatment completely stopped UTMC-2 cell proliferation, but had less significant effects other multiple myeloma cell lines OPM2 and KMS11 which have FGFR3 mutations K650E and Y373C respectively. Since UTMC-2 cells do not form tumors in mice, OPM2 and KMS11 were xenografted into nude mice. R3Mab abolished xenograft tumor growth in both cell lines. Another experiment was conducted to test R3Mab's mechanism of action where R3Mab's Fc region, which binds to immune effector cells, was modified with D265A/N297A (DANA). The DANA mutation did not affect R3Mab's ability to bind to FGFR3 nor did it affect R3Mab's antitumor activity against bladder cancer cell line xenografts (UMUC-14 and RT112). However, the tumors of xenografted cell lines OPM2 and KMS11 were resistant to DANA R3Mab. Further testing also showed that multiple myeloma cells expressed 5 to 6 fold more cell surface FGFR3 than bladder cancer cell lines. All this information led the authors to conclude that in addition to ligand blocking and preventing dimerization, R3Mab can induce antibody-depedent cell-mediated cytotoxicity (ADCC) in cells expressing high FGFR3 cell surface levels. This conclusion applied to both wild type and mutant FGFR3.",
+      "evidence_level": "D",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "SENSITIVITYRESPONSE",
+      "feature_names": "FGFR3",
+      "variant_names": "Overexpression",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "R3Mab",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Antibody-based targeting of FGFR3 in bladder carcinoma and t(4;14)-positive multiple myeloma in mice.",
+      "source_citation_id": "19381019"
+    },
+    {
+      "evidence_id": 10364,
+      "evidence_description": "Pro-B Ba/F3 cells transfected with wild type FGFR3 resulted in Il-3 independence with FGF1 dependence for growth. Monoclonal antibody R3Mab treatment in addition to FGF1 resulted in suppression of proliferation of Ba/F3 cells with wild type FGFR3. R3Mab was then tested on t(4;14)-positive multiple myeloma cell line UTMC-2 which has wild type FGFR3. R3Mab stopped proliferation of UMTC-2 cells but did not attenuate multiple myeloma cell line KMS11 with FGFR3 Y373C. KMS11 cells were xenografted into nude mice in which R3Mab treatment abolished tumor growth. When R3Mab's Fc-region (which binds to immune effector cells) was modified with D265A/N297A (DANA), R3Mab no longer inhibited tumor growth of KMS11 xenograft tumors. Further testing also showed that multiple myeloma cells expressed 5 to 6 fold more cell surface FGFR3 than bladder cancer cell lines. The authors to conclude that in addition to ligand blocking and preventing dimerization, R3Mab can induce antibody-depedent cell-mediated cytotoxicity (ADCC) in cells expressing high wild type or mutant FGFR3 cell surface levels.",
+      "evidence_level": "D",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "SENSITIVITYRESPONSE",
+      "feature_names": "FGFR3",
+      "variant_names": "Overexpression",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "R3Mab",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Antibody-based targeting of FGFR3 in bladder carcinoma and t(4;14)-positive multiple myeloma in mice.",
+      "source_citation_id": "19381019"
+    },
+    {
+      "evidence_id": 10365,
+      "evidence_description": "In culture, monoclonal antibody R3Mab treatment inhibited the growth of multiple myeloma cell line UTMC-2 which has wild type FGFR3 but did not affect proliferation of multiple myeloma cell line KMS11 with FGFR3 Y373C.  Since UTMC-2 cells do not form tumors in mice, OPM2 and KMS11 were xenografted into nude mice. R3Mab abolished xenograft tumor growth in both cell lines. Another experiment was conducted to test R3Mab's mechanism of action where R3Mab's Fc region, which binds to immune effector cells, was modified with D265A/N297A (DANA). The DANA mutation did not affect R3Mab's ability to bind to FGFR3 nor did it affect R3Mab's antitumor activity against bladder cancer cell line xenografts (UMUC-14 and RT112). However, the tumors of xenografted cell lines OPM2 and KMS11 were resistant to DANA R3Mab. Further testing also showed that multiple myeloma cells expressed 5 to 6 fold more cell surface FGFR3 than bladder cancer cell lines. All this information led the authors to conclude that in addition to ligand blocking and preventing dimerization, R3Mab can induce antibody-depedent cell-mediated cytotoxicity (ADCC) in cells expressing high FGFR3 cell surface levels. This conclusion applied to both wild type and mutant FGFR3.",
+      "evidence_level": "D",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "SENSITIVITYRESPONSE",
+      "feature_names": "FGFR3",
+      "variant_names": "K650E",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "R3Mab",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Antibody-based targeting of FGFR3 in bladder carcinoma and t(4;14)-positive multiple myeloma in mice.",
+      "source_citation_id": "19381019"
+    },
+    {
+      "evidence_id": 10366,
+      "evidence_description": "In culture, monoclonal antibody R3Mab treatment inhibited the growth of multiple myeloma cell line UTMC-2 which has wild type FGFR3 but did not affect proliferation of multiple myeloma cell line KMS11 with FGFR3 Y373C. Since UTMC-2 cells do not form tumors in mice, multiple myeloma cell lines KMS11 and OPM2 with mutation FGFR3 K650E were xenografted into nude mice. R3Mab abolished xenograft tumor growth in both cell lines. Another experiment was conducted to test R3Mab's mechanism of action where R3Mab's Fc region, which binds to immune effector cells, was modified with D265A/N297A (DANA). The DANA mutation did not affect R3Mab's ability to bind to FGFR3 nor did it affect R3Mab's antitumor activity against bladder cancer cell line xenografts (UMUC-14 and RT112). However, the tumors of xenografted cell lines OPM2 and KMS11 were resistant to DANA R3Mab. Further testing also showed that multiple myeloma cells expressed 5 to 6 fold more cell surface FGFR3 than bladder cancer cell lines. All this information led the authors to conclude that in addition to ligand blocking and preventing dimerization, R3Mab can induce antibody-depedent cell-mediated cytotoxicity (ADCC) in cells expressing high FGFR3 cell surface levels. This conclusion applied to both wild type and mutant FGFR3.",
+      "evidence_level": "D",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "SENSITIVITYRESPONSE",
+      "feature_names": "FGFR3",
+      "variant_names": "Y373C",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "R3Mab",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Antibody-based targeting of FGFR3 in bladder carcinoma and t(4;14)-positive multiple myeloma in mice.",
+      "source_citation_id": "19381019"
+    },
+    {
+      "evidence_id": 10385,
+      "evidence_description": "Ba/F3 cells transfected with wild type FGFR3 or common bladder carcinoma variant FGFR3 Y375C both resulted in IL-3 independence with FGF1 dependence for growth. However, tumors grew when multiple myeloma cell line KMS11 (FGFR3 Y373C) cells were xenografted into nude mice.",
+      "evidence_level": "D",
+      "evidence_type": "ONCOGENIC",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "ONCOGENICITY",
+      "feature_names": "FGFR3",
+      "variant_names": "Y373C",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": NaN,
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Antibody-based targeting of FGFR3 in bladder carcinoma and t(4;14)-positive multiple myeloma in mice.",
+      "source_citation_id": "19381019"
+    },
+    {
+      "evidence_id": 10383,
+      "evidence_description": "Xenografts of multiple myeloma cell line OPM2 (FGFR3 K650E) into nude mice resulted in tumor growth.",
+      "evidence_level": "D",
+      "evidence_type": "ONCOGENIC",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "ONCOGENICITY",
+      "feature_names": "FGFR3",
+      "variant_names": "K650E",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": NaN,
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Antibody-based targeting of FGFR3 in bladder carcinoma and t(4;14)-positive multiple myeloma in mice.",
+      "source_citation_id": "19381019"
+    }
+  ]
+}

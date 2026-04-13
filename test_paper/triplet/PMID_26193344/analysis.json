@@ -1,0 +1,609 @@
+{
+    "paper_id": "PMID_26193344",
+    "total_true_items_in_paper_estimate": 8,
+    "ai_evidence_item_count": 9,
+    "gt_evidence_item_count": 2,
+    "alignment": [
+      {
+        "tuple_id": "HLA-A|A*0201 POSITIVE STATUS|Multiple Myeloma|NY-ESO-259 TCR-engineered T-cell therapy",
+        "paper_evidence": {
+          "summary": "The affinity-enhanced NY-ESO-1/LAGE-1 TCR recognizes the SLLMWITQC peptide only in complex with HLA-A*0201. All treated patients were HLA-A*0201-positive; HLA-A*0201 positivity was an eligibility requirement for therapy.",
+          "location": "Methods – Eligibility; Introduction; trial schema (Fig. 1)",
+          "quantitative_data": "All 20 treated patients were HLA-A*0201-positive; responses (14/20 nCR/CR; median PFS 19.1 months, median OS 32.1 months) are reported only in this HLA-restricted cohort.",
+          "evidence_type": "PREDICTIVE (borderline between predictive vs pure eligibility criterion)",
+          "evidence_level": "B (single-arm phase I/II trial; could be argued as lower)",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITYRESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 0,
+            "fields": {
+              "feature_names": ["HLA-A"],
+              "variant_names": ["A*0201 POSITIVE STATUS"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["NY-ESO-259 TCR-engineered T-cell therapy"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "B",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY_RESPONSE",
+              "evidence_description": "HLA-A*0201 positive status is required for eligibility and response to NY-ESO-259 TCR-engineered T-cell therapy; all 20 treated patients were HLA-A201 positive with 70% CR/nCR and median PFS 19.1 months.",
+              "verbatim_quote": "We generated a human-derived affinity-enhanced TCR that recognizes the NY-ESO-1/LAGE-1-derived SLLMWITQC peptide in complex with HLA-A*0201.",
+              "variant_origin": "GERMLINE",
+              "gene_entrez_id": 3105,
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": [null],
+              "therapy_ncit_id": ["NCIT:C146779"],
+              "variant_hgvs_descriptions": null,
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": null,
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": 20,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER (HLA-A restriction is clearly described).",
+              "variant_names": "EXACT_MATCH_WITH_PAPER (A*0201 is the required allele).",
+              "disease_name": "EXACT_MATCH_WITH_PAPER.",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER (NY-ESO-259 TCR product).",
+              "evidence_type": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (the paper shows HLA-A*0201 is required for *treatment*, but not formally tested as a predictive biomarker vs HLA-A*0201-negative patients).",
+              "evidence_level": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (B may be slightly generous for a small single-arm trial).",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER (association of treatment in this HLA-positive group with responses).",
+              "evidence_significance": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (sensitivity is implied but no HLA-negative comparison).",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (correct narrative; slightly overstates causal predictive role).",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER (the quoted sentence appears essentially verbatim in the text). :contentReference[oaicite:2]{index=2}",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH (Entrez, EFO, NCIt present only in AI).",
+              "variant_specifics": "EXACT_MATCH_WITH_PAPER (left null; no HGVS or coordinates exist in paper).",
+              "study_details": "EXACT_MATCH_WITH_PAPER (cohort_size=20, phase I/II)."
+            },
+            "notes": "Scientifically valid as an HLA restriction/eligibility criterion. Labeling it as a predictive biomarker is somewhat interpretive but not strictly wrong in a clinical implementation sense."
+          }
+        ],
+        "gt_items": []
+      },
+  
+      {
+        "tuple_id": "NY-ESO-1 (CTAG1B)|OVEREXPRESSION/EXPRESSION|Multiple Myeloma|NY-ESO-259 TCR-engineered T-cell therapy + ASCT + Melphalan",
+        "paper_evidence": {
+          "summary": "In HLA-A*0201+ MM patients with NY-ESO-1 and/or LAGE-1 expression, NY-ESO-259 TCR T-cell therapy after high-dose melphalan and ASCT led to high response rates and durable PFS/OS.",
+          "location": "Abstract; Results – Clinical Outcomes; Fig. 4; Fig. 6",
+          "quantitative_data": "20 treated patients; 16/20 (80%) with advanced MM expressing NY-ESO-1 and/or LAGE-1; 14/20 (70%) achieved nCR/CR at day 100; median PFS 19.1 months (95% CI lower 8.5, upper not reached); median OS 32.1 months at later follow-up. ",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "B",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITYRESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 1,
+            "fields": {
+              "feature_names": ["NY-ESO-1"],
+              "variant_names": ["EXPRESSION"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": [
+                "NY-ESO-259 TCR-engineered T-cell therapy",
+                "Autologous Stem Cell Transplantation",
+                "Melphalan"
+              ],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "B",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY_RESPONSE",
+              "evidence_description": "In HLA-A*0201 positive MM patients with NY-ESO-1 expression, NY-ESO-259 TCR T-cells after high-dose melphalan and ASCT produced 70% nCR/CR and median PFS 19.1 months; median OS 32.1 months; clinical responses were durable and associated with persistent engineered T-cells.",
+              "verbatim_quote": "Of the 20 patients, 14/20 (70%) patients had a near complete response (nCR) or complete response (CR).",
+              "variant_origin": "SOMATIC (functional tumor antigen expression).",
+              "gene_entrez_id": 1485,
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": [null, null, "6718"],
+              "therapy_ncit_id": ["NCIT:C146779", "NCIT:C201465", "NCIT:C15562"],
+              "variant_hgvs_descriptions": null,
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": null,
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": 20,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": {
+                "top_adverse_events": ["IL-6 elevation without severe CRS"],
+                "source": "Results – safety / cytokine analysis"
+              }
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER (NY-ESO-1 is a core target antigen).",
+              "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (paper does not quantify 'overexpression' vs 'expression'; both are reasonable encodings).",
+              "disease_name": "EXACT_MATCH_WITH_PAPER.",
+              "therapy_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (paper treats NY-ESO-259 TCR product as main therapy; melphalan/ASCT is conditioning—AI listing them explicitly is acceptable but slightly different from CIViC style).",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER (consistent with GT, level B). :contentReference[oaicite:4]{index=4}",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER (clear sensitivity/response signal).",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER (narrative and numbers match the Clinical Outcomes section). ",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER.",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH (Entrez, EFO, NCIt, RxCUI not present in GT).",
+              "variant_specifics": "EXACT_MATCH_WITH_PAPER (no sequence-level variants described in paper).",
+              "study_details": "EXACT_MATCH_WITH_PAPER (cohort_size=20, outcomes correctly stated)."
+            },
+            "notes": "This AI item is essentially an expanded version of the CTAG1B CIViC item, adding conditioning regimen and multiple ontology IDs."
+          }
+        ],
+        "gt_items": [
+          {
+            "gt_index": 2940,
+            "fields": {
+              "feature_names": "CTAG1B",
+              "variant_names": "Overexpression",
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": "Letetresgene Autoleucel (NY-ESO-1/LAGE-1 TCR T cells)",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "B",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITYRESPONSE",
+              "evidence_description": "Clinical responses to NY-ESO-1/LAGE-1 TCR-engineered T cells with median PFS 19.1 months.",
+              "clinical_trial_nct_ids": null,
+              "source_title": "NY-ESO-1-specific TCR-engineered T cells mediate sustained antigen-specific antitumor effects in myeloma.",
+              "source_citation_id": "26193344"
+            },
+            "notes": "GT and AI agree on core semantics (NY-ESO-1 overexpression → sensitivity to NY-ESO-1/LAGE-1 TCR T cells), with AI providing extra regimen detail and identifiers."
+          }
+        ]
+      },
+  
+      {
+        "tuple_id": "LAGE-1 (CTAG2)|OVEREXPRESSION/EXPRESSION|Multiple Myeloma|NY-ESO-259 TCR-engineered T-cell therapy + ASCT",
+        "paper_evidence": {
+          "summary": "LAGE-1 is a related cancer-testis antigen recognized by the same TCR; expression in myeloma cells (often more frequent than NY-ESO-1) identifies patients eligible for the same NY-ESO-259 TCR therapy, which shows high response rates.",
+          "location": "Introduction; Results – Patient screening & antigen expression",
+          "quantitative_data": "LAGE-1 expression frequency approximately twice that of NY-ESO-1; 34% of HLA-A2-positive screened patients expressed NY-ESO-1 and/or LAGE-1 and were eligible for treatment. Clinical responses and PFS/OS are reported at the cohort level. ",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "B (same trial as NY-ESO-1)",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITYRESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 2,
+            "fields": {
+              "feature_names": ["LAGE-1"],
+              "variant_names": ["EXPRESSION"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": [
+                "NY-ESO-259 TCR-engineered T-cell therapy",
+                "Autologous Stem Cell Transplantation"
+              ],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "B",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY_RESPONSE",
+              "evidence_description": "LAGE-1 expression in HLA-A*0201+ MM patients is associated with eligibility for NY-ESO-259 TCR T-cell therapy and clinical benefit (median PFS 19.1 months).",
+              "verbatim_quote": "LAGE-1 expression frequency was approximately twice that of NY-ESO-1.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": 54799,
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": [null, null],
+              "therapy_ncit_id": ["NCIT:C146779", "NCIT:C201465"],
+              "variant_hgvs_descriptions": null,
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": null,
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": 20,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER.",
+              "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (as with NY-ESO-1, 'expression' vs 'overexpression' is not formally distinguished).",
+              "disease_name": "EXACT_MATCH_WITH_PAPER.",
+              "therapy_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (again mixing product with ASCT but essentially accurate).",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER (mirrors NY-ESO-1 GT B-level).",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_significance": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (paper reports benefit at cohort level for NY-ESO-1 and/or LAGE-1 expressers combined).",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (correct high-level story, but uses overall median PFS rather than a LAGE-1-only subgroup).",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER.",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH.",
+              "variant_specifics": "EXACT_MATCH_WITH_PAPER (no sequence variants).",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (cohort_size is global TCR cohort, not LAGE-1-only subgroup)."
+            },
+            "notes": "Reasonable LAGE-1 predictive item; more granular subgroup outcomes are not reported, so some extrapolation is inevitable."
+          }
+        ],
+        "gt_items": [
+          {
+            "gt_index": 2941,
+            "fields": {
+              "feature_names": "CTAG2",
+              "variant_names": "Overexpression",
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": "Letetresgene Autoleucel",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "B",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITYRESPONSE",
+              "evidence_description": "Same trial-level response and PFS data applied to LAGE-1 overexpression.",
+              "clinical_trial_nct_ids": null
+            },
+            "notes": "GT and AI are aligned on semantics; AI adds identifiers and regimen context."
+          }
+        ]
+      },
+  
+      {
+        "tuple_id": "NY-ESO-1|LOSS/NEGATIVE SUBCLONES|Multiple Myeloma|NY-ESO-259 TCR-engineered T-cell therapy",
+        "paper_evidence": {
+          "summary": "Loss of NY-ESO-1/LAGE-1 antigen transcripts and emergence of antigen-negative subclones in marrow accompanies or precedes disease relapse in some patients, suggesting antigen escape under TCR therapy.",
+          "location": "Results – Evidence for NY-ESO-1/LAGE-1 tumor antigen targeting; Fig. 5; Supplementary Table 8",
+          "quantitative_data": "Loss of NY-ESO-1 and LAGE-1 transcripts observed in 12/15 patients at day 100 and 11/13 at day 180; 4 patients showed increased CD138 with absent NY-ESO-1/LAGE-1 transcripts; 2 patients relapsed with NY-ESO-1/LAGE-1 antigen-negative subclones; no antigen-positive relapse observed when engineered cells ≥6 cells/μl. ",
+          "evidence_type": "PREDICTIVE (resistance/escape)",
+          "evidence_level": "B–C (small single-arm cohort with translational correlative data)",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "RESISTANCE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 3,
+            "fields": {
+              "feature_names": ["NY-ESO-1"],
+              "variant_names": ["LOSS"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["NY-ESO-259 TCR-engineered T-cell therapy"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "B",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "RESISTANCE",
+              "evidence_description": "Loss of NY-ESO-1 expression (with persistent or recurrent CD138+ myeloma) is associated with resistance and disease progression after NY-ESO-259 TCR T-cell therapy; two patients relapsed with NY-ESO-1 antigen-negative subclones and no antigen-positive relapse occurred when engineered cells persisted at ≥6 cells/μl.",
+              "verbatim_quote": "In no cases was an antigen-positive tumor relapse observed in the presence of engineered cells at ≥6 cells/μl; 2 patients relapsed with NY-ESO-1/LAGE-1 antigen-negative subclones.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": 1485,
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": [],
+              "therapy_ncit_id": ["NCIT:C146779"],
+              "variant_hgvs_descriptions": null,
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": null,
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": 20,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (the paper usually discusses NY-ESO-1/LAGE-1 together; AI isolates NY-ESO-1).",
+              "variant_names": "EXACT_MATCH_WITH_PAPER (loss/absence of transcripts).",
+              "disease_name": "EXACTMATCH_WITH_PAPER.",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER (resistance phenomenon under therapy).",
+              "evidence_level": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (B may be slightly high; data are from correlative analysis rather than a formal comparative study).",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER (faithful to the text and tables).",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER.",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH (GT has no explicit resistance items).",
+              "variant_specifics": "EXACT_MATCH_WITH_PAPER (no sequence data present).",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (uses cohort_size=20 instead of the specific subsets 15/13/10 for biomarker analyses)."
+            },
+            "notes": "Good resistance/escape item; might ideally encode the combined NY-ESO-1/LAGE-1 phenotype rather than NY-ESO-1 alone."
+          }
+        ],
+        "gt_items": []
+      },
+  
+      {
+        "tuple_id": "LAGE-1|LOSS/NEGATIVE SUBCLONES|Multiple Myeloma|NY-ESO-259 TCR-engineered T-cell therapy",
+        "paper_evidence": {
+          "summary": "As above, loss of LAGE-1 (with NY-ESO-1) transcripts and emergence of antigen-negative subclones are part of an antigen-escape pattern under therapy.",
+          "location": "Results – Evidence for NY-ESO-1/LAGE-1 tumor antigen targeting; Fig. 5; Supplementary Table 8",
+          "quantitative_data": "Same as previous tuple; antigen-negative relapses are jointly NY-ESO-1/LAGE-1 negative. ",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "B–C",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "RESISTANCE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 4,
+            "fields": {
+              "feature_names": ["LAGE-1"],
+              "variant_names": ["LOSS"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["NY-ESO-259 TCR-engineered T-cell therapy"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "B",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "RESISTANCE",
+              "evidence_description": "Loss of LAGE-1 expression with persistent or recurrent myeloma (CD138+) is associated with resistance and antigen escape after NY-ESO-259 TCR T-cell therapy.",
+              "verbatim_quote": "loss of NY-ESO-1 and LAGE-1 transcripts was observed in 12/15 patients at day 100, and in 11/13 at day 180... 4 patients had an increase in CD138 transcripts in the absence of NY-ESO-1/LAGE-1 transcripts.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": 54799,
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": [],
+              "therapy_ncit_id": ["NCIT:C146779"],
+              "variant_hgvs_descriptions": null,
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": null,
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": 20,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER.",
+              "variant_names": "EXACT_MATCH_WITH_PAPER.",
+              "disease_name": "EXACT_MATCH_WITH_PAPER.",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_level": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (same comment as above).",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER.",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER.",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH.",
+              "variant_specifics": "EXACT_MATCH_WITH_PAPER.",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (global cohort_size used)."
+            },
+            "notes": "Complementary to the NY-ESO-1 loss item; together they cover antigen-loss escape which GT lacks."
+          }
+        ],
+        "gt_items": []
+      },
+  
+      {
+        "tuple_id": "NY-ESO-1|EXPRESSION|Multiple Myeloma|NY-ESO-259 TCR-engineered T-cell therapy + Lenalidomide",
+        "paper_evidence": {
+          "summary": "In patient 253, after second NY-ESO-259 TCR infusion (without second ASCT), low-dose lenalidomide started at day +24 was followed by marked CD8+ infiltration and reduced plasmacytosis with myeloma necrosis, suggesting possible immunomodulatory synergy and antigenic spreading.",
+          "location": "Results – T-cell persistence, trafficking, and function; Fig. 3; Supplementary Fig. 4 (text); case description for patient 253.",
+          "quantitative_data": "Qualitative case: day +24 marrow with reduced CD138+ cells and increased CD8+ T cells; low-dose lenalidomide 10 mg/day started day +24; by day +38 further CD8+ increase and extensive CD138+ necrosis. ",
+          "evidence_type": "PREDICTIVE (case-level, hypothesis-generating)",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITYRESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 5,
+            "fields": {
+              "feature_names": ["NY-ESO-1"],
+              "variant_names": ["EXPRESSION"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": [
+                "NY-ESO-259 TCR-engineered T-cell therapy",
+                "Lenalidomide"
+              ],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY_RESPONSE",
+              "evidence_description": "In patient 253, second NY-ESO-259 TCR T-cell infusion followed by low-dose lenalidomide (10 mg/day) was associated with increased CD8+ T-cell infiltration and marked reduction of marrow plasmacytosis with CD138+ cell necrosis, suggesting lenalidomide may enhance T-cell–mediated anti-myeloma activity.",
+              "verbatim_quote": "Low dose lenalidomide (10 mg/day) was started on day +24. Two weeks later on day +38, the marrow biopsy demonstrated a considerable increase in the abundance of CD8+ T-cells concomitant with a marked decrease in marrow plasmacytosis with extensive CD138+ myeloma cell necrosis.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": 1485,
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": [null, null],
+              "therapy_ncit_id": ["NCIT:C146779", "NCIT:C1234"], 
+              "variant_hgvs_descriptions": null,
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": null,
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": 1,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER.",
+              "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED.",
+              "disease_name": "EXACT_MATCH_WITH_PAPER.",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER (NY-ESO-259 and lenalidomide both explicitly described).",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER (case-level predictive observation).",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER (D).",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_significance": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (biological plausibility, but one case).",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER (narrative matches the case description).",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER.",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH.",
+              "variant_specifics": "EXACT_MATCH_WITH_PAPER.",
+              "study_details": "EXACT_MATCH_WITH_PAPER (case-level N=1)."
+            },
+            "notes": "Nice example of AI surfacing combination-therapy synergy; absent from GT and clearly grounded in the text."
+          }
+        ],
+        "gt_items": []
+      },
+  
+      {
+        "tuple_id": "NY-ESO-1|LONGITUDINAL EXPRESSION LEVEL|Multiple Myeloma|NY-ESO-259 TCR-engineered T-cell therapy",
+        "paper_evidence": {
+          "summary": "Higher longitudinal NY-ESO-1 expression in marrow is associated with worse overall survival and possibly shorter PFS; NY-ESO-1 expression is also correlated with high-risk disease features.",
+          "location": "Supplementary Tables 9–11; text summarizing joint models; Introduction (high-risk correlation).",
+          "quantitative_data": "T-cell persistence in blood inversely correlated with NY-ESO-1 expression (p=0.022); longitudinal NY-ESO-1 expression associated with OS (p=0.037) and may be predictive of PFS (p=0.094). ",
+          "evidence_type": "PROGNOSTIC (and treatment-context-specific biomarker).",
+          "evidence_level": "C (exploratory modeling in small cohort).",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "POOR_OUTCOME"
+        },
+        "ai_items": [
+          {
+            "ai_index": 6,
+            "fields": {
+              "feature_names": ["NY-ESO-1"],
+              "variant_names": ["EXPRESSION"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": [],
+              "evidence_type": "PROGNOSTIC",
+              "evidence_level": "B",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "POOR_OUTCOME",
+              "evidence_description": "Higher levels of NY-ESO-1 expression over time in marrow were significantly associated with worse overall survival and potentially shorter progression-free survival in the joint models; NY-ESO-1 expression is correlated with tumor proliferation and high-risk features.",
+              "verbatim_quote": "longitudinal expression of NY-ESO-1 and LAGE-1 was associated with OS, and the corresponding p-values for their effects in the model are 0.037 and 0.055, respectively.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": 1485,
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": [],
+              "therapy_ncit_id": [],
+              "cohort_size": 20,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER.",
+              "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (encodes quantitative expression trend as 'EXPRESSION').",
+              "disease_name": "EXACT_MATCH_WITH_PAPER.",
+              "therapy_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (prognostic effect is observed in the treated cohort; leaving therapy blank is not wrong).",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_level": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (B is too strong; C would better reflect exploratory modeling).",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER (correctly reflects association with OS and trend with PFS).",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER.",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH.",
+              "variant_specifics": "EXACT_MATCH_WITH_PAPER (no mutation-level data exist).",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (small N; AI doesn’t emphasize sample size limitations)."
+            },
+            "notes": "Reasonable prognostic item; the only real issue is slightly inflated evidence level."
+          },
+          {
+            "ai_index": 7,
+            "fields": {
+              "feature_names": ["NY-ESO-1"],
+              "variant_names": ["EXPRESSION"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["NY-ESO-259 TCR-engineered T-cell therapy"],
+              "evidence_type": "PROGNOSTIC",
+              "evidence_level": "B",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "POOR_OUTCOME",
+              "evidence_description": "In the treated cohort, higher NY-ESO-1 expression is inversely correlated with T-cell persistence and associated with poorer outcomes (shorter OS) in joint models.",
+              "verbatim_quote": "Between days 0 through 180 post-transplant the T-cell persistence in blood was inversely correlated with the level of NY-ESO-1 expression in the marrow (p=0.022).",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": 1485,
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": [],
+              "therapy_ncit_id": ["NCIT:C146779"],
+              "cohort_size": 20,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER.",
+              "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED.",
+              "disease_name": "EXACT_MATCH_WITH_PAPER.",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER (this item is correctly contextualized as therapy-specific).",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_level": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (same as above).",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (inference that reduced persistence causally mediates poorer outcomes is plausible but not formally proven).",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER.",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH.",
+              "variant_specifics": "EXACT_MATCH_WITH_PAPER.",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED."
+            },
+            "notes": "Provides a more mechanistic view (antigen level ↔ T-cell persistence ↔ outcome). Scientifically sensible, though causal claims should be phrased cautiously."
+          }
+        ],
+        "gt_items": []
+      },
+  
+      {
+        "tuple_id": "LAGE-1|LONGITUDINAL EXPRESSION LEVEL|Multiple Myeloma|NY-ESO-259 TCR-engineered T-cell therapy",
+        "paper_evidence": {
+          "summary": "Higher longitudinal LAGE-1 expression is marginally associated with worse OS and may be predictive of shorter PFS.",
+          "location": "Supplementary Tables 9–11; text summarizing joint models.",
+          "quantitative_data": "OS association p=0.055; possible PFS prediction p=0.065. ",
+          "evidence_type": "PROGNOSTIC",
+          "evidence_level": "C",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "POOR_OUTCOME"
+        },
+        "ai_items": [
+          {
+            "ai_index": 8,
+            "fields": {
+              "feature_names": ["LAGE-1"],
+              "variant_names": ["EXPRESSION"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": [],
+              "evidence_type": "PROGNOSTIC",
+              "evidence_level": "B",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "POOR_OUTCOME",
+              "evidence_description": "LAGE-1 expression levels over time showed marginal association with worse overall survival and trends toward shorter progression-free survival.",
+              "verbatim_quote": "longitudinal expression of NY-ESO-1 and LAGE-1 was associated with OS, and the corresponding p-values for their effects in the model are 0.037 and 0.055, respectively.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": 54799,
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": [],
+              "therapy_ncit_id": [],
+              "cohort_size": 20,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER.",
+              "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED.",
+              "disease_name": "EXACT_MATCH_WITH_PAPER.",
+              "therapy_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED.",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_level": "PARTIAL_MATCH_OR_UNDER-SPECIFIED (should likely be C).",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER.",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER (captures the marginal nature of associations).",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER.",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH.",
+              "variant_specifics": "EXACT_MATCH_WITH_PAPER.",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED."
+            },
+            "notes": "Consistent with the exploratory joint modeling; overstates certainty by choosing level B."
+          }
+        ],
+        "gt_items": []
+      }
+    ],
+    "missing_from_ai": [
+      "No clearly distinct, clinically actionable gene–variant–therapy tuples appear to be completely missing. One could optionally curate a combined 'NY-ESO-1 and/or LAGE-1' expression item instead of (or in addition to) separate CTAG1B and CTAG2 entries, but the AI’s split representation is still consistent with the paper."
+    ],
+    "ai_hallucinated_items": [
+      "None of the 9 AI evidence items are truly unsupported by the paper. The main issues are degree (inflated evidence level B vs C/D) and semantics (calling eligibility criteria 'predictive' and inferring slightly stronger causal statements than the data strictly prove)."
+    ],
+    "ai_improvements_over_gt": [
+      "AI adds explicit items for antigen-loss–mediated resistance (NY-ESO-1/LAGE-1 transcript loss and antigen-negative relapses), which are well-supported in the paper but absent from CIViC curation. ",
+      "AI captures exploratory prognostic modeling (longitudinal NY-ESO-1 and LAGE-1 expression associated with OS and possibly PFS), again supported by supplementary tables but not represented in GT. ",
+      "AI surfaces a case-level lenalidomide combination signal (patient 253) with coherent fields (cohort_size=1, evidence_level D), which GT ignores. ",
+      "AI introduces richer ontology mapping (Entrez IDs, EFO disease IDs, NCIt therapy IDs, RxCUI codes) and structured study details (cohort_size, source_page_numbers) that are not present in GT but align with the trial as described. "
+    ],
+    "overall_judgement": {
+      "summary": "The AI extraction for PMID 26193344 is high-quality and largely faithful to the paper: it recovers the core CIViC predictive items, adds well-supported resistance and prognostic biomarkers, and encodes identifiers and study details in a useful way. Its main weaknesses are slightly inflated evidence levels for exploratory analyses and treating some inclusion/eligibility constraints as fully validated predictive biomarkers.",
+      "strengths": [
+        "Accurately reproduces key response outcomes (14/20 nCR/CR; median PFS 19.1 months; median OS 32.1 months) and aligns with GT predictive items for CTAG1B and CTAG2.",
+        "Surfaces clinically meaningful resistance mechanisms (antigen loss and antigen-negative relapse) with correct direction and good textual grounding.",
+        "Captures exploratory OS/PFS biomarker modeling with correct p-values and directions, and provides rich ontology and study metadata beyond GT."
+      ],
+      "weaknesses": [
+        "Evidence levels sometimes too optimistic (B instead of C/D for small, exploratory biomarker models).",
+        "Some semantic overreach: treating HLA-A*0201 status and eligibility constraints as fully established predictive biomarkers.",
+        "Subtle nuances (combined NY-ESO-1/LAGE-1 expression vs gene-specific effects, small-sample limits) are not always clearly communicated in the evidence_description fields."
+      ]
+    }
+  }
+  

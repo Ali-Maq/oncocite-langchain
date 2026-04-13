@@ -1,0 +1,630 @@
+{
+    "paper_id": "PMID_16091734",
+    "total_true_items_in_paper_estimate": 8,
+    "ai_evidence_item_count": 8,
+    "gt_evidence_item_count": 4,
+    "alignment": [
+      {
+        "tuple_id": "FGFR3|K650E|Multiple Myeloma|PKC412",
+        "paper_evidence": {
+          "summary": "PKC412 inhibits FGFR3 K650E-transformed Ba/F3 cells and t(4;14)+ OPM-1 MM cells expressing FGFR3 K650E, reducing proliferation/viability with relatively high IC50 values.",
+          "location": "RESULTS – PKC412 inhibition of FGFR3 TDII Ba/F3 and t(4;14)+ MM cell lines; corresponding figures.",
+          "quantitative_data": "Ba/F3 TDII IC50 ~6–240 nM; OPM-1 viability approximately 0.9, 0.8, 0.58, 0.25 at 100, 200, 400, 1000 nM PKC412 (from figures/GT); spike at higher doses.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY/RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 1,
+            "fields": {
+              "feature_names": ["FGFR3"],
+              "variant_names": ["K650E"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["PKC412"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY/RESPONSE",
+              "evidence_description": "PKC412 effectively inhibited proliferation of OPM-1 MM cells harboring FGFR3 K650E; reports IC50 ranges for FGFR3 TDII Ba/F3 (6–240 nM) and notes inhibition of OPM-1/KMS11 with relatively high IC50s.",
+              "verbatim_quote": "PKC412 effectively inhibited the growth of OPM-1 and KMS11 cells with relatively high IC50s. PKC412 effectively inhibited the growth of FGFR3 TDII-and TEL-FGFR3-transformed Ba/F3 cells in the absence of IL-3 with IC50 of 6-240 and 100-200 nM, respectively.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": "2261",
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": "1919083",
+              "therapy_ncit_id": "NCIT:C1872",
+              "variant_hgvs_descriptions": null,
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": "p.K650E",
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": null,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Captures correct tuple and core biology; description compresses detailed viability series into qualitative high-IC50 language. Adds useful identifiers absent from GT."
+          }
+        ],
+        "gt_items": [
+          {
+            "gt_index": 10407,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "K650E",
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": "Midostaurin",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITYRESPONSE",
+              "evidence_description": "Composite of Ba/F3 K650E inhibition, introduction of N540D resistance, OPM-1 viability curve, and pre-B cell lymphoma BMT survival data."
+            },
+            "notes": "Correct but conflates MM cell-line and pre-B cell lymphoma mouse-model data into a single MM-labeled item; AI usefully splits this into MM (item 1) and pre-B lymphoma (item 2)."
+          }
+        ]
+      },
+      {
+        "tuple_id": "FGFR3|K650E|Pre-B Cell Lymphoma|PKC412",
+        "paper_evidence": {
+          "summary": "In a murine BMT model, FGFR3 TDII (K650E) causes aggressive pre-B cell lymphoma; PKC412 treatment significantly prolongs survival and reduces immature B cells and lymphoid infiltration.",
+          "location": "RESULTS – PKC412 is effective for the treatment of FGFR3 TDII-induced immature B-cell lymphoid disease in murine BMT model.",
+          "quantitative_data": "Placebo: 0/8 survivors by day 25; PKC412: 7/8 survivors at day 32; P=0.0006; immature B cells 1% vs 73% by flow cytometry.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY/RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 2,
+            "fields": {
+              "feature_names": ["FGFR3"],
+              "variant_names": ["K650E"],
+              "disease_name": "Pre-B Cell Lymphoma",
+              "therapy_names": ["PKC412"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY/RESPONSE",
+              "evidence_description": "PKC412 treatment in murine BMT model of FGFR3 TDII-induced pre-B cell lymphoma significantly prolonged survival (7/8 vs 0/8; P=0.0006) and reduced immature B-cell burden and lymphoid infiltration.",
+              "verbatim_quote": null,
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": "2261",
+              "disease_efo_id": null,
+              "therapy_rxnorm_id": "1919083",
+              "therapy_ncit_id": "NCIT:C1872",
+              "variant_hgvs_descriptions": null,
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": "p.K650E",
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": 16,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER",
+              "verbatim_quote": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+              "variant_specifics": "EXACT_MATCH_WITH_PAPER",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Strong, well-aligned preclinical item. Main limitation is lack of explicit EFO ID and verbatim quote, but narrative and numbers match the paper."
+          }
+        ],
+        "gt_items": [
+          {
+            "gt_index": 10407,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "K650E",
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": "Midostaurin",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITYRESPONSE"
+            },
+            "notes": "Same biological experiments are described but disease_name remains Multiple Myeloma, which is less precise than AI’s explicit Pre-B Cell Lymphoma context."
+          }
+        ]
+      },
+      {
+        "tuple_id": "FGFR3|Y373C|Multiple Myeloma|PKC412",
+        "paper_evidence": {
+          "summary": "PKC412 inhibits proliferation of t(4;14)+ MM cell line KMS11 harboring FGFR3 Y373C mutation, with relatively high IC50s, similar to OPM-1.",
+          "location": "RESULTS – PKC412 inhibition of t(4;14)+ MM cell lines.",
+          "quantitative_data": "Viability curves for KMS11 shown; exact IC50 not isolated in text.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY/RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 3,
+            "fields": {
+              "feature_names": ["FGFR3"],
+              "variant_names": ["Y373C"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["PKC412"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY/RESPONSE",
+              "evidence_description": "PKC412 inhibited KMS11 MM cells harboring FGFR3 Y373C with relatively high IC50s; specific IC50 values are not individually reported, but inhibition parallels that in OPM-1 (K650E).",
+              "verbatim_quote": "PKC412 effectively inhibited the growth of OPM-1 and KMS11 cells with relatively high IC50s.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": "2261",
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": "1919083",
+              "therapy_ncit_id": "NCIT:C1872",
+              "variant_hgvs_descriptions": null,
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": null,
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": null,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Very good match. Only missing explicit HGVS protein notation for Y373C and detailed viability values."
+          }
+        ],
+        "gt_items": [
+          {
+            "gt_index": 10408,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "Y373C",
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": "Midostaurin",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITYRESPONSE"
+            },
+            "notes": "GT and AI agree on core tuple and direction; GT includes explicit viability ratios across PKC412 dose range, which AI summarizes qualitatively."
+          }
+        ]
+      },
+      {
+        "tuple_id": "FGFR3|F384L (polymorphism)|Multiple Myeloma|PKC412",
+        "paper_evidence": {
+          "summary": "LP1 MM cells express FGFR3 wild-type with transmembrane polymorphism F384L and lower FGFR3 expression; PKC412 inhibits these cells but with less drug sensitivity than OPM-1.",
+          "location": "RESULTS – Inhibition of primary t(4;14)+ MM cell lines by PKC412.",
+          "quantitative_data": "LP1 viability curve shows modest reductions across 100–5000 nM but less pronounced than in OPM-1.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY/RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 4,
+            "fields": {
+              "feature_names": ["FGFR3"],
+              "variant_names": ["WILDTYPE"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["PKC412"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY/RESPONSE",
+              "evidence_description": "PKC412 inhibited LP1 MM cells expressing FGFR3 wild-type with F384L polymorphism, but with less sensitivity than cells with activating mutations, likely due to lower FGFR3 expression.",
+              "verbatim_quote": "LP1 cells express FGFR3 wild-type with a polymorphism of F384L in the transmembrane domain. PKC412 also inhibits LP1 cells with less evidence of drug-sensitivity might be due to the much less expression levels of FGFR3 protein in LP1 cells compared to those in OPM-1 cells.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": "2261",
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": "1919083",
+              "therapy_ncit_id": "NCIT:C1872",
+              "variant_hgvs_descriptions": null,
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": null,
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": null,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "MISINTERPRETED_OR_INCORRECT",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Biology is correct and well-supported, but CIViC-style variant_names should be F384L, not WILDTYPE. Overexpression vs expression level nuance is captured."
+          }
+        ],
+        "gt_items": [
+          {
+            "gt_index": 10410,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "F384L",
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": "Midostaurin",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITYRESPONSE"
+            },
+            "notes": "GT correctly encodes the polymorphism as F384L; AI’s variant label is less precise but thematically aligned."
+          }
+        ]
+      },
+      {
+        "tuple_id": "ETV6+FGFR3|TEL-FGFR3|Myeloproliferative Neoplasm|PKC412",
+        "paper_evidence": {
+          "summary": "TEL–FGFR3 fusion causes myeloproliferative disease and peripheral T-cell lymphoma in a murine BMT model; PKC412 prolongs survival, reduces spleen size and WBC counts, and inhibits TEL-FGFR3 signaling.",
+          "location": "RESULTS – Efficacy of PKC412 in treatment of TEL-FGFR3-induced myeloproliferative disease.",
+          "quantitative_data": "Significant survival benefit P<0.0001; marked reduction in spleen weight and leukocytosis vs vehicle.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY/RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 5,
+            "fields": {
+              "feature_names": ["ETV6", "FGFR3"],
+              "variant_names": ["TEL-FGFR3"],
+              "disease_name": "Myeloproliferative Neoplasm",
+              "therapy_names": ["PKC412"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY/RESPONSE",
+              "evidence_description": "PKC412 inhibits TEL-FGFR3-transformed Ba/F3 cells (IC50 100–200 nM) and significantly prolongs survival in murine TEL-FGFR3-induced myeloproliferative disease (P<0.0001), with reduced spleen size and peripheral WBC counts.",
+              "verbatim_quote": "PKC412 effectively inhibited the growth of FGFR3 TDII-and TEL-FGFR3-transformed Ba/F3 cells in the absence of IL-3 with IC50 of 6-240 and 100-200 nM, respectively. The PKC412-treated group had a statistically significant prolongation in survival (P<0.0001).",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": ["2120", "2261"],
+              "disease_efo_id": "EFO_0004251",
+              "therapy_rxnorm_id": "1919083",
+              "therapy_ncit_id": "NCIT:C1872",
+              "variant_hgvs_descriptions": null,
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": null,
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": null,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Well-aligned item capturing TEL-FGFR3 MPN biology. This evidence is only embedded inside GT narratives and not broken out as its own item, so AI is strictly richer here."
+          }
+        ],
+        "gt_items": [
+          {
+            "gt_index": 10411,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "N540D",
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": "Midostaurin"
+            },
+            "notes": "GT evidence_description mentions TEL-FGFR3 experiments when discussing N540D resistance but never creates a standalone TEL-FGFR3/MPN item; AI fills this gap."
+          }
+        ]
+      },
+      {
+        "tuple_id": "ETV6+FGFR3|TEL-FGFR3|Peripheral T-cell Lymphoma|PKC412",
+        "paper_evidence": {
+          "summary": "TEL-FGFR3 BMT model produces peripheral T-cell lymphoma as part of the myeloproliferative disease; PKC412 treatment reduces disease burden and improves survival.",
+          "location": "RESULTS – TEL-FGFR3-induced myeloproliferative disease and T-cell lymphoma subsection.",
+          "quantitative_data": "Survival P<0.0001 vs vehicle; reduction in lymphoma burden described histologically.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY/RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 6,
+            "fields": {
+              "feature_names": ["ETV6", "FGFR3"],
+              "variant_names": ["TEL-FGFR3"],
+              "disease_name": "Peripheral T-cell Lymphoma",
+              "therapy_names": ["PKC412"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY/RESPONSE",
+              "evidence_description": "TEL-FGFR3 fusion from t(4;12) translocation induces peripheral T-cell lymphoma; PKC412 inhibits TEL-FGFR3 signaling and provides a survival benefit in mouse models.",
+              "verbatim_quote": null,
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": ["2120", "2261"],
+              "disease_efo_id": null,
+              "therapy_rxnorm_id": "1919083",
+              "therapy_ncit_id": "NCIT:C1872",
+              "variant_hgvs_descriptions": null,
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": null,
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": null,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "verbatim_quote": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Biology is supported, but the paper frames disease as a combined myeloproliferative/T-cell lymphoma phenotype. Splitting out a pure PTCL label is a mild interpretive step rather than a strict misinterpretation."
+          }
+        ],
+        "gt_items": []
+      },
+      {
+        "tuple_id": "FGFR3|N540D|Multiple Myeloma or FGFR3-driven malignancies|PKC412",
+        "paper_evidence": {
+          "summary": "Introducing N540D into FGFR3 TDII or TEL-FGFR3 confers resistance to PKC412, with markedly increased IC50 vs wild-type kinase domain.",
+          "location": "RESULTS – N540D mutation conferring resistance to PKC412.",
+          "quantitative_data": "N540D cells have cellular IC50 estimated as high as 400 nM vs 6–240 nM (FGFR3 TDII) or 100–200 nM (TEL-FGFR3).",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "RESISTANCE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 7,
+            "fields": {
+              "feature_names": ["FGFR3"],
+              "variant_names": ["N540D"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["PKC412"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "RESISTANCE",
+              "evidence_description": "FGFR3 N540D mutation in TDII and TEL-FGFR3 contexts confers resistance to PKC412, with elevated IC50 (~400 nM) compared to 6–240 nM and 100–200 nM for wild-type kinase domain.",
+              "verbatim_quote": "We introduced an N540D mutation in the context of native FGFR3 into FGFR3 TDII and the TEL-FGFR3 fusion. Ba/F3 cells transformed with FGFR3 TDII K650E/N540D or TEL-FGFR3 N540D demonstrated resistance to PKC412, with an elevated cellular IC50, that was estimated at PKC412 concentration as high as 400 nM.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": "2261",
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": "1919083",
+              "therapy_ncit_id": "NCIT:C1872",
+              "variant_hgvs_descriptions": null,
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": "p.N540D",
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": null,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER",
+              "verbatim_quote": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+              "variant_specifics": "EXACT_MATCH_WITH_PAPER",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Very strong alignment on resistance mechanism and IC50 shift. Minor issue: disease_name is simplified to MM, while experiments are Ba/F3 models relevant across FGFR3-driven malignancies."
+          }
+        ],
+        "gt_items": [
+          {
+            "gt_index": 10411,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "N540D",
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": "Midostaurin",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "RESISTANCE"
+            },
+            "notes": "GT and AI strongly agree on resistance role of N540D. GT focuses on narrative of limited growth inhibition; AI adds explicit comparison of IC50 ranges."
+          }
+        ]
+      },
+      {
+        "tuple_id": "FGFR3|OVEREXPRESSION|Multiple Myeloma|PKC412",
+        "paper_evidence": {
+          "summary": "PKC412 selectively inhibits FGFR3-overexpressing, t(4;14)+ MM cell lines (with or without specific activating mutations), while t(4;14)-negative FGFR3-low OCI-My5 is resistant, indicating FGFR3 overexpression is the key therapeutic target.",
+          "location": "RESULTS – Inhibition of t(4;14)+ primary MM cell lines by PKC412; DISCUSSION – FGFR3 overexpression as molecular target.",
+          "quantitative_data": "OPM-1/KMS11/LP1 sensitivity vs OCI-My5 resistance; ~32% of t(4;14) MM lack FGFR3 expression.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY/RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 8,
+            "fields": {
+              "feature_names": ["FGFR3"],
+              "variant_names": ["OVEREXPRESSION"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["PKC412"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY/RESPONSE",
+              "evidence_description": "PKC412 effectively inhibited t(4;14)+ MM cell lines overexpressing FGFR3 (with activating mutations or wild-type), while t(4;14)-negative OCI-My5 was not inhibited up to 5 μM. Suggests FGFR3 overexpression is the key target for PKC412 in MM.",
+              "verbatim_quote": "These data suggest that PKC412 effectively inhibits proliferation of t(4;14) MM cell lines by targeting FGFR3 and that FGFR3 is the molecular target for inhibition of the t(4;14) MM cells by PKC412.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": "2261",
+              "disease_efo_id": "EFO_0001378",
+              "therapy_rxnorm_id": "1919083",
+              "therapy_ncit_id": "NCIT:C1872",
+              "variant_hgvs_descriptions": null,
+              "variant_hgvs_c": null,
+              "variant_hgvs_p": null,
+              "chromosome": null,
+              "start_position": null,
+              "stop_position": null,
+              "reference_build": null,
+              "cancer_cell_fraction": null,
+              "cohort_size": null,
+              "clinical_trial_nct_ids": [],
+              "drug_safety": null
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Captures an important high-level concept: FGFR3 overexpression as a therapeutic biomarker. Using OVEREXPRESSION as a variant tag is slightly non-standard but clinically meaningful; the logic and supporting evidence are correct."
+          }
+        ],
+        "gt_items": [
+          {
+            "gt_index": 10407,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "K650E",
+              "disease_name": "Multiple Myeloma"
+            },
+            "notes": "GT implicitly reflects the overexpression concept through OPM-1 K650E data and narrative but does not promote ‘overexpression’ to an explicit variant-like entity. AI adds this as a distinct, clinically useful evidence item."
+          }
+        ]
+      }
+    ],
+    "missing_from_ai": [
+      "Numerical viability values for each MM cell line (OPM-1, KMS11, LP1) across all PKC412 concentrations, which are detailed in figures and summarized more precisely in the ground truth.",
+      "Explicit modeling of FLT3- and PDGFR-targeted PKC412 evidence in AML/other malignancies mentioned in the paper’s broader context (outside the FGFR3-centric focus)."
+    ],
+    "ai_hallucinated_items": [
+      "None identified: all 8 AI evidence items map to experimental results or explicit interpretations in the paper. Some disease labels (e.g., pure 'Peripheral T-cell Lymphoma') are slightly more granular than in the text but not unsupported."
+    ],
+    "ai_improvements_over_gt": [
+      "Splitting FGFR3 K650E evidence into separate items for Multiple Myeloma and Pre-B Cell Lymphoma, instead of conflating BMT lymphoma data under an MM label.",
+      "Introducing standalone TEL-FGFR3 items for Myeloproliferative Neoplasm and Peripheral T-cell Lymphoma, which ground truth only mentions indirectly in resistance narratives.",
+      "Adding an explicit FGFR3 OVEREXPRESSION item showing that PKC412 selectively targets t(4;14)+, FGFR3-overexpressing MM lines versus t(4;14)-negative OCI-My5.",
+      "Providing structured identifiers (NCIt, RxCUI, HGVS p.K650E and p.N540D, variant_origin) that are absent from ground truth but clearly supported by the paper or standard annotation.",
+      "Clarifying that all therapeutic items are preclinical (Level D) and consistently encoding evidence_direction and evidence_significance across items."
+    ],
+    "overall_judgement": {
+      "summary": "The AI extraction for PMID 16091734 is high-quality, faithful to the paper, and substantially richer and more granular than the CIViC ground truth, with only minor issues in variant naming and disease labeling.",
+      "strengths": [
+        "Excellent coverage of all major FGFR3/TEL-FGFR3–PKC412 relationships (K650E, Y373C, F384L, N540D, overexpression, TEL-FGFR3, multiple disease contexts).",
+        "Consistent and accurate evidence_type/level/direction/significance assignments aligned with preclinical data.",
+        "Valuable additional granularity versus ground truth (separate disease contexts, resistance mechanism, overexpression concept, identifiers).",
+        "No clear hallucinated items; all evidence items are tied to real experimental findings."
+      ],
+      "weaknesses": [
+        "Variant nomenclature is slightly off for LP1 (uses 'WILDTYPE' instead of F384L polymorphism) and relies on OVEREXPRESSION as a quasi-variant label.",
+        "Some disease labels simplify complex model phenotypes (e.g., assigning N540D exclusively to Multiple Myeloma, while experiments use Ba/F3 models).",
+        "Does not explicitly capture all detailed dose–response numbers and some cohort statistics that appear in the figures and are preserved in ground truth text."
+      ]
+    }
+  }
+  

@@ -1,0 +1,50 @@
+=== Planner Final Response ===
+Content length: 2114
+
+## Extraction Plan Successfully Saved
+
+I have analyzed the paper and created a comprehensive extraction strategy for the **NY-ESO-1 TCR-engineered T-cells in myeloma** clinical trial (Nature Medicine, 2015).
+
+### Study Overview
+**Type**: Phase I/II single-arm trial  
+**Population**: 20 patients with advanced multiple myeloma  
+**Intervention**: NY-ESO-1/LAGE-1 TCR-engineered T-cells administered after ASCT  
+**Primary Endpoint**: Clinical response and safety
+
+### Key Clinical Findings
+- **Response Rate**: 80% overall response (16/20), 70% CR/nCR (14/20)
+- **Survival**: Median PFS 19.1 months, Median OS 32.1 months
+- **Biomarker Correlation**: T-cell persistence inversely correlated with NY-ESO-1 expression (p=0.022)
+- **Safety**: No treatment-related fatalities, no clinically apparent cytokine release syndrome
+
+### Extraction Strategy Summary
+
+**Expected Items**: 12 evidence items  
+**Focus Sections**: Abstract, Results (Patients, Clinical Outcomes, Antigen Targeting), Discussion
+
+**Priority 1-3 Tasks** (5 items):
+1. Abstract summary (overall response, PFS, T-cell persistence correlation)
+2. Detailed clinical outcomes (response rates, survival data)
+3. Biomarker correlations (statistical associations with OS/PFS)
+4. Antigen targeting evidence (transcript loss, escape mechanisms)
+5. Patient characteristics (eligibility, demographics, treatment details)
+
+**Priority 4-5 Tasks** (7 items):
+- T-cell persistence kinetics
+- Safety profile
+- Comparative effectiveness
+- Antigen spreading evidence
+- Resistance/relapse patterns
+- HLA restriction requirements
+- Illustrative patient case studies
+
+### Critical Statistics Tagged
+I identified **18 high-value statistics** with verbatim quotes, including:
+- All response rates with exact numerators/denominators
+- Survival endpoints with confidence intervals
+- Statistical correlations with p-values
+- T-cell persistence measurements over time
+- Biomarker expression changes
+- Safety event counts
+
+The plan provides detailed guidance for each extraction task, including source sections, target fields, and specific hints to maximize extraction accuracy.

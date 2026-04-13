@@ -1,0 +1,320 @@
+{
+  "paper_id": "PMID_15339850",
+  "total_true_items_in_paper_estimate": 5,
+  "ai_evidence_item_count": 4,
+  "gt_evidence_item_count": null,
+  "alignment": [
+    {
+      "tuple_id": "NRAS/KRAS|MUTATION|MGUS→Multiple Myeloma|<no_therapy>",
+      "paper_evidence": {
+        "summary": "Activating K- or N-RAS mutations (codons 12, 13, 61) are much more frequent in malignant multiple myeloma (31%, 18/58) than in premalignant MGUS (5%, 1/20). Authors argue that RAS mutations mark, and may help mediate, the MGUS-to-MM transition, independent of clinical stage.",
+        "location": "Results: 'A high prevalence of activating RAS mutations in MM compared with MGUS'; Table 2; Discussion section.",
+        "quantitative_data": "MGUS: 1/20 (5%) with N-RAS codon 61 mutation; MM: 18/58 (31%) with K- or N-RAS mutation across stages I–III, with similar prevalence by stage.",
+        "evidence_type": "PROGNOSTIC (biomarker of malignant versus premalignant state)",
+        "evidence_level": "C",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "N/A (association with malignant status, not direct outcome data)"
+      },
+      "ai_items": [
+        {
+          "ai_index": 0,
+          "fields": {
+            "feature_names": ["NRAS", "KRAS"],
+            "variant_names": ["MUTATION"],
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": [],
+            "evidence_type": "PROGNOSTIC",
+            "evidence_level": "B",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "ADVERSE_OUTCOME",
+            "evidence_description": "RAS mutations (N-RAS or K-RAS at codons 12, 13, or 61) are significantly associated with progression from MGUS to multiple myeloma. RAS mutations were detected in 31% (18/58) of MM patients compared to only 5% (1/20) of stable MGUS patients, suggesting RAS mutations mark the transition from premalignant to malignant disease and may inform risk stratification.",
+            "verbatim_quote": "The observed low frequency of RAS mutations identified in PCs with a characteristic MM immunophenotype from stable MGUS patients (5%) is in striking contrast to a high frequency of RAS mutations at all Durie and Salmon stages of MM patients at the time of diagnosis (31%). This indicates that RAS mutations provide a molecular marker that distinguishes some MM tumors from MGUS and suggests that these mutations may facilitate the transition from MGUS to MM in a subset of patients.",
+            "variant_origin": "SOMATIC",
+            "gene_entrez_id": ["4893", "3845"],
+            "disease_efo_id": "EFO_0001378",
+            "therapy_rxnorm_id": null,
+            "therapy_ncit_id": null,
+            "variant_hgvs_descriptions": null,
+            "variant_hgvs_c": null,
+            "variant_hgvs_p": null,
+            "chromosome": null,
+            "start_position": null,
+            "stop_position": null,
+            "reference_build": null,
+            "cancer_cell_fraction": null,
+            "cohort_size": 78,
+            "clinical_trial_nct_ids": [],
+            "drug_safety": null,
+            "source_title": "Possible roles for activating RAS mutations in the MGUS to MM transition and in the intramedullary to extramedullary transition in some plasma cell tumors",
+            "source_journal": "Blood",
+            "source_publication_year": 2005,
+            "source_pmid": "15339850",
+            "source_pmcid": null,
+            "source_page_numbers": "Pages 2-4, Table 2, Results section"
+          },
+          "field_status": {
+            "feature_names": "EXACT_MATCH_WITH_PAPER",
+            "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "disease_name": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "therapy_names": "EXACT_MATCH_WITH_PAPER",
+            "evidence_type": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "evidence_level": "MISINTERPRETED_OR_INCORRECT",
+            "evidence_direction": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "evidence_significance": "MISINTERPRETED_OR_INCORRECT",
+            "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+            "variant_origin": "EXACT_MATCH_WITH_PAPER",
+            "identifiers": "EXACT_MATCH_WITH_PAPER",
+            "variant_specifics": "EXACT_MATCH_WITH_PAPER",
+            "study_details": "EXACT_MATCH_WITH_PAPER"
+          },
+          "notes": "Core signal (higher RAS mutation prevalence in MM vs MGUS) is correct and well supported. However, evidence_level is overstated (B vs more appropriate C) and 'ADVERSE_OUTCOME' plus 'associated with progression' go beyond the data, which are cross-sectional frequencies without demonstrated impact on individual progression or survival."
+        }
+      ],
+      "gt_items": []
+    },
+    {
+      "tuple_id": "NRAS/KRAS|MUTATION|ExPCT / extramedullary MM vs intramedullary MM|<no_therapy>",
+      "paper_evidence": {
+        "summary": "In patients with extramedullary plasma cell tumors, RAS mutations are absent from all analyzed intramedullary bone marrow tumor cells (0/13), but present in 3 of 6 clonally related extramedullary tumor samples (ascites, lymph node, intraspinal). This suggests that acquisition of a RAS mutation may be involved in the transition from intramedullary to extramedullary disease in a subset of patients.",
+        "location": "Results: 'RAS mutations in extramedullary but not intramedullary tumor cells in 3 patients'; Table 2; Figure 2; Discussion.",
+        "quantitative_data": "ExPCT medullary PCs: 0/13 with RAS mutation; extramedullary PCs in paired, clonally related cases: 3/6 with a single RAS mutation each.",
+        "evidence_type": "PROGNOSTIC (association with extramedullary dissemination, an adverse disease state)",
+        "evidence_level": "C",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "ADVERSE_OUTCOME (extramedullary disease is clinically unfavorable, though survival endpoints not directly measured here)"
+      },
+      "ai_items": [
+        {
+          "ai_index": 1,
+          "fields": {
+            "feature_names": ["NRAS", "KRAS"],
+            "variant_names": ["MUTATION"],
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": [],
+            "evidence_type": "PROGNOSTIC",
+            "evidence_level": "C",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "ADVERSE_OUTCOME",
+            "evidence_description": "RAS mutations are exclusively present in extramedullary plasma cells but absent in paired intramedullary tumor cells in patients with extramedullary disease. In 3 of 6 patients with clonally-related tumors (identical IgH sequences), RAS mutations were detected only in extramedullary sites (ascites, lymph node, intraspinal), suggesting RAS mutations facilitate the intramedullary to extramedullary transition.",
+            "verbatim_quote": "Strikingly, despite the absence of RAS mutations in BM tumor cells, RAS mutations were found in 3 of 6 extramedullary tumor cell samples (localized in ascites, lymph node, and intraspinal tumor; ExPCT-3, -7, -13; Table 1). Only a single RAS mutation was observed for each patient. Thus, RAS mutations were exclusively observed in extramedullary PCs from 3 of 6 patients with different presentations of ExPCT.",
+            "variant_origin": "SOMATIC",
+            "gene_entrez_id": ["4893", "3845"],
+            "disease_efo_id": "EFO_0001378",
+            "therapy_rxnorm_id": null,
+            "therapy_ncit_id": null,
+            "variant_hgvs_descriptions": null,
+            "variant_hgvs_c": null,
+            "variant_hgvs_p": null,
+            "chromosome": null,
+            "start_position": null,
+            "stop_position": null,
+            "reference_build": null,
+            "cancer_cell_fraction": null,
+            "cohort_size": 13,
+            "clinical_trial_nct_ids": [],
+            "drug_safety": null,
+            "source_title": "Possible roles for activating RAS mutations in the MGUS to MM transition and in the intramedullary to extramedullary transition in some plasma cell tumors",
+            "source_journal": "Blood",
+            "source_publication_year": 2005,
+            "source_pmid": "15339850",
+            "source_pmcid": null,
+            "source_page_numbers": "Pages 4-5, Table 1, Figure 2, Results section"
+          },
+          "field_status": {
+            "feature_names": "EXACT_MATCH_WITH_PAPER",
+            "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "disease_name": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "therapy_names": "EXACT_MATCH_WITH_PAPER",
+            "evidence_type": "EXACT_MATCH_WITH_PAPER",
+            "evidence_level": "EXACT_MATCH_WITH_PAPER",
+            "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+            "evidence_significance": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "evidence_description": "EXACT_MATCH_WITH_PAPER",
+            "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+            "variant_origin": "EXACT_MATCH_WITH_PAPER",
+            "identifiers": "EXACT_MATCH_WITH_PAPER",
+            "variant_specifics": "EXACT_MATCH_WITH_PAPER",
+            "study_details": "EXACT_MATCH_WITH_PAPER"
+          },
+          "notes": "This item is well aligned with the paper: correct description of 0/13 intramedullary vs 3/6 extramedullary RAS+ cases. Use of MM as the disease label is a bit coarse given the ExPCT/plasmacytoma framing, but acceptable. Calling this 'ADVERSE_OUTCOME' is arguably reasonable because extramedullary disease is clinically unfavorable, though the paper itself does not show survival data."
+        }
+      ],
+      "gt_items": []
+    },
+    {
+      "tuple_id": "NRAS/KRAS|MUTATION + cyclin D1 expression|Multiple Myeloma|<no_therapy>",
+      "paper_evidence": {
+        "summary": "RAS mutations are significantly more common in cyclin D1–positive MM. Cyclin D1-positive cases are subdivided into a t(11;14)/high-expression group and a low-to-intermediate-expression group (often 11q polysomy), with RAS mutations enriched across cyclin D1–positive versus cyclin D1–negative tumors.",
+        "location": "Results: 'RAS mutation in relation to other recurrent genetic alterations in MM'; Table 3; Figure 4.",
+        "quantitative_data": "Among 54 MM cases, 9 (17%) have high and 13 (24%) low-to-intermediate cyclin D1 expression. RAS mutations significantly associated with cyclin D1 positivity (P = .015); detailed split: cyclin D1-positive group RAS = 11/17 vs no RAS = 4/37; low vs high subgroups show weaker associations.",
+        "evidence_type": "PROGNOSTIC / MOLECULAR_SUBTYPE_ASSOCIATION",
+        "evidence_level": "C",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "N/A"
+      },
+      "ai_items": [
+        {
+          "ai_index": 2,
+          "fields": {
+            "feature_names": ["NRAS", "KRAS"],
+            "variant_names": ["MUTATION"],
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": [],
+            "evidence_type": "PROGNOSTIC",
+            "evidence_level": "C",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "N/A",
+            "evidence_description": "RAS mutations are significantly associated with cyclin D1-positive multiple myeloma (P=0.015). Among 54 MM cases analyzed, RAS mutations were found in 11 of 22 cyclin D1-positive cases versus 6 of 32 cyclin D1-negative cases. This association is independent of the mechanism of cyclin D1 dysregulation (t(11;14) translocation vs 11q polysomy), suggesting RAS mutations play a role in evolution of cyclin D1-positive MM.",
+            "verbatim_quote": "The presence of RAS mutations was significantly associated with cyclin D1 expression (P = .015)... Importantly, as shown in Figure 4, a similar distribution between patients with high and low to intermediate cyclin D1 expression was observed in both the cohorts with and without a RAS mutation. Thus, RAS mutations show an association with the presence of cyclin D1 expression and not the mechanisms behind the dysregulation.",
+            "variant_origin": "SOMATIC",
+            "gene_entrez_id": ["4893", "3845"],
+            "disease_efo_id": "EFO_0001378",
+            "therapy_rxnorm_id": null,
+            "therapy_ncit_id": null,
+            "variant_hgvs_descriptions": null,
+            "variant_hgvs_c": null,
+            "variant_hgvs_p": null,
+            "chromosome": null,
+            "start_position": null,
+            "stop_position": null,
+            "reference_build": null,
+            "cancer_cell_fraction": null,
+            "cohort_size": 54,
+            "clinical_trial_nct_ids": [],
+            "drug_safety": null,
+            "source_title": "Possible roles for activating RAS mutations in the MGUS to MM transition and in the intramedullary to extramedullary transition in some plasma cell tumors",
+            "source_journal": "Blood",
+            "source_publication_year": 2005,
+            "source_pmid": "15339850",
+            "source_pmcid": null,
+            "source_page_numbers": "Pages 5-6, Table 3, Figure 4, Results and Discussion sections"
+          },
+          "field_status": {
+            "feature_names": "EXACT_MATCH_WITH_PAPER",
+            "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "disease_name": "EXACT_MATCH_WITH_PAPER",
+            "therapy_names": "EXACT_MATCH_WITH_PAPER",
+            "evidence_type": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "evidence_level": "EXACT_MATCH_WITH_PAPER",
+            "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+            "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+            "evidence_description": "EXACT_MATCH_WITH_PAPER",
+            "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+            "variant_origin": "EXACT_MATCH_WITH_PAPER",
+            "identifiers": "EXACT_MATCH_WITH_PAPER",
+            "variant_specifics": "EXACT_MATCH_WITH_PAPER",
+            "study_details": "EXACT_MATCH_WITH_PAPER"
+          },
+          "notes": "This is a good capture of the cyclin D1 association and correctly marks evidence_significance as N/A. Labeling as PROGNOSTIC is acceptable, though more precisely it is a molecular-subtype association without explicit outcome data."
+        }
+      ],
+      "gt_items": []
+    },
+    {
+      "tuple_id": "NRAS/KRAS|MUTATION + t(4;14)/FGFR3 subset|Multiple Myeloma|<no_therapy>",
+      "paper_evidence": {
+        "summary": "RAS mutations are less frequent in the t(4;14) MM subset (FGFR3/MMSET dysregulated) compared to other MM, suggesting mutual exclusivity and analogous oncogenic roles between RAS activation and FGFR3 activation.",
+        "location": "Results & Discussion: 'RAS mutation in relation to other recurrent genetic alterations in MM'; Table 3.",
+        "quantitative_data": "t(4;14) in MM with RAS mutation: 0/17 (0%); t(4;14) in MM without RAS mutation: 7/37 (19%); tendency P = .055.",
+        "evidence_type": "PROGNOSTIC / MOLECULAR_SUBTYPE_ASSOCIATION",
+        "evidence_level": "C",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "N/A"
+      },
+      "ai_items": [
+        {
+          "ai_index": 3,
+          "fields": {
+            "feature_names": ["NRAS", "KRAS"],
+            "variant_names": ["MUTATION"],
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": [],
+            "evidence_type": "PROGNOSTIC",
+            "evidence_level": "C",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "N/A",
+            "evidence_description": "RAS mutations show reduced prevalence in t(4;14)-positive multiple myeloma (P=0.055, trend). Among MM patients analyzed, RAS mutations were less frequent in the t(4;14) subset, likely because unmutated FGFR3 (activated by the translocation) and RAS mutations are mutually exclusive and play analogous oncogenic roles in MM progression.",
+            "verbatim_quote": "We also observed a clear tendency for RAS mutations to be less frequent in the t(4;14) MM subset (P = .055)... One explanation is that the combination of unmutated FGFR3 and an FGF ligand in the BM microenvironment has a similar function as a RAS mutation. Significantly, RAS and FGFR3 mutations, which are mutually exclusive in MM patients, appear to play an analogous oncogenic role in MM progression.",
+            "variant_origin": "SOMATIC",
+            "gene_entrez_id": ["4893", "3845"],
+            "disease_efo_id": "EFO_0001378",
+            "therapy_rxnorm_id": null,
+            "therapy_ncit_id": null,
+            "variant_hgvs_descriptions": null,
+            "variant_hgvs_c": null,
+            "variant_hgvs_p": null,
+            "chromosome": null,
+            "start_position": null,
+            "stop_position": null,
+            "reference_build": null,
+            "cancer_cell_fraction": null,
+            "cohort_size": 54,
+            "clinical_trial_nct_ids": [],
+            "drug_safety": null,
+            "source_title": "Possible roles for activating RAS mutations in the MGUS to MM transition and in the intramedullary to extramedullary transition in some plasma cell tumors",
+            "source_journal": "Blood",
+            "source_publication_year": 2005,
+            "source_pmid": "15339850",
+            "source_pmcid": null,
+            "source_page_numbers": "Pages 5-6, Table 3, Discussion section"
+          },
+          "field_status": {
+            "feature_names": "EXACT_MATCH_WITH_PAPER",
+            "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "disease_name": "EXACT_MATCH_WITH_PAPER",
+            "therapy_names": "EXACT_MATCH_WITH_PAPER",
+            "evidence_type": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "evidence_level": "EXACT_MATCH_WITH_PAPER",
+            "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+            "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+            "evidence_description": "EXACT_MATCH_WITH_PAPER",
+            "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+            "variant_origin": "EXACT_MATCH_WITH_PAPER",
+            "identifiers": "EXACT_MATCH_WITH_PAPER",
+            "variant_specifics": "EXACT_MATCH_WITH_PAPER",
+            "study_details": "EXACT_MATCH_WITH_PAPER"
+          },
+          "notes": "Good capture of the mutually exclusive RAS vs FGFR3/t(4;14) pattern and appropriate use of N/A for significance. Reasoning about analogous oncogenic roles closely follows the discussion text."
+        }
+      ],
+      "gt_items": []
+    },
+    {
+      "tuple_id": "NCAM1/CD56|HIGH vs LOW EXPRESSION|Multiple Myeloma vs ExPCT / extramedullary spread|<no_therapy>",
+      "paper_evidence": {
+        "summary": "CD56 expression is significantly higher on MM plasma cells (with or without RAS mutations) than on intramedullary tumor cells from patients with ExPCT. Low/absent CD56 expression is associated with extramedullary spread, consistent with CD56 as a marker of BM confinement vs dissemination.",
+        "location": "Results: 'MM tumor cells express more CD56 than tumor cells from patients with ExPCTs'; Figure 3.",
+        "quantitative_data": "Mean CD56 fluorescence on MM PCs with RAS mutation: median ~1172 vs 609 in MM without RAS mutation; ExPCT intramedullary PCs: median 72 (P = .0008 and .01 for MM vs ExPCT comparisons).",
+        "evidence_type": "PROGNOSTIC (biomarker of extramedullary risk / dissemination)",
+        "evidence_level": "C",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "ADVERSE_OUTCOME (CD56 loss associated with extramedullary disease, generally a poor-risk feature)"
+      },
+      "ai_items": [],
+      "gt_items": []
+    }
+  ],
+  "missing_from_ai": [
+    "CD56 / NCAM1 immunophenotypic evidence item: higher CD56 expression on MM PCs compared with intramedullary PCs from ExPCT patients, and association of CD56 loss with extramedullary spread. This is a plausible prognostic biomarker signal but is not represented as a separate evidence item in the AI extraction."
+  ],
+  "ai_hallucinated_items": [
+    "No entire evidence items are hallucinated, but item 1 overstates the strength of evidence for RAS mutations as a prognostic marker of MGUS-to-MM progression (evidence_level set to B and evidence_significance set to ADVERSE_OUTCOME despite lack of direct progression or survival data)."
+  ],
+  "ai_improvements_over_gt": [
+    "Ground truth CIViC-style curation file was not provided for this PMID, so direct AI vs GT comparison is not possible for this paper."
+  ],
+  "overall_judgement": {
+    "summary": "The AI extraction for PMID_15339850 captures the four main RAS-related biomarker findings with accurate statistics, correct gene and disease entities, appropriate somatic origin, and validated verbatim quotes. The main weaknesses are calibration of evidence level and clinical significance (especially for the MGUS vs MM item) and omission of a potentially curatable CD56 immunophenotype association.",
+    "strengths": [
+      "All four extracted items correspond to real, central findings emphasized by the paper’s authors.",
+      "Numeric data (proportions, P values, cohort sizes) and verbatim quotes are consistently accurate.",
+      "Later self-critique correctly adjusts evidence_significance to N/A for the cyclin D1 and t(4;14) molecular association items."
+    ],
+    "weaknesses": [
+      "Evidence_level and evidence_significance are sometimes over-optimistic relative to the actual study design (observational biomarker work without clinical outcomes), particularly for the MGUS-to-MM item.",
+      "The system does not surface the CD56 immunophenotype association as its own evidence item, even though it is a clear, quantitated biomarker finding and often clinically relevant in MM.",
+      "Reasoning text (‘may inform risk stratification’, ‘actionable indicator’) tends to over-claim clinical actionability beyond what is explicitly supported in the paper."
+    ]
+  }
+}

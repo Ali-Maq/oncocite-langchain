@@ -1,0 +1,107 @@
+{
+  "pmid": "24997557",
+  "source_id": 1147,
+  "title": "Vemurafenib response in 2 patients with posttransplant refractory BRAF V600E-mutated multiple myeloma.",
+  "journal": "Clin Lymphoma Myeloma Leuk",
+  "year": 2014.0,
+  "civic_item_count": 2,
+  "tier1_field_completeness": {
+    "evidence_id": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "evidence_description": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "evidence_level": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "evidence_type": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "evidence_direction": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "evidence_significance": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "feature_names": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "variant_names": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "disease_name": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "therapy_names": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "clinical_trial_nct_ids": {
+      "populated": 0,
+      "total": 2,
+      "percentage": 0.0
+    },
+    "source_title": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    },
+    "source_citation_id": {
+      "populated": 2,
+      "total": 2,
+      "percentage": 100.0
+    }
+  },
+  "evidence_items": [
+    {
+      "evidence_id": 1698,
+      "evidence_description": "A 65-year-old man presented with stage II myeloma.  He was initially treated with chemotherapy and he received an autologous stem cell transplant. Sequencing of the recurrent tumor harbored BRAF V600E mutation and he was treated with vemurafenib.  After 7 weeks of treatment, the patient relapsed and died.",
+      "evidence_level": "C",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "SENSITIVITYRESPONSE",
+      "feature_names": "BRAF",
+      "variant_names": "V600E",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Vemurafenib",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Vemurafenib response in 2 patients with posttransplant refractory BRAF V600E-mutated multiple myeloma.",
+      "source_citation_id": "24997557"
+    },
+    {
+      "evidence_id": 1699,
+      "evidence_description": "A 54-year-old man presented with stage II myeloma.  He was initially treated with chemotherapy and received an autologous stem cell transplant.  Genomic profiling of the bone biopsy revealed BRAF V600E activating mutation and the patient was treated with vemurafenib.  At 4-months post treatment (time of case study report) the patient maintains near-resolution of hypermetabolic lesions.",
+      "evidence_level": "C",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "SENSITIVITYRESPONSE",
+      "feature_names": "BRAF",
+      "variant_names": "V600E",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Vemurafenib",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Vemurafenib response in 2 patients with posttransplant refractory BRAF V600E-mutated multiple myeloma.",
+      "source_citation_id": "24997557"
+    }
+  ]
+}

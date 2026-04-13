@@ -1,0 +1,322 @@
+{
+  "paper_id": "PMID_12483530",
+  "paper_info": {
+    "author": "Matt Rowley and Brian Van Ness",
+    "year": "2002",
+    "num_pages": 7,
+    "paper_type": "PRIMARY"
+  },
+  "extraction": {
+    "items": 6,
+    "iterations": 1,
+    "complete": true,
+    "evidence_items": [
+      {
+        "feature_names": [
+          "NRAS"
+        ],
+        "feature_entrez_ids": [
+          "4893"
+        ],
+        "variant_names": [
+          "CODON 12 MUTATION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "therapy_names": [
+          "Dexamethasone"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C10162"
+        ],
+        "therapy_rxnorm_ids": [
+          "3264"
+        ],
+        "evidence_description": "NRAS codon 12 mutations confer resistance to dexamethasone in multiple myeloma cell lines. ANBL6 cells transfected with N-ras12 gene were protected from dexamethasone-induced apoptosis, with protection levels comparable to cells treated with high concentrations (10 ng/ml) of IL-6.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null,
+        "cohort_size": null,
+        "source_title": "Activation of N-ras and K-ras induced by interleukin-6 in a myeloma cell line: implications for disease progression and therapeutic response",
+        "source_publication_year": 2002,
+        "source_journal": "Oncogene",
+        "source_page_numbers": "Abstract, Results section, Figure 5",
+        "verbatim_quote": "Interestingly, the ANBL6 cell line transfected with an N-ras12 or a K-ras12 gene is protected from dexamethasone-induced apoptosis.",
+        "extraction_confidence": 0.9,
+        "extraction_reasoning": "Clear experimental evidence showing that NRAS codon 12 mutations protect myeloma cells from dexamethasone-induced apoptosis. This is clinically actionable as it suggests patients with NRAS mutations may have reduced response to dexamethasone therapy."
+      },
+      {
+        "feature_names": [
+          "KRAS"
+        ],
+        "feature_entrez_ids": [
+          "3845"
+        ],
+        "variant_names": [
+          "CODON 12 MUTATION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "therapy_names": [
+          "Dexamethasone"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C10162"
+        ],
+        "therapy_rxnorm_ids": [
+          "3264"
+        ],
+        "evidence_description": "KRAS codon 12 mutations confer resistance to dexamethasone in multiple myeloma cell lines. ANBL6 cells transfected with K-ras12 gene were protected from dexamethasone-induced apoptosis, with protection levels comparable to cells treated with high concentrations (10 ng/ml) of IL-6.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null,
+        "cohort_size": null,
+        "source_title": "Activation of N-ras and K-ras induced by interleukin-6 in a myeloma cell line: implications for disease progression and therapeutic response",
+        "source_publication_year": 2002,
+        "source_journal": "Oncogene",
+        "source_page_numbers": "Abstract, Results section, Figure 5",
+        "verbatim_quote": "Interestingly, the ANBL6 cell line transfected with an N-ras12 or a K-ras12 gene is protected from dexamethasone-induced apoptosis.",
+        "extraction_confidence": 0.9,
+        "extraction_reasoning": "Clear experimental evidence showing that KRAS codon 12 mutations protect myeloma cells from dexamethasone-induced apoptosis. This is clinically actionable as it suggests patients with KRAS mutations may have reduced response to dexamethasone therapy."
+      },
+      {
+        "feature_names": [
+          "NRAS"
+        ],
+        "feature_entrez_ids": [
+          "4893"
+        ],
+        "variant_names": [
+          "CODON 12 MUTATION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "therapy_names": [
+          "Doxorubicin"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C156665"
+        ],
+        "therapy_rxnorm_ids": [
+          "3639"
+        ],
+        "evidence_description": "NRAS codon 12 mutations confer resistance to doxorubicin in multiple myeloma cell lines. ANBL6 cells expressing N-ras12 were resistant to doxorubicin-induced apoptosis, in contrast to parental cells where IL-6 enhanced doxorubicin-induced apoptosis.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null,
+        "cohort_size": null,
+        "source_title": "Activation of N-ras and K-ras induced by interleukin-6 in a myeloma cell line: implications for disease progression and therapeutic response",
+        "source_publication_year": 2002,
+        "source_journal": "Oncogene",
+        "source_page_numbers": "Results section, Figure 6",
+        "verbatim_quote": "Interestingly, the ANBL6.Nras12.EE and ANBL6.Kras12.EE cell lines, which have high levels of activated Ras, were resistant to doxorubicin-induced apoptosis.",
+        "extraction_confidence": 0.9,
+        "extraction_reasoning": "Clear experimental evidence showing that NRAS codon 12 mutations protect myeloma cells from doxorubicin-induced apoptosis. This is clinically actionable as it suggests patients with NRAS mutations may have reduced response to doxorubicin therapy."
+      },
+      {
+        "feature_names": [
+          "KRAS"
+        ],
+        "feature_entrez_ids": [
+          "3845"
+        ],
+        "variant_names": [
+          "CODON 12 MUTATION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "therapy_names": [
+          "Doxorubicin"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C156665"
+        ],
+        "therapy_rxnorm_ids": [
+          "3639"
+        ],
+        "evidence_description": "KRAS codon 12 mutations confer resistance to doxorubicin in multiple myeloma cell lines. ANBL6 cells expressing K-ras12 were resistant to doxorubicin-induced apoptosis, in contrast to parental cells where IL-6 enhanced doxorubicin-induced apoptosis.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null,
+        "cohort_size": null,
+        "source_title": "Activation of N-ras and K-ras induced by interleukin-6 in a myeloma cell line: implications for disease progression and therapeutic response",
+        "source_publication_year": 2002,
+        "source_journal": "Oncogene",
+        "source_page_numbers": "Results section, Figure 6",
+        "verbatim_quote": "Interestingly, the ANBL6.Nras12.EE and ANBL6.Kras12.EE cell lines, which have high levels of activated Ras, were resistant to doxorubicin-induced apoptosis.",
+        "extraction_confidence": 0.9,
+        "extraction_reasoning": "Clear experimental evidence showing that KRAS codon 12 mutations protect myeloma cells from doxorubicin-induced apoptosis. This is clinically actionable as it suggests patients with KRAS mutations may have reduced response to doxorubicin therapy."
+      },
+      {
+        "feature_names": [
+          "NRAS"
+        ],
+        "feature_entrez_ids": [
+          "4893"
+        ],
+        "variant_names": [
+          "MUTATION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PROGNOSTIC",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "POOR_OUTCOME",
+        "therapy_names": null,
+        "therapy_ncit_ids": null,
+        "therapy_rxnorm_ids": null,
+        "evidence_description": "NRAS mutations are associated with worse prognosis in multiple myeloma patients. The study references that patients with Ras mutations (collectively including both NRAS and KRAS, which occur at 40-50% frequency in myeloma) have worse prognosis, potentially due to decreased sensitivity to therapeutic agents. The paper does not distinguish NRAS-specific prognostic effects from KRAS.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null,
+        "cohort_size": null,
+        "source_title": "Activation of N-ras and K-ras induced by interleukin-6 in a myeloma cell line: implications for disease progression and therapeutic response",
+        "source_publication_year": 2002,
+        "source_journal": "Oncogene",
+        "source_page_numbers": "Discussion section",
+        "verbatim_quote": "Consistent with this, patients with high levels of IL-6 expression, or patients with a Ras mutation have a worse prognosis. Ras may be due in part to a decreased sensitivity to therapeutic agents.",
+        "extraction_confidence": 0.85,
+        "extraction_reasoning": "The paper directly states that patients with Ras mutations have worse prognosis, linking this to therapeutic resistance. While the statement refers to Ras mutations collectively, separate entries for NRAS and KRAS are clinically relevant given both genes are mutated in myeloma at high frequency and both are discussed throughout the paper."
+      },
+      {
+        "feature_names": [
+          "KRAS"
+        ],
+        "feature_entrez_ids": [
+          "3845"
+        ],
+        "variant_names": [
+          "MUTATION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PROGNOSTIC",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "POOR_OUTCOME",
+        "therapy_names": null,
+        "therapy_ncit_ids": null,
+        "therapy_rxnorm_ids": null,
+        "evidence_description": "KRAS mutations are associated with worse prognosis in multiple myeloma patients. The study references that patients with Ras mutations (collectively including both NRAS and KRAS, which occur at 40-50% frequency in myeloma) have worse prognosis, potentially due to decreased sensitivity to therapeutic agents. The paper does not distinguish KRAS-specific prognostic effects from NRAS.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null,
+        "cohort_size": null,
+        "source_title": "Activation of N-ras and K-ras induced by interleukin-6 in a myeloma cell line: implications for disease progression and therapeutic response",
+        "source_publication_year": 2002,
+        "source_journal": "Oncogene",
+        "source_page_numbers": "Discussion section",
+        "verbatim_quote": "Consistent with this, patients with high levels of IL-6 expression, or patients with a Ras mutation have a worse prognosis. Ras may be due in part to a decreased sensitivity to therapeutic agents.",
+        "extraction_confidence": 0.85,
+        "extraction_reasoning": "The paper directly states that patients with Ras mutations have worse prognosis, linking this to therapeutic resistance. While the statement refers to Ras mutations collectively, separate entries for NRAS and KRAS are clinically relevant given both genes are mutated in myeloma at high frequency and both are discussed throughout the paper."
+      }
+    ]
+  },
+  "plan": {
+    "paper_type": "PRIMARY",
+    "expected_items": 6,
+    "key_variants": "NRAS codon 12 mutation, KRAS codon 12 mutation, RAS mutations at codons 12/13/61",
+    "key_therapies": "Dexamethasone, Doxorubicin, Melphalan, Interleukin-6 (IL-6)",
+    "key_diseases": "Multiple Myeloma",
+    "focus_sections": "Abstract, Results (especially sections on dexamethasone and doxorubicin apoptosis), Discussion",
+    "extraction_notes": "This paper provides PREDICTIVE evidence about RAS mutations and therapeutic response in multiple myeloma. Key actionable findings:\n\n1. NRAS/KRAS codon 12 mutations PROTECT from dexamethasone-induced apoptosis in myeloma cells (Figure 5, constitutive Ras activation provides protection comparable to high IL-6)\n\n2. NRAS/KRAS codon 12 mutations PROTECT from doxorubicin-induced apoptosis in myeloma cells (Figure 6, mutant lines show resistance)\n\n3. IL-6 enhances doxorubicin-induced apoptosis in wild-type cells but mutant RAS protects (differential response pattern)\n\n4. General RAS mutations (codons 12, 13, 61) provide IL-6-independent proliferation signals\n\n5. RAS mutations associated with worse prognosis in myeloma patients (mentioned in Discussion with reference to Liu et al., 1996)\n\n6. Frequency of NRAS/KRAS mutations in myeloma: 40-50% incidence reported\n\nFOCUS ON: The functional consequences of NRAS/KRAS mutations on therapeutic response to dexamethasone and doxorubicin. This is PREDICTIVE evidence (mutations predict resistance to therapy).\n\nEVIDENCE TYPE: Predictive (Resistance/Response)\nEVIDENCE LEVEL: Pre-clinical (cell line studies)\nEVIDENCE DIRECTION: Supports resistance to dexamethasone and doxorubicin\n\nNOTE: This is laboratory/cell line data (ANBL6 myeloma cell line), so evidence level is pre-clinical. However, it provides mechanistic insight into therapeutic resistance patterns that could inform clinical decisions."
+  },
+  "final_critique": {
+    "overall_assessment": "APPROVE",
+    "item_feedback": "**Items 1-4 (PREDICTIVE - Dexamethasone and Doxorubicin Resistance): APPROVED**\nAll four predictive evidence items remain unchanged from iteration 1 and continue to meet all CIViC requirements:\n- NRAS codon 12 and KRAS codon 12 mutations conferring resistance to dexamethasone (Items 1-2)\n- NRAS codon 12 and KRAS codon 12 mutations conferring resistance to doxorubicin (Items 3-4)\n- Verbatim quotes are accurate and present in the paper\n- Evidence type (PREDICTIVE), significance (RESISTANCE), and level (D) are appropriate\n- Therapy names correctly included for each item\n- Evidence descriptions accurately represent experimental findings\n\n**Items 5-6 (PROGNOSTIC - Poor Outcome): APPROVED WITH REVISIONS SUCCESSFULLY IMPLEMENTED**\nThe extractor has successfully addressed all concerns from iteration 1:\n\nItem 5 (NRAS):\n\u2713 Evidence description now explicitly acknowledges: \"The paper does not distinguish NRAS-specific prognostic effects from KRAS\"\n\u2713 Clarifies that the prognostic statement refers to \"Ras mutations (collectively including both NRAS and KRAS)\"\n\u2713 Includes the 40-50% frequency context from the paper\n\u2713 Links prognosis to therapeutic resistance mechanism\n\u2713 Verbatim quote remains accurate\n\u2713 extraction_confidence appropriately set at 0.85 (reflecting the limitation)\n\nItem 6 (KRAS):\n\u2713 Evidence description now explicitly acknowledges: \"The paper does not distinguish KRAS-specific prognostic effects from NRAS\"\n\u2713 Clarifies that the prognostic statement refers to \"Ras mutations (collectively including both NRAS and KRAS)\"\n\u2713 Includes the 40-50% frequency context from the paper\n\u2713 Links prognosis to therapeutic resistance mechanism\n\u2713 Verbatim quote remains accurate\n\u2713 extraction_confidence appropriately set at 0.85 (reflecting the limitation)\n\nThe revised descriptions maintain scientific accuracy while acknowledging the limitation that the paper's prognostic statement does not differentiate between NRAS and KRAS individually. Creating separate entries remains justified given both genes are extensively discussed throughout the paper and both are mutated in myeloma.",
+    "missing_items": "No missing items identified. All clinically actionable evidence has been appropriately extracted:\n- 4 PREDICTIVE evidence items (NRAS/KRAS codon 12 mutations with dexamethasone and doxorubicin)\n- 2 PROGNOSTIC evidence items (NRAS/KRAS mutations with poor outcome)\n\nNon-actionable findings correctly excluded:\n- H-RAS expression patterns (biological observation)\n- RAS mutation prevalence statistics (diagnostic frequency)\n- IL-6 activation kinetics and mechanisms (mechanistic data)\n- Melphalan resistance (only cited from previous work, not demonstrated in this paper)",
+    "extra_items": "No extra items identified. All six extracted evidence items meet CIViC's actionability criteria:\n- Items 1-4: PREDICTIVE evidence directly informing treatment decisions regarding dexamethasone and doxorubicin therapy\n- Items 5-6: PROGNOSTIC evidence informing patient outcome expectations\n\nAll items are appropriately based on findings from this paper and properly supported by the text with accurate verbatim quotes.",
+    "summary": "OVERALL ASSESSMENT: APPROVE\n\nThe extractor has successfully addressed all concerns from iteration 1. The revised evidence descriptions for items 5 and 6 (PROGNOSTIC evidence for NRAS and KRAS mutations) now explicitly acknowledge the limitation that the paper's prognostic statement refers to \"Ras mutations\" collectively without distinguishing between NRAS and KRAS individually.\n\nKEY IMPROVEMENTS IN ITERATION 2:\n1. Items 5 and 6 now include explicit statements: \"The paper does not distinguish NRAS-specific prognostic effects from KRAS\" and \"The paper does not distinguish KRAS-specific prognostic effects from NRAS\"\n2. Context about the 40-50% mutation frequency for both genes is included\n3. The limitation is clearly stated while maintaining the clinical relevance of separate entries\n4. Items 1-4 remain unchanged and continue to meet all requirements\n\nALL SIX EVIDENCE ITEMS NOW READY FOR APPROVAL:\n- Evidence descriptions are accurate and not misleading\n- Verbatim quotes are present in the paper content\n- All required fields are complete\n- Type-specific rules are followed (PREDICTIVE items have therapy_names)\n- Evidence significance matches evidence type\n- Confidence scores are appropriate (0.9 for items 1-4, 0.85 for items 5-6 reflecting the acknowledged limitation)\n\nThe extractor demonstrated excellent responsiveness to feedback and produced high-quality evidence items that balance scientific accuracy with clinical utility. No further revisions needed.",
+    "iteration": 1
+  },
+  "paper_content": {
+    "title": "Activation of N-ras and K-ras induced by interleukin-6 in a myeloma cell line: implications for disease progression and therapeutic response",
+    "authors": [
+      "Matt Rowley and Brian Van Ness"
+    ],
+    "journal": "Oncogene",
+    "year": 2002,
+    "paper_type": "PRIMARY",
+    "abstract": "Ras is a major signaling molecule activated by interleukin-6. There have been no published reports, however, that specifically examine the kinetics and percentage of Ras activation in response to IL-6. Model cell lines were used to study activation of N- and K-ras induced by IL-6. All of the myeloma cell lines tested express both N-ras and K-ras, but not H-ras. GTP-bound Ras was measured and the percentage of the total Ras pool that was activated in response to IL-6 was calculated. IL-6 is able to transiently activate both N- and K-ras in the ANBL6 cell line. In addition, increasing concentrations of IL-6 are able to activate increasing levels of both N- and K-ras. One ng/ml of IL-6 is able to activate approximately 10% of the N-ras pool and 18% of the K-ras pool. The amount of Ras-GTP in the cells correlates with the level of proliferation at low levels, but proliferation plateaus when higher levels of Ras-GTP are present. Protection from dexamethasone-induced apoptosis correlates with IL-6 concentration and Ras activation. However, IL-6 enhances apoptosis induced by doxorubicin. Interestingly, the ANBL6 cell line transfected with an N-ras12 or a K-ras12 gene is protected from dexamethasone-induced apoptosis.",
+    "sections": [
+      {
+        "name": "Full Text",
+        "page_numbers": [],
+        "content": "## Introduction\nSignals transmitted from the cell surface to the nucleus are essential components of cell viability. A complex network of signal transduction pathways link cell surface receptors to the control of cellular proliferation, differentiation, and survival. The Ras family, comprised of H-ras, N-ras and K-ras, are critical components of many of these signal transduction pathways (Hall, 1998; McCormick, 1996). \n\nH-, N-, and K-ras are small monomeric G proteins that act as molecular switches (Takai et al., 2001). Ras cycles between the GDP-bound inactive state and the GTP-bound active state. An upstream signal from an activated receptor leads to the dissociation of GDP from the inactive Ras and subsequent association of GTP. This induces a conformational change in the effector-binding domain of Ras and leads to activation of downstream effectors. The intrinsic GTPase activity of Ras converts the GTP-bound Ras back to the inactive GDP-bound form completing one cycle of Ras activation. Point mutations at codons 12, 13, or 61 lead to a constitutively active, GTP-bound Ras protein.\n\nInterleukin-6 (IL-6) has been shown to act as a growth factor for multiple myeloma cells (Hirano et al., 1997; Kawano et al., 1988; Klein et al., 1989). In addition, IL-6 has been shown to protect myeloma cells from apoptosis induced by dexamethasone, anti-Fas antibodies, and serum starvation (Chauhan et al., 1997a; Hardin et al., 1994; Lichtenstein et al., 1995). IL-6 signals through a number of different downstream effectors including Ras (Nakafuku et al., 1992). Several reports have demonstrated the presence of activating mutations in N- and K-ras, but not H-ras, in myeloma cells with a frequency as high as 40-50% (Corradini et al., 1993; Liu et al., 1996; Neri et al., 1989; Paquette et al., 1990; Portier et al., 1992). It has been shown that activating mutations in either N- or K-ras can provide a proliferation signal independent of exogenous IL-6 in the ANBL6 myeloma cell line (Billadeau et al., 1995, 1997). In addition, ras mutations have been shown to protect myeloma cell lines from apoptosis induced by dexamethasone, doxorubicin, or melphalan (Rowley et al., 2000). This demonstrates the importance of Ras dependent signal transduction in myeloma cells.\n\nEven though IL-6-induced signal transduction through Ras has been well documented, there have not been any published reports of specific kinetics of Ras expression and activation in myeloma cells. In this report we examined the expression of H-, N- and K-ras in several myeloma cell lines. In addition, we studied the kinetics of Ras activation induced by IL-6 over time, or by increasing concentrations of IL-6. We were able to calculate the percentage of the total cellular N- or K-ras pool that was activated in response to IL-6 and correlate this with proliferation and therapeutic response.\n\n## Results\n\n### Principle of the activated Ras interaction assay\nActivation of Ras is induced by a number of different stimuli including cytokines, growth factors, and adhesion molecules. Assays that have been used to study Ras activation include thin-layer chromatography (Brownell et al., 1997; Hata et al., 1993; Jones and Jackson, 1998) and the activated Ras interaction assay (ARIA) (Taylor and Shalloway, 1996). In the ARIA assay, the Ras binding domain of Raf-1 is fused to a GST protein and bound to glutathione beads. This complex will only bind to GTP-bound Ras and can be used to precipitate Ras-GTP from cell lysates. Affinity-precipitated Ras is then detected by Western blotting with antibodies specific to H-, N-, or K-ras.\n\n### Interleukin-6 is able to activate both N- and K-ras\nIL-6 has been shown to activate Ras in myeloma cell lines; however, there have not been any published reports that have distinguished between activation of H-ras, N-ras, or K-ras. In order to determine which Ras proteins are activated by IL-6 we first needed to determine which forms of Ras are expressed in our cell lines. Whole cell extracts were made from the ANBL6, Kas 6/1 and RPMI 8226 myeloma cell lines. In addition, extracts were made from T-24 (bladder cancer cell line containing the H-ras oncogene) and the ANBL6 cell line transfected with either an N-ras12.EE or K-ras12.EE gene. Western blot analysis shows that N- and K-ras are expressed in the four myeloma cell lines tested, but that H-ras is not (Figure 1a). Overexposure of the K-ras blot shows that K-ras is weakly expressed in the U266 cell line. The ANBL6.Nras12.EE and ANBL6.Kras12.EE cell lines express either an epitope tagged N-ras or K-ras respectively. Since the epitope tag allows the migration through the gel, these proteins can be distinguished from endogenous N- or K-ras and act as controls for antibody specificity. Data from four independent experiments show that protein expression of the N-ras12.EE is about 3.3-fold higher than the endogenous N-ras and expression of K-ras12.EE is about 1.3-fold higher than endogenous K-ras.\n\nSince both N- and K-ras are expressed in the ANBL6 cell line, we wanted to determine whether IL-6 was able to activate both N- and K-ras. Figure 1b shows that in the absence of IL-6, there is no detectable GTP-bound N- or K-ras in the ANBL6.pLXSN cell line. Addition of IL-6 induces activation of both N- and K-ras. The ANBL6.Nras12.EE and ANBL6.Kras12.EE cell lines show constitutive activation of N- or K-ras respectively. In addition, stimulation with IL-6 induced activation of the endogenous N- or K-ras in these cell lines as indicated by the presence of the faster migrating band.\n\n### The activated Ras interaction assay is semi-quantitative\nIn order to quantify Ras activation induced by IL-6 we first needed to show that the assay is titratable. Cell extracts were prepared from ANBL6.Nras12.EE or ANBL6.Kras12.EE cell lines. Since these cell lines have either a constitutively active N- or K-ras that is tagged and can be distinguished from the endogenous N- or K-ras, they allow us to calculate the efficiency of the ARIA assay. The level of total tagged Ras and activated tagged Ras is the same since all of it is constitutively GTP-bound. The protein concentration was determined for each extract and varying amounts were used for the ARIA. The N- or K-ras-GTP that was pulled down was used for Western blot analysis and compared to N- or K-ras in whole cell lysates (Figure 1c). Increasing amounts of both N- and K-ras-GTP were detected when the amount of cell extract was increased. The amount of Ras-GTP recovered from 50 \u03bcg of extract used in the ARIA was slower than in the same amount of whole cell extracts. This is probably due to inefficient binding of Ras-GTP to the GST-RBD as well as loss of some protein during the subsequent wash steps. Using densitometry, and comparing the signal from the ARIA samples to the expected signal based on the amount of Ras in whole cell lysates, the efficiency of the assay was calculated to be about 35% for N-ras and 39% for K-ras.\n\n### Interleukin-6 induces transient activation of both N- and K-ras that is increased with increasing levels of interleukin 6\nSince IL-6 is able to activate both N- and K-ras, we wanted to determine what percentage of the total Ras pool is activated. ANBL6.pLXSN cells were treated with 1 ng/ml IL-6 and harvested at the indicated time points to make cell extracts. Equal amounts of protein (400 \u03bcg) were used from each time point for the ARIA assay. Both N- and K-ras were activated by 5 min in response to IL-6 (Figure 2a). Activated N- and K-ras were both detectable at 40 min, but lost by 60 min after treatment with IL-6. Densitometry and calculations based on the whole cell extract control and 35 to 39% efficiency for ARIA show that Ras activation peaked at about 11 to 18% of the total N- or K-ras pool respectively (Figure 2b).\n\nTo determine whether increasing concentrations of IL-6 lead to increasing levels of Ras activation, ANBL6.pLXSN cells were treated with varying amounts of IL-6 for 15 min. Extracts were made and equal amounts of protein were used for the ARIA assay. Figure 3 shows that activation of both N- and K-ras increased when cells were stimulated with higher concentrations of IL-6 for 15 min. Cells were harvested and extracts were made to measure Ras activation by ARIA using 400 \u03bcg of extract. 40 \u03bcg of whole cell lysates were used in lane 1 to measure total Ras expression. (b) The level of activated Ras was measured by comparing the density of the N- or K-ras-GTP band with the total N- or K-ras expression. The percentage was adjusted to account for the 10-fold higher protein concentration used for ARIA as well as the 35 or 39% efficiency of ARIA for N- or K-ras activation respectively.\n\nK-ras induced by IL-6 is titratable. Significant levels of N-ras-GTP were detectable with 0.1 ng/ml of IL-6. K-ras-GTP was detectable when cells were treated with 1 ng/ml of IL-6. K-ras activation was as high as 70% of the total K-ras pool when stimulated with 10 ng/ml of IL-6. The decreased threshold for K-ras activation is most likely due to the sensitivity of the antibody used for the Western blot rather than an actual decrease in the activation threshold because the signal from the K-ras antibody is lower than the signal from the N-ras antibody and because once K-ras activation is detectable, the percentage of activated K-ras is similar to N-ras.\n\n### Activation of Ras by interleukin-6 correlates with proliferation\nBoth IL-6 and activating Ras mutations have been shown to induce proliferation of myeloma cells. We wanted to determine whether activation of N- or K-ras induced by IL-6 correlated with proliferation. ANBL6.pLXSN, ANBL6.Nras12.EE, or ANBL6.Kras12.EE cells were treated with different concentrations of IL-6 and proliferation was measured by incorporation of [3H]thymidine. The ANBL6.pLXSN cell line has little [3H] incorporation in the absence of IL-6, but increases in a dose-dependent manner with the addition of IL-6 (Figure 4). Proliferation plateaus above 1 ng/ml IL-6. Introduction of either the N-ras12 or K-ras12 gene induces proliferation even in the absence of IL-6 and is only slightly enhanced by additional IL-6.\n\n### Activation of Ras by interleukin-6 correlates with protection from dexamethasone-induced, but not doxorubicin-induced apoptosis\nSince it has been previously shown that both IL-6 and activating Ras mutations are able to protect myeloma cells from dexamethasone induced apoptosis (Billadeau et al., 1997; Chauhan et al., 1997a; Hardin et al., 1994; Rowley et al., 2000), we wanted to determine whether the concentration of IL-6 and subsequent Ras activation correlated with the level of protection. ANBL6.pLXSN cells were incubated with increasing levels of IL-6 then treated with dexamethasone. Higher concentrations of IL-6 lead to better protection from apoptosis (Figure 5). At 10 ng/ml IL-6, the apoptotic protection is almost at the same level as the cell lines expressing either the mutant N-ras12 or K-ras12 gene. This demonstrates that increasing levels of Ras activation correlates with better protection from dexamethasone-induced apoptosis.\n\nWe had previously shown that IL-6 could enhance apoptosis induced by dox (Rowley et al., 2000). Based on this, we wanted to determine whether increasing concentrations of IL-6 had an effect on doxorubicin-induced apoptosis. ANBL6.pLXSN cells were incubated with increasing levels of IL-6 followed by treatment with doxorubicin. In contrast to dexamethasone, ANBL6 cells became more sensitive to doxorubicin-induced apoptosis in the presence of increasing levels of IL-6 (Figure 6). Interestingly, the ANBL6.Nras12.EE and ANBL6.Kras12.EE cell lines, which have high levels of activated Ras, were resistant to doxorubicin-induced apoptosis. This suggests that even though high concentrations of IL-6 can activate a high percentage of the Ras pool, it is not enough to protect the cells from apoptosis induced by doxorubicin.\n\n## Discussion\n\nActivation of N-ras or K-ras either by mutation or IL-6 induction plays an important role in biology of multiple myeloma. Several studies have shown that the incidence of N-ras and K-ras mutations is as high as 47% in myeloma but that H-ras mutations are not detected (Corradini et al., 1993; Liu et al., 1996; Neri et al., 1989; Paquette et al., 1990; Portier et al., 1992). We were unable to detect expression of H-ras in any of the four myeloma cell lines we tested. This would provide an explanation for the lack of H-ras mutations associated with myeloma. If H-ras were not expressed in myeloma cells, a mutation in the H-ras gene would have no effect on the growth or apoptotic response of myeloma cells.\n\nActivation of Ras is a major component of IL-6 signal transduction. We have shown that IL-6 can activate both N-ras and K-ras in the ANBL6 cell line. In addition, IL-6-induced activation of Ras is transient and increasing concentrations of IL-6 lead to a greater level of Ras activation. While it has long been accepted that stimulation with growth factors often leads to a transient activation of signaling molecules such as Ras, the percentage of the total cellular Ras pool that is activated by IL-6 has never been reported. We were able to calculate the percentage of both N- and K-ras that is activated in response to IL-6 in myeloma cells. Our results suggest that only a small fraction of the total N- or K-ras pool is activated by physiological levels of IL-6. Klein et al. (Klein et al., 1989) measured the IL-6 levels in the bone marrow of patients with flammating myeloma and showed that the concentration of IL-6 was 833+/\u2212 945 pg/ml. At that level, we expect that only about 10\u201315% of the Ras pool is activated.\n\nThe level of activated Ras correlates with proliferation at low levels of GTP-Ras. However, at higher levels of Ras activation, the proliferation begins to plateau. The presence of the N-Ras12 or K-ras12 gene is able to induce proliferation independent of IL-6, but the level of [3H] thymidine incorporation is not any higher than the ANBL6.pLXSN cells treated with 0.1 ng/ml IL-6. This demonstrates that the rate-limiting factor for proliferation of ANBL6 cells is not at the level of activated Ras available. IL-6 is known to activate other transcription factors, such as Stat-3 (Rowley et al., 2000).\n\nA number of studies have demonstrated that both IL-6 and activating mutations in the ras genes are able to provide protection from dexamethasone-induced apoptosis (Billadeau et al., 1997; Chauhan et al., 1997b; Lichtenstein et al., 1995; Rowley et al., 2000). In this study, we have shown that increasing concentrations of IL-6 are able to provide better apoptotic protection in response to dexamethasone. At 10 ng/ml, IL-6 is able to activate approximately 30% of the N-ras pool and 70% of the K-ras pool. This is enough to provide protection comparable to the cells transfected with the N-ras12 or K-ras12 genes. Consistent with this, patients with high levels of IL-6 expression, or patients with a Ras mutation have a worse prognosis (Bataille et al., 1989; Liu et al., 1996). Ras may be due in part to a decreased sensitivity to therapeutic agents.\n\nIn contrast to dexamethasone-induced apoptosis, incubation of the ANBL6.pLXSN cells with enhanced doxorubicin-induced apoptosis. Based on this, we would have expected that the constitutively active N- or K-ras would have also enhanced apoptosis, but instead, it inhibited apoptosis. One possible explanation for this may be that N- or K-ras12 mutants provide a constitutive signal of 100% of the expressed mutant Ras, while the signal induced by IL-6 is transient and does not completely activate the pool of Ras. Constitutive, high level Ras activation could lead to a constitutive activation of anti-apoptotic factors or block apoptosis. IL-6 may only transiently activate these same factors and therefore be ineffective in long-term protection from apoptosis. Indeed, in further studies we have found that Dox induces cytc release, caspase 9 and caspase 3 activation in ANBL-6 cells; whereas the ras mutant line still releases cytc in response to dox, but does not activate caspase 9 or 3 (manuscript submitted).\n\n## Materials and methods\n\n### Cell culture\nThe ANBL6 cell lines were as previously described (Billadeau et al., 1997). All cell lines were maintained in RPMI 1640 supplemented with 10% fetal calf serum, 50 U/ml each of penicillin and streptomycin, 2 mmol/l L-glutamine (Gibco BRL, Gaithersburg, MD, USA), and 0.5 ng/ml IL-6 (R&D Systems, Minneapolis, MN, USA). Cultures were incubated in the absence of IL-6 for three days to eliminate the IL-6 effect on the cells and were then centrifuged on Ficoll-Histopaque to eliminate dead cells before each experiment.\n\n### GST-RBD preparation\nDH5\u03b1 cells containing the pGEX-RBD expression plasmid (Taylor and Shalloway, 1996) were grown in 200 ml LB at A600 of 0.7\u20130.8. Expression of GST-RBD was induced with 1 mM isopropyl-\u03b2-D-thiogalactopyranoside (IPTG) for 2 h. Bacteria were pelleted and washed once in HBS (25 mM HEPES, pH 7.5, 150 mM NaCl). The final pellet was resuspended in 10 ml of lysis buffer (20 mM HEPES, pH 7.5, 120 mM NaCl, 10% glycerol, 2 mM EDTA, 10 \u03bcg/ml leupeptin, 20 \u03bcg/ml aprotinin). Cells were lysed with a french press (SLM Instruments) at 1000 psi. Extracts were centrifuged at 15000 g to pellet debris. NP-40 to 0.5% final and 500 \u03bcl packed agarose beads (equilibrated in HBS) were added to the supernatant and rocked for 30 min at 4\u00b0C. The beads were washed 7\u20138 times with 0.6 ml lysis buffer plus 0.5% NP-40.\n\n### Activated Ras interaction assay\n5\u201310\u00d7106 cells were treated as indicated, washed once in ice-cold HBS and lysed in ice cold Mg-containing lysis buffer (MLB) (25 mM HEPES, pH 7.5, 150 mM NaCl, 1% NP-40, 0.25% sodium deoxycholate, 10% glycerol, 25 mM NaF, 10 mM MgCl2, 1 mM EDTA, 1 mM sodium vanadate, 10 \u03bcg/ml leupeptin, 10 \u03bcg/ml aprotinin) for 20 min at 4\u00b0C. Debris was pelleted at 15000 g for 20 min. Protein concentration of the supernatant was measured using the Bio-Rad Protein Assay kit. Equal amounts of protein were used as indicated. Lysates were rocked with 15 \u03bcl of packed GST-RBD-agarose beads at 4\u00b0C for 30 min. Beads were washed three times in 0.6 ml MLB and resuspended in SDS-PAGE sample buffer for Western blot analysis.\n\n### Western blot analysis\nProteins were separated by SDS-PAGE, transferred to a PVDF membrane (Bio-Rad, Hercules, CA, USA) and probed with primary antibodies or anti-EE antibodies (Santa Cruz, Santa Cruz, CA, USA). The blots were washed and incubated with HRP conjugated secondary antibody and developed by enhanced chemiluminescence (ECL)\u2212Plus using the manufacturer's protocol (Amersham Pharmacia, Piscataway, NJ, USA).\n\n### [3H] Thymidine incorporation assay\nThe assay was performed as previously described (McCloskey et al., 1994). Briefly, cells were diluted to 2\u00d7105 cells/ml and 200 \u03bcl of each culture was seeded into 96 well plates in the presence of various concentrations of IL-6 as indicated. The 96 well plates were incubated for two days, before the addition of one \u03bcCi of [3H] thymidine (5.0 Ci/mmole; Amersham, Arlington Heights, IL, USA) to each well. The cells were further incubated for 16 h and then harvested onto glass filter paper (Skatron, Sterling, VA). The [3H] thymidine incorporation was measured by liquid scintillation counting (Beckman, Arlington Heights, IL, USA).\n\n### Apoptosis measurement\nCells were washed in RPMI and diluted to 2\u00d7105 cells/ml with RPMI 1640 with 1 mM doxorubicin or 250 nM doxorubicin or IL-6 as indicated. Cells were harvested and labelled at the indicated time points. Cell pellets were resuspended with 0.5 ml hypotonic lysis solution (50 \u03bcg/ml propidium iodide (Sigma, St. Louis, MO, USA), 0.1% sodium citrate, and 0.1% triton X-100) and incubated at 4\u00b0C for at least 3 h in the dark. Nuclear staining was analysed on a FACSCalibur flow cytometer (Becton Dickinson, San Jose, CA, USA)."
+      }
+    ],
+    "tables": "No formal numbered tables present in this paper. Data is presented in figures and graphs.",
+    "figures": "Figure 1: Ras expression and IL-6 induced activation in myeloma cell lines. (a) Myeloma cell lines express N-ras, but not H-ras. Western blot showing H-ras, N-ras12.EE/N-ras, and K-ras12.EE/K-ras expression in T-24, ANBL6 Nras12.EE, ANBL6 pLXSN, U266, Kas 6/1, and RPMI 8226 cell lines. (b) IL-6 induces activation of both N-ras and K-ras in ANBL6.pLXSN, ANBL6.Nras12, and ANBL6.Kras12 cells. (c) ARIA assay is semi-quantitative showing titration of cell extracts (25-400 \u03bcg) from ANBL6.Nras12.EE and ANBL6.Kras12.EE cells.\n\nFigure 2: Interleukin-6 induces transient activation of N-ras and K-ras. (a) ANBL6.pLXSN cells stimulated with 1 ng/ml IL-6 over time course (0-90 min). (b) Percentage of activated Ras over time showing peak activation at ~11% for N-ras and ~18% for K-ras.\n\nFigure 3: Activation of N- or K-ras increases with the addition of increasing amounts of interleukin-6. (a) ANBL6.pLXSN cells treated with various concentrations of IL-6 (0-10 ng/ml) for 15 min. (b) Graph showing percentage of activated Ras increasing with IL-6 concentration, reaching ~30% for N-ras and ~70% for K-ras at 10 ng/ml IL-6.\n\nFigure 4: Proliferation of ANBL6 cells correlates with Ras activation. Bar graph showing [3H]Thymidine incorporation in pLXSN, pLXSN + 0.01-10 ng/ml IL-6, Nras12, and Kras12 cells. Values represent mean of duplicate samples ranging from ~5000-60000 cpm.\n\nFigure 5: Protection from dexamethasone-induced apoptosis correlates with activation of N- or K-ras. Line graph showing % apoptotic nuclei over 4 days for ANBL6.pLXSN cells treated with 0-10 ng/ml IL-6 plus dexamethasone, compared to Nras12 and Kras12 cells. Higher IL-6 concentrations provide better protection.\n\nFigure 6: Interleukin-6 and Ras activation enhance doxorubicin-induced apoptosis. Line graph showing % apoptotic nuclei over 4 days for ANBL6.pLXSN cells treated with 0-10 ng/ml IL-6 plus 250 nM doxorubicin, compared to ANBL6.Nras12.EE and ANBL6.Kras12.EE cells. Higher IL-6 enhances doxorubicin-induced apoptosis in pLXSN cells, while Nras12 and Kras12 cells are protected.",
+    "statistics": "- IL-6 concentration in bone marrow of patients with flammating myeloma: 833+/\u2212945 pg/ml\n- N-ras12.EE protein expression: ~3.3-fold higher than endogenous N-ras\n- K-ras12.EE protein expression: ~1.3-fold higher than endogenous K-ras\n- ARIA assay efficiency: ~35% for N-ras, ~39% for K-ras\n- Peak N-ras activation by IL-6: ~11% of total N-ras pool\n- Peak K-ras activation by IL-6: ~18% of total K-ras pool\n- N-ras activation at 0.1 ng/ml IL-6: detectable levels\n- K-ras activation at 1 ng/ml IL-6: detectable levels\n- K-ras activation at 10 ng/ml IL-6: ~70% of total K-ras pool\n- N-ras activation at 10 ng/ml IL-6: ~30% of total N-ras pool\n- Expected activation of Ras pool at physiological IL-6 levels (833 pg/ml): ~10-15%\n- Incidence of N-ras and K-ras mutations in myeloma: as high as 40-50% (previously reported)\n- Incidence of N-ras and K-ras mutations in myeloma: as high as 47% (previously reported)\n- Cell density for experiments: 2\u00d710^5 cells/ml\n- Protein amounts used for ARIA: 25-400 \u03bcg whole cell extract\n- [3H]Thymidine incorporation values: ranging from ~5,000 to ~60,000 cpm\n- Time course measurements: 0, 5, 10, 20, 40, 60, 90 minutes for Ras activation\n- IL-6 concentrations tested: 0, 0.01, 0.03, 0.1, 0.3, 1, 3, 10 ng/ml\n- Apoptosis measurement timepoints: 0, 1, 2, 3, 4 days\n- Doxorubicin concentrations: 1 mM or 250 nM\n- Dexamethasone concentration: not specified (referenced as \"dex\")\n- [3H]Thymidine concentration: 1 \u03bcCi per well (5.0 Ci/mmole)\n- 10-fold higher protein concentration adjustment for ARIA calculations",
+    "genes": "NRAS (N-ras), KRAS (K-ras), HRAS (H-ras), RAF1 (Raf-1), STAT3 (Stat-3)",
+    "variants": "N-ras12 (codon 12 mutation), K-ras12 (codon 12 mutation), N-ras12.EE (epitope-tagged N-ras codon 12 mutant), K-ras12.EE (epitope-tagged K-ras codon 12 mutant). Point mutations at codons 12, 13, or 61 lead to constitutively active GTP-bound Ras protein (mentioned generally).",
+    "diseases": "Multiple myeloma, bladder cancer (T-24 cell line context)",
+    "therapies": "Interleukin-6 (IL-6), dexamethasone, doxorubicin, melphalan, anti-Fas antibodies",
+    "clinical_trials": "No clinical trials mentioned in this paper."
+  },
+  "timing": {
+    "start": "2025-12-15T01:08:46.230486",
+    "end": "2025-12-15T01:20:45.199346",
+    "seconds": 718.96886
+  },
+  "log_file": "/Users/ali/Downloads/civic/civic_extraction_end_to_end/logs/PMID_12483530_20251215_010846.log"
+}

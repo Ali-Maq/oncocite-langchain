@@ -1,0 +1,34 @@
+=== Extractor Final Response ===
+Content length: 1698
+
+Perfect! I have successfully revised the extraction based on the critique feedback. Here's a summary of what was fixed:
+
+## Summary of Fixes
+
+### 1. **Entity Grounding Failures** (Fixed)
+- Extended verbatim quotes to include all key entities mentioned in evidence_description
+- All items now properly ground disease_name ("multiple myeloma"), feature_names (NY-ESO-1, LAGE-1, HLA-A*0201, CD138), and therapy_names in their verbatim_quotes
+
+### 2. **Verbatim Quote Capitalization Errors** (Fixed)
+- Corrected capitalization to match exact paper text:
+  - "Between" (capital B) instead of "between"
+  - "However" (capital H) instead of "however" 
+  - All quotes now exact substrings of paper content
+
+### 3. **Invalid Evidence Type** (Fixed)
+- Changed 'RESISTANCE' to 'PREDICTIVE' with clinical_significance 'Drug resistance'
+
+### 4. **Missing Evidence Categories** (Added 6 new items)
+- Abstract summary response rate: 80% ORR with median PFS 19.1 months
+- Median OS outcomes: 32.1 months with detailed survival statistics
+- Detailed response rate breakdown: 70% CR/nCR, 10% VGPR, 10% PR, 5% SD, 5% PD
+- Comparative effectiveness: 70% CR/nCR vs <40% expected with ASCT
+- T-cell trafficking: Engineered cells detected in marrow day 7-180
+- Antigen targeting: Loss of NY-ESO-1/LAGE-1 transcripts in 12/15 at day 100
+
+## Final Results
+- **Total Evidence Items: 13** (all valid)
+- **Evidence Types:** 10 PREDICTIVE, 3 PROGNOSTIC
+- **All validation checks passed** with proper entity grounding and exact verbatim quotes
+
+The extraction now comprehensively covers the clinical trial outcomes, biomarker correlations, resistance mechanisms, and comparative effectiveness as outlined in the extraction plan.

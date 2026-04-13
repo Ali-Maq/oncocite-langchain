@@ -1,0 +1,137 @@
+{
+  "pmid": "11050000",
+  "source_id": 1420,
+  "title": "Heterogeneity in therapeutic response of genetically altered myeloma cell lines to interleukin 6, dexamethasone, doxorubicin, and melphalan.",
+  "journal": "Blood",
+  "year": 2000.0,
+  "civic_item_count": 4,
+  "tier1_field_completeness": {
+    "evidence_id": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_description": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_level": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_type": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_direction": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_significance": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "feature_names": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "variant_names": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "disease_name": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "therapy_names": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "clinical_trial_nct_ids": {
+      "populated": 0,
+      "total": 4,
+      "percentage": 0.0
+    },
+    "source_title": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "source_citation_id": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    }
+  },
+  "evidence_items": [
+    {
+      "evidence_id": 2012,
+      "evidence_description": "In in vitro experiments, myeloma cell lines expressing activating NRAS and KRAS mutations are less sensitive to the apoptosis-inducing effects of dexamethasone, doxorubicin, and melphalan in comparison to cells with wildtype RAS.",
+      "evidence_level": "D",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "RESISTANCE",
+      "feature_names": "KRAS",
+      "variant_names": "G12A",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Melphalan",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Heterogeneity in therapeutic response of genetically altered myeloma cell lines to interleukin 6, dexamethasone, doxorubicin, and melphalan.",
+      "source_citation_id": "11050000"
+    },
+    {
+      "evidence_id": 2250,
+      "evidence_description": "In in vitro experiments, myeloma cell lines expressing activating NRAS and KRAS mutations are less sensitive to the apoptosis-inducing effects of dexamethasone, doxorubicin, and melphalan in comparison to cells with wildtype RAS.",
+      "evidence_level": "D",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "RESISTANCE",
+      "feature_names": "KRAS",
+      "variant_names": "G12D",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Melphalan",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Heterogeneity in therapeutic response of genetically altered myeloma cell lines to interleukin 6, dexamethasone, doxorubicin, and melphalan.",
+      "source_citation_id": "11050000"
+    },
+    {
+      "evidence_id": 2261,
+      "evidence_description": "In in vitro experiments, myeloma cell lines expressing activating NRAS and KRAS mutations are less sensitive to the apoptosis-inducing effects of dexamethasone, doxorubicin, and melphalan in comparison to cells with wildtype RAS.",
+      "evidence_level": "D",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "RESISTANCE",
+      "feature_names": "KRAS",
+      "variant_names": "G12C",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Melphalan",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Heterogeneity in therapeutic response of genetically altered myeloma cell lines to interleukin 6, dexamethasone, doxorubicin, and melphalan.",
+      "source_citation_id": "11050000"
+    },
+    {
+      "evidence_id": 2277,
+      "evidence_description": "In in vitro experiments, myeloma cell lines expressing activating NRAS and KRAS mutations are less sensitive to the apoptosis-inducing effects of dexamethasone, doxorubicin, and melphalan in comparison to cells with wildtype RAS.",
+      "evidence_level": "D",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "RESISTANCE",
+      "feature_names": "KRAS",
+      "variant_names": "G12S",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Melphalan",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Heterogeneity in therapeutic response of genetically altered myeloma cell lines to interleukin 6, dexamethasone, doxorubicin, and melphalan.",
+      "source_citation_id": "11050000"
+    }
+  ]
+}

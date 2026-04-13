@@ -1,0 +1,594 @@
+{
+  "paper_id": "11050000",
+  "total_true_items_in_paper_estimate": 8,
+  "ai_evidence_item_count": 8,
+  "gt_evidence_item_count": 4,
+  "alignment": [
+    {
+      "tuple_id": "TP53|WILD TYPE|Multiple Myeloma|Doxorubicin",
+      "paper_evidence": {
+        "summary": "In U266 myeloma cells carrying mutant p53, stable expression of wild-type p53 suppresses IL-6, induces cell-cycle arrest, and significantly reduces doxorubicin-induced apoptosis compared with control cells.",
+        "location": "Abstract and Results (section on p53-mediated cell cycle arrest; Figure 2)",
+        "quantitative_data": "Approx. 26% vs 55% Dox-induced apoptosis at day 4 in wt p53 vs control cells.",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE"
+      },
+      "ai_items": [
+        {
+          "ai_index": 0,
+          "fields": {
+            "feature_names": ["TP53"],
+            "variant_names": ["WILD TYPE"],
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": ["Doxorubicin"],
+            "evidence_type": "PREDICTIVE",
+            "evidence_level": "D",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "DECREASED_RESPONSE",
+            "evidence_description": "Wild-type p53 expression in U266 myeloma cells with endogenous mutant p53 reduces doxorubicin-induced apoptosis via G0/G1 arrest, with lower apoptosis percentages in wt p53 cells; implies that loss of wt p53 increases Dox sensitivity. Preclinical cell-line evidence.",
+            "verbatim_quote": "AI uses a sentence beginning with 'Expression of wt p53 results in a loss of accumulation in the S/G2/M stages of the cell cycle and significantly suppresses Dox- ... induced apoptosis.'",
+            "variant_origin": "SOMATIC",
+            "gene_entrez_id": 7157,
+            "disease_efo_id": "EFO_0001378",
+            "therapy_rxnorm_id": "3639",
+            "therapy_ncit_id": null,
+            "variant_hgvs_descriptions": null,
+            "variant_hgvs_c": null,
+            "variant_hgvs_p": null,
+            "chromosome": null,
+            "start_position": null,
+            "stop_position": null,
+            "reference_build": null,
+            "cancer_cell_fraction": null,
+            "cohort_size": null,
+            "clinical_trial_nct_ids": [],
+            "drug_safety": null
+          },
+          "field_status": {
+            "feature_names": "EXACT_MATCH_WITH_PAPER",
+            "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "disease_name": "EXACT_MATCH_WITH_PAPER",
+            "therapy_names": "EXACT_MATCH_WITH_PAPER",
+            "evidence_type": "EXACT_MATCH_WITH_PAPER",
+            "evidence_level": "EXACT_MATCH_WITH_PAPER",
+            "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+            "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+            "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+            "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+            "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "study_details": "EXACT_MATCH_WITH_PAPER"
+          },
+          "notes": "Captures the U266 wt p53–Dox resistance relationship correctly with quantitative effect size and cell-cycle mechanism. The bidirectional statement about mutant p53 increasing sensitivity is a reasonable inference. No corresponding ground-truth CIViC item exists."
+        }
+      ],
+      "gt_items": []
+    },
+    {
+      "tuple_id": "TP53|WILD TYPE|Multiple Myeloma|Melphalan",
+      "paper_evidence": {
+        "summary": "In U266 cells, restoration of wild-type p53 similarly reduces melphalan-induced apoptosis compared with mutant p53 control cells, via cell-cycle arrest and IL-6 suppression.",
+        "location": "Abstract and Results (p53-mediated cell cycle arrest; Figure 2)",
+        "quantitative_data": "Approx. 34% vs 70% Mel-induced apoptosis at day 4 in wt p53 vs control cells.",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE"
+      },
+      "ai_items": [
+        {
+          "ai_index": 1,
+          "fields": {
+            "feature_names": ["TP53"],
+            "variant_names": ["WILD TYPE"],
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": ["Melphalan"],
+            "evidence_type": "PREDICTIVE",
+            "evidence_level": "D",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "DECREASED_RESPONSE",
+            "evidence_description": "Wild-type p53 expression in U266 myeloma cells significantly reduces melphalan-induced apoptosis (around one-half of the apoptosis rate in control cells), attributed to G0/G1 arrest and associated reduction in IL-6. Suggests mutant p53 may increase melphalan sensitivity. Preclinical.",
+            "verbatim_quote": "Same p53 quote used, covering both Dox and Mel apoptosis suppression.",
+            "variant_origin": "SOMATIC",
+            "gene_entrez_id": 7157,
+            "disease_efo_id": "EFO_0001378",
+            "therapy_rxnorm_id": "6718",
+            "therapy_ncit_id": null,
+            "variant_hgvs_descriptions": null,
+            "variant_hgvs_c": null,
+            "variant_hgvs_p": null,
+            "chromosome": null,
+            "start_position": null,
+            "stop_position": null,
+            "reference_build": null,
+            "cancer_cell_fraction": null,
+            "cohort_size": null,
+            "clinical_trial_nct_ids": [],
+            "drug_safety": null
+          },
+          "field_status": {
+            "feature_names": "EXACT_MATCH_WITH_PAPER",
+            "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "disease_name": "EXACT_MATCH_WITH_PAPER",
+            "therapy_names": "EXACT_MATCH_WITH_PAPER",
+            "evidence_type": "EXACT_MATCH_WITH_PAPER",
+            "evidence_level": "EXACT_MATCH_WITH_PAPER",
+            "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+            "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+            "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+            "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+            "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "study_details": "EXACT_MATCH_WITH_PAPER"
+          },
+          "notes": "Accurately captures wt p53–Melphalan resistance with correct direction and quantitative data. The IL-6–mediated mechanism is consistent with the abstract, and the preclinical nature is clearly stated."
+        }
+      ],
+      "gt_items": []
+    },
+    {
+      "tuple_id": "NRAS|CODON 12 ACTIVATING MUTATION|Multiple Myeloma|Dexamethasone",
+      "paper_evidence": {
+        "summary": "ANBL6 cells transfected with activated N-ras12 show reduced dexamethasone-induced apoptosis compared with parental cells, indicating Dex resistance associated with NRAS activation.",
+        "location": "Results (ras-transfected ANBL6; Figure 4)",
+        "quantitative_data": "Text describes 'significant protection' from Dex-induced apoptosis; quantitative values are shown in Figure 4 but not detailed in the abstract.",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE"
+      },
+      "ai_items": [
+        {
+          "ai_index": 2,
+          "fields": {
+            "feature_names": ["NRAS"],
+            "variant_names": ["CODON 12 ACTIVATING MUTATION"],
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": ["Dexamethasone"],
+            "evidence_type": "PREDICTIVE",
+            "evidence_level": "D",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "DECREASED_RESPONSE",
+            "evidence_description": "Constitutively activated N-ras12 in ANBL6 multiple myeloma cells provides significant protection from dexamethasone-induced apoptosis. Protection is described as more complete than with IL-6 alone. Preclinical cell-line evidence.",
+            "verbatim_quote": "AI cites the sentence beginning 'expression of an activating mutation in either N-ras or K-ras is able to provide significant protection from apoptosis induced by Dex, Dox, or Mel'.",
+            "variant_origin": "SOMATIC",
+            "gene_entrez_id": 4893,
+            "disease_efo_id": "EFO_0001378",
+            "therapy_rxnorm_id": "3264",
+            "therapy_ncit_id": null,
+            "variant_hgvs_descriptions": null,
+            "variant_hgvs_c": null,
+            "variant_hgvs_p": null,
+            "chromosome": null,
+            "start_position": null,
+            "stop_position": null,
+            "reference_build": null,
+            "cancer_cell_fraction": null,
+            "cohort_size": null,
+            "clinical_trial_nct_ids": [],
+            "drug_safety": null
+          },
+          "field_status": {
+            "feature_names": "EXACT_MATCH_WITH_PAPER",
+            "variant_names": "EXACT_MATCH_WITH_PAPER",
+            "disease_name": "EXACT_MATCH_WITH_PAPER",
+            "therapy_names": "EXACT_MATCH_WITH_PAPER",
+            "evidence_type": "EXACT_MATCH_WITH_PAPER",
+            "evidence_level": "EXACT_MATCH_WITH_PAPER",
+            "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+            "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+            "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+            "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+            "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "study_details": "EXACT_MATCH_WITH_PAPER"
+          },
+          "notes": "Correctly captures NRAS codon-12–mediated Dex resistance. The comparison to IL-6 ('more complete protection') is interpretive but logically compatible with the described biology."
+        }
+      ],
+      "gt_items": []
+    },
+    {
+      "tuple_id": "NRAS|CODON 12 ACTIVATING MUTATION|Multiple Myeloma|Doxorubicin",
+      "paper_evidence": {
+        "summary": "Activated N-ras12 in ANBL6 cells protects from Dox-induced apoptosis, consistent with a resistance phenotype.",
+        "location": "Results (ras-transfected ANBL6; Figure 4)",
+        "quantitative_data": "Described as 'significant protection' from Dox-induced apoptosis; details in Figure 4.",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE"
+      },
+      "ai_items": [
+        {
+          "ai_index": 3,
+          "fields": {
+            "feature_names": ["NRAS"],
+            "variant_names": ["CODON 12 ACTIVATING MUTATION"],
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": ["Doxorubicin"],
+            "evidence_type": "PREDICTIVE",
+            "evidence_level": "D",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "DECREASED_RESPONSE",
+            "evidence_description": "Constitutively activated N-ras12 in ANBL6 myeloma cells confers significant protection from doxorubicin-induced apoptosis, described as stronger than IL-6-mediated protection. Preclinical.",
+            "verbatim_quote": "Same ras quote covering Dex, Dox, Mel.",
+            "variant_origin": "SOMATIC",
+            "gene_entrez_id": 4893,
+            "disease_efo_id": "EFO_0001378",
+            "therapy_rxnorm_id": "3639",
+            "therapy_ncit_id": null,
+            "variant_hgvs_descriptions": null,
+            "variant_hgvs_c": null,
+            "variant_hgvs_p": null,
+            "chromosome": null,
+            "start_position": null,
+            "stop_position": null,
+            "reference_build": null,
+            "cancer_cell_fraction": null,
+            "cohort_size": null,
+            "clinical_trial_nct_ids": [],
+            "drug_safety": null
+          },
+          "field_status": {
+            "feature_names": "EXACT_MATCH_WITH_PAPER",
+            "variant_names": "EXACT_MATCH_WITH_PAPER",
+            "disease_name": "EXACT_MATCH_WITH_PAPER",
+            "therapy_names": "EXACT_MATCH_WITH_PAPER",
+            "evidence_type": "EXACT_MATCH_WITH_PAPER",
+            "evidence_level": "EXACT_MATCH_WITH_PAPER",
+            "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+            "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+            "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+            "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+            "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "study_details": "EXACT_MATCH_WITH_PAPER"
+          },
+          "notes": "Correct drug, gene, variant state, and direction. Description is faithful but high-level; still preclinical-only. No GT item explicitly encodes the Dox relationship, so AI extends beyond structured GT."
+        }
+      ],
+      "gt_items": []
+    },
+    {
+      "tuple_id": "NRAS|CODON 12 ACTIVATING MUTATION|Multiple Myeloma|Melphalan",
+      "paper_evidence": {
+        "summary": "Activated N-ras12 in ANBL6 cells confers resistance to melphalan-induced apoptosis compared with parental cells.",
+        "location": "Results (ras-transfected ANBL6; Figure 4)",
+        "quantitative_data": "Described as 'significant protection' from melphalan-induced apoptosis; detailed values are figure-based.",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE"
+      },
+      "ai_items": [
+        {
+          "ai_index": 4,
+          "fields": {
+            "feature_names": ["NRAS"],
+            "variant_names": ["CODON 12 ACTIVATING MUTATION"],
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": ["Melphalan"],
+            "evidence_type": "PREDICTIVE",
+            "evidence_level": "D",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "DECREASED_RESPONSE",
+            "evidence_description": "Constitutively activated N-ras12 in ANBL6 multiple myeloma cells provides significant protection from melphalan-induced apoptosis, described as more complete than IL-6-mediated protection. Preclinical.",
+            "verbatim_quote": "Ras sentence about protection from Dex, Dox, and Mel, plus comparison of N-ras12 vs K-ras12.",
+            "variant_origin": "SOMATIC",
+            "gene_entrez_id": 4893,
+            "disease_efo_id": "EFO_0001378",
+            "therapy_rxnorm_id": "6718",
+            "therapy_ncit_id": null,
+            "variant_hgvs_descriptions": null,
+            "variant_hgvs_c": null,
+            "variant_hgvs_p": null,
+            "chromosome": null,
+            "start_position": null,
+            "stop_position": null,
+            "reference_build": null,
+            "cancer_cell_fraction": null,
+            "cohort_size": null,
+            "clinical_trial_nct_ids": [],
+            "drug_safety": null
+          },
+          "field_status": {
+            "feature_names": "EXACT_MATCH_WITH_PAPER",
+            "variant_names": "EXACT_MATCH_WITH_PAPER",
+            "disease_name": "EXACT_MATCH_WITH_PAPER",
+            "therapy_names": "EXACT_MATCH_WITH_PAPER",
+            "evidence_type": "EXACT_MATCH_WITH_PAPER",
+            "evidence_level": "EXACT_MATCH_WITH_PAPER",
+            "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+            "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+            "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+            "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+            "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "study_details": "EXACT_MATCH_WITH_PAPER"
+          },
+          "notes": "Accurately encodes NRAS–Melphalan resistance. This relationship is only implicitly present in GT text (shared NRAS/KRAS phrasing), but NRAS is not represented in GT structured fields."
+        }
+      ],
+      "gt_items": []
+    },
+    {
+      "tuple_id": "KRAS|CODON 12 ACTIVATING MUTATION|Multiple Myeloma|Dexamethasone",
+      "paper_evidence": {
+        "summary": "Activated K-ras12 in ANBL6 cells provides significant but somewhat weaker protection from dexamethasone-induced apoptosis than N-ras12, indicating Dex resistance associated with KRAS activation.",
+        "location": "Results (ras-transfected ANBL6; Figure 4)",
+        "quantitative_data": "Described qualitatively as significant protection; N-ras12 gives somewhat stronger protection.",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE"
+      },
+      "ai_items": [
+        {
+          "ai_index": 5,
+          "fields": {
+            "feature_names": ["KRAS"],
+            "variant_names": ["CODON 12 ACTIVATING MUTATION"],
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": ["Dexamethasone"],
+            "evidence_type": "PREDICTIVE",
+            "evidence_level": "D",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "DECREASED_RESPONSE",
+            "evidence_description": "Constitutively activated K-ras12 in ANBL6 myeloma cells provides significant protection from dexamethasone-induced apoptosis, somewhat less than N-ras12. Preclinical cell-line evidence.",
+            "verbatim_quote": "Same N-ras/K-ras protection sentence.",
+            "variant_origin": "SOMATIC",
+            "gene_entrez_id": 3845,
+            "disease_efo_id": "EFO_0001378",
+            "therapy_rxnorm_id": "3264",
+            "therapy_ncit_id": null,
+            "variant_hgvs_descriptions": null,
+            "variant_hgvs_c": null,
+            "variant_hgvs_p": null,
+            "chromosome": null,
+            "start_position": null,
+            "stop_position": null,
+            "reference_build": null,
+            "cancer_cell_fraction": null,
+            "cohort_size": null,
+            "clinical_trial_nct_ids": [],
+            "drug_safety": null
+          },
+          "field_status": {
+            "feature_names": "EXACT_MATCH_WITH_PAPER",
+            "variant_names": "EXACT_MATCH_WITH_PAPER",
+            "disease_name": "EXACT_MATCH_WITH_PAPER",
+            "therapy_names": "EXACT_MATCH_WITH_PAPER",
+            "evidence_type": "EXACT_MATCH_WITH_PAPER",
+            "evidence_level": "EXACT_MATCH_WITH_PAPER",
+            "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+            "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+            "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+            "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+            "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "study_details": "EXACT_MATCH_WITH_PAPER"
+          },
+          "notes": "Direction and qualitative comparison to N-ras12 match the Results text. GT does not separately encode Dex as a therapy, so this is an AI-only improvement."
+        }
+      ],
+      "gt_items": []
+    },
+    {
+      "tuple_id": "KRAS|CODON 12 ACTIVATING MUTATION|Multiple Myeloma|Doxorubicin",
+      "paper_evidence": {
+        "summary": "Activated K-ras12 in ANBL6 cells confers significant protection from doxorubicin-induced apoptosis compared with parental cells, with somewhat weaker protection than N-ras12.",
+        "location": "Results (ras-transfected ANBL6; Figure 4)",
+        "quantitative_data": "Significant reduction in Dox-induced apoptosis; comparative strength to N-ras12 noted qualitatively.",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE"
+      },
+      "ai_items": [
+        {
+          "ai_index": 6,
+          "fields": {
+            "feature_names": ["KRAS"],
+            "variant_names": ["CODON 12 ACTIVATING MUTATION"],
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": ["Doxorubicin"],
+            "evidence_type": "PREDICTIVE",
+            "evidence_level": "D",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "DECREASED_RESPONSE",
+            "evidence_description": "Constitutively activated K-ras12 in ANBL6 myeloma cells provides significant protection from doxorubicin-induced apoptosis, with less protection than N-ras12. Preclinical.",
+            "verbatim_quote": "Same ras protection sentence.",
+            "variant_origin": "SOMATIC",
+            "gene_entrez_id": 3845,
+            "disease_efo_id": "EFO_0001378",
+            "therapy_rxnorm_id": "3639",
+            "therapy_ncit_id": null,
+            "variant_hgvs_descriptions": null,
+            "variant_hgvs_c": null,
+            "variant_hgvs_p": null,
+            "chromosome": null,
+            "start_position": null,
+            "stop_position": null,
+            "reference_build": null,
+            "cancer_cell_fraction": null,
+            "cohort_size": null,
+            "clinical_trial_nct_ids": [],
+            "drug_safety": null
+          },
+          "field_status": {
+            "feature_names": "EXACT_MATCH_WITH_PAPER",
+            "variant_names": "EXACT_MATCH_WITH_PAPER",
+            "disease_name": "EXACT_MATCH_WITH_PAPER",
+            "therapy_names": "EXACT_MATCH_WITH_PAPER",
+            "evidence_type": "EXACT_MATCH_WITH_PAPER",
+            "evidence_level": "EXACT_MATCH_WITH_PAPER",
+            "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+            "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+            "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+            "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+            "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "study_details": "EXACT_MATCH_WITH_PAPER"
+          },
+          "notes": "Accurate KRAS–Dox relationship; again, GT only encodes Melphalan, so this is an additional AI-captured tuple relative to GT."
+        }
+      ],
+      "gt_items": []
+    },
+    {
+      "tuple_id": "KRAS|CODON 12 ACTIVATING MUTATION|Multiple Myeloma|Melphalan",
+      "paper_evidence": {
+        "summary": "Activated K-ras12 in ANBL6 cells provides significant protection from melphalan-induced apoptosis, slightly less than N-ras12, demonstrating a ras-driven melphalan resistance phenotype.",
+        "location": "Results (ras-transfected ANBL6; Figure 4); also summarized in abstract.",
+        "quantitative_data": "Qualitative 'significant protection' plus comparison to N-ras12; exact percentages are figure-based.",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE"
+      },
+      "ai_items": [
+        {
+          "ai_index": 7,
+          "fields": {
+            "feature_names": ["KRAS"],
+            "variant_names": ["CODON 12 ACTIVATING MUTATION"],
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": ["Melphalan"],
+            "evidence_type": "PREDICTIVE",
+            "evidence_level": "D",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "DECREASED_RESPONSE",
+            "evidence_description": "Constitutively activated K-ras12 in ANBL6 multiple myeloma cells provides significant protection from melphalan-induced apoptosis, described as more complete than IL-6-mediated protection. Preclinical; clinical validation required.",
+            "verbatim_quote": "Same ras protection sentence plus text noting stronger protection for N-ras12 vs K-ras12.",
+            "variant_origin": "SOMATIC",
+            "gene_entrez_id": 3845,
+            "disease_efo_id": "EFO_0001378",
+            "therapy_rxnorm_id": "6718",
+            "therapy_ncit_id": null,
+            "variant_hgvs_descriptions": null,
+            "variant_hgvs_c": null,
+            "variant_hgvs_p": null,
+            "chromosome": null,
+            "start_position": null,
+            "stop_position": null,
+            "reference_build": null,
+            "cancer_cell_fraction": null,
+            "cohort_size": null,
+            "clinical_trial_nct_ids": [],
+            "drug_safety": null
+          },
+          "field_status": {
+            "feature_names": "EXACT_MATCH_WITH_PAPER",
+            "variant_names": "EXACT_MATCH_WITH_PAPER",
+            "disease_name": "EXACT_MATCH_WITH_PAPER",
+            "therapy_names": "EXACT_MATCH_WITH_PAPER",
+            "evidence_type": "EXACT_MATCH_WITH_PAPER",
+            "evidence_level": "EXACT_MATCH_WITH_PAPER",
+            "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+            "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+            "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+            "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+            "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+            "study_details": "EXACT_MATCH_WITH_PAPER"
+          },
+          "notes": "This is the only tuple also present in structured ground truth. AI uses a generic KRAS codon-12 label rather than G12A/G12D/G12C/G12S, which matches the level of specificity in the paper better than GT’s codon-level enumeration."
+        }
+      ],
+      "gt_items": [
+        {
+          "gt_index": 2012,
+          "fields": {
+            "feature_names": "KRAS",
+            "variant_names": "G12A",
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": "Melphalan",
+            "evidence_type": "PREDICTIVE",
+            "evidence_level": "D",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "RESISTANCE",
+            "evidence_description": "Myeloma cell lines with activating NRAS and KRAS mutations are less sensitive to Dex, Dox, and Mel than wildtype RAS."
+          },
+          "notes": "Conceptually matches the KRAS–Melphalan resistance tuple but introduces a specific G12A label not stated in this paper. Drug list in description includes Dex and Dox, but therapy_names only encodes Melphalan."
+        },
+        {
+          "gt_index": 2250,
+          "fields": {
+            "feature_names": "KRAS",
+            "variant_names": "G12D",
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": "Melphalan",
+            "evidence_type": "PREDICTIVE",
+            "evidence_level": "D",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "RESISTANCE",
+            "evidence_description": "Same description as 2012, with G12D variant."
+          },
+          "notes": "Same conceptual tuple; variant-level detail not supported directly by the article."
+        },
+        {
+          "gt_index": 2261,
+          "fields": {
+            "feature_names": "KRAS",
+            "variant_names": "G12C",
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": "Melphalan",
+            "evidence_type": "PREDICTIVE",
+            "evidence_level": "D",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "RESISTANCE",
+            "evidence_description": "Same description as 2012, with G12C variant."
+          },
+          "notes": "Same conceptual tuple; variant-level label again exceeds the specificity of the paper."
+        },
+        {
+          "gt_index": 2277,
+          "fields": {
+            "feature_names": "KRAS",
+            "variant_names": "G12S",
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": "Melphalan",
+            "evidence_type": "PREDICTIVE",
+            "evidence_level": "D",
+            "evidence_direction": "SUPPORTS",
+            "evidence_significance": "RESISTANCE",
+            "evidence_description": "Same description as 2012, with G12S variant."
+          },
+          "notes": "Same conceptual KRAS–Melphalan resistance evidence split across another codon 12 variant."
+        }
+      ]
+    }
+  ],
+  "missing_from_ai": [
+    "No explicit evidence item for IL-6 protecting ANBL6 cells from dexamethasone- and melphalan-induced apoptosis but not from doxorubicin-induced apoptosis, despite this being a clear, therapy-like effect in the abstract and Results.",
+    "No explicit item capturing the reversal of p53-mediated protection by exogenous IL-6 in U266 cells (IL-6 addition restoring cell cycle progression and doxorubicin/melphalan-induced apoptosis).",
+    "No separate evidence item aggregating 'general ras activation alters response to IL-6 itself', which is discussed conceptually in the paper."
+  ],
+  "ai_hallucinated_items": [
+    "There are no fully hallucinated evidence items (all 8 tuples are grounded in the paper). However, some reasoning text adds external details not in the article, such as a statement that codon 12 mutations occur in 30–50% of multiple myeloma cases, and interpretive language that ras-mediated protection is 'more complete than IL-6 alone' rather than simply broader in drug coverage."
+  ],
+  "ai_improvements_over_gt": [
+    "Adds two TP53-based predictive items (wild-type p53 confers resistance to doxorubicin and melphalan in U266), which are clearly described in the paper but absent from ground truth.",
+    "Separates NRAS from KRAS and creates three explicit NRAS codon-12 items (Dex, Dox, Mel), whereas ground truth only tags KRAS in structured fields even though the description mentions NRAS.",
+    "Splits ras-based resistance by individual drug (Dex, Dox, Mel) for both NRAS and KRAS, while ground truth only encodes Melphalan in therapy_names and leaves Dex/Dox implicitly in the text.",
+    "Provides standardized identifiers (Entrez IDs for TP53/NRAS/KRAS, EFO ID for multiple myeloma, RxNorm IDs for dexamethasone/doxorubicin/melphalan), which are correct and not present in the ground truth file.",
+    "Uses a generic 'CODON 12 ACTIVATING MUTATION' label for KRAS/NRAS that matches what the paper actually states (N-ras12, K-ras12) rather than enumerating specific G12A/G12D/G12C/G12S variants that are not mentioned in this article."
+  ],
+  "overall_judgement": {
+    "summary": "For PMID 11050000, the AI extraction is highly faithful to the paper’s core p53 and ras predictive signals and, relative to CIViC ground truth, substantially improves coverage (more genes, more drugs, better structured fields) without introducing any wholly spurious evidence items; its main weaknesses are recall gaps around IL-6-related biology and a small amount of over-interpretive or externalized reasoning.",
+    "strengths": [
+      "Captures all 8 gene–drug predictive tuples clearly supported by the paper, including two TP53 items and six NRAS/KRAS codon-12 items across Dex, Dox, and Mel.",
+      "Aligns correctly with the experimental systems (U266 vs ANBL6, ras12 constructs), with appropriate evidence type (PREDICTIVE) and level (D).",
+      "Improves upon ground truth by representing NRAS explicitly, splitting drugs, and avoiding over-specified G12X variant labels that are not in the article.",
+      "Adds useful structured identifiers (Entrez, EFO, RxNorm) and keeps HGVS/coordinates empty rather than hallucinating them."
+    ],
+    "weaknesses": [
+      "Misses clearly stated IL-6-mediated protection and IL-6 reversal of p53 effects, which could be curated as additional (or mechanistic) evidence items.",
+      "Some evidence descriptions and reasoning contain interpretive language (e.g., 'more complete than IL-6 alone') and an external prevalence estimate for codon 12 mutations that are not grounded in this paper.",
+      "Does not represent the wild-type vs mutant comparator structure explicitly (e.g., p53 status of the background cell line and parental vs transfected ras lines) beyond prose, which may matter for more advanced downstream modeling."
+    ]
+  }
+}

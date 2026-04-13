@@ -1,0 +1,516 @@
+{
+    "paper_id": "PMID_19381019",
+    "total_true_items_in_paper_estimate": 12,
+    "ai_evidence_item_count": 8,
+    "gt_evidence_item_count": 6,
+    "alignment": [
+      {
+        "tuple_id": "FGFR3|S249C|Bladder Carcinoma|R3Mab",
+        "paper_evidence": {
+          "summary": "S249C bladder models show sensitivity to R3Mab (reduced colony growth; inhibited xenograft growth and signaling).",
+          "location": "Figures 5C–E, 7D–E",
+          "quantitative_data": "~55% reduction in colonies >120 μm; xenograft inhibition (qualitative).",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY_RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 1,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "S249C",
+              "disease_name": "Bladder Carcinoma",
+              "therapy_names": "R3Mab",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY_RESPONSE",
+              "evidence_description": "Colony inhibition and xenograft inhibition (includes ~55% colony effect).",
+              "verbatim_quote": "Mentions ~55% colony reduction",
+              "gene_entrez_id": "2261",
+              "disease_efo_id": "EFO_0006544",
+              "variant_hgvs_p": "p.S249C",
+              "extraction_confidence": 0.95
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Good capture of key quantitative colony effect and overall xenograft sensitivity."
+          }
+        ],
+        "gt_items": []
+      },
+  
+      {
+        "tuple_id": "FGFR3|WILD TYPE|Bladder Carcinoma|R3Mab",
+        "paper_evidence": {
+          "summary": "WT FGFR3 bladder xenografts (RT112) show dose-dependent tumor growth suppression with R3Mab.",
+          "location": "Figure 7A",
+          "quantitative_data": "~41% (5 mg/kg) and ~73% (50 mg/kg) suppression at day 27 vs vehicle.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY_RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 2,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "WILD TYPE",
+              "disease_name": "Bladder Carcinoma",
+              "therapy_names": "R3Mab",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY_RESPONSE",
+              "evidence_description": "RT112 xenograft inhibition with ~41% and ~73% effects at day 27.",
+              "verbatim_quote": "Mentions ~41% and ~73% suppression",
+              "gene_entrez_id": "2261",
+              "disease_efo_id": "EFO_0006544",
+              "extraction_confidence": 0.95
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER",
+              "verbatim_quote": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "identifiers": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Directionality and key quantitative suppression are correctly captured."
+          }
+        ],
+        "gt_items": []
+      },
+  
+      {
+        "tuple_id": "FGFR3|R248C|Bladder Carcinoma|R3Mab",
+        "paper_evidence": {
+          "summary": "Ba/F3 cells expressing activated FGFR3R248C show inhibited proliferation with R3Mab.",
+          "location": "Figure 3D",
+          "quantitative_data": "Inhibition shown (figure-based).",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY_RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 5,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "R248C",
+              "disease_name": "Bladder Carcinoma",
+              "therapy_names": "R3Mab",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY_RESPONSE",
+              "evidence_description": "R3Mab inhibits R248C-driven proliferation in Ba/F3 model.",
+              "gene_entrez_id": "2261",
+              "variant_hgvs_p": "p.R248C",
+              "extraction_confidence": 0.90
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "verbatim_quote": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "identifiers": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Correct relationship; limited quantitative detail (figure-only in paper)."
+          }
+        ],
+        "gt_items": []
+      },
+  
+      {
+        "tuple_id": "FGFR3|Y375C|Bladder Carcinoma|R3Mab",
+        "paper_evidence": {
+          "summary": "FGFR3Y375C is FGF1-dependent in Ba/F3; R3Mab blocks FGF1-stimulated proliferation.",
+          "location": "Figure 3E",
+          "quantitative_data": "Complete/near-complete blockade described.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY_RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 4,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "Y375C",
+              "disease_name": "Bladder Carcinoma",
+              "therapy_names": "R3Mab",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY_RESPONSE",
+              "evidence_description": "FGF1-dependent; R3Mab blocks proliferation.",
+              "variant_hgvs_p": "p.Y375C",
+              "extraction_confidence": 0.90
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "verbatim_quote": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "identifiers": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Correct; could benefit from explicit mention that this is ligand-dependent."
+          }
+        ],
+        "gt_items": []
+      },
+  
+      {
+        "tuple_id": "FGFR3|G372C|Bladder Carcinoma|R3Mab",
+        "paper_evidence": {
+          "summary": "FGFR3G372C Ba/F3 proliferation is FGF1-dependent and inhibited by R3Mab.",
+          "location": "Figure 3F",
+          "quantitative_data": "Inhibition shown (figure-based).",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY_RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 6,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "G372C",
+              "disease_name": "Bladder Carcinoma",
+              "therapy_names": "R3Mab",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY_RESPONSE",
+              "variant_hgvs_p": "p.G372C",
+              "extraction_confidence": 0.90
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "verbatim_quote": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "identifiers": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Correct; again, ligand-dependence detail is important to keep explicit."
+          }
+        ],
+        "gt_items": []
+      },
+  
+      {
+        "tuple_id": "FGFR3|K652E|Bladder Carcinoma|R3Mab",
+        "paper_evidence": {
+          "summary": "K652E has weak basal activity; R3Mab does not remove basal but largely blocks ligand-driven proliferation.",
+          "location": "Figure 3G",
+          "quantitative_data": "Effect is context-dependent (ligand-stimulated).",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY_RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 7,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "K652E",
+              "disease_name": "Bladder Carcinoma",
+              "therapy_names": "R3Mab",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY_RESPONSE",
+              "extraction_confidence": 0.85
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "verbatim_quote": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "identifiers": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Direction is correct, but should explicitly preserve the basal-vs-ligand nuance."
+          }
+        ],
+        "gt_items": []
+      },
+  
+      {
+        "tuple_id": "FGFR3|EXPRESSION|Bladder Carcinoma|None",
+        "paper_evidence": {
+          "summary": "FGFR3 knockdown in RT112 suppresses tumor growth and downstream signaling, supporting FGFR3 dependence/oncogenicity in this model.",
+          "location": "Figure 1 (tumor suppression; signaling decreases)",
+          "quantitative_data": "Tumor suppression shown; signaling decreases described.",
+          "evidence_type": "ONCOGENIC",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "ONCOGENICITY"
+        },
+        "ai_items": [
+          {
+            "ai_index": 8,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "EXPRESSION",
+              "disease_name": "Bladder Carcinoma",
+              "therapy_names": "None",
+              "evidence_type": "ONCOGENIC",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "ONCOGENICITY",
+              "extraction_confidence": 0.88
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "disease_name": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "verbatim_quote": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "identifiers": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Conceptually correct; but 'EXPRESSION' is a coarse proxy for 'FGFR3 dependence/knockdown'."
+          }
+        ],
+        "gt_items": []
+      },
+  
+      {
+        "tuple_id": "FGFR3|OVEREXPRESSION|Multiple Myeloma|R3Mab",
+        "paper_evidence": {
+          "summary": "t(4;14)+ MM context: R3Mab shows activity (in vitro in UTMC-2; in vivo xenografts). Fc/ADCC contribution supported by DANA results.",
+          "location": "Figure 8 + ADCC/DANA experiments",
+          "quantitative_data": "Xenograft growth abolished (OPM2, KMS11); DANA loses activity in MM xenografts.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY_RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 3,
+            "fields": {
+              "feature_names": "FGFR3",
+              "variant_names": "OVEREXPRESSION",
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": "R3Mab",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY_RESPONSE",
+              "extraction_confidence": 0.90
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "verbatim_quote": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "identifiers": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Correct directionally, but collapses distinct MM variants (K650E, Y373C) and under-captures ADCC/DANA specifics."
+          }
+        ],
+        "gt_items": [
+          {
+            "gt_index": 10363,
+            "fields": { "feature_names": "FGFR3", "variant_names": "Overexpression", "disease_name": "Multiple Myeloma", "therapy_names": "R3Mab", "evidence_type": "PREDICTIVE", "evidence_level": "D", "evidence_direction": "SUPPORTS", "evidence_significance": "SENSITIVITYRESPONSE" },
+            "notes": "GT includes UTMC-2 + MM xenograft narrative and ADCC/DANA mechanism."
+          },
+          {
+            "gt_index": 10364,
+            "fields": { "feature_names": "FGFR3", "variant_names": "Overexpression", "disease_name": "Multiple Myeloma", "therapy_names": "R3Mab", "evidence_type": "PREDICTIVE", "evidence_level": "D", "evidence_direction": "SUPPORTS", "evidence_significance": "SENSITIVITYRESPONSE" },
+            "notes": "Largely duplicative of 10363 in this GT file."
+          }
+        ]
+      },
+  
+      {
+        "tuple_id": "FGFR3|K650E|Multiple Myeloma|R3Mab",
+        "paper_evidence": {
+          "summary": "OPM2 (FGFR3 K650E) xenograft tumor growth is abolished by R3Mab.",
+          "location": "Figure 8",
+          "quantitative_data": "Tumor growth abolished (curve-level).",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY_RESPONSE"
+        },
+        "ai_items": [],
+        "gt_items": [
+          {
+            "gt_index": 10365,
+            "fields": { "feature_names": "FGFR3", "variant_names": "K650E", "disease_name": "Multiple Myeloma", "therapy_names": "R3Mab", "evidence_type": "PREDICTIVE", "evidence_level": "D", "evidence_direction": "SUPPORTS", "evidence_significance": "SENSITIVITYRESPONSE" },
+            "notes": "Present in GT and supported by paper; missing as its own AI item."
+          }
+        ]
+      },
+  
+      {
+        "tuple_id": "FGFR3|Y373C|Multiple Myeloma|R3Mab",
+        "paper_evidence": {
+          "summary": "KMS11 (FGFR3 Y373C) xenograft tumor growth is abolished by R3Mab.",
+          "location": "Figure 8",
+          "quantitative_data": "Tumor growth abolished (curve-level).",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY_RESPONSE"
+        },
+        "ai_items": [],
+        "gt_items": [
+          {
+            "gt_index": 10366,
+            "fields": { "feature_names": "FGFR3", "variant_names": "Y373C", "disease_name": "Multiple Myeloma", "therapy_names": "R3Mab", "evidence_type": "PREDICTIVE", "evidence_level": "D", "evidence_direction": "SUPPORTS", "evidence_significance": "SENSITIVITYRESPONSE" },
+            "notes": "Present in GT and supported by paper; missing as its own AI item."
+          }
+        ]
+      },
+  
+      {
+        "tuple_id": "FGFR3|K650E|Multiple Myeloma|None",
+        "paper_evidence": {
+          "summary": "OPM2 (FGFR3 K650E) forms tumors as xenografts (oncogenicity evidence in CIViC framing).",
+          "location": "MM xenograft section",
+          "quantitative_data": "Tumor formation described.",
+          "evidence_type": "ONCOGENIC",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "ONCOGENICITY"
+        },
+        "ai_items": [],
+        "gt_items": [
+          {
+            "gt_index": 10383,
+            "fields": { "feature_names": "FGFR3", "variant_names": "K650E", "disease_name": "Multiple Myeloma", "therapy_names": "None", "evidence_type": "ONCOGENIC", "evidence_level": "D", "evidence_direction": "SUPPORTS", "evidence_significance": "ONCOGENICITY" },
+            "notes": "Present in GT; missing in AI."
+          }
+        ]
+      },
+  
+      {
+        "tuple_id": "FGFR3|Y373C|Multiple Myeloma|None",
+        "paper_evidence": {
+          "summary": "KMS11 (FGFR3 Y373C) forms tumors as xenografts (oncogenicity evidence in CIViC framing).",
+          "location": "MM xenograft section",
+          "quantitative_data": "Tumor formation described.",
+          "evidence_type": "ONCOGENIC",
+          "evidence_level": "D",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "ONCOGENICITY"
+        },
+        "ai_items": [],
+        "gt_items": [
+          {
+            "gt_index": 10385,
+            "fields": { "feature_names": "FGFR3", "variant_names": "Y373C", "disease_name": "Multiple Myeloma", "therapy_names": "None", "evidence_type": "ONCOGENIC", "evidence_level": "D", "evidence_direction": "SUPPORTS", "evidence_significance": "ONCOGENICITY" },
+            "notes": "Present in GT; missing in AI."
+          }
+        ]
+      }
+    ],
+  
+    "missing_from_ai": [
+      "FGFR3|K650E|Multiple Myeloma|R3Mab (predictive xenograft sensitivity in OPM2)",
+      "FGFR3|Y373C|Multiple Myeloma|R3Mab (predictive xenograft sensitivity in KMS11)",
+      "FGFR3|K650E|Multiple Myeloma|None (oncogenicity via tumor formation)",
+      "FGFR3|Y373C|Multiple Myeloma|None (oncogenicity via tumor formation)",
+      "Mechanism: DANA Fc-mutant losing activity in MM xenografts (ADCC dependence)",
+      "Safety: reported lack of discernible toxicity in mice"
+    ],
+  
+    "ai_hallucinated_items": [],
+  
+    "ai_improvements_over_gt": [
+      "Adds bladder carcinoma PREDICTIVE evidence for WT FGFR3 and common activating mutants (S249C, R248C, Y375C, G372C, K652E) under R3Mab, absent in this GT file.",
+      "Adds a bladder carcinoma ONCOGENIC/DEPENDENCE-style item (FGFR3 knockdown suppresses tumor growth), absent in this GT file."
+    ],
+  
+    "overall_judgement": {
+      "summary": "AI extraction is strong and precise for bladder carcinoma FGFR3 variant-specific sensitivity to R3Mab, and adds real coverage beyond the provided ground truth. The main weakness is incomplete representation of multiple myeloma: it collapses MM biology into a single 'overexpression' item and misses K650E/Y373C-specific predictive and oncogenic entries present in ground truth and supported by the paper.",
+      "strengths": [
+        "High precision: no clear unsupported tuples detected.",
+        "Good variant-level coverage for bladder hotspot mutations plus WT.",
+        "Captures key quantitative tumor-growth suppression for RT112 and colony reduction for UMUC-14."
+      ],
+      "weaknesses": [
+        "Under-captures MM variant granularity (K650E and Y373C).",
+        "Mechanism (ADCC/DANA) and tolerability signals not represented as structured fields.",
+        "Some stored text fields appear truncated with literal '...'."
+      ]
+    }
+  }
+  

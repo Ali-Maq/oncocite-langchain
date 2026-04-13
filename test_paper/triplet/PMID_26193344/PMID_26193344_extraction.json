@@ -1,0 +1,521 @@
+{
+  "paper_id": "PMID_26193344",
+  "paper_info": {
+    "author": "Aaron P. Rapoport, Edward A. Stadtmauer, Gwendolyn K. Binder-Scholl, Olga Goloubeva, Dan T. Vogl, Simon F. Lacey, Azah Z. Badros, Alfred Garfall, Brendan Weiss, Jeffrey Finklestein, Irina Kulikovskaya, Sanjoy K. Sinha, Shari Kronsberg, Minnal Gupta, Sarah Bond, Luca Melchiori, Joanna E. Brewer, Alan D. Bennett, Andrew B. Gerry, Nicholas J. Pumphrey, Daniel Williams, Helen K. Tayton-Martin, Lillian Ribeiro, Tom Holdich, Saul Yanovich, Nancy Hardy, Jean Yared, Naseem Kerr, Sunita Philip, Sandra Westphal, Don L. Siegel, Bruce L. Levine, Bent K. Jakobsen, Michael Kalos, Carl H. June",
+    "year": "2015",
+    "num_pages": 23,
+    "paper_type": "PRIMARY"
+  },
+  "extraction": {
+    "items": 9,
+    "iterations": 2,
+    "complete": true,
+    "evidence_items": [
+      {
+        "feature_names": [
+          "HLA-A"
+        ],
+        "feature_entrez_ids": [
+          3105
+        ],
+        "variant_names": [
+          "A*0201 POSITIVE STATUS"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "NY-ESO-259 TCR-engineered T-cell therapy"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C146779"
+        ],
+        "therapy_rxcui_ids": [
+          null
+        ],
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "B",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "SENSITIVITY_RESPONSE",
+        "evidence_description": "HLA-A*0201 positive status is required for eligibility and response to NY-ESO-259 TCR-engineered T-cell therapy in multiple myeloma. The affinity-enhanced TCR recognizes the NY-ESO-1/LAGE-1-derived SLLMWITQC peptide only when presented in complex with HLA-A*0201. All 20 patients treated in this trial were HLA-A201 positive, achieving 70% CR/nCR rate and 19.1 month median PFS.",
+        "source_page_numbers": "Introduction, Results - Patients section",
+        "verbatim_quote": "We generated a human-derived affinity-enhanced TCR that recognizes the NY-ESO-1/LAGE-1-derived SLLMWITQC peptide in complex with HLA-A*0201",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "HLA-A*0201 is a mandatory eligibility criterion for this TCR therapy. The engineered TCR can only recognize its target when the peptide is presented by this specific HLA allele, making it a critical predictive biomarker for treatment selection.",
+        "variant_origin": "GERMLINE",
+        "cohort_size": 20,
+        "source_pmid": "26193344",
+        "source_pmcid": "PMC4529359",
+        "source_title": "NY-ESO-1 specific TCR engineered T-cells mediate sustained antigen-specific antitumor effects in myeloma",
+        "source_publication_year": 2015,
+        "source_journal": "Nature Medicine",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null
+      },
+      {
+        "feature_names": [
+          "NY-ESO-1"
+        ],
+        "feature_entrez_ids": [
+          1485
+        ],
+        "variant_names": [
+          "EXPRESSION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "NY-ESO-259 TCR-engineered T-cell therapy",
+          "Autologous Stem Cell Transplantation",
+          "Melphalan"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C146779",
+          "NCIT:C201465",
+          "NCIT:C15562"
+        ],
+        "therapy_rxcui_ids": [
+          null,
+          null,
+          "6718"
+        ],
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "B",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "SENSITIVITY_RESPONSE",
+        "evidence_description": "In HLA-A*0201 positive multiple myeloma patients with NY-ESO-1 expression, treatment with NY-ESO-259 TCR-engineered T-cells following high-dose melphalan (140-200 mg/m2) and autologous stem cell transplantation resulted in 70% (14/20) achieving near complete response (nCR) or complete response (CR) at day 100. At median follow-up of 30.1 months, median progression-free survival was 19.1 months and median overall survival was 32.1 months. The therapy was well-tolerated without clinically apparent cytokine release syndrome.",
+        "source_page_numbers": "Abstract, Results - Clinical Outcomes section",
+        "verbatim_quote": "Of the 20 patients, 14/20 (70%) patients had a near complete response (nCR, defined as myeloma monoclonal band only detectable by sensitive immunofixation assay) or CR",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "Consolidated evidence from original Items 1 and 10, combining both day 100 response rates and long-term survival outcomes from the same cohort. This is highly actionable as NY-ESO-1 expression status guides selection for this specific TCR T-cell therapy.",
+        "variant_origin": "SOMATIC",
+        "cohort_size": 20,
+        "source_pmid": "26193344",
+        "source_pmcid": "PMC4529359",
+        "source_title": "NY-ESO-1 specific TCR engineered T-cells mediate sustained antigen-specific antitumor effects in myeloma",
+        "source_publication_year": 2015,
+        "source_journal": "Nature Medicine",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null
+      },
+      {
+        "feature_names": [
+          "LAGE-1"
+        ],
+        "feature_entrez_ids": [
+          30848
+        ],
+        "variant_names": [
+          "EXPRESSION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "NY-ESO-259 TCR-engineered T-cell therapy",
+          "Autologous Stem Cell Transplantation"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C146779",
+          "NCIT:C201465"
+        ],
+        "therapy_rxcui_ids": [
+          null,
+          null
+        ],
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "B",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "SENSITIVITY_RESPONSE",
+        "evidence_description": "LAGE-1 expression in HLA-A*0201 positive multiple myeloma patients predicted response to NY-ESO-259 TCR-engineered T-cell therapy. LAGE-1 expression frequency was approximately twice that of NY-ESO-1, and 34% of HLA-A2 positive screened patients expressed LAGE-1 and/or NY-ESO-1, making them eligible for treatment. Median PFS was 19.1 months.",
+        "source_page_numbers": "Results - Patients section",
+        "verbatim_quote": "LAGE-1 expression frequency was approximately twice that of NY-ESO-1.",
+        "extraction_confidence": 0.92,
+        "extraction_reasoning": "LAGE-1 is a related cancer testis antigen recognized by the same TCR therapy. Expression status determines treatment eligibility and predicts response.",
+        "variant_origin": "SOMATIC",
+        "cohort_size": 20,
+        "source_pmid": "26193344",
+        "source_pmcid": "PMC4529359",
+        "source_title": "NY-ESO-1 specific TCR engineered T-cells mediate sustained antigen-specific antitumor effects in myeloma",
+        "source_publication_year": 2015,
+        "source_journal": "Nature Medicine",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null
+      },
+      {
+        "feature_names": [
+          "NY-ESO-1"
+        ],
+        "feature_entrez_ids": [
+          1485
+        ],
+        "variant_names": [
+          "LOSS"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "NY-ESO-259 TCR-engineered T-cell therapy"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C146779"
+        ],
+        "therapy_rxcui_ids": [
+          null
+        ],
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "B",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "Loss of NY-ESO-1 expression was associated with resistance to NY-ESO-259 TCR-engineered T-cell therapy and disease progression in multiple myeloma. Progression in 8 of 10 cases correlated with loss of persisting gene-modified cells, and in no cases was antigen-positive tumor relapse observed with engineered cells \u22656 cells/\u03bcl. Two patients relapsed with NY-ESO-1 antigen-negative subclones.",
+        "source_page_numbers": "Results - Clinical Outcomes section",
+        "verbatim_quote": "In no cases was an antigen-positive tumor relapse observed in the presence of engineered cells at \u22656 cells/\u03bcl; as noted above, 2 patients relapsed with NY-ESO-1/LAGE-1 antigen-negative subclones.",
+        "extraction_confidence": 0.93,
+        "extraction_reasoning": "Clear mechanism of resistance through antigen loss/escape. This is actionable as it explains treatment failure and suggests need for multi-antigen targeting strategies.",
+        "variant_origin": "SOMATIC",
+        "cohort_size": 10,
+        "source_pmid": "26193344",
+        "source_pmcid": "PMC4529359",
+        "source_title": "NY-ESO-1 specific TCR engineered T-cells mediate sustained antigen-specific antitumor effects in myeloma",
+        "source_publication_year": 2015,
+        "source_journal": "Nature Medicine",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null
+      },
+      {
+        "feature_names": [
+          "LAGE-1"
+        ],
+        "feature_entrez_ids": [
+          30848
+        ],
+        "variant_names": [
+          "LOSS"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "NY-ESO-259 TCR-engineered T-cell therapy"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C146779"
+        ],
+        "therapy_rxcui_ids": [
+          null
+        ],
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "B",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "Loss of LAGE-1 expression was associated with treatment resistance and disease progression. At relapse, loss of LAGE-1 transcripts in marrow specimens correlated with tumor escape. Four patients had increased CD138 transcripts in the absence of NY-ESO-1/LAGE-1 transcripts, suggesting selection for antigen escape subclones lacking target tumor antigen.",
+        "source_page_numbers": "Results - Evidence for NY-ESO-1/LAGE-1 tumor antigen targeting section",
+        "verbatim_quote": "Four patients had an increase in CD138 transcripts in the absence of NY-ESO-1/LAGE-1 transcripts, suggesting that the treatment was potentially selecting for tumor escape subclones that lacked target tumor antigen.",
+        "extraction_confidence": 0.91,
+        "extraction_reasoning": "Demonstrates antigen escape mechanism of resistance. Clinically actionable as it explains treatment failure and suggests monitoring antigen expression during therapy.",
+        "variant_origin": "SOMATIC",
+        "cohort_size": 20,
+        "source_pmid": "26193344",
+        "source_pmcid": "PMC4529359",
+        "source_title": "NY-ESO-1 specific TCR engineered T-cells mediate sustained antigen-specific antitumor effects in myeloma",
+        "source_publication_year": 2015,
+        "source_journal": "Nature Medicine",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null
+      },
+      {
+        "feature_names": [
+          "NY-ESO-1"
+        ],
+        "feature_entrez_ids": [
+          1485
+        ],
+        "variant_names": [
+          "EXPRESSION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "NY-ESO-259 TCR-engineered T-cell therapy",
+          "Lenalidomide"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C146779",
+          "NCIT:C2668"
+        ],
+        "therapy_rxcui_ids": [
+          null,
+          "342369"
+        ],
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "SENSITIVITY_RESPONSE",
+        "evidence_description": "In a patient (pt 253) who received a second NY-ESO-259 TCR-engineered T-cell infusion followed by low-dose lenalidomide (10 mg/day), marrow biopsy at day +38 demonstrated marked decrease in plasmacytosis with extensive CD138+ myeloma cell necrosis. The combination resulted in considerable increase in CD8+ T-cells and antitumor response with evidence of antigenic spreading.",
+        "source_page_numbers": "Results - T-cell persistence, trafficking, and function section",
+        "verbatim_quote": "Low dose lenalidomide (10 mg/day) was started on day +24. Two weeks later on day +38, the marrow biopsy demonstrated a considerable increase in the abundance of CD8+ T-cells concomitant with a marked decrease in marrow plasmacytosis with extensive CD138+ myeloma cell necrosis.",
+        "extraction_confidence": 0.88,
+        "extraction_reasoning": "Case report showing enhanced response with lenalidomide combination. Actionable for treatment sequencing and combination strategy in NY-ESO-1 positive myeloma.",
+        "variant_origin": "SOMATIC",
+        "cohort_size": 1,
+        "source_pmid": "26193344",
+        "source_pmcid": "PMC4529359",
+        "source_title": "NY-ESO-1 specific TCR engineered T-cells mediate sustained antigen-specific antitumor effects in myeloma",
+        "source_publication_year": 2015,
+        "source_journal": "Nature Medicine",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null
+      },
+      {
+        "feature_names": [
+          "NY-ESO-1"
+        ],
+        "feature_entrez_ids": [
+          1485
+        ],
+        "variant_names": [
+          "EXPRESSION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [],
+        "therapy_ncit_ids": [],
+        "therapy_rxcui_ids": [],
+        "evidence_type": "PROGNOSTIC",
+        "evidence_level": "B",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "POOR_OUTCOME",
+        "evidence_description": "Higher levels of NY-ESO-1 expression over time in marrow were significantly associated with worse overall survival (p=0.037) and marginally with worse progression-free survival (p=0.094) in patients treated with NY-ESO-259 TCR-engineered T-cells post-ASCT. Longitudinal NY-ESO-1 levels predicted increased hazard of death (positive coefficient in joint model). NY-ESO-1 expression is correlated with tumor proliferation and high-risk features.",
+        "source_page_numbers": "Introduction, Results - Clinical Outcomes section",
+        "verbatim_quote": "Up to 60% of advanced myelomas have been reported to express NY-ESO-1, a feature correlated to tumor proliferation and high risk features.",
+        "extraction_confidence": 0.9,
+        "extraction_reasoning": "REVISED per Critic feedback: Reclassified from DIAGNOSTIC to PROGNOSTIC. NY-ESO-1 expression associates with advanced disease and poor prognosis. Therapy_names removed as this is prognostic association independent of specific treatment, though observed in treatment context.",
+        "variant_origin": "SOMATIC",
+        "cohort_size": 20,
+        "source_pmid": "26193344",
+        "source_pmcid": "PMC4529359",
+        "source_title": "NY-ESO-1 specific TCR engineered T-cells mediate sustained antigen-specific antitumor effects in myeloma",
+        "source_publication_year": 2015,
+        "source_journal": "Nature Medicine",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null
+      },
+      {
+        "feature_names": [
+          "NY-ESO-1"
+        ],
+        "feature_entrez_ids": [
+          1485
+        ],
+        "variant_names": [
+          "EXPRESSION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "NY-ESO-259 TCR-engineered T-cell therapy"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C146779"
+        ],
+        "therapy_rxcui_ids": [
+          null
+        ],
+        "evidence_type": "PROGNOSTIC",
+        "evidence_level": "B",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "POOR_OUTCOME",
+        "evidence_description": "In the context of NY-ESO-259 TCR-engineered T-cell therapy, higher NY-ESO-1 expression levels in marrow over time (days 0-180 post-transplant) were inversely correlated with T-cell persistence in blood (p=0.022). T-cell persistence was a marker of treatment response, thus higher antigen burden during treatment was associated with reduced T-cell persistence and poorer outcomes.",
+        "source_page_numbers": "Results - Clinical Outcomes section",
+        "verbatim_quote": "Between days 0 through 180 post-transplant the T-cell persistence in blood was inversely correlated with the level of NY-ESO-1 expression in the marrow (p=0.022)",
+        "extraction_confidence": 0.88,
+        "extraction_reasoning": "REVISED per Critic feedback: Clarified that this is a treatment-specific prognostic marker where antigen burden during TCR-T therapy inversely correlates with T-cell persistence, hence therapy_names is appropriate here to indicate treatment context.",
+        "variant_origin": "SOMATIC",
+        "cohort_size": 20,
+        "source_pmid": "26193344",
+        "source_pmcid": "PMC4529359",
+        "source_title": "NY-ESO-1 specific TCR engineered T-cells mediate sustained antigen-specific antitumor effects in myeloma",
+        "source_publication_year": 2015,
+        "source_journal": "Nature Medicine",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null
+      },
+      {
+        "feature_names": [
+          "LAGE-1"
+        ],
+        "feature_entrez_ids": [
+          30848
+        ],
+        "variant_names": [
+          "EXPRESSION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [],
+        "therapy_ncit_ids": [],
+        "therapy_rxcui_ids": [],
+        "evidence_type": "PROGNOSTIC",
+        "evidence_level": "B",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "POOR_OUTCOME",
+        "evidence_description": "LAGE-1 expression levels over time showed marginal association with overall survival (p=0.055) and progression-free survival (p=0.065) in multiple myeloma patients treated with NY-ESO-259 TCR-engineered T-cells. Higher LAGE-1 marker levels predicted worse prognosis (positive coefficient in joint model).",
+        "source_page_numbers": "Results - Clinical Outcomes section",
+        "verbatim_quote": "longitudinal expression of NY-ESO-1 and LAGE-1 was associated with OS, and the corresponding p-values for their effects in the model are 0.037 and 0.055, respectively",
+        "extraction_confidence": 0.87,
+        "extraction_reasoning": "REVISED per Critic feedback: Removed bortezomib from therapy_names and therapy_names list entirely. The prognostic association is based on statistical modeling in the TCR-T cohort. Bortezomib resistance mentioned from microarray data is not adequately supported from this study's primary data.",
+        "variant_origin": "SOMATIC",
+        "cohort_size": 20,
+        "source_pmid": "26193344",
+        "source_pmcid": "PMC4529359",
+        "source_title": "NY-ESO-1 specific TCR engineered T-cells mediate sustained antigen-specific antitumor effects in myeloma",
+        "source_publication_year": 2015,
+        "source_journal": "Nature Medicine",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [],
+        "cancer_cell_fraction": null
+      }
+    ]
+  },
+  "plan": {
+    "paper_type": "PRIMARY",
+    "expected_items": "8-12",
+    "key_variants": "NY-ESO-1 (CTAG-1B) expression status, LAGE-1 expression status, t(4;14) translocation, del17p13, HLA-A*0201 positive status",
+    "key_therapies": "NY-ESO-1 TCR-engineered T-cells (NY-ESO-259 TCR T-cells), autologous stem cell transplantation (ASCT), melphalan (high-dose 140-200 mg/m2), lenalidomide (10 mg/day maintenance)",
+    "key_diseases": "Multiple myeloma (MM), advanced/relapsed multiple myeloma, high-risk multiple myeloma",
+    "focus_sections": "Abstract (clinical outcomes summary), Results - Patients (patient characteristics and treatment details), Results - Clinical Outcomes (response rates, adverse events, survival data), Results - T-cell persistence (biomarker data), Results - Evidence for NY-ESO-1/LAGE-1 tumor antigen targeting (mechanism of action), Discussion (comparative efficacy and clinical implications)",
+    "extraction_notes": "PRIORITY EXTRACTION GUIDANCE:\n\n1. PRIMARY EVIDENCE ITEMS (Predictive - Sensitivity):\n   - NY-ESO-1/LAGE-1 POSITIVE status \u2192 NY-ESO-259 TCR T-cells \u2192 Multiple Myeloma: 80% response rate (16/20), 70% CR/nCR rate (14/20), median PFS 19.1 months, median OS 32.1 months. This is the main therapeutic evidence.\n   - HLA-A*0201 POSITIVE status required for NY-ESO-259 TCR T-cells eligibility in MM (biomarker requirement)\n   \n2. SECONDARY PREDICTIVE EVIDENCE:\n   - High-risk cytogenetics (t(4;14), del17p13) patients showed responses to TCR T-cell therapy (7/20 had high-risk features, outcomes included in overall response rates)\n   - Lenalidomide combination with TCR T-cells (patient 253 case demonstrates enhanced response)\n   \n3. PROGNOSTIC EVIDENCE:\n   - NY-ESO-1/LAGE-1 expression levels inversely correlated with OS (p=0.037 for NY-ESO-1, p=0.055 for LAGE-1) - higher antigen expression associated with worse outcomes\n   - LAGE-1 expression correlates with bortezomib resistance (mentioned in Discussion)\n   \n4. RESISTANCE/NEGATIVE PREDICTIVE:\n   - Antigen escape (loss of NY-ESO-1/LAGE-1 expression) associated with disease progression after initial response\n   - Loss of engineered T-cell persistence associated with relapse (8/10 progressions)\n\n5. SAFETY CONSIDERATIONS:\n   - Well-tolerated therapy without severe cytokine release syndrome (important contrast to CAR T-cells)\n   - Autologous GVHD occurred in 3/20 patients (mild grade)\n   \n6. KEY STATISTICS TO EXTRACT:\n   - Response rates: 80% ORR, 70% CR/nCR, 10% VGPR, 10% PR/SD/PD\n   - Survival: median PFS 19.1 months (95% CI 8.5-NR), median OS 32.1 months\n   - Treatment details: mean 2.4\u00d710^9 engineered T-cells infused on day +2 post-ASCT\n   - Patient population: 25% prior ASCT, 60% cytogenetic abnormalities, 35% high-risk\n\nEXTRACTION NOTES:\n- Focus on ACTIONABLE variant-drug-disease relationships\n- NY-ESO-1/LAGE-1 expression status is the key predictive biomarker for TCR T-cell therapy eligibility\n- HLA-A*0201 is a prerequisite biomarker (no therapeutic benefit without this HLA type)\n- Emphasize that this is post-ASCT setting (line of therapy context important)\n- Several case examples (patients 250, 253, 252, 260) provide detailed clinical narratives that support evidence items\n- The inverse correlation between antigen persistence and OS suggests both predictive (for therapy) and prognostic (for outcome) implications\n- Antigen escape represents resistance mechanism - important for clinical understanding\n- Consider extracting evidence for combination approaches (lenalidomide + TCR T-cells based on patient 253)\n- Comparison to standard ASCT outcomes (CR rate typically <40%) provides clinical context for benefit"
+  },
+  "final_critique": {
+    "overall_assessment": "APPROVE",
+    "item_feedback": "{\n  \"item_1_HLA-A*0201\": {\n    \"status\": \"APPROVE\",\n    \"comment\": \"Excellent addition addressing the critical missing evidence. HLA-A*0201 requirement is properly classified as PREDICTIVE with appropriate quote and reasoning. Variant_origin GERMLINE is correct for HLA allele.\"\n  },\n  \"item_2_NY-ESO-1_EXPRESSION_PREDICTIVE\": {\n    \"status\": \"APPROVE\",\n    \"comment\": \"Excellent consolidation of previous Items 1 and 10. Successfully combines day 100 response rates (70% CR/nCR) with long-term survival outcomes (19.1 months median PFS, 32.1 months median OS) into a comprehensive evidence item. Eliminates redundancy while maintaining all critical data.\"\n  },\n  \"item_3_LAGE-1_EXPRESSION_PREDICTIVE\": {\n    \"status\": \"APPROVE\",\n    \"comment\": \"Well-supported PREDICTIVE evidence for related antigen. Quote verified, cohort size accurate.\"\n  },\n  \"item_4_NY-ESO-1_LOSS_RESISTANCE\": {\n    \"status\": \"APPROVE\",\n    \"comment\": \"Clear resistance mechanism through antigen escape. Quote verified with specific quantitative threshold (\u22656 cells/\u03bcl). Cohort size appropriate for subset analysis.\"\n  },\n  \"item_5_LAGE-1_LOSS_RESISTANCE\": {\n    \"status\": \"APPROVE\",\n    \"comment\": \"Parallel resistance mechanism to Item 4. Quote accurately describes antigen escape selection. Well-documented.\"\n  },\n  \"item_6_NY-ESO-1_with_Lenalidomide\": {\n    \"status\": \"APPROVE\",\n    \"comment\": \"Valid case report (n=1) showing combination therapy benefit. Evidence level D appropriate. Quote verified. Actionable for combination strategy.\"\n  },\n  \"item_7_NY-ESO-1_PROGNOSTIC\": {\n    \"status\": \"APPROVE\",\n    \"comment\": \"Successfully reclassified from DIAGNOSTIC to PROGNOSTIC as requested. Therapy_names appropriately removed (empty list). Quote verified. Statistical support (p=0.037 for OS) documented. Extraction reasoning clearly explains the revision.\"\n  },\n  \"item_8_NY-ESO-1_TREATMENT-SPECIFIC_PROGNOSTIC\": {\n    \"status\": \"APPROVE\",\n    \"comment\": \"Appropriately distinguished from Item 7 as treatment-specific prognostic marker. The inclusion of therapy_names is justified given this measures antigen burden during TCR-T therapy affecting T-cell persistence. Quote verified with statistical significance (p=0.022). Extraction reasoning clearly explains this distinction.\"\n  },\n  \"item_9_LAGE-1_PROGNOSTIC\": {\n    \"status\": \"APPROVE\",\n    \"comment\": \"Successfully revised per feedback: therapy_names removed (empty list), bortezomib reference removed. Quote verified. Statistical support documented (p=0.055 for OS, p=0.065 for PFS). Extraction reasoning explains changes.\"\n  }\n}",
+    "missing_items": "None. All clinically actionable evidence from this paper has been captured. The critical HLA-A*0201 requirement has been added, and the evidence set now comprehensively covers:\n- Patient eligibility criteria (HLA-A*0201, NY-ESO-1/LAGE-1 expression)\n- Treatment sensitivity/response (Items 2, 3, 6)\n- Resistance mechanisms (Items 4, 5)\n- Prognostic associations (Items 7, 8, 9)",
+    "extra_items": "None. All redundancy has been eliminated:\n- Previous Items 1 and 10 successfully consolidated into Item 2\n- Patient 250 case report appropriately removed as redundant detail\n- Each remaining item represents distinct, non-overlapping clinical evidence",
+    "summary": "**ITERATION 2 ASSESSMENT: APPROVE**\n\nThe extractor has successfully addressed ALL feedback from Iteration 1. This revised extraction is ready for final approval.\n\n**Changes Successfully Implemented:**\n1. \u2713 Added HLA-A*0201 requirement as PREDICTIVE evidence (Item 1) - critical eligibility criterion\n2. \u2713 Consolidated Items 1 & 10 into comprehensive Item 2 combining day 100 response and long-term survival\n3. \u2713 Reclassified Item 8 from DIAGNOSTIC to PROGNOSTIC (now Item 7)\n4. \u2713 Removed redundant patient 250 case report (previously Item 9)\n5. \u2713 Clarified PROGNOSTIC items (Items 7, 8, 9) with appropriate therapy_names usage\n\n**Quality Assessment:**\n- **Accuracy**: All 9 verbatim quotes verified in paper text. All statistics match source data precisely.\n- **Completeness**: All required fields present. Extended fields (variant_origin, cohort_size) appropriately populated.\n- **Classification**: Proper distinction between PREDICTIVE (Items 1-6) and PROGNOSTIC (Items 7-9) evidence types.\n- **Evidence Levels**: Appropriate assignment (B for phase I/II cohort, D for case report).\n- **No Redundancy**: Each item represents distinct clinical evidence with no overlap.\n- **Actionability**: All items meet CIViC actionability criteria - each would inform clinical decision-making.\n\n**Strengths:**\n- HLA-A*0201 requirement now properly captured as mandatory eligibility criterion\n- Thoughtful consolidation eliminated redundancy while preserving all critical data\n- Clear distinction between general prognostic value (Item 7) and treatment-specific prognostic markers (Item 8)\n- Resistance mechanisms through antigen escape well-documented (Items 4, 5)\n- Combination therapy evidence preserved (Item 6)\n\n**Final Count**: 9 evidence items (within expected 8-12 range for primary research paper)\n\n**Recommendation**: APPROVE for final extraction. No further revisions needed.",
+    "iteration": 2
+  },
+  "paper_content": {
+    "title": "NY-ESO-1 specific TCR engineered T-cells mediate sustained antigen-specific antitumor effects in myeloma",
+    "authors": [
+      "Aaron P. Rapoport",
+      "Edward A. Stadtmauer",
+      "Gwendolyn K. Binder-Scholl",
+      "Olga Goloubeva",
+      "Dan T. Vogl",
+      "Simon F. Lacey",
+      "Azah Z. Badros",
+      "Alfred Garfall",
+      "Brendan Weiss",
+      "Jeffrey Finklestein",
+      "Irina Kulikovskaya",
+      "Sanjoy K. Sinha",
+      "Shari Kronsberg",
+      "Minnal Gupta",
+      "Sarah Bond",
+      "Luca Melchiori",
+      "Joanna E. Brewer",
+      "Alan D. Bennett",
+      "Andrew B. Gerry",
+      "Nicholas J. Pumphrey",
+      "Daniel Williams",
+      "Helen K. Tayton-Martin",
+      "Lillian Ribeiro",
+      "Tom Holdich",
+      "Saul Yanovich",
+      "Nancy Hardy",
+      "Jean Yared",
+      "Naseem Kerr",
+      "Sunita Philip",
+      "Sandra Westphal",
+      "Don L. Siegel",
+      "Bruce L. Levine",
+      "Bent K. Jakobsen",
+      "Michael Kalos",
+      "Carl H. June"
+    ],
+    "journal": "Nature Medicine",
+    "year": 2015,
+    "paper_type": "PRIMARY",
+    "abstract": "Despite recent therapeutic advances, multiple myeloma (MM) remains largely incurable. Herein we report results of a phase I/II trial to evaluate the safety and activity of autologous T-cells engineered to express an affinity-enhanced T-cell receptor (TCR) recognizing a naturally processed peptide shared by the cancer-testis antigens NY-ESO-1 and LAGE-1. Twenty patients with antigen-positive MM received an average 2.4\u00d710^9 engineered T cells two days after autologous stem cell transplant (ASCT). Infusions were well-tolerated without clinically apparent cytokine release syndrome, despite high IL-6 levels. Engineered T-cells expanded, persisted, trafficked to marrow and exhibited a cytotoxic phenotype. Persistence of engineered T cells in blood was inversely associated with levels of NY-ESO-1 in the marrow. Disease progression was associated with loss of T cell persistence or antigen escape, consistent with the expected mechanism of action of the transferred T cells. Encouraging clinical responses were observed in 16 of 20 patients (80%) with advanced disease, with a median progression free survival of 19.1 months. NY-ESO-1/LAGE-1 TCR-engineered T-cells were safe, trafficked to marrow and showed extended persistence that correlated with clinical activity against antigen-positive myeloma.",
+    "sections": [
+      {
+        "name": "Full Text",
+        "page_numbers": [],
+        "content": "INTRODUCTION: Allogeneic stem cell transplants can eradicate myeloma through the T-cell mediated \"graft-vs-myeloma\" (GVM) effect but success is limited by morbidity and mortality from infections and organ toxicity. Autologous stem cell transplantation (ASCT) is less toxic but rarely curative due in part to the lack of GVM effect. Better clinical outcomes following ASCT for myeloma are associated with rapid post-transplant lymphocyte recovery. Tumor-reactive T-cells present at low frequencies in the marrow and blood of myeloma patients have the potential to target myeloma cells upon activation. Thus autologous immune-mediated control of myeloma may be possible.\n\nWe and others have studied whether cancer vaccines and autologous T-cell transfer administered post-ASCT could enhance immune reconstitution and improve post-transplant clinical outcomes in myeloma. A key problem with these approaches however, is that post-transplant tumor responses remain inadequate. A likely reason for this is that tumor antigens are typically self-antigens which would result in deletion of high affinity T-cells capable of recognizing effective tumor antigens during the process of thymic maturation. Moreover, advanced cancers are often immune edited resulting in reduced antigen presentation, thus rendering low affinity T cells incapable of tumor interaction. Synthetic biology may help to overcome these problems by enabling the genetic engineering of autologous T cells to express either chimeric antigen receptors (CARs) or affinity-enhanced T-cell receptors (TCRs) that recognize known tumor target antigens. Early clinical results using CAR-modified T-cells have been encouraging but also highlight the risks from cytokine release syndrome (CRS).\n\nTCR engineered T cells have been employed in a number of early-stage clinical trials for melanoma, although very short-term expression of these transgenic TCRs (usually < 1 month) likely compromised their clinical impact. We generated a human-derived affinity-enhanced TCR that recognizes the NY-ESO-1/LAGE-1-derived SLLMWITQC peptide in complex with HLA-A*0201 (NY-ESO-259) as previously described and clinically tested in patients with metastatic synovial cell sarcoma and melanoma. NY-ESO-1 (also known as CTAG-1B) is an immunogenic cancer testis antigen (CTA) associated with spontaneous and vaccine-induced immunity that can lead to clinical cancer responses. Up to 60% of advanced myelomas have been reported to express NY-ESO-1, a feature correlated to tumor proliferation and high risk features. We hypothesized that adoptive transfer of NY-ESO-259 TCR-engineered T-cells would improve the duration and depth of post-ASCT clinical responses in HLA-A201-positive patients with advanced NY-ESO-1/LAGE-1-expressing MM.\n\nRESULTS - Patients: A flow diagram depicting the trial design is shown in Figure 1 and a consort diagram is provided in Supplementary Figure 1. We screened HLA-A201 positive patients for expression of NY-ESO-1 and/or the related cancer testis antigen LAGE-1 in their myeloma cells. A third (34%) of the HLA-A2 positive patients who were screened expressed NY-ESO-1 and/or LAGE-1 mRNA by PCR and were therefore eligible for enrollment. LAGE-1 expression frequency was approximately twice that of NY-ESO-1. Supplementary Table 1 summarizes demographics and pre-transplant characteristics. All patients had symptomatic myeloma with active disease, representing an advanced stage population including 5 (25%) with prior ASCT and 12 (60%) with cytogenetic abnormalities, including 7 (35%) categorized as high-risk [t(4;14), del17p13, or complex]. Peripheral blood mononuclear cells obtained by steady-state apheresis were transduced with lentiviral vector encoding the affinity-enhanced NY-ESO-259 TCR and expanded using anti-CD3/28 antibody conjugated paramagnetic microbeads. After autologous stem cell collection, patients were conditioned with high-dose melphalan (140-200 mg/m2) followed 2 days later by autologous stem cell infusion. On day +2 after stem cell transplantation, patients received a mean of 8 billion total CD3 T-cells (range 1-10 billion) with an average transduction efficiency of 33% (range 18%-49%). A mean of 2.4 billion NY-ESO-259-engineered CD3 T-cells (range 0.45-3.9 billion) were infused, which were comprised of >90% CD62L expressing cells, including a variable percentage of CD4 and CD8 T cells (Supplementary Table 2).\n\nRESULTS - T-cell persistence, trafficking, and function: T-cell expansion, persistence and trafficking to marrow were evaluated using a qualified Q-RT-PCR assay. Peak numbers of engineered T-cells were detected at study day 14, and median persistence in peripheral blood at days 7, 14, 28 and 42 post-ASCT was 104 (range 16-741), 489 (range 63-1850), 107 (range 3-881), and 51 (range 1-237), respectively (Fig. 2a). Peak percentages of engineered cells in leukocytes were found on day 7 (median 47%; range 10%-80%), during the white blood cell (WBC) nadir (Fig. 2b), and declined thereafter to a median of 3% (range <1%-11%) and 1% (range <1%-9%) on days 28 and 180, respectively.\n\nA subset of patients (13/20) underwent marrow biopsies at multiple timepoints post-transplant; engineered cells were detected in marrow from day 7 through day 180 (Fig. 2c). The near 100% marking in marrow biopsy at day 7 is inconsistent with flow and histochemistry, and is higher than in blood. This suggests enrichment of gene-marked cells at the site of antigen (marrow), and is possibly due in part, to preferential infiltration of marrow with engineered cells containing multiple integration events. This data suggests that multiple integration events may improve T cell reactivity to the targeted antigen. A majority of patients (15/20) underwent marrow biopsy for response assessment at day 100; 14/15 had detectable engineered cells, with 9/15 with >1% and 14/15 with >0.1% marking (Supplementary Fig. 2). NY-ESO-259 expressing T-cells were detected by dextramer staining in blood and marrow through 2 years of follow-up (Supplementary Fig. 3). Of 10 patients who reached two years of follow-up, 9 continued to have detectable engineered cells in the peripheral blood (Supplementary Table 3). Serum cytokine analysis was performed in all patients. A significant elevation of IL-6 was detected in all patients (median 22-fold increase; range 8- to 2272-fold) within 7-28 days post infusion, which overlapped with the period of maximum T cell expansion (Supplementary Table 4). Four responding patients with high levels of engineered T cells were evaluated by flow cytometry for cytokine production (IFN-\u03b3) and cytotoxic potential (granzyme B production and CD107\u03b1 surface expression) in response to peptide loaded targets. The data show that polyfunctional T cells that were generated during manufacturing engrafted in the patients where they remained functional in blood for up to a year after infusion (Fig. 2d).\n\nImmunohistochemical analysis of marrow from one of 4 patients who had day +7 marrow biopsies demonstrated that residual CD138+ myeloma was associated with CD8 T-cell infiltration (Fig. 3a). A substantial fraction of the infiltrating CD3+ cells (11.2%) were engineered (Fig. 3b). As per protocol, patients who relapsed with NYESO-1/LAGE-1 antigen-positive disease were permitted to receive a second gene-modified T cell infusion without a second ASCT. In one case (pt 253) the marrow was densely packed with CD138+ myeloma cells before the second infusion. CD138+ myeloma cell numbers decreased at D+24 after reinfusion in association with an increase in CD8+ T-cells in that compartment. Low dose lenalidomide (10 mg/day) was started on day +24. Two weeks later on day +38, the marrow biopsy demonstrated a considerable increase in the abundance of CD8+ T-cells concomitant with a marked decrease in marrow plasmacytosis with extensive CD138+ myeloma cell necrosis (Fig. 3c; also see the legend to Supplementary Fig. 4 for a detailed clinical summary). Notably, while engineered T-cells were detected in marrow at the D+38 timepoint, deep-sequencing-based T cell receptor spectratyping revealed the presence in the marrow biopsies of two dominant TCR clonotypes that were distinct from the V\u03b213.1 clonotype expressed by the NY-ESO-259 engineered cells (see Supplementary Fig. 4). Collectively, these results suggest that anti-myeloma-specific T-cell activity mediated by infusion of engineered autologous T-cells, and potentially enhanced by immunomodulatory treatment with lenalidomide, may result in antigenic spreading and the development of a secondary endogenous anti-tumor immune response.\n\nA representative example of the myeloma tumor targeting that we observed in patients with advanced and refractory disease is provided by the clinical course of patient 250. This 72 year old patient had a prior ASCT with a 2 year response duration, after which he relapsed with a high-risk 4;14 translocation. After additional treatment (using both bortezomib and lenalidomide), he developed progressive disease (PD) with high serum free kappa light chain levels, extensive osteolytic bone lesions associated with large adjacent soft tissue masses, and a biopsy-proven pancreatic plasmacytoma. He attained a stringent complete response (CR) (Fig. 4a), accompanied by expansion and then durable persistence of engineered T-cells in marrow and blood, with approximately 1% of CD3+ lymphocytes expressing the transgenic receptor at one year (Fig. 4a, b). This expansion and persistence was accompanied by normalization of marrow and clearance of the pancreatic plasmacytoma (Fig. 4c and d). The patient later relapsed and at relapse, he patient developed progression in the abdominal mesentery and pelvic soft tissue. Notably, the patient's marrow remained free of myeloma cells and expression of NY-ESO-1/LAGE-1 was absent until his death from disease progression at 2 years post engineered T cell infusion, suggesting ongoing immune surveillance and antigen escape. Of note, figure 2d demonstrates the polyfunctionality and cytotoxic potential of the gene-modified T-cells isolated from this patient, which persisted for at least 1 year after infusion.\n\nRESULTS - Evidence for NY-ESO-1/LAGE-1 tumor antigen targeting: To evaluate antigen-specific anti-tumor activity of the engineered T-cells, we performed qRT-PCR analysis on marrow specimens collected from patients, and quantitatively assessed transcript levels for NY-ESO-1 and LAGE-1, as well as CD138 as a measure of myeloma/plasma cell burden. Relative to levels at enrollment, loss of NY-ESO-1 and LAGE-1 transcripts was observed in 12/15 patients at day 100, and in 11/13 at day 180. At day 100, 3/15 patients had detectable levels of NY-ESO-1 and LAGE-1 transcripts, an observation that accompanied a drop of engineered cells in the peripheral blood to very low or undetectable levels and preceded relapse in two cases (Fig. 5). Four patients had an increase in CD138 transcripts in the absence of NY-ESO-1/LAGE-1 transcripts, suggesting that the treatment was potentially selecting for tumor escape subclones that lacked target tumor antigen. Patient 256 and 212 were in confirmed complete responses, despite elevated CD138 transcripts, which may reflect polyclonal plasma cell recovery. Taken together, these data suggest induction of robust and, in a subset of patients, persistent tumor antigen-specific immune responses. Two patients (252 and 260) with aggressive relapsed and refractory disease prior to study treatment are also instructive with respect to antigen-specific targeting (Supplemental Note).\n\nThese patients had partial myeloma responses following ASCT and NY-ESO-259-engineered T cell infusion which were ongoing at 2 years and 9 months respectively without lenalidomide maintenance. Serial followup marrow examinations showed that the residual myeloma cells were NY-ESO-1/LAGE-1-negative by PCR, suggesting that the engineered T cells selectively eliminated the antigen-positive myeloma fraction which may have been responsible for the more aggressive clinical courses that were observed in these patients before transplant. Additional details on these 2 patients are provided in the Supplemental data.\n\nRESULTS - Clinical Outcomes: There were no treatment related fatalities. All 7 serious adverse events (SAEs) resolved (Supplementary Table 5). Seventeen (17) adverse events occurred which were at least probably related to the treatment, all of grade 3 or lower (Supplementary Table 6). Skin rash with lymphocytosis occurred in 4/20 patients. Some patients had a diarrheal syndrome that occurred later than expected for melphalan-induced mucositis, and in 3/20 patients was confirmed to be autologous graft versus host disease (aGVHD) (Supplementary Fig. 5). Analysis of engineered T-cells in inflamed and normal colonic tissue and peripheral blood was performed in patients who developed aGVHD. While engineered T-cells were present in inflamed tissue, they were proportionately lower at sites of inflammation compared to adjacent non-inflamed tissues suggesting that they were not driving the event (Supplementary Table 7). Furthermore we have previously observed aGVHD in the gut and skin after post-ASCT adoptive transfers of activated but non-gene modified T cells.\n\nOverall and progression-free survival (OS and PFS) functions were estimated using the Kaplan-Meier method (Figs. 6a and 6b). With a median follow-up of 21.1 months (the corresponding 95% CI: 18.6-23 months), 10/20 patients (50%) were alive and progression-free, 15/20 (75%) patients were alive, and 5/20 (25%) died after disease progression. All 20 patients were assessed for clinical response at day 100, which was prior to lenalidomide maintenance received by a subset of patients (Supplementary Table 1). Of the 20 patients, 14/20 (70%) patients had a near complete response (nCR, defined as myeloma monoclonal band only detectable by sensitive immunofixation assay) or CR while 2 patients had a very good partial response (VGPR, \u226590% reduction in paraprotein levels), 2 had a partial response (PR, 50-90% reduction), 1 had stable disease (SD, < 50% reduction), and 1 had progressive disease (PD). Nine patients experienced gradual improvements in tumor markers and/or disease response between the first and second disease assessment at day 100 (Supplementary Fig. 6), consistent with delayed immune-mediated antitumor effects as reported in other trials. Three patients (206, 256, and 257) had ongoing responses at the time of transplant from additional therapy given post enrollment. We note that as of March, 2014, the estimated median PFS time was 19.1 months, the corresponding 95% CI lower bound was 8.5 months, and the upper bound has not been reached yet. As of April, 2015 with a median follow up of 30.1 months the median PFS has remained the same at 19.1 months, and the median OS has increased to 32.1 months (Supplementary Fig. 7). A swimmer plot shows the duration and depth of response for each patient, and associated levels of T cell persistence at major timepoints (Fig. 6c). Progression in 8 of 10 cases correlated with a loss of persisting gene-modified cells in the peripheral blood, and the myeloma was antigen-positive upon relapse. In no cases was an antigen-positive tumor relapse observed in the presence of engineered cells at \u22656 cells/\u03bcl (Supplementary Table 8); as noted above, 2 patients relapsed with NY-ESO-1/LAGE-1 antigen-negative subclones.\n\nAn association between LAGE-1, NY-ESO-1, CD138 and T-cell persistence in the blood was estimated using mixed-effects modeling. Notably, there was a significant inverse correlation between target antigen levels and gene-modified T cells. Between days 0 through 180 post-transplant the T-cell persistence in blood was inversely correlated with the level of NY-ESO-1 expression in the marrow (p=0.022), and marginally correlated with LAGE-1 (p=0.098) (Supplementary Table 9). In contrast, there was no relationship over time between T-cell persistence in blood and CD138 expression in marrow.\n\nInferences regarding patients' survival experience were made based on the joint modelling for longitudinal and time-to-event (OS and PFS) data. The statistical model revealed that baseline levels of NY-ESO-1, LAGE-1, CD138, cytogenetic abnormalities, engineered cell dose, prior SCT status, and age, did not affect OS. Neither T-cell persistence in blood or marrow were predictive of OS. However, longitudinal expression of NY-ESO-1 and LAGE-1 was associated with OS, and the corresponding p-values for their effects in the model are 0.037 and 0.055, respectively. There was a marginal effect of the CD138 expression (p-value = 0.110). All three biomarkers had positive coefficients (estimated by joint model), hence, the hazard of death increases with a higher level of these biomarkers (Supplementary Table 10).\n\nPFS was also jointly modeled with time-changing biomarkers and the results were concordant with the OS results. The NY-ESO-1, LAGE-1 and CD138 levels may be predictive of the time-to-progression, but the p-values did not reach significance with values of 0.094, 0.065, and 0.160, respectively for PFS (Supplementary Table 11), perhaps reflecting the small sample size. Thus the effect of NY-ESO-1, LAGE-1 and CD138 levels in the marrow was more pronounced in OS than in PFS, but the same pattern was observed. Higher levels of these markers over time may predict a worse prognosis.\n\nDISCUSSION: We show in this study that infusion of ex-vivo expanded NY-ESO-259 TCR-engineered T-cells were well-tolerated without significant safety concerns, and that engineered T cells expanded in vivo, trafficked to disease tissue, persisted and manifested durable target-specific anti-tumor activity. The observation of safety is a significant finding, and may be related to physiological signaling and antigen specificity provided by the TCR. In contrast, T-cells engineered to express a CD19-directed chimeric-antigen-receptor (CAR) have been associated with severe adverse events attributable in part to grade 3 or higher CRS, an IL-6 mediated macrophage activation syndrome, or sepsis. Complications associated with CRS or neurotoxicity have led to deaths in the CD19 CAR studies. We report that severe CRS did not occur in our study, despite the elevated levels of IL-6 detected. These levels are comparable to what has been observed in CD19 CAR T cell studies for patients without severe CRS but are generally lower than the peak levels measured for patients who developed severe CRS. It is important to note that there are a constellation of post-ASCT adverse events that may mimic clinical diagnosis of mild cases of CRS. In our other ongoing solid tumor NY-ESO-259T studies, we have observed multiple cases of mild CRS. High antigen burden may increase the risk of CRS for both CAR and TCR approaches. However, a potential risk that may be unique to engineered TCRs is enhanced recognition of non-target peptides, as observed in prior study where the wild-type and affinity-enhanced TCR recognized a contractile protein in cardiac tissue.\n\nPersistence of engineered T-cells and trafficking to tumor sites are increasingly being reported as biomarkers predictive of clinical responses, and durable persistence may be important to maintain clinical responses in at least a subset of patients. Previous studies with engineered T cells have not demonstrated persistence and expression beyond one month. In this study, long term persistence was detectable in a majority of patients and continued expression of the TCR was observed up to two years post infusion, suggesting that significant gene silencing was not occurring, which is a novel finding and is in contrast to clinical data utilizing retroviral vector gene transfer. Notably, this is the first published study of lentiviral vector mediated TCR gene expression in humans. Additionally, the method of T cell manufacturing, which selects for younger T cells and also prolonged expansion also is likely a significant factor in durable persistence, and studies using CAR modified T cells have demonstrated similar durations of persistence in oncology and HIV clinical studies. Robust trafficking to marrow, the principal site of tumor, was also observed. Relapse was associated with a loss of gene-modified T-cells, which suggests that methods for sustaining long-term persistence of engineered T-cells in a larger fraction of patients may improve treatment durability.\n\nSeveral lines of evidence support on target activity of the engineered T-cells. First, expression levels of NY-ESO-1/LAGE-1 decreased post-transplant in all patients, with progressive improvement over time in a subset of patients, and remained very low except in those patients who had loss of gene-modified T-cells. Second, a subset of patients with partial responses exhibited only antigen negative myeloma after treatment and another subset of patients developed antigen negative myeloma on relapse. Third, expression of NY-ESO-1 correlated inversely and significantly to higher levels of engineered T-cells while no association of T cell persistence with CD138 expression (more reflective of burden of normal plasma cells and/or antigen negative myeloma cells) was observed. Future approaches should consider targeting more than one antigen in order to avoid emergence of antigen escape variants and allow treatment of patients presenting with NY-ESO-1/LAGE-1 negative tumors. Targeting more than one tumor antigen combined with the development of tumor specific TCRs restricted to additional common HLA antigens, should enable this therapy to be available to most patients.\n\n70% of patients on study achieved CR (nCR or CR), which compares favorably with the expected response frequencies following ASCT or double sequential (tandem) ASCT where response rates are typically less than 40% in patients without high risk disease. This is encouraging given the predisposition of patients on our study to inferior outcomes due to an enrollment requirement for high-risk or advanced disease, a considerable frequency of prior ASCT, and the known association of cancer testis antigen expression with poor prognosis. Interestingly, LAGE-1 expression was identified by microarray analysis to also correlate with bortezomib resistance. In our small data set, we observed a significant inverse association between expression of LAGE-1 and NY-ESO-1 mRNA expression over time and OS. It must be acknowledged that the use of high-dose chemotherapy in our trial, as with lymphodepleting chemotherapy in virtually all trials of gene-modified T cells, makes it difficult to rigorously ascribe clinical activity to the NY-ESO-TCR-T cells without a randomized study.\n\nTaken together, our data support the continued development of NY-ESO-1/LAGE-1 TCR-engineered T-cells for treatment of myeloma, and that methods for enhancing long term survival and function of the cells may improve treatment durability. Such strategies may include repeat infusions and/or incorporation of immune-modulatory agents such as checkpoint inhibitors and maintenance lenalidomide. The striking clinical response that occurred in patient 253 after the second infusion of T-cells in concert with the emergence of non-transduced T-cell TCR clonotypes suggests that such approaches may also induce secondary tumor-specific immune responses to myeloma through antigen spreading. Future strategies to augment antigen spreading to cancer neoantigens may further enhance durable clinical activity."
+      }
+    ],
+    "tables": "Table 1 (Supplementary): Patient demographics and pre-transplant characteristics- All patients had symptomatic myeloma with active disease, representing an advanced stage population including 5 (25%) with prior ASCT and 12 (60%) with cytogenetic abnormalities, including 7 (35%) categorized as high-risk [t(4;14), del17p13, or complex].\n\nTable 2 (Supplementary): T-cell product characteristics - A mean of 2.4 billion NY-ESO-259-engineered CD3 T-cells (range 0.45-3.9 billion) were infused, which were comprised of >90% CD62L expressing cells, including a variable percentage of CD4 and CD8 T cells.\n\nTable 3 (Supplementary): Long-term T-cell persistence - Of 10 patients who reached two years of follow-up, 9 continued to have detectable engineered cells in the peripheral blood.\n\nTable 4 (Supplementary): Serum cytokine analysis - A significant elevation of IL-6 was detected in all patients (median 22-fold increase; range 8- to 2272-fold) within 7-28 days post infusion.\n\nTable 5 (Supplementary): Serious adverse events - All 7 serious adverse events (SAEs) resolved.\n\nTable 6 (Supplementary): Adverse events - Seventeen (17) adverse events occurred which were at least probably related to the treatment, all of grade 3 or lower.\n\nTable 7 (Supplementary): Analysis of engineered T-cells in aGVHD - While engineered T-cells were present in inflamed tissue, they were proportionately lower at sites of inflammation compared to adjacent non-inflamed tissues.\n\nTable 8 (Supplementary): Antigen status at relapse - In no cases was an antigen-positive tumor relapse observed in the presence of engineered cells at \u22656 cells/\u03bcl; 2 patients relapsed with NY-ESO-1/LAGE-1 antigen-negative subclones.\n\nTable 9 (Supplementary): Mixed-effects modeling of biomarkers and T-cell persistence - Between days 0 through 180 post-transplant the T-cell persistence in blood was inversely correlated with the level of NY-ESO-1 expression in the marrow (p=0.022), and marginally correlated with LAGE-1 (p=0.098).\n\nTable 10 (Supplementary): Joint modeling for OS - Longitudinal expression of NY-ESO-1 and LAGE-1 was associated with OS, with p-values of 0.037 and 0.055, respectively. CD138 expression had a marginal effect (p-value = 0.110).\n\nTable 11 (Supplementary): Joint modeling for PFS - The NY-ESO-1, LAGE-1 and CD138 levels may be predictive of the time-to-progression, with p-values of 0.094, 0.065, and 0.160, respectively.",
+    "figures": "Figure 1: Overview of clinical study - Patient screening, including HLA testing and tumor antigen testing, and apheresis scheduling requires 2-4 weeks. Manufacture of gene-modified cells takes 3-4 weeks. Patients received high dose melphalan two days prior to stem cell infusion, and four days prior to T-cell infusion. Response assessments were performed at day 42, 100, 180 and quarterly thereafter. Optional bone marrow biopsies are indicated by asterisk.\n\nFigure 2: Persistence and function of gene-modified cells in blood and marrow - (a) Total number of gene-modified cells from infusion to 1 year on study measured by Q-RT-PCR. Red line represents median across patients. Limit of detection approximately 2.5 cells/microliter. (b) Percent of gene marking in blood over time, using left vertical axis. Red bold line represents average WBC count using right vertical axis. Standard deviation represented by error bars. (c) Total number of vector copies per microgram of DNA in bone marrow for patients with two or more marrow collections post infusion. Percent of cells marked calculated assuming one vector copy per cell. Limit of detection 10 copies. (d) NY-ESO TCR-positive CD8 T-cells evaluated for functionality in cell product (MP) and at multiple timepoints post infusion by measuring production of IFN-\u03b3, granzyme B and CD107a in response to antigen loaded T2 target cells.\n\nFigure 3: Tumor and T-cell infiltration in marrow - (a) Day 7 marrow stained for plasma cell marker CD138 and CD8 to evaluate T-cell infiltration. 11.2% of CD3+ cells were NY-ESO TCR specific. (b) Mononuclear cells from fresh marrow aspirates stained with anti-CD3 antibody to detect T-cells, and NY-ESO TCR specific peptide/HLA-A2 dextramer reagent to detect gene-modified cells. (c) Patient 253 received second infusion of NY-ESO TCR T-cells without ASCT after progressing following ASCT and first infusion. Core marrow biopsies collected just prior to 1 infusion, and at day 24 and 38 after infusion, stained for CD138 plasma cell/myeloma tumor marker and CD8 T-cell infiltration.\n\nFigure 4 (implied from description): Clinical course of patient 250 - (a) Stringent complete response with expansion and persistence of engineered T-cells. (b) Approximately 1% of CD3+ lymphocytes expressing transgenic receptor at one year. (c) and (d) Normalization of marrow and clearance of pancreatic plasmacytoma.\n\nFigure 5: NY-ESO-1/LAGE-1 transcript levels and disease response - Loss of NY-ESO-1 and LAGE-1 transcripts in 12/15 patients at day 100 and 11/13 at day 180. Four patients had increase in CD138 transcripts in absence of NY-ESO-1/LAGE-1 transcripts, suggesting tumor escape subclones lacking target antigen.\n\nFigure 6: Overall survival and progression-free survival - (a) and (b) Kaplan-Meier curves showing OS and PFS functions. With median follow-up of 21.1 months (95% CI: 18.6-23 months), 10/20 patients (50%) were alive and progression-free, 15/20 (75%) were alive, and 5/20 (25%) died after disease progression. Estimated median PFS time was 19.1 months (95% CI lower bound 8.5 months, upper bound not reached). As of April 2015 with median follow up of 30.1 months, median PFS remained 19.1 months and median OS increased to 32.1 months. (c) Swimmer plot showing duration and depth of response for each patient, and associated levels of T cell persistence at major timepoints.\n\nSupplementary Figure 1: Consort diagram\nSupplementary Figure 2: Marrow biopsy response assessment at day 100 - 14/15 had detectable engineered cells, with 9/15 with >1% and 14/15 with >0.1% marking\nSupplementary Figure 3: NY-ESO-259 expressing T-cells detected by dextramer staining in blood and marrow through 2 years of follow-up\nSupplementary Figure 4: TCR clonotype analysis - Deep-sequencing-based T cell receptor spectratyping revealed presence in marrow biopsies of two dominant TCR clonotypes distinct from V\u03b213.1 clonotype expressed by NY-ESO-259 engineered cells\nSupplementary Figure 5: Autologous graft versus host disease (aGVHD) confirmed in 3/20 patients\nSupplementary Figure 6: Nine patients experienced gradual improvements in tumor markers and/or disease response between first and second disease assessment at day 100\nSupplementary Figure 7: Updated survival curves as of April 2015",
+    "statistics": "- 34% of HLA-A2 positive patients screened expressed NY-ESO-1 and/or LAGE-1 mRNA by PCR\n- LAGE-1 expression frequency approximately twice that of NY-ESO-1\n- 5 patients (25%) had prior ASCT\n- 12 patients (60%) had cytogenetic abnormalities\n- 7 patients (35%) categorized as high-risk [t(4;14), del17p13, or complex]\n- Mean 8 billion total CD3 T-cells infused (range 1-10 billion)\n- Average transduction efficiency 33% (range 18%-49%)\n- Mean 2.4 billion NY-ESO-259-engineered CD3 T-cells infused (range 0.45-3.9 billion)\n- >90% CD62L expressing cells\n- Median persistence in peripheral blood: day 7: 104 (range 16-741); day 14: 489 (range 63-1850); day 28: 107 (range 3-881); day 42: 51 (range 1-237)\n- Peak percentage of engineered cells in leukocytes on day 7: median 47% (range 10%-80%)\n- Day 28 engineered cell percentage: median 3% (range <1%-11%)\n- Day 180 engineered cell percentage: median 1% (range <1%-9%)\n- 13/20 patients underwent marrow biopsies at multiple timepoints\n- Near 100% marking in marrow biopsy at day 7\n- 15/20 patients underwent marrow biopsy for response assessment at day 100\n- 14/15 had detectable engineered cells; 9/15 with >1% marking; 14/15 with >0.1% marking\n- 9/10 patients who reached two years of follow-up continued to have detectable engineered cells\n- IL-6 elevation: median 22-fold increase (range 8- to 2272-fold) within 7-28 days post infusion\n- 11.2% of infiltrating CD3+ cells were engineered (marrow analysis, patient 258)\n- 3/20 patients confirmed to have autologous graft versus host disease (aGVHD)\n- All 7 serious adverse events (SAEs) resolved\n- 17 adverse events occurred, all grade 3 or lower\n- 4/20 patients had skin rash with lymphocytosis\n- Median follow-up: 21.1 months (95% CI: 18.6-23 months)\n- 10/20 patients (50%) alive and progression-free\n- 15/20 patients (75%) alive\n- 5/20 patients (25%) died after disease progression\n- 14/20 patients (70%) had near complete response (nCR) or complete response (CR) at day 100\n- 2 patients had very good partial response (VGPR, \u226590% reduction in paraprotein levels)\n- 2 patients had partial response (PR, 50-90% reduction)\n- 1 patient had stable disease (SD, <50% reduction)\n- 1 patient had progressive disease (PD)\n- Estimated median PFS time: 19.1 months (95% CI lower bound 8.5 months, upper bound not reached) as of March 2014\n- As of April 2015 with median follow up of 30.1 months: median PFS 19.1 months, median OS 32.1 months\n- Loss of NY-ESO-1 and LAGE-1 transcripts: 12/15 patients at day 100; 11/13 at day 180\n- 3/15 patients had detectable NY-ESO-1 and LAGE-1 transcripts at day 100\n- T-cell persistence in blood inversely correlated with NY-ESO-1 expression in marrow (p=0.022)\n- T-cell persistence marginally correlated with LAGE-1 (p=0.098)\n- Longitudinal expression of NY-ESO-1 associated with OS (p=0.037)\n- Longitudinal expression of LAGE-1 associated with OS (p=0.055)\n- CD138 expression marginal effect on OS (p-value = 0.110)\n- PFS association with NY-ESO-1 (p=0.094), LAGE-1 (p=0.065), CD138 (p=0.160) - not significant\n- 8/10 cases of progression correlated with loss of persisting gene-modified cells\n- No antigen-positive tumor relapse observed in presence of engineered cells at \u22656 cells/\u03bcl\n- 2 patients relapsed with NY-ESO-1/LAGE-1 antigen-negative subclones\n- High-dose melphalan: 140-200 mg/m2 (or 140 mg/m2 if age > 70 years)\n- Stem cells infused: \u22652 \u00d7 10^6 CD34+ cells/kg body weight at day 0\n- Lenalidomide maintenance: 10 mg/day starting day +100 post-transplant for patients with sufficient marrow recovery\n- Response rate following first ASCT in patients without high risk disease: typically less than 40%\n- Power calculation: 85.8% power to detect difference in CR rate from 36% to 66% (2/3 patients) at 5% significance level using one-sided Chi-square test",
+    "genes": "NY-ESO-1 (also known as CTAG-1B), LAGE-1, CD3, CD4, CD8, CD62L, CD138, CD19, HLA-A*0201, BRCA1, EGFR, BRAF, MAGE-A3, MAGE-C1, CT7 (MAGE-C1), IL-6, IFN-\u03b3 (interferon-gamma), TNF\u03b1, Granzyme B (GrB), CD107\u03b1, Ki67, CCR7, CD45RA, IL-2, CDKN1A, PP1B, Rev, VSV-G, gag/pol",
+    "variants": "NY-ESO-259 peptide (SLLMWITQC), t(4;14) translocation, del17p13, high-risk cytogenetic abnormalities including complex karyotype",
+    "diseases": "Multiple myeloma (MM), melanoma, synovial cell sarcoma, non-Hodgkin lymphoma, acute lymphoblastic leukemia, chronic lymphocytic leukemia, B-cell leukemias",
+    "therapies": "NY-ESO-259 TCR-engineered T-cells, autologous stem cell transplantation (ASCT), allogeneic stem cell transplantation, melphalan (high-dose 140-200 mg/m2), lenalidomide (10 mg/day), bortezomib, G-CSF (10 \u03bcg/kg), cyclophosphamide (1.5-3.0 g/m2), Prevnar-13\u00ae (pneumococcal conjugate vaccine, PCV), anti-CD3/28 antibody conjugated paramagnetic microbeads, CAR (chimeric antigen receptor) T-cells, checkpoint inhibitors, pidilizumab, immune-modulatory agents",
+    "clinical_trials": "NCT01352286 - Phase I/IIa single-arm trial which enrolled 24 patients, 20 of whom received ASCT followed by gene-modified T cells. Expected nCR/CR rate following first ASCT in patients without high risk disease was 36%. Hypothesized CR rate in trial would be 66% (2/3 patients). Using one-sided Chi-square test, had 85.8% power to detect this difference at 5% significance level."
+  },
+  "timing": {
+    "start": "2025-12-15T02:21:43.670904",
+    "end": "2025-12-15T02:41:05.590082",
+    "seconds": 1161.919178
+  },
+  "log_file": "/Users/ali/Downloads/civic/civic_extraction_end_to_end/logs/PMID_26193344_20251215_022143.log"
+}

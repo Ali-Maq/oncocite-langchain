@@ -1,0 +1,152 @@
+{
+  "pmid": "18528420",
+  "source_id": 229,
+  "title": "Clinical and biological significance of RAS mutations in multiple myeloma.",
+  "journal": "Leukemia",
+  "year": 2008.0,
+  "civic_item_count": 5,
+  "tier1_field_completeness": {
+    "evidence_id": {
+      "populated": 5,
+      "total": 5,
+      "percentage": 100.0
+    },
+    "evidence_description": {
+      "populated": 5,
+      "total": 5,
+      "percentage": 100.0
+    },
+    "evidence_level": {
+      "populated": 5,
+      "total": 5,
+      "percentage": 100.0
+    },
+    "evidence_type": {
+      "populated": 5,
+      "total": 5,
+      "percentage": 100.0
+    },
+    "evidence_direction": {
+      "populated": 5,
+      "total": 5,
+      "percentage": 100.0
+    },
+    "evidence_significance": {
+      "populated": 4,
+      "total": 5,
+      "percentage": 80.0
+    },
+    "feature_names": {
+      "populated": 5,
+      "total": 5,
+      "percentage": 100.0
+    },
+    "variant_names": {
+      "populated": 5,
+      "total": 5,
+      "percentage": 100.0
+    },
+    "disease_name": {
+      "populated": 5,
+      "total": 5,
+      "percentage": 100.0
+    },
+    "therapy_names": {
+      "populated": 0,
+      "total": 5,
+      "percentage": 0.0
+    },
+    "clinical_trial_nct_ids": {
+      "populated": 0,
+      "total": 5,
+      "percentage": 0.0
+    },
+    "source_title": {
+      "populated": 5,
+      "total": 5,
+      "percentage": 100.0
+    },
+    "source_citation_id": {
+      "populated": 5,
+      "total": 5,
+      "percentage": 100.0
+    }
+  },
+  "evidence_items": [
+    {
+      "evidence_id": 487,
+      "evidence_description": "In a retrospective study of 439 patients with multiple myeloma enrolled in a clinical trial, 28 had mutations in KRAS (22/28 in G12/G13). Those with KRAS (but not NRAS) mutations had worse overall (median 19.9 vs 44.3 months, p=0.005) and progression free survival (median 14.7 vs 30.3 months, p<0.001) than those without mutations.",
+      "evidence_level": "B",
+      "evidence_type": "PROGNOSTIC",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "POOR_OUTCOME",
+      "feature_names": "KRAS",
+      "variant_names": "G12",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": NaN,
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Clinical and biological significance of RAS mutations in multiple myeloma.",
+      "source_citation_id": "18528420"
+    },
+    {
+      "evidence_id": 488,
+      "evidence_description": "In a retrospective study of 439 patients with multiple myeloma enrolled in a clinical trial, 28 had mutations in KRAS (22/28 in G12/G13). Those with KRAS (but not NRAS) mutations had worse overall (median 19.9 vs 44.3 months, p=0.005) and progression free survival (median 14.7 vs 30.3 months, p<0.001) than those without mutations.",
+      "evidence_level": "B",
+      "evidence_type": "PROGNOSTIC",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "POOR_OUTCOME",
+      "feature_names": "KRAS",
+      "variant_names": "G13",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": NaN,
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Clinical and biological significance of RAS mutations in multiple myeloma.",
+      "source_citation_id": "18528420"
+    },
+    {
+      "evidence_id": 489,
+      "evidence_description": "In a retrospective study of 439 patients with multiple myeloma enrolled in a clinical trial, 28 had mutaions in KRAS. Those with mutations had worse overall and progression free survival than those without mutations.",
+      "evidence_level": "B",
+      "evidence_type": "PROGNOSTIC",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "POOR_OUTCOME",
+      "feature_names": "KRAS",
+      "variant_names": "Q61",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": NaN,
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Clinical and biological significance of RAS mutations in multiple myeloma.",
+      "source_citation_id": "18528420"
+    },
+    {
+      "evidence_id": 496,
+      "evidence_description": "In patients with multiple myeloma, the presence of a mutation in NRAS was not significantly associated with progression-free or overall survival.",
+      "evidence_level": "B",
+      "evidence_type": "PROGNOSTIC",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": NaN,
+      "feature_names": "NRAS",
+      "variant_names": "Mutation",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": NaN,
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Clinical and biological significance of RAS mutations in multiple myeloma.",
+      "source_citation_id": "18528420"
+    },
+    {
+      "evidence_id": 377,
+      "evidence_description": "The presence of KRAS mutations in MM patients is prognostic for shorter overall and progression free survival.",
+      "evidence_level": "B",
+      "evidence_type": "PROGNOSTIC",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "POOR_OUTCOME",
+      "feature_names": "KRAS",
+      "variant_names": "G12",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": NaN,
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Clinical and biological significance of RAS mutations in multiple myeloma.",
+      "source_citation_id": "18528420"
+    }
+  ]
+}

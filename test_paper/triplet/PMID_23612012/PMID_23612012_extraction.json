@@ -1,0 +1,222 @@
+{
+  "paper_id": "PMID_23612012",
+  "paper_info": {
+    "author": "Mindaugas Andrulis, Nicola Lehners, David Capper, Roland Penzel, Christoph Heining, Jennifer Huellein, Thorsten Zenz, Andreas von Deimling, Peter Schirmacher, Anthony D. Ho, Hartmut Goldschmidt, Kai Neben, and Marc S. Raab",
+    "year": "2013",
+    "num_pages": 8,
+    "paper_type": "PRIMARY"
+  },
+  "extraction": {
+    "items": 3,
+    "iterations": 0,
+    "complete": true,
+    "evidence_items": [
+      {
+        "feature_names": [
+          "BRAF"
+        ],
+        "variant_names": [
+          "V600E"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "evidence_type": "PROGNOSTIC",
+        "evidence_level": "B",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "POOR_OUTCOME",
+        "evidence_description": "BRAF V600E mutation in multiple myeloma is associated with significantly shorter median overall survival of 45 months (range 6-54) compared to 105 months (range 4-227 months, P=0.04) in patients without the mutation. This analysis included patients with documented follow-up of at least 3 months from the start of first-line treatment.",
+        "therapy_names": [],
+        "source_pmid": "23612012",
+        "source_title": "Targeting the BRAF V600E Mutation in Multiple Myeloma",
+        "source_journal": "Cancer Discovery",
+        "source_publication_year": 2013,
+        "source_page_numbers": "Full text, Results section",
+        "verbatim_quote": "Those patients confirmed to have the BRAF V600E mutation were found to have a significantly shorter median overall survival of 45 months (range 6 to 54) as compared with 105 months (range 4 to 227 months; P = 0.04) in patients without the mutation.",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "This is clearly actionable prognostic evidence with specific survival statistics and statistical significance. Knowing BRAF V600E status would influence clinical management and patient counseling.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "c.1799T>A"
+        ],
+        "variant_hgvs_c": "c.1799T>A",
+        "variant_hgvs_p": "p.V600E",
+        "cohort_size": 379,
+        "clinical_trial_nct_ids": [],
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "cancer_cell_fraction": null,
+        "gene_entrez_id": "673",
+        "disease_efo_id": "EFO_0001378",
+        "source_pmcid": null
+      },
+      {
+        "feature_names": [
+          "BRAF"
+        ],
+        "variant_names": [
+          "V600E"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "evidence_type": "PROGNOSTIC",
+        "evidence_level": "B",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "POOR_OUTCOME",
+        "evidence_description": "BRAF V600E mutation in multiple myeloma is associated with a significantly higher incidence of extramedullary disease. Four of seven BRAF-mutated patients (57%) developed extramedullary disease compared with 43 of 251 (17%, P=0.02) control patients with symptomatic disease. Extramedullary disease is associated with aggressive clinical course and dismal outcome.",
+        "therapy_names": [],
+        "source_pmid": "23612012",
+        "source_title": "Targeting the BRAF V600E Mutation in Multiple Myeloma",
+        "source_journal": "Cancer Discovery",
+        "source_publication_year": 2013,
+        "source_page_numbers": "Full text, Results section",
+        "verbatim_quote": "Remarkably, four of the seven BRAF-mutated patients (57%) went on to develop extramedullary disease compared with 43 of 251 (17%, P = 0.02) control patients with symptomatic disease.",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "This is actionable prognostic evidence with statistically significant association between BRAF V600E and extramedullary disease development. This would influence patient monitoring and treatment planning.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "c.1799T>A"
+        ],
+        "variant_hgvs_c": "c.1799T>A",
+        "variant_hgvs_p": "p.V600E",
+        "cohort_size": 379,
+        "clinical_trial_nct_ids": [],
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "cancer_cell_fraction": null,
+        "gene_entrez_id": "673",
+        "disease_efo_id": "EFO_0001378",
+        "source_pmcid": null
+      },
+      {
+        "feature_names": [
+          "BRAF"
+        ],
+        "variant_names": [
+          "V600E"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "C",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "SENSITIVITY_RESPONSE",
+        "evidence_description": "A patient with BRAF V600E-mutated relapsed/refractory multiple myeloma with extensive extramedullary disease achieved partial response to vemurafenib. Treatment with vemurafenib (480-720 mg twice daily) resulted in rapid tumor regression within 2 weeks, with soft tissue plasmacytoma diameters decreasing from 14.5\u00d75.7 cm to 6.4\u00d71.7 cm at day 28, and achievement of serologic partial response by IMWG criteria. Response remained durable after 8 months of treatment.",
+        "therapy_names": [
+          "Vemurafenib"
+        ],
+        "source_pmid": "23612012",
+        "source_title": "Targeting the BRAF V600E Mutation in Multiple Myeloma",
+        "source_journal": "Cancer Discovery",
+        "source_publication_year": 2013,
+        "source_page_numbers": "Full text, Results section, Figure 3",
+        "verbatim_quote": "Within 2 weeks, the soft tissue plasmacytomas visually reduced in size... Whole-body MRI scan and measurements of the three reference skin lesions showed a decrease in the sum of diameters from 14.5 \u00d7 5.7 cm to 6.4 \u00d7 1.7 cm.",
+        "extraction_confidence": 0.9,
+        "extraction_reasoning": "This is highly actionable predictive evidence demonstrating therapeutic response to vemurafenib in BRAF V600E-mutated multiple myeloma. Although based on a single case report (n=1), the dramatic and durable response in refractory disease provides strong proof-of-principle for targeted therapy.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "c.1799T>A"
+        ],
+        "variant_hgvs_c": "c.1799T>A",
+        "variant_hgvs_p": "p.V600E",
+        "cohort_size": 1,
+        "clinical_trial_nct_ids": [],
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "cancer_cell_fraction": null,
+        "gene_entrez_id": "673",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_rxnorm_id": "1147220",
+        "therapy_ncit_id": "NCIT:C64768",
+        "drug_safety": {
+          "top_adverse_events": [
+            {
+              "term": "PYREXIA",
+              "count": 312
+            },
+            {
+              "term": "RASH",
+              "count": 309
+            },
+            {
+              "term": "DISEASE PROGRESSION",
+              "count": 269
+            },
+            {
+              "term": "DIARRHOEA",
+              "count": 266
+            },
+            {
+              "term": "ARTHRALGIA",
+              "count": 212
+            }
+          ],
+          "source": "FAERS/OpenFDA"
+        },
+        "source_pmcid": null
+      }
+    ]
+  },
+  "plan": {
+    "paper_type": "PRIMARY",
+    "expected_items": 6,
+    "key_variants": "BRAF V600E (c.1799T>A), KRAS G60V, SF3B1 K700E, t(4;14), del17p",
+    "key_therapies": "Vemurafenib, bortezomib, carfilzomib, lenalidomide, dexamethasone, bendamustine, melphalan, thalidomide, pomalidomide",
+    "key_diseases": "Multiple myeloma, symptomatic multiple myeloma, extramedullary myeloma, smoldering myeloma, monoclonal gammopathy of undetermined significance (MGUS), Amyloid Light-chain amyloidosis",
+    "focus_sections": "ABSTRACT, RESULTS (especially Patient #5 case report and cohort analysis), DISCUSSION (prognostic and therapeutic implications)",
+    "extraction_notes": "This paper contains multiple extractable evidence items:\n\n1. PREDICTIVE evidence for BRAF V600E mutation with vemurafenib in multiple myeloma - The detailed case report of Patient #5 demonstrates dramatic response to vemurafenib (480-720mg twice daily) in refractory extramedullary multiple myeloma. Patient achieved partial response within 28 days with tumor regression, decreased M-protein, and reduced pain. Response maintained for 8+ months. This is highly actionable SUPPORTS evidence with clinical_significance: SENSITIVITY/RESPONSE.\n\n2. PROGNOSTIC evidence for BRAF V600E mutation in multiple myeloma - The cohort analysis of 379 patients showed BRAF V600E carriers had significantly shorter overall survival (45 months vs 105 months, P=0.04) compared to wild-type. This is SUPPORTS evidence with clinical_significance: POOR_OUTCOME.\n\n3. PROGNOSTIC evidence for BRAF V600E mutation associated with extramedullary disease - 57% (4/7) of BRAF V600E-positive patients developed extramedullary disease compared to 17% (43/251) of controls (P=0.02). This is SUPPORTS evidence with clinical_significance: POOR_OUTCOME.\n\n4. PREDICTIVE evidence for BRAF V600E with standard therapies - Patient #5 and cohort data showed very short progression-free survival and resistance to standard therapies (bortezomib, lenalidomide, dexamethasone, bendamustine). This is DOES_NOT_SUPPORT evidence with clinical_significance: RESISTANCE or POOR_RESPONSE.\n\n5. ONCOGENIC evidence for BRAF V600E in multiple myeloma - The paper demonstrates clonal evolution with BRAF V600E mutation emerging at relapse in 3 patients, associated with aggressive disease phenotype and pathway activation (p-ERK). This is SUPPORTS evidence with clinical_significance: ONCOGENIC.\n\n6. Potential PREDICTIVE evidence for KRAS G60V mutation - One patient (#7) had concomitant BRAF V600E and KRAS G60V mutations in same subclone, though clinical implications unclear and this mutation is rare/not well-characterized. This may not meet actionability threshold.\n\nCRITICAL EXTRACTION GUIDANCE:\n- Focus on Patient #5 case report for strong PREDICTIVE evidence with vemurafenib\n- Extract cohort survival data (45 vs 105 months, P=0.04) for PROGNOSTIC evidence\n- Extract extramedullary disease association (57% vs 17%, P=0.02) for PROGNOSTIC evidence\n- Consider resistance to standard therapies as PREDICTIVE DOES_NOT_SUPPORT evidence\n- Extract ONCOGENIC evidence based on clonal evolution and pathway activation data\n- Ensure therapy_names field is populated for all PREDICTIVE evidence items\n- Be specific about patient numbers, response criteria (IMWG), and statistical significance\n- Note the response was achieved at lower doses (480-720mg BID) than standard melanoma dosing\n- Mention durability of response (8+ months at time of publication)"
+  },
+  "final_critique": {
+    "overall_assessment": "APPROVE",
+    "item_feedback": "[\n  {\n    \"item_number\": 1,\n    \"variant\": \"BRAF V600E\",\n    \"disease\": \"Multiple Myeloma\",\n    \"evidence_type\": \"PROGNOSTIC\",\n    \"assessment\": \"APPROVED\",\n    \"comments\": \"Excellent extraction. Evidence statement accurately reflects the paper's findings on overall survival. Verbatim quote is exact match. Statistics (45 months vs 105 months, P=0.04) are correctly reported. Evidence is clearly actionable for prognostic assessment. All required fields present and valid. Extended fields (variant_origin, HGVS, cohort_size) appropriately included.\"\n  },\n  {\n    \"item_number\": 2,\n    \"variant\": \"BRAF V600E\",\n    \"disease\": \"Multiple Myeloma\",\n    \"evidence_type\": \"PROGNOSTIC\",\n    \"assessment\": \"APPROVED\",\n    \"comments\": \"Excellent extraction. Evidence statement accurately describes the association with extramedullary disease. Verbatim quote is exact match. Statistics (4/7 = 57% vs 43/251 = 17%, P=0.02) are correctly reported. Evidence is actionable as it would influence monitoring strategy and treatment planning. All required fields present and valid. Extended fields appropriately included.\"\n  },\n  {\n    \"item_number\": 3,\n    \"variant\": \"BRAF V600E\",\n    \"disease\": \"Multiple Myeloma\",\n    \"evidence_type\": \"PREDICTIVE\",\n    \"assessment\": \"APPROVED\",\n    \"comments\": \"Excellent extraction. Evidence statement accurately describes the clinical response to vemurafenib in the detailed case report. Verbatim quote is exact match. Treatment response measurements (14.5\u00d75.7 cm to 6.4\u00d71.7 cm) are accurate. Evidence level C is appropriately assigned for case report (n=1). Therapy name (Vemurafenib) correctly specified. Evidence is highly actionable - would directly inform treatment decisions. All required fields present and valid. Extended fields appropriately included.\"\n  }\n]",
+    "missing_items": "No missing items identified. The extractor captured all actionable clinical evidence from the paper:\n- Two PROGNOSTIC items covering overall survival and extramedullary disease association\n- One PREDICTIVE item covering vemurafenib response\n\nOther findings in the paper (e.g., prevalence data, clonal evolution observations, SF3B1 co-mutation with unknown significance) are not independently actionable and were appropriately excluded.",
+    "extra_items": "No extra items identified. All three extracted items are appropriately actionable and well-supported by the paper content:\n- Item 1 (overall survival) - clearly actionable for prognosis\n- Item 2 (extramedullary disease) - actionable for monitoring and treatment planning\n- Item 3 (vemurafenib response) - actionable for treatment selection\n\nNone should be removed.",
+    "summary": "APPROVED - All three evidence items are accurately extracted, well-supported, and appropriately actionable.\n\n**Strengths:**\n1. All evidence statements accurately reflect paper findings with no hallucination\n2. All verbatim quotes are exact matches from the paper\n3. All statistics and measurements are correctly reported\n4. Evidence types, levels, and significance are appropriately assigned\n5. All 8 required fields are present and valid\n6. Extended fields (variant_origin, HGVS, cohort_size) are appropriately included and supported\n7. Therapy names correctly specified for PREDICTIVE evidence\n8. All items are truly actionable - would change clinical care decisions\n9. Comprehensive coverage of actionable evidence without including non-actionable findings\n\n**No issues identified.**\n\nThe extraction demonstrates excellent quality and completeness. Ready for CIViC submission.",
+    "iteration": 0
+  },
+  "paper_content": {
+    "title": "Targeting the BRAF V600E Mutation in Multiple Myeloma",
+    "authors": [
+      "Mindaugas Andrulis",
+      "Nicola Lehners",
+      "David Capper",
+      "Roland Penzel",
+      "Christoph Heining",
+      "Jennifer Huellein",
+      "Thorsten Zenz",
+      "Andreas von Deimling",
+      "Peter Schirmacher",
+      "Anthony D. Ho",
+      "Hartmut Goldschmidt",
+      "Kai Neben",
+      "and Marc S. Raab"
+    ],
+    "journal": "Cancer Discovery",
+    "year": 2013,
+    "paper_type": "PRIMARY",
+    "abstract": "In multiple myeloma, there has been little progress in the specific therapeutic targeting of oncogenic mutations. Whole-genome sequencing data have recently revealed that a subset of patients carry an activating mutation (V600E) in the BRAF kinase. To uncover the clinical relevance of this mutation in multiple myeloma, we correlated the mutation status in primary tumor samples from 379 patients with myeloma with disease outcome. We found a significantly higher incidence of extramedullary disease and a shorter overall survival in mutation carriers compared with controls. Most importantly, we report on a patient with confirmed BRAF V600E mutation and relapsed myeloma with extensive extramedullary disease, refractory to all approved therapeutic options, who has rapidly and durably responded to low doses of the mutation-specific BRAF inhibitor vemurafenib. Collectively, we provide evidence for the development of the BRAF V600E mutation in the context of clonal evolution and describe the prognostic and therapeutic relevance of this targetable mutation.",
+    "sections": [
+      {
+        "name": "Full Text",
+        "page_numbers": [],
+        "content": "INTRODUCTION: Multiple myeloma is a malignancy of terminally differentiated B-lymphocytes, but its pathogenesis is yet only partially understood (1-3). Although new therapeutic options have substantially increased the response rates and survival of patients with myeloma over the last decade, it is still considered incurable in most cases, and more effective therapies are urgently needed (4). Current treatment strategies are mechanistically based on agents without tumor cell specificity, such as proteasome inhibitors (bortezomib, carfilzomib), immunomodulatory drugs with pleiotropic effects (thalidomide, lenalidomide, pomalidomide), or conventional chemotherapy. High-throughput tumor cell sequencing of myeloma cells shows a diverse mutational landscape with few recurrent mutations. The most prominent set of mutations was found within the RAS pathway (2, 5, 6). Of immediate clinical interest, the gene encoding the serine-threonine kinase BRAF was found to be mutated in approximately 4% of all cases, with the BRAF V600E mutation being the most common. In malignant melanomas and hairy cell leukemia, targeting the highly prevalent BRAF V600E mutation has recently proven to be of clinical benefit. However, whether this also applies to malignancies with a low frequency of this mutation remains unclear (7-12). In colorectal carcinoma, only 5% of patients with mutated BRAF respond to treatment with the specific inhibitor vemurafenib (13). We therefore have screened tumor specimens from patients with plasma cell diseases for protein expression of mutated BRAF V600E by mutation-specific immunohistochemistry (IHC). Here, we describe the clonal evolution of myeloma cells from patients with a confirmed BRAF V600E mutation and the distinct clinical course of this rare cohort, thereby indicating the clinical relevance of this mutation and providing first proof-of-principle for the therapeutic efficacy of vemurafenib in multiple myeloma.\n\nRESULTS: We screened for protein expression of BRAF V600E in plasma cells by IHC using a mutation-specific antibody on paraffin-embedded soft tissue and bone marrow core biopsies from patients with a monoclonal gammopathy. Positive results were verified by Sanger sequencing (Fig. 1). A total of 421 samples (391 bone marrow biopsies, 30 soft tissue plasmacytomas) obtained from 379 patients (59 with relapsed, clonal gammopathy of undetermined significance, 53 with smoldering myeloma, 241 with symptomatic myeloma, 16 with Amyloid Light-chain amyloidosis) were analyzed. Patient characteristics are summarized in Table 1. Two or more consecutive biopsies were available from 37 patients of the cohort. Mutated BRAF V600E was detected in seven patients with myeloma, corresponding to a prevalence of 2.8% of patients with symptomatic myeloma and 1.8% of all patients with monoclonal plasma cell disorders, respectively. One patient initially harbored the mutation in a minor subclone detectable by IHC (Fig. 1A and B). This could be confirmed by sequencing only after microdissection of the tissue to enrich for positive plasma cells (Fig. 1C). In three patients, the mutation was present at diagnosis, whereas it became detectable in an additional three patients only in the context of relapsed disease, indicating clonal evolution (Fig. 2). As RAS is the most frequently mutated gene family in myeloma, we sequenced codons 10, 11, and 61 of exons 2 and 3 of NRAS and KRAS, respectively. Although no mutations were detected in any of the 12 available samples from six patients, the BRAF-mutated subclone in patient #7 harbored a concomitant substitution of valine for glycine at position 60 (G60V) in KRAS, which has not been described before in multiple myeloma. Remarkably, four of the seven BRAF-mutated patients (57%) went on to develop extramedullary disease compared with 43 of 251 (17%, P = 0.02) control patients with symptomatic disease (Fig. 2 and Table 1). Progression-free survival in five of these seven patients was very short once the mutation was present. Details of the patients' courses of disease are given in Supplementary Table S1. The overall survival of all patients with documented follow-up of at least 3 months from the start of first-line treatment was then assessed. Those patients confirmed to have the BRAF V600E mutation were found to have a significantly shorter median overall survival of 45 months (range 6 to 54) as compared with 105 months (range 4 to 227 months; P = 0.04) in patients without the mutation. Patient #5, a 61-year-old female Caucasian, presented with multiple soft tissue plasmacytomas and marked B symptoms (Fig. 2 and Supplementary Table S1). She had first been diagnosed with immunoglobulin A (IgA) kappa symptomatic multiple myeloma, Salmon & Durie stage IIIA, in August 2008. Risk profiling revealed an International Staging System score of II. No high-risk cytogenetic aberration (i.e., t(4;14) or del17p) was detected by FISH. First-line treatment consisted of a bortezomib-containing induction regimen, stem cell mobilization, and harvesting followed by high-dose melphalan and autologous blood stem cell transplant (ASCT) in November 2008. A near-complete remission was achieved, according to International Myeloma Working Group (IMWG) criteria (14). Fifteen months after ASCT, she developed a soft tissue plasmacytoma of the left upper eyelid, which was treated with radiotherapy, accompanied by systemic progressive disease. Treatment with lenalidomide/dexamethasone was initiated in March 2010. In January 2011, the disease progressed, and she then received bortezomib/dexamethasone, and subsequently bendamustine in October 2011, rendering the disease refractory to lenalidomide, bortezomib, dexamethasone, and bendamustine. While still receiving bendamustine, the patient presented to our outpatient clinic with progressive disease in June 2012. The patient presented with profuse night sweats and opioid-dependent pain in her left arm. Clinical examination revealed multiple small cutaneous plasmacytomas (e.g., 2.1 \u00d7 1.5; 1.1 \u00d7 0.9; 1.4 \u00d7 1.2 cm) as well as a large subcutaneous plasmacytoma above the left shoulder (5.9 \u00d7 2.1 cm by whole-body MRI scan), whereas the known osteolytic lesions remained stable. Electrophoresis of blood and urine showed a monoclonal IgA protein of 7.7 g/L and 346 mg/day of kappa light chain proteinuria, and free kappa light chains of 101 mg/L in serum were noted. Biopsies from the subcutaneous mass above the left shoulder as well as from one of the skin lesions showed extensive plasma cell infiltration. IHC with the BRAF V600E mutation-specific antibody showed the presence of mutated protein in all malignant cells. The mutation status was confirmed by sequencing of the biopsied material as well as of purified myeloma cells obtained from the large plasmacytoma, without evidence of concurrent RAS mutations. The purified myeloma cells were assessed for additional mutations, e.g., EZH2, MYD88, NOTCH1, PIK3CA, SF3B1, and TP53, that have been commonly found in other B-cell neoplasias. A concomitant mutation was detected only in SF3B1 (K700E). However, the relevance of this mutation in multiple myeloma is currently unknown. In the bone marrow, less than 5% plasma cells were present at the site of the biopsy, and no BRAF V600E-mutated cells could be detected. Given the resistance of the disease to standard lines of therapy and the absence of RAS mutations, off-label treatment with the mutation-specific BRAF inhibitor vemurafenib was considered a rational approach. Individual informed consent was obtained and treatment was started with low-dose vemurafenib at 480 mg twice daily. Because the patient tolerated the treatment well, the dosage was increased to 720 mg twice daily after one week. Within 2 weeks, the soft tissue plasmacytomas visually reduced in size. This was accompanied by a reduced requirement for pain medication. At day 28, response parameters were assessed. Whole-body MRI scan and measurements of the three reference skin lesions showed a decrease in the sum of diameters from 14.5 \u00d7 5.7 cm to 6.4 \u00d7 1.7 cm. Serum electrophoresis showed no measurable M-spike and IgA-negative immunofixation, and urine electrophoresis revealed decreased kappa light chain proteinuria of 113.2 mg/day with positive immunofixation, resulting in a partial response to the disease by IMWG criteria (Fig. 3A). A rebiopsy of one of the residual skin plasmacytomas was obtained and revealed extensive tumor regression and scarring (Fig. 3B). Although IHC still detected mutated BRAF V600E in the small area with remaining plasma cells (Fig. 3C), pathway activation, assessed by phosphorylation of the extracellular signal-regulated kinase (p-ERK), and cell proliferation, represented by MIB1, were drastically reduced compared with baseline samples (Fig. 3D). Furthermore, an increased number of apoptotic and hypoapoptotic cells was evident and confirmed by staining for activated caspase-3. The average number of caspase-3\u2013positive apoptotic bodies was less than one per high power field (HPF) at baseline and more than 10 per HPF at day 28 (10 HPFs were counted per slide; Fig. 3D). In summary, the administration of a single 4-week course of vemurafenib resulted in the achievement of a partial response, both serologically and by size. After the second course, the urine electrophoresis became negative by immunofixation. All cutaneous manifestations had disappeared. The patient developed extrapyramidal movement arthralgia and bursitis-like pain, and an intermittent tremor of both hands. During the fourth course, the patient had to be admitted to hospital due to pneumonia and treatment was temporarily discontinued. This resulted in a transient disease reactivation, which was detectable only in the urine, both qualitatively and by immunofixation (Fig. 3B). Once symptoms had resolved, vemurafenib was restarted with the fifth course at a lower dose of 480 mg twice daily. Urinary light chains rapidly returned to baseline, though immunofixation of the urine remained positive (Fig. 3B). The patient currently remains in stable remission after eight courses and is still undergoing continuous treatment with vemurafenib at 480 mg twice daily. There is now no evidence of acanthomas or squamous cell carcinoma.\n\nDISCUSSION: With the introduction of increasingly detailed molecular diagnostics and intervention, the clinical use of targeted inhibition of oncogenic signal transduction cascades has been rapidly evolving. Prominent examples include imatinib targeting BCR\u2013ABL in chronic myeloid leukemia and KIT in gastrointestinal stromal tumors (15, 16); erlotinib and other agents targeting the EGF receptor (EGFR) in non\u2013small cell lung cancer (17); and, most recently, vemurafenib and dabrafenib targeting BRAF in malignant melanoma or hairy cell leukemia (8\u201310). In contrast, most recent, vemurafenib and dabrafenib targeting BRAF in malignant melanoma or hairy cell leukemia does not necessarily predict for clinical and therapeutic relevance. In papillary thyroid carcinoma, BRAF mutations are associated with adverse prognosis, but the therapeutic relevance remains elusive (18). In colorectal cancer, BRAF mutations seem to confer a poor clinical outcome, but the efficacy of BRAF inhibition has so far been disappointing (13). In multiple myeloma, two studies have reported BRAF mutations in approximately 4% of patients using genotyping approaches (5, 6). The most well-characterized BRAF mutation, V600E, was detected in 2.4% and 4% (6/147 patients), respectively. This is in line with our data using a proteomics-based approach, which is a very cost-effective screening modality. In our patient cohort, the activating BRAF V600E mutation seems to be associated with a clinically more aggressive form of multiple myeloma and shorter overall survival. In four of seven patients, we found that clonal dominance of BRAF-mutated plasma cells developed over other subclones. Moreover, we observed a high incidence of extramedullary disease in more than half of the BRAF V600E\u2013positive patients, significantly higher than in patients without this mutation (Table 1). Extramedullary disease is normally a rare event in patients with myeloma and is associated with a dismal clinical outcome (19). However, as this mutation is rare and thus patient numbers are small, these findings await confirmation in large international trial cohorts. In BRAF V600E\u2013mutated melanoma, activation of rescue pathways and concurrent mutations in the RAS genes have been suggested to confer vemurafenib resistance (20, 21) and drive treatment-associated cutaneous squamous cell carcinomas and chronic myelomonocytic leukemia (22\u201324). The risk of secondary skin cancers, similar to other therapy-associated adverse events, also seems to be dose-dependent (9, 23). In contrast, KRAS and BRAF-encoded proteins are mutated in many of the same types of malignancies. Concomitant mutations, however, are extremely rare, especially in the context of BRAF V600E (25). This is likely because both genes undergo gain-of-function mutations and thus represent different mechanisms of activating the same pathway. Of note in this context, mutations in the RAS gene family are one of the most frequent recurrent genetic aberrations in multiple myeloma (2, 5, 6). None of the known activating mutations were detectable in myeloma cells from our BRAF-positive patients, confirming previous reports that these mutations appear to be mutually exclusive in multiple myeloma (6). However, in the bone marrow sample from patient #7, a rare KRAS mutation (G60V) was detected. Moreover, this mutation was only present in the subclone of myeloma cells that concomitantly expressed BRAF V600E after tissue microdissection. This protein alteration has been described only once in colon cancer according to the Catalog of Somatic Mutations in Cancer database. Although it is predicted to be damaging by the SNAP/SIFT algorithms, no functional relevance of clinical significance has yet been identified (26). We next hypothesized that RAS mutation\u2013negative myeloma with BRAF V600E could potentially be targetable with the mutation-specific BRAF inhibitor vemurafenib. We found that pharmacologic inhibition of this single driver mutation can result in disease regression and impressive clinical benefits for a patient with refractory myeloma. It is remarkable that this response was observed at the relatively low dose of 720 mg twice daily and could be maintained at 480 mg twice daily. To avoid additional side effects, we chose not to further increase the dose despite residual signal alterations within the bone marrow detectable by whole-body MRI. So far, the response has been durable and no signs of progressive disease or secondary malignancies have been detected after 8 months of treatment, a highly remarkable duration of response for a refractory patient with extramedullary disease. However, emerging resistance to BRAF inhibition is a therapeutic challenge in malignant melanoma. Continued follow-up of our patient will teach us whether this holds true for multiple myeloma and provide the opportunity to apply advanced molecular means to characterize emerging rescue mechanisms in multiple myeloma as compared with other diseases. Multiple myeloma does not harbor a unifying genomic aberration or mutation. Our data underlines the necessity for detailed molecular diagnostics early in the disease. They show the clinical feasibility of targeted inhibition of patient-specific tumor mutations and represent a significant step toward the goal of personalizing treatment for this genetically complex malignancy. Our data provide the rationale for a validation of long-term success rate, timing, and optimal dosage of BRAF inhibition in multiple myeloma by larger-scale trials.\n\nMETHODS - Patients and Tissue Samples: A retrospective single-center cohort of 379 patients with a monoclonal gammopathy diagnosed between January 1992 and January 2012 was investigated by IHC. Two or more consecutive biopsies were available from 37 patients of the cohort. In total, the series consisted of 421 formalin-fixed paraffin-embedded (FFPE) bone marrow (n = 391) or soft-tissue biopsies (n = 30). The work was conducted within our program for the identification of novel therapeutic targets in plasma cell dyscrasias and was approved by the Institutional Review Board. Patient characteristics are summarized in Table 1.\n\nMETHODS - Immunohistochemistry: Antibodies and IHC conditions have previously been described in detail (27, 28). Briefly, a primary BRAF V600E mutation-specific antibody (clone VE1) was used to screen for protein expression of BRAF V600E in myeloma tissue. Four- to six-micrometer sections were cut from FFPE specimens and mounted on Superfrost Ultra Plus glass slides (Menzel-Gl\u00e4ser). The immunostaining was conducted on a Ventana BenchMark Ultra (Ventana Medical Systems) autostainer immunostainer using standard reagents provided by Ventana. Pretreatment with cell conditioner 1 (Ventana Medical Systems) was followed by incubation with undiluted VE1 hybridoma supernatant and consecutive chromogenic detection with the optiView Universal DAB detection kit and counterstaining with hematoxylin and bluing reagent for 4 minutes each. The immunostained slides were evaluated by two pathologists. Microscopic figures were taken with an Olympus BX-51 light microscope equipped with a DP50-CCD camera and processed with Cell-A Software (all from Olympus).\n\nMETHODS - Sequencing: Mutation analysis of the BRAF gene was conducted as previously described (24). Briefly, DNA was isolated from FFPE tissue using standard methods and mutation analysis was conducted by Sanger sequencing. In case of low tumor burden, the DNA was extracted from microdissected areas infiltrated by clonal plasma cells. For mutation analysis of KRAS and NRAS, exons 2 and 3 of both genes were amplified with the following primers: GTG TGA CAT GTT CTA CAG TGA AAA (KRAS exon 2 forward), GAA AGA AAG CCC TCC CCA GTT AAA (KRAS exon 2 reverse), CCA GAC TGT GTT TCT CCC TCC (KRAS exon 3 forward), AAC CAA AGT TGA ACA ATA ATG GTG AAT ATC AA (KRAS exon 3 reverse), GAT GTG GCT CGC CAA TTA AC (NRAS exon 2 forward), CCG ACA ATA GAG GAT TGA GAG ACA AGA CAG (NRAS exon 2 reverse), CCC CTT ACC CTC CAC ACC (NRAS exon 3 forward), and CAC AAA GAT CAT CTT GCC TTA AGA GAA (NRAS exon 3 reverse). Bidirectional Sanger sequencing of all PCR products was subsequently conducted on a 3500 Genetic Analyzer (Life Technologies) using the BigDye Terminator v1.1 Cycle Sequencing Kit (Life Technologies) and the mentioned PCR primers according to standard protocols. In addition, targeted resequencing for mutations commonly found in B-cell malignancies was conducted on an Illumina MiSeq Junior 454 benchtop sequencer (Roche) using a two-step multiplex PCR approach as previously described (29). In brief, exons with known hotspot mutations of BRAF (exons 11 and 15), EZH2 (exon 16), MYD88 (exons 3 and 5), NOTCH1 (exon 34), PIK3CA (exons 9 and 20), and SF3B1 (exons 14 and 15), as well as exons 4\u201310 of TP53, were amplified in two multiplex PCR (exons in two pools, 0.5 \u03bcg of genomic DNA extracted from CD138-purified patient cells. Sequencing data was processed with the GSRunProcessor software (v2.5.v2.7) and image and signal processing via the amplicon pipeline was performed (Roche).\n\nMETHODS - Statistical Analysis: We applied the Fisher Exact Test to compare the prevalence of extramedullary disease between mutation carriers and control patients. Overall survival from the start of treatment was determined for symptomatic patients for whom a follow-up of at least 3 months was available and evaluated using Kaplan\u2013Meier estimates."
+      }
+    ],
+    "tables": "Table 1. Characteristics of samples/patients\n- Samples (n = 421): Tissue - Bone marrow: 391, Soft tissue: 30; Time point - At diagnosis: 302, Relapsed: 109\n- BRAF V600E (n = 13): Tissue - Bone marrow: 10, Soft tissue: 3; Time point - At diagnosis: 7, Relapsed: 6\n- Patients (n = 379): Age 62 (29-87), Sex (male) 222; Type - IgG: 210, IgA: 76, IgM: 16, IgD: 5, Bence-Jones: 67, Asecretory: 6, Biclonal: 1; Stage - MGUS: 59, SMM: 53, MM: 251, EMD+: 47, EMD-: 204, Amyloidosis: 16\n- BRAF V600E (n = 7): Age 57 (45-76), Sex (male) 3; Type - IgG: 2, IgA: 2, IgM: 0, IgD: 0, Bence-Jones: 3, Asecretory: 0, Biclonal: 0; Stage - MGUS: 0, SMM: 0, MM: 7, EMD+: 4, EMD-: 3, Amyloidosis: 0; P = 0.02\nNOTE: Prevalence of extramedullary sites in symptomatic multiple myeloma was significantly higher in patients with BRAF V600E (57%) than in BRAF wild-type (18%; P = 0.02; Fisher Exact Test). Abbreviations: Ig, immunoglobulin; MGUS, monoclonal gammopathy of undetermined significance; SMM, smoldering multiple myeloma; MM, symptomatic multiple myeloma; EMD, incidence of extramedullary myeloma in the course of the disease.",
+    "figures": "Figure 1. Immunohistochemical and molecular characterization of BRAF V600E mutation status in multiple myeloma. Samples of bone marrow core biopsies obtained from three representative myeloma patients (left, center, right) show marked plasma cell infiltration by means of IHC against CD138 (A). B, immunohistochemical analysis for BRAF V600E reveals nearly 100% BRAF-mutated plasma cells in one patient (left, BRAF mut), no BRAF V600E (wild-type) expression in another patient (center, BRAF WT), and a small subclone with mutated BRAF V600E (right, BRAF mut subclone). C, sequencing of bone marrow biopsies (in case of the BRAF-mutated subclone after microdissection of BRAF V600E-positive tissue to enrich for mutated plasma cells) confirms a heterozygous c.1799T>A substitution that results in the BRAF V600E mutation in patient BRAF mut, BRAF wild-type in patient BRAF WT, and a small proportion of BRAF V600E mutation in patient BRAF mut subclone (C, left to right).\n\nFigure 2. Delineation of the clinical course and evolution of BRAF mutation status in the seven patients with BRAF V600E mutation. The clinical courses of the seven patients with confirmed BRAF V600E mutation are depicted as bar diagrams with darker shades of gray marking further lines of therapy and white bars depicting periods without treatment. A blunt end of the bar signifies the death of the patient, an arrowhead end ongoing remission/therapy. Four of the seven patients developed extramedullary myeloma (time points indicated by arrows). At each time point as shown by white (soft tissue) or black (bone marrow core biopsies), the BRAF mutation status is given by an open (wild-type) or filled (mutated) circle. This reveals three patients (#3, #4, #6) with initial BRAF V600E, three patients (#1, #2, #5) with clonal evolution from BRAF wild-type to BRAF mutated, and one patient (#7) with a subclone harboring BRAF V600E mutation at initial diagnosis.\n\nFigure 3. Response to vemurafenib in patient #5. Comparative baseline to day 28 analyses. Whole-body MRI scans reveal a marked shrinkage of a large subcutaneous plasmacytoma above the left shoulder (A, left). The measurable monoclonal protein in the serum (A, top right) as well as the kappa light chain proteinuria (bottom right) decreased after start of treatment. Confirmed negative immunofixation in the serum and urine are depicted by respective arrows. The gray area indicates intermittent breaks in treatment. Overview histology (B, hematoxylin and eosin, H&E) of a skin biopsy shows regression of an infiltrative tumor. The bars depict tumor thickness (T) at baseline and day 28 as well as the extent of progression zones (P). C, IHC for BRAF V600E-positive cells and for apoptotic cells with activated caspase-3. At baseline (C, top row), large numbers of BRAF V600E-positive cells and only few numerous apoptotic figures (arrowheads) are evident on day 28. Although the residual tumor remains positive for BRAF V600E on day 28 (C, right), p-ERK expression is completely abolished, indicating decreased pathway activation after vemurafenib therapy (D, left). Furthermore, the cell proliferation rate (IHC for MIB1, C, center) is markedly reduced and the rate of apoptosis (IHC for activated caspase-3, C, right, arrowheads) is increased.",
+    "statistics": "- Total samples analyzed: n = 421 (391 bone marrow biopsies, 30 soft tissue plasmacytomas)\n- Total patients: n = 379\n- BRAF V600E prevalence: 2.8% in symptomatic myeloma, 1.8% in all patients with monoclonal plasma cell disorders\n- BRAF V600E positive patients: n = 7\n- Patients with BRAF V600E and extramedullary disease: 4/7 (57%)\n- Control patients with extramedullary disease: 43/251 (17%)\n- P-value for extramedullary disease comparison: P = 0.02 (Fisher Exact Test)\n- Median overall survival in BRAF V600E patients: 45 months (range 6 to 54)\n- Median overall survival in BRAF wild-type patients: 105 months (range 4 to 227)\n- P-value for overall survival: P = 0.04\n- Patient #5 baseline measurements: IgA protein 7.7 g/L, kappa light chain proteinuria 346 mg/day, free kappa light chains 101 mg/L\n- Patient #5 subcutaneous mass: 5.9 \u00d7 2.1 cm by whole-body MRI\n- Patient #5 response at day 28: sum of diameters decreased from 14.5 \u00d7 5.7 cm to 6.4 \u00d7 1.7 cm\n- Patient #5 kappa light chain proteinuria at day 28: 113.2 mg/day\n- Caspase-3 positive apoptotic bodies: less than 1 per HPF at baseline, more than 10 per HPF at day 28\n- Age of patients overall: 62 (29-87)\n- Age of BRAF V600E patients: 57 (45-76)\n- Sex distribution overall: 222 male\n- Sex distribution BRAF V600E: 3 male\n- Patient #5 age: 61 years old\n- Patient #5 vemurafenib dosing: started at 480 mg twice daily, increased to 720 mg twice daily, maintained at 480 mg twice daily\n- Duration of response in patient #5: 8 months (at time of publication)",
+    "genes": "BRAF, RAS, NRAS, KRAS, EZH2, MYD88, NOTCH1, PIK3CA, SF3B1, TP53, BCR-ABL, KIT, EGFR",
+    "variants": "BRAF V600E (c.1799T>A), KRAS G60V, SF3B1 K700E, t(4;14), del17p",
+    "diseases": "Multiple myeloma, symptomatic multiple myeloma, smoldering multiple myeloma, monoclonal gammopathy of undetermined significance (MGUS), Amyloid Light-chain amyloidosis, extramedullary myeloma, melanoma, hairy cell leukemia, chronic myeloid leukemia, colorectal carcinoma, gastrointestinal stromal tumors, non-small cell lung cancer, papillary thyroid carcinoma, chronic myelomonocytic leukemia,squamous cell carcinoma, acanthomas, colon cancer",
+    "therapies": "Vemurafenib, bortezomib, carfilzomib, thalidomide, lenalidomide, pomalidomide, chemotherapy, dexamethasone, bendamustine, melphalan, autologous blood stem cell transplant (ASCT), radiotherapy, imatinib, erlotinib, dabrafenib",
+    "clinical_trials": "No specific clinical trial identifiers mentioned in the paper."
+  },
+  "timing": {
+    "start": "2025-12-15T02:01:16.649235",
+    "end": "2025-12-15T02:09:47.153056",
+    "seconds": 510.503821
+  },
+  "log_file": "/Users/ali/Downloads/civic/civic_extraction_end_to_end/logs/PMID_23612012_20251215_020116.log"
+}

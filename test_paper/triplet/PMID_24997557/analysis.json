@@ -1,0 +1,200 @@
+{
+    "paper_id": "24997557",
+    "total_true_items_in_paper_estimate": 3,
+    "ai_evidence_item_count": 3,
+    "gt_evidence_item_count": 2,
+    "alignment": [
+      {
+        "tuple_id": "BRAF|V600E|Multiple Myeloma|Vemurafenib",
+        "paper_evidence": {
+          "summary": "Two post-transplant refractory MM patients with BRAF V600E showed rapid biochemical/clinical (Pt1) and biochemical+radiographic (Pt2) responses to vemurafenib 960 mg BID; Pt1 later developed CNS progression ~7 weeks; Pt2 ongoing response at 4 months with dermatitis and SCC during therapy.",
+          "location": "Case Presentations Patient 1 & 2; Figure 1; Discussion",
+          "quantitative_data": "Pt1: pain improved within 4 days; IgG κ 2.5→1.3 g/dL; κ FLC 41→7 mg/dL within 1 month; CNS involvement ~7 weeks. Pt2: κ FLC ↓90% within 1 month; normalized at 2 months; PET near-resolution; ongoing at 4 months; grade 1 dermatitis; SCC treated.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "C",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY/RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 0,
+            "fields": {
+              "feature_names": ["BRAF"],
+              "variant_names": ["V600E"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["Vemurafenib"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "LEVEL_D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY/RESPONSE",
+              "evidence_description": "Matches Pt1: rapid pain improvement; IgG κ and κ FLC reductions within 1 month; response ~7 weeks then CNS progression.",
+              "verbatim_quote": "Exact sentence block from Pt1 case presentation describing pain improvement and biomarker drops.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": "673",
+              "disease_efo_id": "EFO_0001378",
+              "therapy_ncit_id": "NCIT:C64768",
+              "therapy_rxcui": "1147220",
+              "variant_hgvs_p": "p.Val600Glu",
+              "clinical_trial_nct_ids": ["NCT01524972"],
+              "drug_safety": "FAERS/OpenFDA top adverse events list"
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "MISINTERPRETED_OR_INCORRECT",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+              "variant_specifics": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+              "study_details": "MISINTERPRETED_OR_INCORRECT"
+            },
+            "notes": "Core clinical claim is faithful. Major issues: evidence_level not CIViC-consistent (case study should be C), and NCT ID does not match paper text; FAERS safety list is not sourced to the paper."
+          },
+          {
+            "ai_index": 1,
+            "fields": {
+              "feature_names": ["BRAF"],
+              "variant_names": ["V600E"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["Vemurafenib"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "LEVEL_D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY/RESPONSE",
+              "evidence_description": "Matches Pt2: 90% κ FLC decrease at 1 month, normalization at 2 months, PET near-resolution, ongoing response at 4 months.",
+              "verbatim_quote": "Exact sentence block from Pt2 case presentation describing 90% drop, normalization, PET response, 4-month ongoing response.",
+              "variant_origin": "SOMATIC",
+              "clinical_trial_nct_ids": ["NCT01524972"],
+              "drug_safety": "FAERS/OpenFDA top adverse events list"
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "MISINTERPRETED_OR_INCORRECT",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+              "variant_specifics": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+              "study_details": "MISINTERPRETED_OR_INCORRECT"
+            },
+            "notes": "Core efficacy claim is faithful. Misses paper-specific adverse events (dermatitis, squamous cell carcinoma). NCT ID mismatch and CIViC evidence_level mismatch remain."
+          }
+        ],
+        "gt_items": [
+          {
+            "gt_index": 1698,
+            "fields": {
+              "feature_names": "BRAF",
+              "variant_names": "V600E",
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": "Vemurafenib",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "C",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITYRESPONSE"
+            },
+            "notes": "Covers Pt1 but is underspecified: does not include pain/biomarker response magnitude, and frames outcome mainly as relapse/death at ~7 weeks."
+          },
+          {
+            "gt_index": 1699,
+            "fields": {
+              "feature_names": "BRAF",
+              "variant_names": "V600E",
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": "Vemurafenib",
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "C",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITYRESPONSE"
+            },
+            "notes": "Covers Pt2 and correctly notes near-resolution at 4 months, but misses the explicit 90%/normalization timeline and AEs."
+          }
+        ]
+      },
+      {
+        "tuple_id": "BRAF|V600E|Multiple Myeloma|NONE",
+        "paper_evidence": {
+          "summary": "Paper states BRAF V600E-mutated MM may have aggressive clinical course with prominent extramedullary disease and short duration response to standard therapies; cites Andrulis et al (7/379; extramedullary 4/7) and notes both case patients had aggressive/extramedullary features.",
+          "location": "Discussion; Clinical Practice Points/Conclusion-style statements",
+          "quantitative_data": "Andrulis et al summary: 7/379 BRAF V600E; 4/7 extramedullary (as reported in this paper’s discussion).",
+          "evidence_type": "PROGNOSTIC",
+          "evidence_level": "C (discussion-supported; secondary citation caveat)",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "POOR OUTCOME"
+        },
+        "ai_items": [
+          {
+            "ai_index": 2,
+            "fields": {
+              "feature_names": ["BRAF"],
+              "variant_names": ["V600E"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": [],
+              "evidence_type": "PROGNOSTIC",
+              "evidence_level": "LEVEL_D",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "POOR OUTCOME",
+              "evidence_description": "Aggressive phenotype + extramedullary disease; cites Andrulis 7/379 and notes both case patients aggressive.",
+              "verbatim_quote": "Matches discussion sentence(s) about aggressive phenotype and Andrulis cohort summary.",
+              "cohort_size": 9,
+              "clinical_trial_nct_ids": ["NCT01524972"]
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "MISINTERPRETED_OR_INCORRECT",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+              "variant_specifics": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+              "study_details": "MISINTERPRETED_OR_INCORRECT"
+            },
+            "notes": "Core prognostic statement is supported by the paper, but (1) cohort_size=9 mixes external Andrulis cohort with in-paper cases in a way that is not clean for a single-source evidence item, and (2) NCT field does not belong here and also mismatches paper."
+          }
+        ],
+        "gt_items": []
+      }
+    ],
+    "missing_from_ai": [
+      "Paper-specific adverse events during vemurafenib in Patient 2 (grade 1 dermatitis; squamous cell carcinoma requiring treatment) are not captured as structured safety evidence."
+    ],
+    "ai_hallucinated_items": [
+      "FAERS/OpenFDA 'top_adverse_events' list is not in the paper; it is external enrichment and should not be treated as paper-supported evidence.",
+      "Clinical trial ID is mismatched (paper text shows NCT01524978, AI uses NCT01524972)."
+    ],
+    "ai_improvements_over_gt": [
+      "Adds a supported prognostic/aggressive-phenotype item not present in ground truth.",
+      "Adds quantitative response metrics and timelines (pain improvement; IgG/κ FLC changes; PET near-resolution; CNS progression timing).",
+      "Adds normalization/enrichment fields (HGVS protein, Entrez/EFO/NCIt/RxCUI) that are absent from ground truth."
+    ],
+    "overall_judgement": {
+      "summary": "The AI extraction captures the core clinical claims of the paper very well for the two predictive case items and meaningfully extends beyond ground truth by adding a supported prognostic statement. However, it has key normalization/metadata errors (notably the clinical trial NCT mismatch and CIViC evidence-level mismatch) and fails to encode paper-specific adverse events while instead attaching an external FAERS safety list not supported by the paper.",
+      "strengths": [
+        "High fidelity to the paper’s efficacy narratives and quantitative response details for both patients.",
+        "Correct direction/significance for predictive response and prognostic poor-outcome framing.",
+        "Adds a real (paper-supported) evidence item missing from CIViC baseline."
+      ],
+      "weaknesses": [
+        "Incorrect clinical trial identifier vs paper text.",
+        "Evidence_level not aligned with CIViC grading for case reports (should be C).",
+        "Safety handling is inverted: misses in-paper AEs but adds external FAERS adverse-event frequencies not paper-derived.",
+        "Prognostic cohort_size field is not cleanly defined for a single-source evidence item (mixes cohorts across publications)."
+      ]
+    }
+  }
+  

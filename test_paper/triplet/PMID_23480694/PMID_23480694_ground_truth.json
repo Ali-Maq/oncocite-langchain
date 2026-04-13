@@ -1,0 +1,92 @@
+{
+  "pmid": "23480694",
+  "source_id": 1232,
+  "title": "Extramedullary myeloma whole genome sequencing reveals novel mutations in Cereblon, proteasome subunit G2 and the glucocorticoid receptor in multi drug resistant disease.",
+  "journal": "Br J Haematol",
+  "year": 2013.0,
+  "civic_item_count": 1,
+  "tier1_field_completeness": {
+    "evidence_id": {
+      "populated": 1,
+      "total": 1,
+      "percentage": 100.0
+    },
+    "evidence_description": {
+      "populated": 1,
+      "total": 1,
+      "percentage": 100.0
+    },
+    "evidence_level": {
+      "populated": 1,
+      "total": 1,
+      "percentage": 100.0
+    },
+    "evidence_type": {
+      "populated": 1,
+      "total": 1,
+      "percentage": 100.0
+    },
+    "evidence_direction": {
+      "populated": 1,
+      "total": 1,
+      "percentage": 100.0
+    },
+    "evidence_significance": {
+      "populated": 1,
+      "total": 1,
+      "percentage": 100.0
+    },
+    "feature_names": {
+      "populated": 1,
+      "total": 1,
+      "percentage": 100.0
+    },
+    "variant_names": {
+      "populated": 1,
+      "total": 1,
+      "percentage": 100.0
+    },
+    "disease_name": {
+      "populated": 1,
+      "total": 1,
+      "percentage": 100.0
+    },
+    "therapy_names": {
+      "populated": 1,
+      "total": 1,
+      "percentage": 100.0
+    },
+    "clinical_trial_nct_ids": {
+      "populated": 0,
+      "total": 1,
+      "percentage": 0.0
+    },
+    "source_title": {
+      "populated": 1,
+      "total": 1,
+      "percentage": 100.0
+    },
+    "source_citation_id": {
+      "populated": 1,
+      "total": 1,
+      "percentage": 100.0
+    }
+  },
+  "evidence_items": [
+    {
+      "evidence_id": 1766,
+      "evidence_description": "A 37 year old, heavily pretreated (including thalidomide and lenalidomide) patient with IgG-kappa multiple myeloma was sequenced following extramedullary relapse. A high number of alterations were observed including 38 rearrangements, 35 translocations, 4 indels, and 271 nonsynonymous point mutations. Two mutations altering CRBN (Q99* and R283K), a gene previously described as being necessary for immunomodulatory drug response, were observed and thought to be responsible for resistance to the pomalidomide and dexamethasone treatment she received but failed to respond to following sequencing.",
+      "evidence_level": "C",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "RESISTANCE",
+      "feature_names": "CRBN",
+      "variant_names": "Mutation",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Lenalidomide|Pomalidomide",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Extramedullary myeloma whole genome sequencing reveals novel mutations in Cereblon, proteasome subunit G2 and the glucocorticoid receptor in multi drug resistant disease.",
+      "source_citation_id": "23480694"
+    }
+  ]
+}

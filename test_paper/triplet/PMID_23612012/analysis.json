@@ -1,0 +1,210 @@
+{
+    "paper_id": "23612012",
+    "total_true_items_in_paper_estimate": 3,
+    "ai_evidence_item_count": 3,
+    "gt_evidence_item_count": 1,
+    "alignment": [
+      {
+        "tuple_id": "BRAF|V600E|Multiple Myeloma|NA (Extramedullary disease risk)",
+        "paper_evidence": {
+          "summary": "BRAF V600E-positive MM patients had higher incidence of developing extramedullary disease: 4/7 (57%) vs 43/251 (17%); P=0.02.",
+          "location": "Results; Table 1 / Figure 2 narrative (page showing cohort comparison).",
+          "quantitative_data": "4/7 (57%) vs 43/251 (17%), P=0.02.",
+          "evidence_type": "PROGNOSTIC",
+          "evidence_level": "B",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "POOR_OUTCOME"
+        },
+        "ai_items": [
+          {
+            "ai_index": 1,
+            "fields": {
+              "feature_names": ["BRAF"],
+              "variant_names": ["V600E"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": [],
+              "evidence_type": "PROGNOSTIC",
+              "evidence_level": "B",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "POOR_OUTCOME",
+              "evidence_description": "Higher incidence of extramedullary disease: 4/7 vs 43/251; P=0.02.",
+              "verbatim_quote": "Remarkably, four of the seven BRAF-mutated patients (57%) went on to develop extramedullary disease compared with 43 of 251 (17%, P = 0.02) control patients with symptomatic disease.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": "673",
+              "disease_efo_id": "EFO_0001378",
+              "variant_hgvs_c": "c.1799T>A",
+              "variant_hgvs_p": "p.V600E",
+              "cohort_size": 379
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Core claim and statistics match the paper. Cohort sizing is broadly correct (379 total), but the exact denominator for the control comparison is 251 symptomatic MM."
+          }
+        ],
+        "gt_items": []
+      },
+  
+      {
+        "tuple_id": "BRAF|V600E|Multiple Myeloma|NA (Overall survival)",
+        "paper_evidence": {
+          "summary": "BRAF V600E carriers had shorter median overall survival than non-carriers, assessed among patients with ≥3 months follow-up from start of first-line therapy.",
+          "location": "Results (survival comparison paragraph).",
+          "quantitative_data": "Median OS 45 months (range 6–54) vs 105 months (range 4–227); P=0.04.",
+          "evidence_type": "PROGNOSTIC",
+          "evidence_level": "B",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "POOR_OUTCOME"
+        },
+        "ai_items": [
+          {
+            "ai_index": 0,
+            "fields": {
+              "feature_names": ["BRAF"],
+              "variant_names": ["V600E"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": [],
+              "evidence_type": "PROGNOSTIC",
+              "evidence_level": "B",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "POOR_OUTCOME",
+              "evidence_description": "Median OS 45 months vs 105 months; P=0.04; follow-up ≥3 months from first-line start.",
+              "verbatim_quote": "Those patients confirmed to have the BRAF V600E mutation were found to have a significantly shorter median overall survival of 45 months (range 6 to 54) as compared with 105 months (range 4 to 227 months; P = 0.04) in patients without the mutation.",
+              "variant_origin": "SOMATIC",
+              "gene_entrez_id": "673",
+              "disease_efo_id": "EFO_0001378",
+              "variant_hgvs_c": "c.1799T>A",
+              "variant_hgvs_p": "p.V600E",
+              "cohort_size": 379
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "EXACT_MATCH_WITH_PAPER",
+              "verbatim_quote": "EXACT_MATCH_WITH_PAPER",
+              "identifiers": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "PARTIAL_MATCH_OR_UNDER-SPECIFIED"
+            },
+            "notes": "Matches the paper’s OS comparison and correctly includes the follow-up constraint."
+          }
+        ],
+        "gt_items": [
+          {
+            "gt_index": 463,
+            "fields": {
+              "feature_names": "BRAF",
+              "variant_names": "V600E",
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": null,
+              "evidence_type": "PROGNOSTIC",
+              "evidence_level": "B",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "POOR_OUTCOME",
+              "evidence_description": "BRAF V600E had shorter OS than wild-type.",
+              "source_title": "Targeting the BRAF V600E mutation in multiple myeloma.",
+              "source_citation_id": "23612012"
+            },
+            "notes": "Ground truth correctly captures the OS direction/significance but is less quantitative/complete than the paper and AI."
+          }
+        ]
+      },
+  
+      {
+        "tuple_id": "BRAF|V600E|Multiple Myeloma|Vemurafenib",
+        "paper_evidence": {
+          "summary": "Case report (patient #5): off-label low-dose vemurafenib produced rapid shrinkage of extramedullary plasmacytomas and IMWG partial response by day 28; response durability reported with ongoing therapy. Paper also reports treatment interruption due to pneumonia and other adverse symptoms (arthralgia/bursitis-like pain, tremor) and notes no acanthomas/SCC at reporting time.",
+          "location": "Results + Figure 3; follow-up paragraph describing dosing, response metrics, and adverse events.",
+          "quantitative_data": "Sum of diameters 14.5×5.7 cm → 6.4×1.7 cm (day 28). Light-chain proteinuria decreased; IMWG partial response; durable course reported.",
+          "evidence_type": "PREDICTIVE",
+          "evidence_level": "C",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "SENSITIVITY_RESPONSE"
+        },
+        "ai_items": [
+          {
+            "ai_index": 2,
+            "fields": {
+              "feature_names": ["BRAF"],
+              "variant_names": ["V600E"],
+              "disease_name": "Multiple Myeloma",
+              "therapy_names": ["Vemurafenib"],
+              "evidence_type": "PREDICTIVE",
+              "evidence_level": "C",
+              "evidence_direction": "SUPPORTS",
+              "evidence_significance": "SENSITIVITY_RESPONSE",
+              "evidence_description": "Partial response with rapid regression within 2 weeks; lesion diameters decreased at day 28; durable after ~8 months.",
+              "verbatim_quote": "Within 2 weeks, the soft tissue plasmacytomas visually reduced in size... Whole-body MRI scan and measurements of the three reference skin lesions showed a decrease...",
+              "variant_origin": "SOMATIC",
+              "therapy_rxnorm_id": "1147220",
+              "therapy_ncit_id": "NCIT:C64768",
+              "drug_safety": {
+                "top_adverse_events": ["PYREXIA", "RASH", "DISEASE PROGRESSION", "DIARRHOEA", "ARTHRALGIA"],
+                "source": "FAERS/OpenFDA"
+              },
+              "cohort_size": 1
+            },
+            "field_status": {
+              "feature_names": "EXACT_MATCH_WITH_PAPER",
+              "variant_names": "EXACT_MATCH_WITH_PAPER",
+              "disease_name": "EXACT_MATCH_WITH_PAPER",
+              "therapy_names": "EXACT_MATCH_WITH_PAPER",
+              "evidence_type": "EXACT_MATCH_WITH_PAPER",
+              "evidence_level": "EXACT_MATCH_WITH_PAPER",
+              "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+              "evidence_significance": "EXACT_MATCH_WITH_PAPER",
+              "evidence_description": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "verbatim_quote": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "identifiers": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "variant_specifics": "PARTIAL_MATCH_OR_UNDER-SPECIFIED",
+              "study_details": "EXACT_MATCH_WITH_PAPER"
+            },
+            "notes": "Core response claim matches the paper, but the AI omits paper-reported adverse events/interruptions and imports a FAERS/OpenFDA 'drug_safety' block that is not supported by the paper text."
+          }
+        ],
+        "gt_items": []
+      }
+    ],
+    "missing_from_ai": [
+      "Paper-reported on-treatment adverse events and interruption details in the vemurafenib case (e.g., arthralgia/bursitis-like pain, tremor, pneumonia-related discontinuation, and explicit 'no acanthomas/SCC' statement at reporting time)."
+    ],
+    "ai_hallucinated_items": [
+      "FAERS/OpenFDA-derived 'drug_safety.top_adverse_events' block is not present in the paper and should not be treated as paper-supported evidence."
+    ],
+    "ai_improvements_over_gt": [
+      "AI captures extramedullary disease risk association (absent from GT).",
+      "AI captures vemurafenib therapeutic response case report (absent from GT).",
+      "AI includes quantitative OS and extramedullary statistics more explicitly than GT."
+    ],
+    "overall_judgement": {
+      "summary": "AI extraction is high precision for the core clinical claims and materially more complete than the ground truth, but it incorrectly treats an external FAERS/OpenFDA safety summary as if it were part of the paper record and it misses the paper’s actual case-level adverse event details.",
+      "strengths": [
+        "Correct identification of the key biomarker (BRAF V600E) and disease context (MM).",
+        "Accurate capture of the two cohort-based prognostic associations with correct statistics and P-values.",
+        "Accurate capture of the vemurafenib response signal (case report) with key tumor-measurement numbers."
+      ],
+      "weaknesses": [
+        "Safety reporting mismatch: misses paper-reported patient adverse events while adding non-paper FAERS/OpenFDA events.",
+        "Some fields are overconfidently populated without paper-confirmed specificity (e.g., some identifier/variant-origin assumptions are reasonable but not explicitly asserted in-text)."
+      ]
+    }
+  }
+  

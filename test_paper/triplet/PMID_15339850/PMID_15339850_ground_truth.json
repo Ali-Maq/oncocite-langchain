@@ -1,0 +1,137 @@
+{
+  "pmid": "15339850",
+  "source_id": 1419,
+  "title": "Possible roles for activating RAS mutations in the MGUS to MM transition and in the intramedullary to extramedullary transition in some plasma cell tumors.",
+  "journal": "Blood",
+  "year": 2005.0,
+  "civic_item_count": 4,
+  "tier1_field_completeness": {
+    "evidence_id": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_description": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_level": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_type": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_direction": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "evidence_significance": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "feature_names": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "variant_names": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "disease_name": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "therapy_names": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "clinical_trial_nct_ids": {
+      "populated": 0,
+      "total": 4,
+      "percentage": 0.0
+    },
+    "source_title": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    },
+    "source_citation_id": {
+      "populated": 4,
+      "total": 4,
+      "percentage": 100.0
+    }
+  },
+  "evidence_items": [
+    {
+      "evidence_id": 2011,
+      "evidence_description": "Activating mutations in KRAS or NRAS were observed more frequently in multiple myeloma patients than in patients with monoclonal gammopathy of uncertain significance (MGUS) (31%  vs. 5% ). Another study found that the frequency of RAS mutations was higher in multiple myeloma patients with progressive disease compared to the newly diagnosed (81%  vs. 54.5% ).",
+      "evidence_level": "B",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "RESISTANCE",
+      "feature_names": "KRAS",
+      "variant_names": "G12A",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Melphalan",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Possible roles for activating RAS mutations in the MGUS to MM transition and in the intramedullary to extramedullary transition in some plasma cell tumors.",
+      "source_citation_id": "15339850"
+    },
+    {
+      "evidence_id": 2249,
+      "evidence_description": "Activating mutations in KRAS or NRAS were observed more frequently in multiple myeloma patients than in patients with monoclonal gammopathy of uncertain significance (MGUS) (31%  vs. 5% ). Another study found that the frequency of RAS mutations was higher in multiple myeloma patients with progressive disease compared to the newly diagnosed (81%  vs. 54.5% ).",
+      "evidence_level": "B",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "RESISTANCE",
+      "feature_names": "KRAS",
+      "variant_names": "G12D",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Melphalan",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Possible roles for activating RAS mutations in the MGUS to MM transition and in the intramedullary to extramedullary transition in some plasma cell tumors.",
+      "source_citation_id": "15339850"
+    },
+    {
+      "evidence_id": 2260,
+      "evidence_description": "Activating mutations in KRAS or NRAS were observed more frequently in multiple myeloma patients than in patients with monoclonal gammopathy of uncertain significance (MGUS) (31%  vs. 5% ). Another study found that the frequency of RAS mutations was higher in multiple myeloma patients with progressive disease compared to the newly diagnosed (81%  vs. 54.5% ).",
+      "evidence_level": "B",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "RESISTANCE",
+      "feature_names": "KRAS",
+      "variant_names": "G12C",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Melphalan",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Possible roles for activating RAS mutations in the MGUS to MM transition and in the intramedullary to extramedullary transition in some plasma cell tumors.",
+      "source_citation_id": "15339850"
+    },
+    {
+      "evidence_id": 2276,
+      "evidence_description": "Activating mutations in KRAS or NRAS were observed more frequently in multiple myeloma patients than in patients with monoclonal gammopathy of uncertain significance (MGUS) (31%  vs. 5% ). Another study found that the frequency of RAS mutations was higher in multiple myeloma patients with progressive disease compared to the newly diagnosed (81%  vs. 54.5% ).",
+      "evidence_level": "B",
+      "evidence_type": "PREDICTIVE",
+      "evidence_direction": "SUPPORTS",
+      "evidence_significance": "RESISTANCE",
+      "feature_names": "KRAS",
+      "variant_names": "G12S",
+      "disease_name": "Multiple Myeloma",
+      "therapy_names": "Melphalan",
+      "clinical_trial_nct_ids": NaN,
+      "source_title": "Possible roles for activating RAS mutations in the MGUS to MM transition and in the intramedullary to extramedullary transition in some plasma cell tumors.",
+      "source_citation_id": "15339850"
+    }
+  ]
+}
