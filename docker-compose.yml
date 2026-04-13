@@ -1,0 +1,16 @@
+services:
+  oncocite:
+    build: .
+    image: oncocite-langchain:latest
+    container_name: oncocite-langchain
+    environment:
+      - FIREWORKS_API_KEY=${FIREWORKS_API_KEY:?FIREWORKS_API_KEY must be set in the environment or a .env file}
+      - FIREWORKS_BASE_URL=${FIREWORKS_BASE_URL:-https://api.fireworks.ai/inference/v1}
+      - FIREWORKS_MODEL_NAME=${FIREWORKS_MODEL_NAME:-accounts/fireworks/models/glm-4p7}
+      - FIREWORKS_VISION_MODEL=${FIREWORKS_VISION_MODEL:-accounts/fireworks/models/qwen3-vl-235b-a22b-thinking}
+      - MAX_ITERATIONS=${MAX_ITERATIONS:-3}
+      - LANGGRAPH_CHECKPOINT_BACKEND=${LANGGRAPH_CHECKPOINT_BACKEND:-sqlite}
+    volumes:
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+    command: ["--help"]

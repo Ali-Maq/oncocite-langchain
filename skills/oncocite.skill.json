@@ -1,0 +1,53 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/skill-v1.json",
+  "name": "oncocite",
+  "version": "1.0.0",
+  "description": "OncoCITE — multi-agent CIViC evidence extraction from scientific literature. Reads a publication PDF, plans an extraction strategy, extracts clinical genomic evidence items with verbatim source grounding, iteratively refines them, and normalizes entities to standardized ontologies (Entrez / DOID / RxNorm / NCIt / EFO / HPO / ClinVar / HGVS). Produces a 45-field JSON record per evidence item suitable for CIViC import.",
+  "license": "MIT",
+  "paper": {
+    "title": "OncoCITE: Multimodal Multi-Agent Reconstruction of Clinical Oncology Knowledge Bases from Scientific Literature",
+    "doi": "10.21203/rs.3.rs-9160944/v1"
+  },
+  "mcp_server": {
+    "transport": "stdio",
+    "command": "python",
+    "args": ["-m", "mcp_server"],
+    "cwd_env": "ONCOCITE_REPO_ROOT"
+  },
+  "tools": [
+    {"name": "save_paper_content", "agent": "Reader", "purpose": "Persist extracted paper content."},
+    {"name": "get_paper_content", "agent": "All", "purpose": "Retrieve paper content."},
+    {"name": "save_extraction_plan", "agent": "Planner", "purpose": "Save extraction strategy."},
+    {"name": "get_extraction_plan", "agent": "Extractor", "purpose": "Retrieve extraction strategy."},
+    {"name": "check_actionability", "agent": "Extractor", "purpose": "Check clinical relevance."},
+    {"name": "validate_evidence_item", "agent": "Extractor", "purpose": "Check schema compliance."},
+    {"name": "save_evidence_items", "agent": "Extractor", "purpose": "Save validated items."},
+    {"name": "get_evidence_items", "agent": "Critic, Normalizer", "purpose": "Retrieve current items."},
+    {"name": "save_critique", "agent": "Critic", "purpose": "Save validation results."},
+    {"name": "increment_iteration", "agent": "Orchestrator", "purpose": "Increment refinement iteration."},
+    {"name": "lookup_gene_entrez", "agent": "Normalizer", "purpose": "Look up NCBI Gene ID."},
+    {"name": "lookup_rxnorm", "agent": "Normalizer", "purpose": "Look up RxNorm ID."},
+    {"name": "lookup_therapy_ncit", "agent": "Normalizer", "purpose": "Look up NCIt therapy code."},
+    {"name": "lookup_efo", "agent": "Normalizer", "purpose": "Look up EFO disease ID."},
+    {"name": "lookup_disease_doid", "agent": "Normalizer", "purpose": "Look up DOID."},
+    {"name": "lookup_clinical_trial", "agent": "Normalizer", "purpose": "Verify NCT identifier."},
+    {"name": "lookup_variant_info", "agent": "Normalizer", "purpose": "Look up genomic coordinates / HGVS."},
+    {"name": "save_final_output", "agent": "Orchestrator", "purpose": "Save final extraction output."},
+    {"name": "get_workflow_status", "agent": "All", "purpose": "Retrieve workflow status."},
+    {"name": "log_agent_action", "agent": "All", "purpose": "Log agent actions (audit trail)."},
+    {"name": "save_checkpoint", "agent": "Orchestrator", "purpose": "Save intermediate checkpoint."},
+    {"name": "restore_checkpoint", "agent": "Orchestrator", "purpose": "Restore from checkpoint."}
+  ],
+  "usage_examples": [
+    {
+      "description": "Run the full extraction pipeline on a single publication PDF.",
+      "invocation": "python run_extraction.py --input paper.pdf --output results/",
+      "outputs": "results/{paper_id}/{timestamp}/{paper_id}_extraction.json — 45-field evidence-item array with verbatim quotes, confidence scores, and ontology identifiers."
+    },
+    {
+      "description": "Drive the pipeline over MCP from an external agent.",
+      "invocation": "python -m mcp_server",
+      "notes": "The server registers all 22 tools listed above and communicates over stdio. Point your MCP client (Claude Desktop, the MCP inspector, or a LangChain agent using langchain-mcp-adapters) at this command to invoke the tools directly."
+    }
+  ]
+}

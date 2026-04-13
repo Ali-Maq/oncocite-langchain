@@ -1,9 +1,18 @@
 [project]
-name = "civic-langgraph-migration"
-version = "0.1.0"
-description = "CIViC extraction pipeline migrated to LangGraph"
+name = "oncocite-langchain"
+version = "1.0.0"
+description = "OncoCITE — LangChain/LangGraph implementation of the multi-agent CIViC evidence extraction pipeline (companion code for the OncoCITE manuscript)."
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Mujahid Quidwai" },
+    { name = "Santiago Thibaud" },
+    { name = "Dennis Shasha" },
+    { name = "Sundar Jagannath" },
+    { name = "Samir Parekh" },
+    { name = "Alessandro Laganà" },
+]
 dependencies = [
     # LangGraph & LangChain
     "langgraph>=0.2.0",
@@ -12,14 +21,17 @@ dependencies = [
     "langchain-core>=0.3.0",
     "langchain-openai>=0.2.0",
 
-    # OpenAI-compatible client (for vLLM)
+    # OpenAI-compatible client (for vLLM / Fireworks / other LangChain-compatible providers)
     "openai>=1.0.0",
+
+    # Model Context Protocol — 22 tools per Supplementary Table S15
+    "mcp>=1.0.0",
 
     # Async HTTP
     "aiohttp>=3.9.0",
     "httpx>=0.27.0",
 
-    # PDF processing (same as original)
+    # PDF processing (Reader phase)
     "pymupdf>=1.24.0",
     "Pillow>=10.0.0",
 
@@ -40,12 +52,20 @@ dev = [
     "mypy>=1.10.0",
 ]
 
+[project.urls]
+Homepage = "https://github.com/Ali-Maq/oncocite-langchain"
+Paper = "https://doi.org/10.21203/rs.3.rs-9160944/v1"
+
+[project.scripts]
+oncocite-extract = "run_extraction:main"
+oncocite-mcp-server = "mcp_server.server:main"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["graphs", "runtime", "config"]
+packages = ["graphs", "runtime", "config", "tools", "hooks", "mcp_server"]
 
 [tool.uv]
 dev-dependencies = [

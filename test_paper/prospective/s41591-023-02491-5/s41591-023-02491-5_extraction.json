@@ -1,0 +1,545 @@
+{
+  "paper_id": "s41591-023-02491-5",
+  "paper_info": {
+    "author": "Holly Lee, Sungwoo Ahn, Ranjan Maity, Noemie Leblay, Bachisio Zicheddu, Marietta Truger, Moritz Chorianopoulos, Anthony Cirincione, Michael Durante, Eileen M. Boyle, Remi Maura, Ola Landgren, Manasse Oualkacha, Sarthak Sinha, John McIntyre, Angela M.Y. Chan, Holly Wilson, Shari Kyman, Amrita Krishnan, Ola Landgren, Wencke Walter, Manja Meggendorfer, Claudia Haferlach, Torsten Haferlach, Hermann Einsele, Martin K. Kortum, Stefan Knop, Jean Baptiste Alberge, Andreas Rosenwald, Jonathan J. Keats, Leo Rasche, Francesco Maura, Paola Neri, Nizar J. Bahlis",
+    "year": "2023",
+    "num_pages": 34,
+    "paper_type": "PRIMARY"
+  },
+  "extraction": {
+    "items": 9,
+    "iterations": 1,
+    "complete": true,
+    "evidence_items": [
+      {
+        "feature_names": [
+          "TNFRSF17"
+        ],
+        "feature_entrez_ids": [
+          608
+        ],
+        "variant_names": [
+          "BIALLELIC DELETION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "Biallelic focal deletions at the TNFRSF17 locus (encoding BCMA) mediate resistance to anti-BCMA CAR T and TCE therapies in multiple myeloma. Two cases showed MM relapse driven by BCMA-negative clones harboring focal biallelic deletions at the TNFRSF17 locus, either emerging at relapse or through selective expansion of pre-existing subclones.",
+        "therapy_names": [
+          "Idecabtagene Vicleucel",
+          "Teclistamab"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C117729",
+          "NCIT:C136823"
+        ],
+        "therapy_rxcui_ids": [
+          "2536430",
+          "2619426"
+        ],
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [],
+        "chromosome": "16",
+        "start_position": 11920001,
+        "stop_position": 12100000,
+        "reference_build": "GRCh37",
+        "clinical_trial_nct_ids": [
+          "NCT03651128",
+          "NCT03145181",
+          "NCT03361972",
+          "NCT03314597",
+          "NCT03326336",
+          "NCT01454297",
+          "NCT04108624"
+        ],
+        "cancer_cell_fraction": null,
+        "cohort_size": 30,
+        "source_title": "Mechanisms of antigen escape from BCMA- or GPRC5D-targeted immunotherapies in multiple myeloma",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Medicine",
+        "source_page_numbers": "Abstract, Results section",
+        "verbatim_quote": "In two cases, MM relapse post-TCE/CAR T therapy was driven by BCMA-negative clones harboring focal biallelic deletions at the TNFRSF17 locus at relapse or by selective expansion of pre-existing subclones with biallelic TNFRSF17 loss.",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "This evidence is highly actionable as it demonstrates a clear mechanism of resistance (biallelic TNFRSF17 deletion) to specific anti-BCMA therapies in multiple myeloma patients, supported by whole-genome sequencing of 30 patients."
+      },
+      {
+        "feature_names": [
+          "TNFRSF17"
+        ],
+        "feature_entrez_ids": [
+          608
+        ],
+        "variant_names": [
+          "p.Arg27Pro"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "The TNFRSF17 p.Arg27Pro missense mutation in the extracellular domain of BCMA negates the efficacy of anti-BCMA TCE therapies despite detectable surface BCMA protein expression. This nontruncating mutation was identified in cases of multiple myeloma relapse after anti-BCMA TCE therapy.",
+        "therapy_names": [
+          "Teclistamab",
+          "Elranatamab",
+          "Alnuctamab"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C136823",
+          "NCIT:C146860",
+          "NCIT:C175740"
+        ],
+        "therapy_rxcui_ids": [
+          "2619426",
+          "2644880",
+          "2622189"
+        ],
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "p.Arg27Pro",
+          "c.80G>C"
+        ],
+        "chromosome": "16",
+        "start_position": 11965404,
+        "stop_position": 11965404,
+        "reference_build": "GRCh37",
+        "clinical_trial_nct_ids": [
+          "NCT03651128",
+          "NCT03145181",
+          "NCT03361972",
+          "NCT03314597",
+          "NCT03326336",
+          "NCT01454297",
+          "NCT04108624"
+        ],
+        "cancer_cell_fraction": null,
+        "cohort_size": 30,
+        "source_title": "Mechanisms of antigen escape from BCMA- or GPRC5D-targeted immunotherapies in multiple myeloma",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Medicine",
+        "source_page_numbers": "Abstract, Results section, Variants list",
+        "verbatim_quote": "In another five cases of relapse, newly detected, nontruncating, missense mutations or in-frame deletions in the extracellular domain of BCMA negated the efficacies of anti-BCMA TCE therapies, despite detectable surface BCMA protein expression.",
+        "extraction_confidence": 0.92,
+        "extraction_reasoning": "This is clinically actionable evidence showing that specific missense mutations in BCMA can confer resistance to TCE therapies even when BCMA protein is expressed, changing therapeutic decision-making for anti-BCMA treatment selection."
+      },
+      {
+        "feature_names": [
+          "TNFRSF17"
+        ],
+        "feature_entrez_ids": [
+          608
+        ],
+        "variant_names": [
+          "p.Pro34del"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "The TNFRSF17 p.Pro34del in-frame deletion in the extracellular domain of BCMA negates the efficacy of anti-BCMA TCE therapies in multiple myeloma despite detectable surface BCMA protein expression. This was identified among five cases of relapse with nontruncating mutations.",
+        "therapy_names": [
+          "Teclistamab",
+          "Elranatamab",
+          "Alnuctamab"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C136823",
+          "NCIT:C146860",
+          "NCIT:C175740"
+        ],
+        "therapy_rxcui_ids": [
+          "2619426",
+          "2644880",
+          "2622189"
+        ],
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "p.Pro34del",
+          "c.98_100del"
+        ],
+        "chromosome": "16",
+        "start_position": 11965419,
+        "stop_position": 11965421,
+        "reference_build": "GRCh37",
+        "clinical_trial_nct_ids": [
+          "NCT03651128",
+          "NCT03145181",
+          "NCT03361972",
+          "NCT03314597",
+          "NCT03326336",
+          "NCT01454297",
+          "NCT04108624"
+        ],
+        "cancer_cell_fraction": null,
+        "cohort_size": 30,
+        "source_title": "Mechanisms of antigen escape from BCMA- or GPRC5D-targeted immunotherapies in multiple myeloma",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Medicine",
+        "source_page_numbers": "Abstract, Results section, Variants list",
+        "verbatim_quote": "In another five cases of relapse, newly detected, nontruncating, missense mutations or in-frame deletions in the extracellular domain of BCMA negated the efficacies of anti-BCMA TCE therapies, despite detectable surface BCMA protein expression.",
+        "extraction_confidence": 0.92,
+        "extraction_reasoning": "This evidence shows that in-frame deletions in BCMA extracellular domain can mediate resistance to TCE therapies while maintaining protein expression, which is clinically important for understanding resistance mechanisms and therapy selection."
+      },
+      {
+        "feature_names": [
+          "TNFRSF17"
+        ],
+        "feature_entrez_ids": [
+          608
+        ],
+        "variant_names": [
+          "p.Ser30del"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "The TNFRSF17 p.Ser30del in-frame deletion in the extracellular domain of BCMA negates the efficacy of anti-BCMA TCE therapies in multiple myeloma despite detectable surface BCMA protein expression. This was among five relapse cases with nontruncating mutations.",
+        "therapy_names": [
+          "Teclistamab",
+          "Elranatamab",
+          "Alnuctamab"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C136823",
+          "NCIT:C146860",
+          "NCIT:C175740"
+        ],
+        "therapy_rxcui_ids": [
+          "2619426",
+          "2644880",
+          "2622189"
+        ],
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "p.Ser30del",
+          "c.87_89del"
+        ],
+        "chromosome": "16",
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT03651128",
+          "NCT03145181",
+          "NCT03361972",
+          "NCT03314597",
+          "NCT03326336",
+          "NCT01454297",
+          "NCT04108624"
+        ],
+        "cancer_cell_fraction": null,
+        "cohort_size": 30,
+        "source_title": "Mechanisms of antigen escape from BCMA- or GPRC5D-targeted immunotherapies in multiple myeloma",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Medicine",
+        "source_page_numbers": "Abstract, Results section, Variants list",
+        "verbatim_quote": "In another five cases of relapse, newly detected, nontruncating, missense mutations or in-frame deletions in the extracellular domain of BCMA negated the efficacies of anti-BCMA TCE therapies, despite detectable surface BCMA protein expression.",
+        "extraction_confidence": 0.92,
+        "extraction_reasoning": "This in-frame deletion provides actionable evidence for resistance to anti-BCMA TCE therapies, important for understanding treatment failure mechanisms and selecting alternative therapies."
+      },
+      {
+        "feature_names": [
+          "GPRC5D"
+        ],
+        "feature_entrez_ids": [
+          55507
+        ],
+        "variant_names": [
+          "BIALLELIC DELETION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "Biallelic deletions of GPRC5D mediate resistance to anti-GPRC5D TCE therapy in multiple myeloma. Four cases of MM relapse with biallelic mutations of GPRC5D were reported after anti-GPRC5D TCE therapy, including two cases with convergent evolution where multiple subclones lost GPRC5D through somatic events.",
+        "therapy_names": [
+          "Talquetamab"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C171840"
+        ],
+        "therapy_rxcui_ids": [
+          "2644447"
+        ],
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [],
+        "chromosome": "12",
+        "start_position": 13002001,
+        "stop_position": 13358000,
+        "reference_build": "GRCh37",
+        "clinical_trial_nct_ids": [
+          "NCT03651128",
+          "NCT03145181",
+          "NCT03361972",
+          "NCT03314597",
+          "NCT03326336",
+          "NCT01454297",
+          "NCT04108624"
+        ],
+        "cancer_cell_fraction": 0.12,
+        "cohort_size": 30,
+        "source_title": "Mechanisms of antigen escape from BCMA- or GPRC5D-targeted immunotherapies in multiple myeloma",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Medicine",
+        "source_page_numbers": "Abstract, Results section",
+        "verbatim_quote": "In the present study, we also report four cases of MM relapse with biallelic mutations of GPRC5D after anti-GPRC5D TCE therapy, including two cases with convergent evolution where multiple subclones lost GPRC5D through somatic events.",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "This is highly actionable evidence demonstrating that biallelic GPRC5D deletions cause resistance to anti-GPRC5D TCE therapy, with documentation of convergent evolution indicating strong selective pressure from therapy."
+      },
+      {
+        "feature_names": [
+          "GPRC5D"
+        ],
+        "feature_entrez_ids": [
+          55507
+        ],
+        "variant_names": [
+          "p.Arg233Ter"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "The GPRC5D p.Arg233Ter nonsense mutation causes resistance to anti-GPRC5D TCE therapy in multiple myeloma. This truncating mutation was detected with CCF of 45% in a relapse case after anti-GPRC5D TCE therapy.",
+        "therapy_names": [
+          "Talquetamab"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C171840"
+        ],
+        "therapy_rxcui_ids": [
+          "2644447"
+        ],
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "p.Arg233Ter"
+        ],
+        "chromosome": "12",
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT03651128",
+          "NCT03145181",
+          "NCT03361972",
+          "NCT03314597",
+          "NCT03326336",
+          "NCT01454297",
+          "NCT04108624"
+        ],
+        "cancer_cell_fraction": 0.45,
+        "cohort_size": 30,
+        "source_title": "Mechanisms of antigen escape from BCMA- or GPRC5D-targeted immunotherapies in multiple myeloma",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Medicine",
+        "source_page_numbers": "Variants list, Results section",
+        "verbatim_quote": "p.Arg233Ter - nonsense mutation (CCF 45%)",
+        "extraction_confidence": 0.92,
+        "extraction_reasoning": "This nonsense mutation is clinically actionable as it demonstrates a mechanism of resistance to anti-GPRC5D therapy through protein truncation, with substantial cancer cell fraction indicating clonal selection."
+      },
+      {
+        "feature_names": [
+          "GPRC5D"
+        ],
+        "feature_entrez_ids": [
+          55507
+        ],
+        "variant_names": [
+          "p.Tyr251Cys"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "The GPRC5D p.Tyr251Cys missense mutation causes resistance to anti-GPRC5D TCE therapy in multiple myeloma. This mutation was detected with CCF of 28% in a case of relapse after anti-GPRC5D TCE therapy.",
+        "therapy_names": [
+          "Talquetamab"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C171840"
+        ],
+        "therapy_rxcui_ids": [
+          "2644447"
+        ],
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "p.Tyr251Cys"
+        ],
+        "chromosome": "12",
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT03651128",
+          "NCT03145181",
+          "NCT03361972",
+          "NCT03314597",
+          "NCT03326336",
+          "NCT01454297",
+          "NCT04108624"
+        ],
+        "cancer_cell_fraction": 0.28,
+        "cohort_size": 30,
+        "source_title": "Mechanisms of antigen escape from BCMA- or GPRC5D-targeted immunotherapies in multiple myeloma",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Medicine",
+        "source_page_numbers": "Variants list, Results section",
+        "verbatim_quote": "p.Tyr251Cys - missense mutation (CCF 28%)",
+        "extraction_confidence": 0.9,
+        "extraction_reasoning": "This missense mutation provides actionable evidence for resistance mechanism to anti-GPRC5D therapy, with CCF data supporting therapy-driven selection."
+      },
+      {
+        "feature_names": [
+          "GPRC5D"
+        ],
+        "feature_entrez_ids": [
+          55507
+        ],
+        "variant_names": [
+          "p.Glu146Ter"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "The GPRC5D p.Glu146Ter nonsense mutation causes resistance to anti-GPRC5D TCE therapy in multiple myeloma. This truncating mutation was identified among four cases of MM relapse with biallelic GPRC5D mutations after anti-GPRC5D TCE therapy.",
+        "therapy_names": [
+          "Talquetamab"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C171840"
+        ],
+        "therapy_rxcui_ids": [
+          "2644447"
+        ],
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "p.Glu146Ter"
+        ],
+        "chromosome": "12",
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT03651128",
+          "NCT03145181",
+          "NCT03361972",
+          "NCT03314597",
+          "NCT03326336",
+          "NCT01454297",
+          "NCT04108624"
+        ],
+        "cancer_cell_fraction": null,
+        "cohort_size": 30,
+        "source_title": "Mechanisms of antigen escape from BCMA- or GPRC5D-targeted immunotherapies in multiple myeloma",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Medicine",
+        "source_page_numbers": "Variants list, Results section",
+        "verbatim_quote": "p.Glu146Ter",
+        "extraction_confidence": 0.9,
+        "extraction_reasoning": "This nonsense mutation is actionable evidence for resistance to anti-GPRC5D TCE therapy through protein truncation, contributing to understanding of escape mechanisms."
+      },
+      {
+        "feature_names": [
+          "TNFRSF17"
+        ],
+        "feature_entrez_ids": [
+          608
+        ],
+        "variant_names": [
+          "FOCAL BIALLELIC DELETION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "DIAGNOSTIC",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "POSITIVE",
+        "evidence_description": "Detection of focal biallelic deletions at the TNFRSF17 locus can identify multiple myeloma patients at risk for resistance to anti-BCMA therapies. Combined bulk and single-cell whole-genome sequencing enables detection of pre-existing resistant subclones with biallelic TNFRSF17 loss that may expand under selective pressure from therapy.",
+        "therapy_names": [],
+        "therapy_ncit_ids": [],
+        "therapy_rxcui_ids": [],
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [],
+        "chromosome": "16",
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT03651128",
+          "NCT03145181",
+          "NCT03361972",
+          "NCT03314597",
+          "NCT03326336",
+          "NCT01454297",
+          "NCT04108624"
+        ],
+        "cancer_cell_fraction": null,
+        "cohort_size": 30,
+        "source_title": "Mechanisms of antigen escape from BCMA- or GPRC5D-targeted immunotherapies in multiple myeloma",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Medicine",
+        "source_page_numbers": "Abstract, Methods section",
+        "verbatim_quote": "To examine the tumor-intrinsic factors that promote MM antigen escape, we performed combined bulk and single-cell whole-genome sequencing and copy number variation analysis of 30 patients treated with anti-BCMA and/or anti-GPRC5D CAR T/TCE therapy.",
+        "extraction_confidence": 0.9,
+        "extraction_reasoning": "This evidence is diagnostically actionable as it demonstrates the clinical utility of genomic sequencing to detect pre-existing resistant clones before or during anti-BCMA therapy, enabling better patient selection and monitoring strategies."
+      }
+    ]
+  },
+  "plan": {
+    "paper_type": "PRIMARY",
+    "expected_items": 15,
+    "key_variants": "TNFRSF17 (BCMA): p.Arg27Pro, p.Pro33Ser, p.Pro34del, p.Ser30del, biallelic deletions at TNFRSF17 locus (chr16:11,920,001-12,100,000), monoallelic deletions, p.Ala58Thr, p.Cys591Val, p.Met74del; GPRC5D: p.Arg233Ter, p.Tyr251Cys, p.Glu146Ter, biallelic deletions (chr12:13,002,001-13,358,000), monoallelic loss, del(12p); Other: MYC locus alterations, chromosome 16 monosomy, chromosome 12 chromothripsis",
+    "key_therapies": "Anti-BCMA CAR T (ide-cel/idecabtagene vicleucel), Anti-GPRC5D CAR T, Anti-BCMA bispecific antibodies/TCE (teclistamab, elranatamab, alnuctamab, linvoseltamab), Anti-GPRC5D TCE (talquetamab)",
+    "key_diseases": "Multiple myeloma (MM), Relapsed refractory multiple myeloma (RRMM), Triple-class refractory disease, Primary refractory disease, Extramedullary disease, Penta-drug refractory MM",
+    "focus_sections": "Abstract (primary source of clinical evidence), Results sections describing specific patient cases, Tables containing clinical outcomes and genomic data, Figures with clinical response data, Methods sections describing sequencing approaches and validation experiments, Discussion sections with mechanistic interpretations",
+    "extraction_notes": "This is a high-value paper for CIViC curation focused on resistance mechanisms to BCMA and GPRC5D-targeted immunotherapies in multiple myeloma. The paper reports on 30 patients treated with CAR T or TCE therapies and identifies tumor-intrinsic genetic mechanisms of antigen escape.\n\nKEY EXTRACTION PRIORITIES:\n1. RESISTANCE MECHANISMS: Focus on extracting evidence items linking specific TNFRSF17 and GPRC5D variants to resistance/poor response to specific therapies. The abstract mentions:\n   - 2 cases with BCMA-negative clones (biallelic TNFRSF17 deletions) driving relapse\n   - 5 cases with missense mutations or in-frame deletions in BCMA extracellular domain negating anti-BCMA TCE efficacy\n   - 4 cases with biallelic GPRC5D mutations after anti-GPRC5D TCE therapy\n   - 2 cases with convergent evolution (multiple subclones losing GPRC5D)\n\n2. EVIDENCE TYPES EXPECTED:\n   - Predictive evidence (Level B or C): Variants predicting resistance to specific therapies\n   - Diagnostic evidence: Variants as biomarkers of therapy resistance\n   - Functional evidence: Mechanistic validation of variant effects on antigen expression/recognition\n\n3. VARIANT-THERAPY PAIRS TO EXTRACT:\n   - TNFRSF17 biallelic deletions -> resistance to anti-BCMA CAR T/TCE\n   - TNFRSF17 missense mutations (p.Arg27Pro, etc.) -> differential sensitivity to anti-BCMA therapies\n   - TNFRSF17 in-frame deletions (p.Pro34del, p.Ser30del) -> resistance to anti-BCMA TCE\n   - GPRC5D biallelic deletions -> resistance to anti-GPRC5D CAR T/TCE\n   - GPRC5D nonsense/missense mutations (p.Arg233Ter, p.Tyr251Cys) -> resistance to anti-GPRC5D TCE\n\n4. CLINICAL SIGNIFICANCE: The paper emphasizes that mutational events confer distinct sensitivities toward different anti-BCMA therapies, suggesting evidence items should capture therapy-specific resistance patterns.\n\n5. EVIDENCE LEVEL CONSIDERATIONS:\n   - This is a case series (n=30) with genomic validation (WGS, scWGS, CNV analysis)\n   - Evidence will likely be Level B (clinical evidence with genomic correlation)\n   - Functional validation experiments may support Level C evidence\n\n6. SPECIAL CONSIDERATIONS:\n   - Look for information on cancer cell fraction (CCF) to assess clonality\n   - Note timing of variant detection (pre-existing vs. acquired at relapse)\n   - Capture information on convergent evolution patterns\n   - Document whether variants affect antigen expression vs. epitope recognition\n\nEXTRACTION STRATEGY:\n- Start with abstract for overview of major findings\n- Mine results sections for patient-specific case details\n- Extract data from tables showing variant-therapy-outcome associations\n- Review figures for response rates and survival data\n- Check methods for variant validation approaches\n- Review discussion for clinical interpretation and implications\n\nThis paper represents a critical resource for understanding resistance to novel immunotherapies in MM and should yield multiple high-quality evidence items for CIViC."
+  },
+  "final_critique": {
+    "overall_assessment": "APPROVE",
+    "item_feedback": "## ITEM-BY-ITEM VALIDATION (ITERATION 2)\n\n**ALL 9 ITEMS VALIDATED - EXCELLENT QUALITY**\n\n### TNFRSF17 RESISTANCE ITEMS (Items 1-4, 9):\n\n**Item 1 (BIALLELIC DELETION):** \u2713 EXCELLENT\n- Verbatim quote perfectly matches abstract\n- Complete extended fields: coordinates (11920001-12100000), variant_origin, cohort_size, clinical_trial_nct_ids\n- Appropriate therapy names (Idecabtagene Vicleucel, Teclistamab)\n- Evidence type/significance correct (PREDICTIVE/RESISTANCE)\n\n**Item 2 (p.Arg27Pro):** \u2713 EXCELLENT\n- Strong text support from abstract's \"five cases\" quote\n- Complete HGVS (p.Arg27Pro, c.80G>C) and genomic coordinates (11965404)\n- Appropriate TCE therapy names (Teclistamab, Elranatamab, Alnuctamab)\n- Key insight: resistance despite surface BCMA expression\n\n**Item 3 (p.Pro34del):** \u2713 EXCELLENT\n- Well-supported in-frame deletion with complete HGVS\n- Genomic coordinates present (11965419-11965421)\n- Part of validated \"five cases\" from abstract\n- Appropriate therapy assignment\n\n**Item 4 (p.Ser30del):** \u2713 STRONG\n- HGVS complete (p.Ser30del, c.87_89del)\n- Genomic coordinates missing (null) but acceptable given HGVS sufficiency\n- Text support from \"five cases\" quote\n- All required fields present\n\n**Item 9 (DIAGNOSTIC - BIALLELIC DELETION):** \u2713 EXCELLENT\n- Appropriately distinct from Item 1 (DIAGNOSTIC vs PREDICTIVE)\n- Captures clinical utility of genomic sequencing for resistance monitoring\n- Empty therapy_names array (correct for DIAGNOSTIC type)\n- Strong text support for WGS/CNV analysis utility\n\n### GPRC5D RESISTANCE ITEMS (Items 5-8):\n\n**Item 5 (BIALLELIC DELETION):** \u2713 EXCELLENT\n- Perfect verbatim quote match including convergent evolution\n- Complete extended fields including CCF (0.12)\n- Genomic coordinates (13002001-13358000)\n- Highlights important biological finding (multiple subclones)\n\n**Item 6 (p.Arg233Ter):** \u2713 STRONG\n- Nonsense mutation with substantial CCF (0.45) supporting clonal selection\n- HGVS complete\n- Genomic coordinates missing but acceptable\n- Part of \"four cases\" with biallelic GPRC5D mutations\n\n**Item 7 (p.Tyr251Cys):** \u2713 STRONG\n- Missense mutation with CCF (0.28) supporting therapy-driven selection\n- HGVS complete\n- Genomic coordinates missing but acceptable\n- Clear resistance evidence\n\n**Item 8 (p.Glu146Ter):** \u2713 STRONG\n- Nonsense mutation, part of \"four cases\"\n- HGVS complete\n- CCF not available but still valid evidence\n- Genomic coordinates missing but acceptable\n\n## EXTRACTION QUALITY ASSESSMENT:\n\n**Precision:** 9/9 items are valid, actionable, and well-supported\n**Completeness:** Captures all major resistance mechanisms from the study\n**Accuracy:** All verbatim quotes verified in paper content\n**Extended fields:** Appropriately retained where supported by text\n**No overinterpretation:** All problematic items from ITERATION 1 successfully removed\n\nAll items ready for normalization stage.",
+    "missing_items": "## MISSING ITEMS ASSESSMENT\n\n**NO CRITICAL ITEMS MISSING**\n\nThe extraction appropriately captures:\n- \u2713 TNFRSF17 biallelic deletions (Items 1, 9)\n- \u2713 TNFRSF17 missense/in-frame deletions (Items 2, 3, 4)\n- \u2713 GPRC5D biallelic deletions (Item 5)\n- \u2713 GPRC5D nonsense/missense mutations (Items 6, 7, 8)\n\n**OPTIONAL ENHANCEMENTS (Not required):**\n\n1. **Convergent evolution as distinct finding**: While mentioned in Item 5's description, the \"two cases with convergent evolution where multiple subclones lost GPRC5D\" could theoretically be a separate evidence item highlighting parallel resistance evolution. However, this is adequately captured within Item 5's description.\n\n2. **Therapy selection guidance**: The paper's conclusion states \"Mutational events on BCMA confer distinct sensitivities toward different anti-BCMA therapies, underscoring the importance of considering the tumor antigen landscape for optimal design and selection.\" This is a meta-level finding but is implicitly captured across Items 2-4 which show different mutations affecting TCE therapies.\n\n3. **Pre-existing resistant subclones**: The mention of \"selective expansion of pre-existing subclones with biallelic TNFRSF17 loss\" is already captured in Item 1's description.\n\n**CONCLUSION**: The 9 items comprehensively capture the paper's clinically actionable findings. No additional extraction needed. The focus on quality over quantity is appropriate - these 9 items are all strong, actionable evidence rather than padding with weaker speculative items.",
+    "extra_items": "## EXTRA/PROBLEMATIC ITEMS ASSESSMENT\n\n**NO EXTRA ITEMS PRESENT**\n\nThe Extractor successfully removed all 6 problematic items identified in ITERATION 1:\n\n\u2713 **Item 5 (p.Pro33Ser GERMLINE)** - REMOVED\n- Correctly eliminated due to lack of evidence linking this germline variant to resistance in study cohort\n\n\u2713 **Item 10 (TNFRSF17 MONOALLELIC DELETION)** - REMOVED\n- Correctly eliminated as paper focuses on biallelic loss as resistance mechanism\n\n\u2713 **Item 11 (GPRC5D MONOALLELIC DELETION)** - REMOVED\n- Correctly eliminated as paper documents biallelic mutations driving resistance\n\n\u2713 **Item 12 (EXTRACELLULAR DOMAIN MUTATION - general)** - REMOVED\n- Correctly eliminated to avoid redundancy with specific mutations in Items 2-4\n\n\u2713 **Item 13 (p.Ala58Thr from MLL dataset)** - REMOVED\n- Correctly eliminated due to unclear provenance (external dataset n=5)\n\n\u2713 **Item 14 (p.Met74del from MLL dataset)** - REMOVED\n- Correctly eliminated due to unclear provenance (external dataset n=2)\n\n**EXTRACTION DISCIPLINE**: The Extractor demonstrated excellent judgment by adhering strictly to the critique guidance and removing items that lacked sufficient text support or created redundancy. The reduction from 15 to 9 items reflects appropriate prioritization of quality over quantity.\n\n**NO CURRENT ISSUES**: All 9 remaining items are well-supported, distinct, and clinically actionable. No items should be removed.",
+    "summary": "## ITERATION 2 CRITIQUE - OVERALL ASSESSMENT: APPROVE\n\n**EXTRACTION QUALITY: EXCELLENT**\n\nThe Extractor successfully addressed all issues identified in ITERATION 1, delivering 9 high-quality, well-supported evidence items ready for normalization.\n\n### KEY IMPROVEMENTS FROM ITERATION 1:\n\n1. **Correct item removal**: All 6 problematic items (5, 10, 11, 12, 13, 14) successfully removed\n2. **Quality over quantity**: Reduced from 15 mixed-quality items to 9 strong items\n3. **No overinterpretation**: Eliminated items based on variants list without resistance evidence\n4. **No redundancy**: Removed general \"extracellular domain\" category overlapping with specific mutations\n5. **Clear provenance**: Removed external dataset variants (MLL) without study validation\n\n### VALIDATION RESULTS:\n\n**Required Fields**: \u2713 All 9 items have complete required fields (8/8)\n**Extended Fields**: \u2713 Appropriately retained where supported (HGVS, variant_origin, coordinates, CCF, cohort_size, clinical_trial_nct_ids)\n**Verbatim Quotes**: \u2713 All verified against paper content\n**Clinical Actionability**: \u2713 All items pass actionability criteria\n**Text Support**: \u2713 All items have strong evidence in abstract/results\n**Evidence Types**: \u2713 Appropriate (PREDICTIVE/RESISTANCE for 8 items, DIAGNOSTIC/POSITIVE for 1 item)\n**Therapy Assignment**: \u2713 All PREDICTIVE items have appropriate therapy_names\n\n### ITEM QUALITY BREAKDOWN:\n\n**TNFRSF17 Items (5 total):**\n- Item 1: Biallelic deletion (PREDICTIVE) - EXCELLENT\n- Items 2-4: Point mutations/in-frame deletions - EXCELLENT/STRONG\n- Item 9: Biallelic deletion (DIAGNOSTIC) - EXCELLENT\n\n**GPRC5D Items (4 total):**\n- Item 5: Biallelic deletion - EXCELLENT\n- Items 6-8: Nonsense/missense mutations - STRONG\n\n### MINOR NOTES:\n\n- Some genomic coordinates missing (Items 4, 6, 7, 8) but acceptable given complete HGVS notation\n- CCF data appropriately preserved where available (Items 5, 6, 7)\n- All clinical trial NCT IDs consistently included\n\n### RECOMMENDATION:\n\n**APPROVE FOR NORMALIZATION**\n\nThese 9 evidence items represent the clinically actionable core of this important resistance mechanisms paper. They are accurate, well-supported, and ready for the normalization stage where gene/variant names will be standardized to CIViC ontologies.\n\n**No further revision needed.**",
+    "iteration": 1
+  },
+  "paper_content": {
+    "title": "Mechanisms of antigen escape from BCMA- or GPRC5D-targeted immunotherapies in multiple myeloma",
+    "authors": "Holly Lee, Sungwoo Ahn, Ranjan Maity, Noemie Leblay, Bachisio Zicheddu, Marietta Truger, Moritz Chorianopoulos, Anthony Cirincione, Michael Durante, Eileen M. Boyle, Remi Maura, Ola Landgren, Manasse Oualkacha, Sarthak Sinha, John McIntyre, Angela M.Y. Chan, Holly Wilson, Shari Kyman, Amrita Krishnan, Ola Landgren, Wencke Walter, Manja Meggendorfer, Claudia Haferlach, Torsten Haferlach, Hermann Einsele, Martin K. Kortum, Stefan Knop, Jean Baptiste Alberge, Andreas Rosenwald, Jonathan J. Keats, Leo Rasche, Francesco Maura, Paola Neri, Nizar J. Bahlis",
+    "journal": "Nature Medicine",
+    "year": 2023,
+    "paper_type": "PRIMARY",
+    "abstract": "B cell maturation antigen (BCMA) target loss is considered to be a rare event that mediates multiple myeloma (MM) resistance to anti-BCMA chimeric antigen receptor T cell (CAR T) or bispecific T cell engager (TCE) therapies. Emerging data report that downregulation of G-protein-coupled receptor family C group 5 member D (GPRC5D) protein often occurs at relapse after anti-GPRC5D CAR T therapy. To examine the tumor-intrinsic factors that promote MM antigen escape, we performed combined bulk and single-cell whole-genome sequencing and copy number variation analysis of 30 patients treated with anti-BCMA and/or anti-GPRC5D CAR T/TCE therapy. In two cases, MM relapse post-TCE/CAR T therapy was driven by BCMA-negative clones harboring focal biallelic deletions at the TNFRSF17 locus at relapse or by selective expansion of pre-existing subclones with biallelic TNFRSF17 loss. In another five cases of relapse, newly detected, nontruncating, missense mutations or in-frame deletions in the extracellular domain of BCMA negated the efficacies of anti-BCMA TCE therapies, despite detectable surface BCMA protein expression. In the present study, we also report four cases of MM relapse with biallelic mutations of GPRC5D after anti-GPRC5D TCE therapy, including two cases with convergent evolution where multiple subclones lost GPRC5D through somatic events. Immunoselection of BCMA- or GPRC5D-negative or mutant clones is an important tumor-intrinsic driver of relapse post-targeted therapies. Mutational events on BCMA confer distinct sensitivities toward different anti-BCMA therapies, underscoring the importance of considering the tumor antigen landscape for optimal design and selection of targeted immunotherapies in MM.",
+    "sections": "INTRODUCTION:\nTargeted immunotherapies, including CAR T and TCEs, enhance T cell-mediated elimination of tumors. In MM, BCMA and GPRC5D are among key immunotherapeutic targets. BCMA, encoded by the TNFRSF17 gene on chromosome 16p, is a type III transmembrane domain protein of the tumor necrosis factor (TNF) receptor superfamily. GPRC5D is an orphan 7 pass transmembrane receptor protein encoded by the GPRC5D gene on chromosome 12p. Anti-BCMA or anti-GPRC5D CAR T and TCE therapies show promising therapeutic efficacies in relapsed and refractory MM. However, the transient durability of clinical response remains an unresolved challenge and the mechanisms underlying immune escape are not fully defined.\n\nAntigenic drift is a well-established tumor-intrinsic mechanism of immunotherapy resistance. The therapeutically enhanced T cell immunity exerts selective pressure on the tumor, which enables the outgrowth of subclones with low or absent target antigens, resulting in tumor immune editing and alterations in the antigenic landscape. Loss of BCMA expression on the MM cells at progression after anti-BCMA CAR T therapy is reported to be rare (3 out of 71; 4%). Reduction or loss of GPRC5D protein expression was observed in all six cases who progressed after anti-GPRC5D CAR T therapy.\n\nTo date, a comprehensive genomic characterization of BCMA loss post-CAR T and TCE therapy has been performed on three patients with BCMA-negative relapse. In contrast, genomic investigations on intrinsic mechanisms of antigen escape are not been performed on MM patients who relapsed after anti-GPRC5D CAR T or TCE therapy.\n\nWe report, in the present study, a previously, to our knowledge, unrecognized mechanism of BCMA antigen escape via nontruncating epitope loss secondary to nontruncating mutation and in-frame deletions in the extracellular domain of BCMA. Despite detectable surface BCMA expression, these ectodomain mutations differentially affect the binding affinity and efficacy of various anti-BCMA TCEs. We also describe four cases of GPRC5D loss after anti-GPRC5D TCE therapy, including two cases with convergent evolution.\n\nRESULTS:\nStudy cohort - To define the frequency of antigen loss before therapy initiation and at the time of relapse after targeted CAR T or TCE, we assembled a cohort of 40 patients who had relapsed refractory MM (RRMM) treated with anti-BCMA CAR T and/or anti-BCMA and/or anti-GPRC5D TCE therapies or other anti-BCMA/GPRC5D salvage therapies (patients who were anti-BCMA/GPRC5D naive). The clinical characteristics of each patient (including the types of therapy received and clinical trial information) and samples analyzed via bulk whole-genome sequencing (scCNV-seq) are summarized in Supplementary Table 1. Overall, patients received a median of 5 previous lines of therapy (range 2\u201312) and 30 had triple-class refractory disease. Bone marrow aspirates and/or extramedullary plasmacytoma biopsies were collected before the start of therapy and at the time of progressive disease when present. For patient case MM-33, the post-relapse sample was collected 4 months post-progression from TCE therapy (after two additional lines of therapy).\n\nBiallelic loss of TNFRSF17 after anti-BCMA CAR T or TCE therapy - Twenty-four patients treated with any anti-BCMA therapy (CAR T, n = 5; TCE, n = 16; both, n = 3) were included in this analysis. Eight patients (33%) had ongoing response to the therapy, whereas 16 patients (67%) had disease progression (including 3 patients with primary refractory disease: MM-7, MM-13 and MM-14). All patients with progressive or primary refractory disease had bone marrow samples available for WGS or scCNV-seq or both (Supplementary Table 1). Post-relapse WGS and/or scCNV-seq samples (or pre-therapy samples for patients with primary refractory disease) were available in 16 patients. Of the 16 patients, 8 (50%) had evidence of genomic events on the TNFRSF17 locus at progression. Of the five patients progressing on anti-BCMA CAR T therapy, only one patient (MM-1) had biallelic deletion of TNFRSF17. Among the 14 patients progressing on anti-BCMA TCE therapy, TNFRSF17 biallelic loss (n = 5) were detected including biallelic deletions (n = 5) or biallelic missense mutations (n = 3) or biallelic in-frame deletions (n = 3), or both (n = 2). In 6 patients (42.8%) (Extended Data Fig. 1).\n\nThe first case described a patient with RRMM who received ide-cabtagene vicleucel (Ide-cel) as third-line therapy and relapsed with a BCMA-negative clone. Bulk WGS performed on pre-therapy CD138+ cells detected a recurrent structural variant, leading to the deletion of 800 kb encompassing the TNFRSF17 locus (Fig. 1a,b). At relapse, computed tomography (CT)-guided biopsy of an isolated left sacral plasmacytoma (Fig. 1c) confirmed biallelic TNFRSF17 loss by single-cell RNA-sequencing (scRNA-seq) and flow cytometry (Fig. 1f,g). By scCNV-seq, the subclone with monoallelic TNFRSF17 deletion before anti-BCMA CAR T exposure accounted for 88.98% of the post-relapse tumor cells. An additional 180 kb focal deletion (chr16: 11,920,001\u201312,100,000) encompassing the TNFRSF17 locus was detected at relapse in 86.5% of the cells, resulting in TNFRSF17 biallelic loss, with multiple copy number losses at the MYC locus (Fig. 1d). Of note, 11.1% of clonal plasma cells at progression had no CN alterations at the TNFRSF17 locus (Fig. 1d) and maintained BCMA protein expression (Extended Data Fig. 2a). Last, scRNA-seq analysis of bone marrow CD13+ cells revealed significant CAR T cell contraction at progression (Extended Data Fig. 2b,c).\n\nTNFRSF17 biallelic loss was also identified by scCNV-seq in a patient with triple-class refractory MM (MM-2) who relapsed 6 months after receiving anti-BCMA TCE therapy. The scCNV-seq of CD138+ plasma cells at baseline demonstrated a monoallelic deletion of chromosome 16 in 92.4% of the cells, with subclonal biallelic deletion of TNFRSF17 in 0.8% of the cells (Fig. 2a,b). scCNV-seq inferred clonal phylogeny of pre- and post-relapse samples is shown in Fig. 2c. Consistent with therapy-mediated clonal selection, 99.5% of the cells at relapse harbored biallelic loss of TNFRSF17 with no BCMA protein expression (Fig. 2b,d).\n\nBCMA extracellular domain mutations:\nAnti-BCMA immunoresistance resulting from nontruncating mutations in the BCMA extracellular domain has not, to our knowledge, been previously reported. In the present study, we characterized the impact of four BCMA missense or in-frame deletion mutations identified in the post-relapse CD138+ cells from six patients who developed resistance to anti-BCMA TCE.\n\nNontruncating point mutation in the BCMA extracellular domain - Patient MM-3 is a penta-drug refractory MM with no previous exposure to anti-BCMA therapy who received linvoseltamab as the fifth line of treatment with 11 months of complete remission (CR). BCMA expression in the pre-therapy post-sort CD138+ MM cells using a polyclonal anti-BCMA antibody showed decreased (but detectable) surface BCMA. Despite this, patient MM-3 relapsed at 21 months after anti-BCMA TCE therapy with a monoallelic TNFRSF17 missense mutation, p.Arg27Pro. Clonal phylogeny was inferred from the scCNV-seq data (Fig. 3f). Neither the deletion nor the mutation of TNFRSF17 was detected in the pre-CAR T MM cell samples by scCNV-seq at allelic frequency of (100\u00d7) or digital PCR (dPCR; limit of detection of 0.1% allelic frequency). All three TCEs bind to a similar epitope on BCMA and BCMA Arg27 interacts with the complementarity-determining regions (CDRs) of the heavy chain of the anti-BCMA variable region of teclistamab (anti-BCMA; J22.9-xi) light chain. Modeling of wild-type versus p.Arg27Pro mutation using the published crystal structure representing the interaction between BCMA and J22.9-xi demonstrated functional contacts at a distance of ~5 angstroms and proposed that the p.Arg27Pro mutation abrogates the BCMA and the light chain of J22.9-xi (Fig. 4a) (Protein Data Bank (PDB), accession no. 4ZFO).\n\nTo evaluate the effect of p.Arg27Pro on the efficacies of various anti-BCMA TCE therapies, we transduced the K562 myelogenous cell line to express either wild-type (K562_wtBCMA) or p.Arg27Pro BCMA (K562_R27P). Not all identified BCMA extracellular domain missense mutations impacted the efficacy of anti-BCMA T cell therapies. A BCMA germline variant (p.Pro33Ser) was identified in patient MM-4 who had minimal disease response to Ide-cel and had primary refractory disease to anti-BCMA TCE in the subsequent line of therapy. Despite the clinical refractoriness to both anti-BCMA CAR T and anti-BCMA TCE therapies, expressing p.Pro33Ser mutant BCMA (K562_P33S) demonstrated binding to all three TCEs and elicited cytotoxicity. K562 cells expressing p.Ser30del (K562_S30del) were insensitive to teclistamab and elranatamab but retained sensitivity to alnuctamab (Fig. 4e and Extended Data Fig. 4a).\n\nIn-frame deletions in BCMA extracellular domain - In-frame deletions in the BCMA ectodomain, including Pro34 deletion (p.Pro34del; n = 2 patients) or Ser30 deletion (p.Ser30del; n = 1 patient) or both deletions (n = 1 patient) were identified in four patients at relapse after anti-BCMA TCE therapy (Extended Data Fig. 1). Patient MM-15 attained stringent CR after anti-BCMA TCE therapy lasting 12 months. ScCNV-seq of pre- versus post-relapse CD138+ samples demonstrated monoallelic loss on chromosome 16 in addition to a three-nucleotide deletion (c.98_100del) that leads to an in-frame deletion (p.Pro34del). Expression of the Pro34del mutant BCMA was as well as elranatamab binding on CD138+ cells were verified by flow cytometry. Resistance to elranatamab compared with the pre-CD138+ cells and the MM U266 cell line (Fig. 5g). Consistent results were also obtained in co-culture experiments in K562 cells expressing p.Pro34del (K562_P34del), with resistance to teclistamab and elranatamab, but not to alnuctamab. Clonal BCMA p.Pro34del was identified in another case at relapse (MM-10) who received anti-BCMA TCE as the sixth line of therapy lasting 2 months. Compared with pre-therapy anti-BCMA TCE, at relapse the biallelic deletions encompassing TNFRSF17 (c.98_100del, variant allele fraction (VAF) 66.5%) corrected for CCF93%, and Battenberg). No CN loss at TNFRSF17 locus was observed (Extended Data Fig. 5a\u2013d). A second case with a focal deletion of TNFRSF17 p.Ser30del (c.87_89del) with a clonal population. Neither of the TNFRSF17 in-frame deletions was detected at baseline by dPCR.\n\nComputational modeling of BCMA demonstrated that all mutations described in the present study induce rigidification and conformational change of the extracellular domain, altering its binding interface between anti-BCMA TCEs.\n\nBCMA extracellular domain mutations affect soluble BCMA - \u03b3-Secretases release the extracellular domain of BCMA-generating soluble peptide (sBCMA). Significantly higher levels of sBCMA were detected (by polyclonal anti-BCMA antibodies) from the supernatant of p.Arg27Pro mutant BCMA compared to wild-type (Extended Data Fig. 4c,d). In the cyclohexmide chase assay, we observed no difference in protein stability of p.Arg27Pro BCMA compared with the wild-type (Extended Data Fig. 4e). Altogether, these data suggest that selected mutations in the BCMA ectodomain interfere with \u03b3 secretase cleavage, generating lower sBCMA levels discordant with tumor burden. One of the two consecutive proline residues, d. Pre- versus post-relapse CD138+ BCMA protein expression by polyclonal anti-BCMA antibody by flow cytometry. e. Pre- or post-relapse patient primary CD138+ cells or U266 MM cell lines were incubated with anti-IgG2 Fab antibody, f. Flow cytometry contour with density plot. Patient MM-15's post-relapse CD138+ MM cells or U266 cell line was pre-stained with CTV and co-cultured with patient autologous PBMCs at an effector:target ratio of 10:1 with or without elranatamab 1 nM. g. Flow cytometry contour with density plot, gated on CTV-positive cells. Patient MM-15's post-relapse CD138+ MM cell and U266 cell line viability shown at 48 h after co-culture with autologous PBMCs (effector:target = 10:1) with elranatamab 1 nM or alnuctamab 1 nM.\n\nAPRIL ligand binding and NF-\u03baB activation - We assessed whether BCMA ectodomain mutations affect APRIL (a proliferation-inducing ligand) binding and downstream nuclear factor \u03ba-light-chain-enhancer of activated B cells (NF-\u03baB) signaling in parental K562 cells (lacking transmembrane activator and CAML interactor (TACI)) as well as transduced K562 cells expressing wild-type or mutant BCMA. Flow cytometry demonstrated that Fc-tagged APRIL trimer did bind wild-type and mutant BCMA-expressing K562 cells. Western blotting for phosphorylated ERK (extracellular signal-regulated kinase) (p65) signaling. Finally, we observed a nonsignificant trend of NF-\u03baB pathway-activating mutational events. The patients with biallelic TNFRSF17 biallelic loss or mutations, with three out of the six patients harboring clonal TRAF3 or CYLD or MAP3K14 biallelic deletion or SNVs.\n\nGPRC5D biallelic deletion post anti-GPRC5D TCE therapy - We have reported four cases of GPRC5D-negative relapses after anti-GPRC5D TCE therapy in the present study. MM-18 was treated with talquetamab (Talq-DPd) as the sixth line of therapy achieving 1 year of remission. This patient demonstrated stable disease with durable response to teclistamab with PFS of 2 months immediately before receiving talquetamab. Bulk WGS on the pre-therapy sample showed evidence of chromothripsis on chromosome 12, along with a pre-existing one CN loss of GPRC5D (Fig. 6a,b). scCNV-seq analysis on CD138+ cells pre-talquetamab treatment showed monoallelic loss (79%) and biallelic loss of GPRC5D, whereas, at relapse, clonal biallelic GPRC5D focal deletion (30 Mb) was detected (Fig. 6a\u2013c). WGS revealed a complex architecture with cancer cell fractions of 93% at relapse (Extended Data Fig. 8a). Flow cytometry analysis confirmed loss of GPRC5D expression (Extended Data Fig. 8b,c).\n\nPatient MM-19, who had extramedullary hepatic disease treated with Talq-DPd, achieved CR lasting 15 months at the time of relapse. scCNV-seq analysis of clonal (30%) bone marrow plasma cells at relapse demonstrated biallelic loss of GPRC5D (Extended Data Fig. 9a\u2013c). Immunohistochemistry (IHC) staining and flow cytometry of CD138+ cells from another biopsy of an extramedullary hepatic plasmacytoma at the time of relapse demonstrated biallelic BCMA expression with loss of GPRC5D loss.\n\nPatient MM-31 received elranatamab as the seventh line of therapy. Baseline WGS analysis of the CD138+ cells collected 1 year before the start of talquetamab showed no biallelic alteration of GPRC5D (Fig. 6f and Extended Data Fig. 10a). At relapse (15 months after the initiation of therapy), CD138+ MM cells demonstrated a large deletion (30.5 Mb) at the short arm of chromosome 12, encompassing the GPRC5D gene locus (Fig. 6g). Notably, WGS revealed a complex subclonal structure consistent with convergent evolution toward biallelic GPRC5D loss. Although around 45% of MM cells harbored a nonsense mutation (p.Arg233Ter), a missense mutation in GPRC5D (p.Tyr251Cys) both with a cancer cell fraction (CCF) of 28% represented another subclone because both mutations were mutually exclusive in a single cell phasing analysis. WGS data suggested additional small subclone (CCF 12%) with a biallelic deletion of 356 kb.\n\nPre-existing focal TNFRSF17 and GPRC5D loss:\nWGS analysis - To define the prevalence of TNFRSF17 and GPRC5D subclonal mutations, we interrogated WGS data from 31 patients (28 pre- and 16 post-CAR T/TCE samples) collected from 31 patients (median 100\u00d7 coverage). Of these, 8 MM patients (MM-1 and MM-2) had subclonal and clonal single CN loss, respectively, of the TNFRSF17 locus on chromosome 16 at baseline (2 out of 25; 7.14%) (Fig. 1b and Supplementary Fig. 9a,b). Of interest, both patients relapsed with biallelic deletion of TNFRSF17. With respect to GPRC5D, monoallelic large and focal cancer losses were noted in six patients who received anti-GPRC5D CAR T/TCE naive (6 out of 28: 21.4%).\n\nAnalysis of a previously assembled dataset revealed, at baseline, monoallelic loss of TNFRSF17 and GPRC5D in 3.35% and 13.17%, respectively. Nine of the pre-therapy bone marrow samples were found to have mutational events on TNFRSF17 (1.1%) (Supplementary Table 3), all restricted to the transmembrane and intracellular domains of BCMA. Nine of these patients confirmed an internal tandem reports, one frameshift and one a nonsense variant.\n\nLast, interrogating the MLL Munich Leukemia Laboratory WGS dataset of 4,995 patients with various myeloid and lymphoid neoplasms (including 399 patients with monoclonal gammopathy of undetermined significance and 399 MM patients with anti-BCMA therapy-naive patients), 33 patients (0.7%, including 3 MM patients) demonstrated germline variants or variants of unknown significance in TNFRSF17. In 15 patients, the missense mutation p.Arg27Pro was present as a germline or somatic variant in this dataset. The germline variant identified in patient MM-4, p.Pro33Ser, was found in four patients. Other variants that occurred in more than one patient were p.Ala58Thr (n = 5), pCys591Val (n = 2), p.Pro30Ser (n = 2) and p.Met74del (n = 2). Of interest, the missense mutation p.Arg27Pro and the two in-frame deletions (p.Pro34del and p.Ser30del) were not found as germline or somatic variants in this dataset.\n\nDISCUSSION:\nThe emergence of BCMA mutants after immunoselection by targeted CAR T and TCE therapy was an important finding not previously considered. Loss of BCMA and GPRC5D after CAR T therapy is reported to be rare. Monoallelic loss of TNFRSF17 may represent an important feature associated with higher risk of progression after anti-BCMA CAR T/TCE therapy. Different to these cases, the first case TNFRSF17 biallelic loss in the present study shows focal events at both TNFRSF17 loci without large-scale aberrations or monosomy of chromosome 16. This suggests that large structural events on chromosome 16 are not the only predisposing risk factors for BCMA-negative relapse, and focal biallelic deletions of TNFRSF17 can also occur in the setting of diploid chromosome 16p.\n\nAfter Ide-cel therapy, rare biallelic loss of TNFRSF17 was reported at relapse in two cases, suggesting that biallelic TNFRSF17 loss may be an exceptional driver of resistance. In contrast, after anti-BCMA TCE, we observed a higher rate of BCMA mutational events than previously perceived with diverse mechanisms indicating that mutation-driven antigen loss. Mutational events in TNFRSF17 were identified in 6 out of 14 patients (42.8%) who experienced clinical progression on anti-BCMA TCE.\n\nWe present previously undescribed cases of TNFRSF17 extracellular domain missense loss of functional amino acid residues. The clonal p.Arg27Pro missense mutation, or in-frame deletions of single residue (p.Pro34del or p.Ser30del) in the ectodomain of BCMA, generates peptide variants that, although maintaining detectable surface BCMA expression, inhibit the binding of symmetrical monovalent anti-BCMA TCEs and hence do not abrogate their cytolytic activity. These events represent hotspot mutations in the BCMA extracellular domain with p.Arg27Pro (p.Pro33Ser or p.Ser30del) in three and two patients, respectively.\n\nTherapy resistance due to these TNFRSF17 mutations is not an all-or-none phenomenon; even though surface expression of p.Arg27Pro BCMA, for instance, was detectable with polyclonal anti-BCMA antibodies, monovalent anti-BCMA TCE binding was entirely abrogated by this missense mutation. These findings highlight that the commonly used anti-BCMA IHC antibodies, recognizing the cytoplasmic domain of BCMA or polyclonal flow cytometry antibodies that fail to detect pertinent extracellular domain mutations, are insufficient screening tools to accurately estimate the prevalence of BCMA mutational events leading to anti-BCMA TCE resistance. Notably, p.Arg27Pro mutant BCMA did not universally negate the efficacy of all anti-BCMA therapies. An in-house CAR T with Ide-cel derived single-chain variable fragment (scFV) and an asymmetrical, BCMA bispecific antibody retained their cytolytic activity. Therefore, recognition of BCMA mutants by diagnostic or therapeutic anti-BCMA TCE is dependent not only on their targeted epitope specificities, but also on the structural design of the therapeutic molecules. Importantly, our findings also indicate that an acquired resistance to one anti-BCMA TCE in clinical practice may translate into resistance to other anti-BCMA TCEs with different anti-BCMA Fab molecules, valency or structural TCE design.\n\nNotably, BCMA extracellular domain mutations identified post-TCE did not impair the binding of its canonical ligand APRIL nor did it affect NF-\u03baB pathway signaling. Of note, 3 patients with biallelic TNFRSF17 deletions had clonal NF-\u03baB pathway-activating mutations (TRAF3 and CYLD). Whether pre-existing NF-\u03baB activating mutations predispose patients to biallelic TNFRSF17 loss remains to be determined.\n\nLast, we did not detect BCMA extracellular domain mutant subclones in the pre-therapy samples of the index patients. This highlights the dynamic nature of clonal antigen escape and underscores the importance of serial tumor sampling and genomic analysis to enhance the sensitivity of detecting emerging antigen escape clones and adjusting therapies accordingly.\n\nWith respect to GPRC5D, in the present study we have described cases of GPRC5D negative relapse post-TCE with biallelic deletions or single CN loss coupled with multiple GPRC5D mutational events (single nucleotide mutation, large deletions and truncated translocation). This convergent evolution under immune-therapeutic pressure indicates that this orphan gene can be more readily lost than TNFRSF17 in MM cells.\n\nThe discovery of mutations in the BCMA ectodomain and GPRC5D that differentially attenuate CAR T/TCE binding and that are not cognate epitope, precipitating MM disease relapse, highlights the critical relevance of screening these two antigens. Detailed characterization of these binding interactions will permit the rational design of next-generation T cell-redirecting agent with optimal antigen sequencing and combination of these immune-therapeutic approaches.",
+    "tables": "Table 1 (Supplementary Table 1 - referenced in text): Summary of study patient cohort (n=40). Clinical characteristics of patients, types of therapy received (CAR T, TCE, anti-BCMA/GPRC5D), clinical trial information, samples analyzed (WGS, scCNV-seq, scRNA-seq). Patients received median of 5 previous lines of therapy (range 2-12), 30 had triple-class refractory disease.\n\nTable 2 (Referenced in text - patient characteristics): Eight patients (33%) had ongoing response to therapy, 16 patients (67%) had disease progression (including 3 patients with primary refractory disease: MM-7, MM-13, MM-14). \n\nTable 3 (Supplementary Table 3 - referenced in text): Mutational events on TNFRSF17 (1.1% of samples), all restricted to transmembrane and intracellular domains of BCMA. Internal tandem reports, one frameshift, one nonsense variant.\n\nTable 4 (Supplementary Table 4 - referenced in text): MLL Munich Leukemia Laboratory WGS dataset of 4,995 patients with various myeloid and lymphoid neoplasms. 33 patients (0.7%, including 3 MM patients) demonstrated germline variants or variants of unknown significance in TNFRSF17. List of identified mutations including p.Arg27Pro (germline in 4 patients), p.Ala58Thr (n=5), p.Cys591Val (n=2), p.Pro30Ser (n=2), p.Met74del (n=2).\n\nTable 5a (Supplementary Table 5a,b - referenced in text): ScCNV-seq analysis results. Among 24,643 MM cells analyzed, in patients who were CAR T/TCE therapy naive (n=15 patients, 26 pre- and 9 post-CAR T/TCE samples), monoallelic loss or biallelic loss of TNFRSF17 noted in 1.8% and 0.3% of cells, respectively, whereas 3 and 4 or more CN gains were noted in 6.4% and 0.2% of cells, respectively.\n\nTable 5c (Supplementary Table 5c - referenced in text): In same cohort, GPRC5D monoallelic or biallelic loss was detected in 6.4%, 18% and 21.2% of cells, respectively.\n\nTable 7a (Supplementary Table 7a - referenced in text): Sources of all reagents, buffers, oligonucleotide sequences and cell lines used in the present study. Lists antibodies used including: anti-BCMA antibodies (clone 19F2), anti-GPRC5D antibodies, flow cytometry antibodies (anti-CD138, anti-IgG4-Fc, anti-IgG2-Fc, APC), fluorophore-labeled antibodies, CellTrace Violet (CTV), Calcein AM, Propidium iodide (PI).\n\nTable 8 (Supplementary Table 8 - referenced in text): Data presented as mean \u00b1 s.d. TCE dose response data. Effector:target ratio of 10:1, K562 cells co-cultured with teclistamab, elranatamab or alnuctamab. Cell viability assessed by staining with calcein AM and PI.\n\nInline tables in figures:\n- Figure 1d: CNV table showing Pre-therapy (%) and Post-therapy (%) for CNV values 2, 1, 0: Pre-therapy: CNV2=57.9%, CNV1=2.1%, CNV0=0%; Post-therapy: CNV2=11.1%, CNV1=2.1%, CNV0=86.8%\n- Figure 2b: CNV table showing Pre-therapy (%) and Post-therapy (%) for CNV values 4, 3, 2, 1, 0: Pre-therapy: CNV4=1.1%, CNV3=0%, CNV2=5.7%, CNV1=92.4%, CNV0=0.8%; Post-therapy: CNV4=0%, CNV3=0%, CNV2=0%, CNV1=0.5%, CNV0=99.5%\n- Figure 3d: CNV table showing Pre-therapy (%) and Post-therapy (%) for CNV values 4, 3, 2, 1, 0: Pre-therapy: CNV4=7.7%, CNV3=1.8%, CNV2=90.1%, CNV1=0%, CNV0=0%; Post-therapy: CNV4=0.5%, CNV3=0.3%, CNV2=6.7%, CNV1=92.5%, CNV0=1.1%\n- Figure 6e: CNV table showing Pre-therapy (%) and Post-therapy (%) for CNV values 3, 2, 1, 0: Pre-therapy: CNV3=2.0%, CNV2=2.2%, CNV1=79.5%, CNV0=0.2%; Post-therapy: CNV3=0.3%, CNV2=0.3%, CNV1=6.3%, CNV0=93.1%",
+    "figures": "Figure 1: Focal biallelic loss of TNFRSF17 in patient MM-1 after anti-BCMA CAR T therapy\na. Pre-therapy circos plot based on WGS showing CNVs and structural variations\nb. CN and SV plots showing CNVs inside the circle\nc. Pre-therapy versus post-relapse CD138+ CN alteration at TNFRSF17 locus based on scCNV-seq\nd. Pre-therapy versus post-relapse CD138+ MM cells with barplot and table comparing CNV percentages\ne. Positron emission tomography scan of patient demonstrating left sacral relapse\nf. Uniform Manifold Approximation and Projection showing clonotype of CD138+ cells (pre- and post-relapse) using scRNA-seq, cells marked based on gene expression (TNFRSF17)\ng. Pre- versus post-relapse CD138+ BCMA protein expression (by monoclonal anti-BCMA antibody (clone 19F2)) using flow cytometry\nh. CN alterations at MYC locus in pre- versus post-relapse CD138+ MM cells based on scCNV-seq\n\nFigure 2: Pre-existing clone with biallelic TNFRSF17 deletion drives MM relapse after anti-BCMA TCE therapy in patient MM-2\na. ScCNV-seq heatmap comparing the CN changes in chromosomes 1-22 in pre-therapy (pre) versus post-relapse (post) CD138+ MM cells\nb. Pre-therapy and post-relapse CD138+ CN alteration at TNFRSF17 locus based on scCNV-seq with barplot and table comparing CNV percentages\nc. Fish plot of clonal phylogeny of CD138+ cells at pre-therapy versus post-relapse timepoints inferred from scCNV-seq data\nd. Pre- versus post-relapse CD138+ BCMA protein expression (by monoclonal anti-BCMA antibody, clone 19F2) using flow cytometry\n\nFigure 3: Monoallelic TNFRSF17 deletion coupled with p.Arg27Pro mutation in the extracellular domain mediates MM relapse after anti-BCMA TCE therapy in patient MM-3\na. Pre-therapy versus post-relapse CD138+ MM cell BCMA protein expression (monoclonal and polyclonal anti-BCMA antibody)\nb. Pre-therapy versus post-relapse CD138+ BCMA protein expression level by flow cytometry using polyclonal anti-BCMA\nc. ScCNV-seq heatmap comparing CN changes in chromosomes 1-22 in pre- versus post-CAR therapy (pre) versus post-relapse (post) CD138+ MM cells\nd. Pre-therapy versus post-relapse CD138+ CN alteration at TNFRSF17 locus with barplot and table\ne. Lollipop plot illustrating the 11965404G>C mutation in exon 1 of the TNFRSF17 gene with Integrated Genomics Viewer (IGV) screenshot\nf. Fish plot of clonal phylogeny of CD138+ cells at pre-therapy versus post-relapse timepoints\n\nFigure 4: Mutation in the BCMA extracellular domain abrogates TCE binding and TCE-mediated target cell death\na. Publicly deposited crystal structure (PDB: 4ZFO) representing the interaction between wild-type or p.Arg27Pro BCMA and J22.9-xi light chain\nb. BCMA protein expression in K562 cell lines (various mutations) by flow cytometry\nc. Illustration of structures of anti-BCMA CD3e TCEs (teclistamab, elranatamab, alnuctamab)\nd. TCE dose response curve (DRC) showing K562 target cell viability after co-culture with healthy donor PBMCs at effector:target ratio of 10:1\ne. Flow cytometry dose response curves showing teclistamab, elranatamab, and alnuctamab binding to various K562 cell lines\nf. Barplot showing percentage viability of K562 cells after co-culture with donor PBMCs at effector:target ratio of 10:1 with/without TCEs. P-values shown: 1.1 x 10^-5, 0.0032, 0.00032, 2.6 x 10^-5, 8.8 x 10^-5, 0.042, 0.012, 5.1 x 10^-5, 0.056, 0.13\n\nFigure 5: Monoallelic TNFRSF17 deletion coupled with deletion of Pro34 in the BCMA extracellular domain mediates MM relapse after anti-BCMA TCE therapy in patient MM-15\na. ScCNV-seq heatmap comparing CN changes in chromosomes 1-22 in pre-therapy (pre) versus post-relapse (post) CD138+ MM cells\nb. Pre-therapy and post-relapse CD138+ CN alteration at TNFRSF17 locus based on scCNV-seq\nc. Lollipop plot illustrating the 11965419_11965421del in exon 1 of TNFRSF17 gene\nd. Pre- versus post-relapse CD138+ BCMA protein expression (by monoclonal anti-BCMA antibody (clone 19F2))\ne. Flow cytometry contour density plot. Patient MM-15's post-relapse CD138+ MM cells, pre-stained with CTV and co-cultured with patient autologous PBMCs at effector:target ratio of 10:1 with/without elranatamab 1 nM\nf. Flow cytometry contour density plot showing cell viability\n\nFigure 6: GPRC5D biallelic loss mediates MM relapse after anti-GPRC5D TCE therapy\na. Pre-therapy circos plot of patient MM-18 based on WGS\nb. Lollipop plot (Chromosome 12) showing CNVs and SVs\nc. ScCNV-seq heatmap comparing CN changes in chromosomes 1-22 in pre-therapy (pre) versus post-relapse (post) CD138+ MM cells\nd. Fish plot of clonal phylogeny showing clone evolution\ne. Pre-therapy and post-relapse CD138+ CN alteration at GPRC5D locus based on scCNV-seq with barplot and table\nf. Pre-therapy and post-relapse circos plots showing chromosome alterations\ng. Illustration of chromosome 12 CNVs and SVs\nh. Diagram showing subclones (CCF%) and biallelic events: del(12p)^10.5 Mb + SV chr 2; chr 12, del(12p)^10.5 Mb + del(12p)^356 kb, del(12p)^10.5 Mb + GPRC5D p.Tyr251Ser, del(12p)^10.5 Mb + GPRC5D p.Arg233Ter\n\nExtended Data Figure 1: Summary of study patient cohort (n=40). Diagram illustrates number of patients treated per type of therapy and lists cases with antigen escape in each treatment group\n\nExtended Data Figure 2: Case MM-01 sacral plasmacytoma and bone marrow biopsy at progressive disease\na. Immunohistochemistry stain of CD138 and BCMA expression on biopsy sample\nb,c. t-distributed stochastic neighbor embedding (tSNE) plot of the distribution of CD3+ cells at pre- (b) and post-relapse (c) using scRNA-seq\n\nExtended Data Figure 3: Pre-therapy circos plot of patient MM-03 based on WGS showing structural variations with CNVs\n\nAdditional figures referenced:\n- Extended Data Figure 2a: BCMA protein expression (monoclonal anti-BCMA antibody clone 19F2)\n- Extended Data Figure 2b,c: CAR T cell contraction analysis\n- Extended Data Figure 4a: TCE binding assays with K562 mutant cell lines\n- Extended Data Figure 4b: Cytotoxicity assays\n- Extended Data Figure 4c,d: Soluble BCMA ELISA assay results\n- Extended Data Figure 4e: BCMA protein stability assay\n- Extended Data Figure 5a-d: Analysis of TNFRSF17 locus CNV\n- Extended Data Figure 6a,b: APRIL binding and NF-\u03baB activation assays\n- Extended Data Figure 7a: Flow cytometry of Fc-tagged APRIL trimer binding\n- Extended Data Figure 8a: Cancer cell fractions analysis\n- Extended Data Figure 8b,c: Flow cytometry confirming GPRC5D loss\n- Extended Data Figure 9a-c: scCNV-seq analysis showing GPRC5D biallelic loss\n- Extended Data Figure 10a: Baseline WGS analysis of GPRC5D locus\n- Supplementary Figure 3: Primary refractory disease analysis\n- Supplementary Figure 9a,b: Baseline subclonal CN loss analysis\n- Supplementary Figure 10: Pre-therapy dataset analysis of TNFRSF17 and GPRC5D prevalence",
+    "statistics": "Patient cohort statistics:\n- n=40 patients total with relapsed refractory MM (RRMM)\n- Median of 5 previous lines of therapy (range 2-12)\n- 30 patients had triple-class refractory disease\n- 24 patients treated with any anti-BCMA therapy (CAR T n=5; TCE n=16; both n=3)\n- 8 patients (33%) had ongoing response to therapy\n- 16 patients (67%) had disease progression\n- 3 patients with primary refractory disease (MM-7, MM-13, MM-14)\n\nTNFRSF17 alterations:\n- Of 16 patients progressing, 8 (50%) had evidence of genomic events on TNFRSF17 locus at progression\n- Of 5 patients progressing on anti-BCMA CAR T, 1 patient (MM-1) had biallelic deletion of TNFRSF17\n- Of 14 patients progressing on anti-BCMA TCE, TNFRSF17 biallelic loss detected in n=5\n- 6 patients (42.8%) had various TNFRSF17 alterations\n\nPatient MM-1 specific statistics:\n- 88.98% of post-relapse tumor cells had monoallelic TNFRSF17 deletion before anti-BCMA CAR T\n- 180 kb focal deletion (chr16: 11,920,001-12,100,000) detected at relapse\n- 86.5% of cells showed TNFRSF17 biallelic loss at relapse\n- 11.1% of clonal plasma cells at progression had no CN alterations at TNFRSF17 locus\n- 12.1% of cells showed monoallelic TNFRSF17 deletion (confirmed a monoallelic TNFRSF17 deletion in 12.1% of the cells)\n\nPatient MM-2 specific statistics:\n- 92.4% of cells at baseline had monoallelic deletion of chromosome 16\n- 0.8% of cells at baseline had subclonal biallelic deletion of TNFRSF17\n- 99.5% of cells at relapse harbored biallelic loss of TNFRSF17\n\nPatient MM-3 specific statistics:\n- 21 months after anti-BCMA TCE therapy relapse\n- 11.1% of clonal plasma cells at progression had no CN alterations at TNFRSF17 locus\n- Allelic frequency at (100\u00d7) by scCNV-seq\n- Limit of detection of 0.1% allelic frequency by dPCR\n\nPatient MM-15 specific statistics:\n- 12 months of stringent CR after anti-BCMA TCE therapy\n- Three-nucleotide deletion (c.98_100del) leading to in-frame deletion (p.Pro34del)\n\nPatient MM-10 specific statistics:\n- 2 months duration of anti-BCMA TCE therapy\n- Biallelic deletions with VAF 66.5%\n- CCF 93% corrected\n\nTCE binding and cytotoxicity statistics:\n- Effector:target ratio of 10:1 used in all co-culture assays\n- Dose range from 0.01 nM to 100 nM\n- 6,000-10,000 live events recorded for flow cytometry\n- 4,000-10,000 CTV-positive cells analyzed\n- P-values for various comparisons: 1.1 x 10^-5, 0.0032, 0.00032, 2.6 x 10^-5, 8.8 x 10^-5, 0.042, 0.012, 5.1 x 10^-5, 0.056, 0.13\n\nGPRC5D alterations:\n- 4 cases of GPRC5D-negative relapses after anti-GPRC5D TCE therapy\n- Patient MM-18: 79% monoallelic loss pre-treatment, 93% biallelic loss at relapse\n- Patient MM-18: 1 year of remission with Talq-DPd\n- Patient MM-18: 2 months PFS with teclistamab before talquetamab\n- Patient MM-18: 30 Mb focal deletion detected at relapse\n- Patient MM-19: 30% clonal bone marrow plasma cells at relapse with biallelic GPRC5D loss\n- Patient MM-19: 15 months CR duration\n- Patient MM-31: 30.5 Mb deletion at short arm of chromosome 12\n- Patient MM-31: 15 months after initiation of therapy at relapse\n- Patient MM-31: 45% of MM cells harbored nonsense mutation (p.Arg233Ter)\n- Patient MM-31: 28% had missense mutation (p.Tyr251Cys)\n- Patient MM-31: CCF 12% had biallelic deletion of 356 kb\n\nPre-existing alterations:\n- 2 out of 25 patients (7.14%) had subclonal/clonal single CN loss of TNFRSF17 at baseline\n- 6 out of 28 patients (21.4%) had monoallelic GPRC5D loss in CAR T/TCE naive samples\n- Baseline prevalence: 3.35% TNFRSF17 monoallelic loss, 13.17% GPRC5D monoallelic loss\n- TNFRSF17 mutational events: 1.1% of samples\n\nScCNV-seq analysis statistics:\n- 24,643 MM cells analyzed by scCNV-seq\n- In CAR T/TCE naive patients (n=15 patients, 26 pre- and 9 post-samples):\n  - Monoallelic loss of TNFRSF17: 1.8% of cells\n  - Biallelic loss of TNFRSF17: 0.3% of cells\n  - 3 or more CN gains: 6.4% of cells\n  - 4 or more CN gains: 0.2% of cells\n- GPRC5D monoallelic or biallelic loss: 6.4%, 18% and 21.2% of cells respectively\n\nMLL dataset statistics:\n- 4,995 patients with various myeloid and lymphoid neoplasms\n- 399 patients with monoclonal gammopathy of undetermined significance\n- 399 MM patients anti-BCMA therapy-naive\n- 33 patients (0.7%, including 3 MM patients) had germline variants/VUS in TNFRSF17\n- p.Arg27Pro variant found in 4 patients\n- p.Ala58Thr: n=5\n- p.Cys591Val: n=2  \n- p.Pro30Ser: n=2\n- p.Met74del: n=2\n\nWGS technical specifications:\n- 100\u00d7 median coverage for WGS\n- >100\u00d7 (151 bp paired-end) sequencing\n- 2\u00d7 150 bp cycles for NovaSeq 6000\n- 2\u00d7 151 bp reads for City of Hope samples\n- >100\u00d7 tumor coverage for patient samples\n- >40\u00d7 normal coverage\n\nFlow cytometry specifications:\n- 6,000-10,000 live events recorded\n- Gates based on forward and side-scatter plots\n- 4,000-10,000 CTV-positive cells analyzed\n- Calcein AM and PI used for cell viability\n- MFIs (median fluorescent intensities) measured\n\nMolecular assays:\n- Digital PCR limit of detection: 0.1% allelic frequency\n- 10\u00d7 Genomics reagent kits used for single-cell methods\n- ~1,000 UMIs, >25,000 UMIs or >25% of mitochondrial reads filtered\n- UMI > 100 for cell identification\n- Allelic frequency (100\u00d7) for scCNV-seq detection\n- 10 ng DNA, 7.5 \u03bcl dPCR Master Mix v.2 for digital PCR\n- 180 \u03bcg centrifugation for 1 min for CAR T generation\n- Transduction efficiency verified at 48 h\n- 1 \u00d7 10^5 cells ml^-1 for T cell activation\n- 1 \u00d7 10^7 cells ml^-1 for K562 cell experiments\n- 10,000 live events for flow cytometry binding assays\n- Effector:target ratio of 10:1 for cytotoxicity assays\n- Doses range: 0.01 nM to 100 nM for TCE assays\n- 300 ng ml^-1 RIPA lysis buffer for protein extraction\n- 1:2,000 dilution for anti-ERK antibody\n- 1:3,000 dilution for anti-rabbit IgG HRP antibody\n- 1:1,000 dilution for NF-\u03baB ELISA antibody\n- 10 \u03bcg nuclear extract for NF-\u03baB quantification",
+    "genes": "TNFRSF17 (encodes BCMA - B cell maturation antigen), chromosome 16p\nGPRC5D (G-protein-coupled receptor family C group 5 member D), chromosome 12p\nCD38\nCD138 (Syndecan-1)\nCD3 (CD3e)\nTRAF3\nCYLD\nMAP3K14\nFCRL5\nSLAMF7\nMYC\nRMD2\nSNX29\nRPH-165M1.2\nGSG1\nEMP1\nNEFH\nCD3D/G/E\nCD4\nFCGR3A\nIgG4\nIgG2\nIgG1",
+    "variants": "TNFRSF17 variants:\n- p.Arg27Pro (c.CGA>CCA, codon change position 27, arginine to proline) - missense mutation in extracellular domain\n- p.Pro33Ser - germline variant, missense mutation\n- p.Pro34del (c.98_100del) - in-frame deletion of proline at position 34\n- p.Ser30del (c.87_89del) - in-frame deletion of serine at position 30\n- c.80G>C - missense mutation resulting in p.Arg27Pro\n- 11965404G>C - genomic coordinate for p.Arg27Pro mutation\n- 11965419_11965421del - genomic coordinates for Pro34 deletion\n- Biallelic deletion at TNFRSF17 locus (chr16: 11,920,001-12,100,000) - 180 kb focal deletion\n- 800 kb deletion encompassing TNFRSF17 locus (chromosome 16: 11,674,653-12,555,286)\n- Monoallelic deletion of TNFRSF17 locus\n- Focal biallelic deletions at TNFRSF17 locus\n- p.Ala58Thr (n=5 in MLL dataset)\n- p.Cys591Val (n=2 in MLL dataset)\n- p.Met74del (n=2 in MLL dataset)\n\nGPRC5D variants:\n- p.Arg233Ter - nonsense mutation (CCF 45%)\n- p.Tyr251Cys - missense mutation (CCF 28%)\n- Biallelic deletion of GPRC5D (30.5 Mb deletion, chr12: 13,002,001-13,358,000)\n- Biallelic focal deletion (chr12: 12,820,001-13,240,000)\n- Biallelic deletion of 356 kb (CCF 12%)\n- p.Glu146Ter\n- p.Arg233Ter\n- Monoallelic GPRC5D loss\n- del(12p)^10.5 Mb + SV chr 2; chr 12\n- del(12p)^10.5 Mb + del(12p)^356 kb\n- del(12p)^10.5 Mb + GPRC5D p.Tyr251Ser\n- del(12p)^10.5 Mb + GPRC5D p.Arg233Ter\n\nOther variants mentioned:\n- MYC locus copy number alterations\n- Chromosome 16 monosomy\n- Chromosome 12 chromothripsis\n- del(12p)^10.5 Mb\n- Structural variations (SVs) including translocations, inversions, duplications\n- CNV gains and losses across multiple chromosomes",
+    "diseases": "Multiple myeloma (MM)\nRelapsed refractory multiple myeloma (RRMM)\nTriple-class refractory disease\nPrimary refractory disease\nExtramedullary disease (hepatic plasmacytoma)\nSacral plasmacytoma\nProgressive disease\nPenta-drug refractory MM\nHematological malignancies\nMyeloid neoplasms\nLymphoid neoplasms\nMonoclonal gammopathy of undetermined significance (MGUS)\nMyelodysplastic syndrome\nChronic myelomonocytic leukemia\nMyeloproliferative neoplasms\nAcute myeloid leukemia\nB cell acute lymphoblastic leukemia\nT cell acute lymphoblastic leukemia\nChronic lymphocytic leukemia\nMantle cell lymphoma\nFollicular lymphoma\nMarginal zone lymphoma\nLymphoplasmacytic lymphoma\nHigh-grade B cell lymphoma\nHairy cell leukemia\nBlastic plasmacytoid dendritic cell neoplasm\nMonoclonal gammopathy of undetermined significance",
+    "therapies": "CAR T therapies:\n- Anti-BCMA CAR T\n- Ide-cel (idecabtagene vicleucel) - BCMA-targeting CAR T\n- Anti-GPRC5D CAR T\n- In-house BCMA CAR T derived from Ide-cel\n- scFv-CAR (single-chain variable fragment CAR)\n\nTCE (T cell engager) / Bispecific antibody therapies:\n- Anti-BCMA TCE\n- Teclistamab (anti-BCMA bispecific antibody, clone J22.9-xi)\n- Elranatamab (anti-BCMA bispecific antibody)\n- Alnuctamab (anti-BCMA bispecific antibody)\n- Anti-GPRC5D TCE\n- Talquetamab (Talq-DPd) (anti-GPRC5D TCE)\n- Linvoseltamab (anti-BCMA TCE)\n- Anti-BCMACD3 tandem scFv\n- BiTE (bispecific T cell engager)\n\nOther therapies mentioned:\n- Anti-BCMA/GPRC5D salvage therapies\n- Monoclonal anti-BCMA antibody (clone 19F2)\n- Polyclonal anti-BCMA antibody\n- Anti-CD3 bispecific antibody\n- Anti-IgG4-Fc antibody\n- Anti-IgG2-Fc antibody\n- APC (allophycocyanin)-conjugated antibodies\n- Fluorophore-conjugated antibodies\n- Fc-tagged APRIL trimer\n- Immunotherapy\n- Targeted immunotherapies\n- Cell-based immunotherapy\n\nReagents and tools:\n- PBMCs (peripheral blood mononuclear cells)\n- Healthy donor PBMCs\n- CellTrace Violet (CTV)\n- Calcein AM\n- Propidium iodide (PI)\n- IL-2\n- ImmunoCult Human CD3/CD28 T Cell Activator\n- Anti-IgG antibody staining\n- \u03b3-secretase inhibitor (HY-15185)\n- Rituximab",
+    "clinical_trials": "NCT03651128 (teclistamab trial)\nNCT03145181 (Ide-cel trial, protocol no. bb2121; ClinicalTrials.gov identifier NCT03361972)\nNCT03314597 (elranatamab trial, protocol no. C1071001)\nNCT03326336 (talquetamab trial, protocol no. C1071005)\nNCT01454297 (GPRC5D trial)\nNCT04108624 (anti-GPRC5D trial, protocol no. 64407564MM1002)\nbb2121-MM-003 (Ide-cel trial identifier)\n\nReferenced trials/studies:\n- MajesTEC-1 (teclistamab study)\n- CARTITUDE-1 (Ide-cel study) \n- CARTITUDE-2 (Ide-cel study)\n- CARTITUDE-4 (Ide-cel study)\n- MagnetisMM-3 (elranatamab study)\n- MonumenTAL-1 (talquetamab study)\n- MMRF (Multiple Myeloma Research Foundation) trial NCT01454297\n- 5,000 Genomes project\n- MLL Munich Leukemia Laboratory WGS dataset"
+  },
+  "timing": {
+    "start": "2025-12-13T03:18:30.695197",
+    "end": "2025-12-13T03:18:36.735912",
+    "seconds": 6.040715
+  },
+  "log_file": "/workspace/civic-extraction-agent/logs/s41591-023-02491-5_20251213_031830.log"
+}

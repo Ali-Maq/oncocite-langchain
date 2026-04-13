@@ -1,0 +1,356 @@
+{
+  "paper_id": "Elnaggar_et_al",
+  "paper_info": {
+    "author": "Muhammad Elnaggar, Sarita Agte, Paula Restrepo, Meghana Ram, David Melnekoff, Christos Adamopoulos, Mark M. Stevens, Katerina Kappes, Violetta Leshchenko, Daniel Verina, Sundar Jagannath, Poulikos I. Poulikaos, Samir Parekh, Alessandro Lagan\u00e0",
+    "year": "2022",
+    "num_pages": 8,
+    "paper_type": "CASE_REPORT"
+  },
+  "extraction": {
+    "items": 6,
+    "iterations": 2,
+    "complete": true,
+    "evidence_items": [
+      {
+        "feature_names": [
+          "BRAF"
+        ],
+        "feature_entrez_ids": [
+          673
+        ],
+        "variant_names": [
+          "V600E"
+        ],
+        "variant_hgvs_p": "p.Val600Glu",
+        "variant_origin": "SOMATIC",
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "E",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "SENSITIVITY_RESPONSE",
+        "therapy_names": [
+          "Dabrafenib",
+          "Trametinib",
+          "Regorafenib"
+        ],
+        "therapy_rxcui_ids": [
+          "1424911",
+          "1425099",
+          "1312397"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C82386",
+          "NCIT:C77908",
+          "NCIT:C184955"
+        ],
+        "evidence_description": "A 61-year-old relapsed/refractory multiple myeloma patient with BRAF V600E subclonal mutation (VAF 41%) achieved very good partial response to triple MAPK inhibition (dabrafenib + trametinib + regorafenib) for 110 days post-BCMA CAR-T failure, with 80% reduction in lambda free light chain (from 126.4 to 27.5 mg/L) and reduction in subcutaneous nodules, allowing bridge to bispecific therapy.",
+        "source_page_numbers": "Abstract, Case presentation, Full Text",
+        "verbatim_quote": "Within 3 months of treatment initiation, prompt reduction in subcutaneous lesions and 80% reduction in Lambda free light chain (\u03bbFLC) (27.5 mg/l) were observed. The 110-day response period achieved by the triple MAPK inhibition allowed the patient to become eligible for clinical trials.",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "Case report with clear clinical outcome showing response to targeted therapy based on BRAF V600E mutation. WES confirmed mutation at VAF 41%, western blot confirmed MAPK pathway activation, and clinical response was documented with objective measurements (80% reduction in FLC, reduction in subcutaneous lesions).",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": null,
+        "cancer_cell_fraction": 0.41,
+        "cohort_size": 1,
+        "source_title": "Triple MAPK inhibition salvaged a relapsed post-BCMA CAR-T cell therapy multiple myeloma patient with a BRAF V600E subclonal mutation",
+        "source_publication_year": 2022,
+        "source_journal": "Journal of Hematology & Oncology"
+      },
+      {
+        "feature_names": [
+          "KRAS"
+        ],
+        "feature_entrez_ids": [
+          3845
+        ],
+        "variant_names": [
+          "Q61R"
+        ],
+        "variant_hgvs_p": "p.Gln61Arg",
+        "variant_origin": "SOMATIC",
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "E",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "therapy_names": [
+          "Dabrafenib",
+          "Trametinib",
+          "Regorafenib"
+        ],
+        "therapy_rxcui_ids": [
+          "1424911",
+          "1425099",
+          "1312397"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C82386",
+          "NCIT:C77908",
+          "NCIT:C184955"
+        ],
+        "evidence_description": "In a BRAF V600E multiple myeloma patient treated with triple MAPK inhibition, emergence of a KRAS Q61R mutation was detected at relapse after 3 months of response. WES analysis showed the newly emerging KRAS Q61R clone in addition to pre-existing BRAF V600E, associated with increased MAPK pathway activity at RNA level and gradual decline in response (FLC rising from 27.5 to 116.6 mg/L).",
+        "source_page_numbers": "Discussion and conclusions, Full Text",
+        "verbatim_quote": "WES analysis of the patient BMA at relapse from triple MAPK inhibition therapy has also shown a newly emerging clone harboring a KRAS Q61R mutation in addition to the previously existing BRAF V600E, which was associated with increased MAPK activity observed at the RNA level. This may explain the gradual decline of the patient response to the triple regimen.",
+        "extraction_confidence": 0.9,
+        "extraction_reasoning": "Case report demonstrating acquired resistance mechanism. KRAS Q61R emerged during therapy and was temporally associated with treatment failure, supported by molecular evidence of increased MAPK pathway activity.",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": null,
+        "cancer_cell_fraction": null,
+        "cohort_size": 1,
+        "source_title": "Triple MAPK inhibition salvaged a relapsed post-BCMA CAR-T cell therapy multiple myeloma patient with a BRAF V600E subclonal mutation",
+        "source_publication_year": 2022,
+        "source_journal": "Journal of Hematology & Oncology"
+      },
+      {
+        "feature_names": [
+          "BRAF"
+        ],
+        "feature_entrez_ids": [
+          673
+        ],
+        "variant_names": [
+          "V600E"
+        ],
+        "variant_hgvs_p": "p.Val600Glu",
+        "variant_origin": "SOMATIC",
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "E",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "SENSITIVITY_RESPONSE",
+        "therapy_names": [
+          "Encorafenib",
+          "Binimetinib"
+        ],
+        "therapy_rxcui_ids": [
+          "2049106",
+          "2049122"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C98283",
+          "NCIT:C84865"
+        ],
+        "evidence_description": "Western blot analysis of post-BCMA CAR-T relapse bone marrow from a BRAF V600E multiple myeloma patient confirmed the mutation and showed phosphorylation of ERK consistent with MAPK signaling activation, which was inhibited by combining MEK inhibitor binimetinib with BRAF V600E monomer inhibitor encorafenib in ex vivo experiments.",
+        "source_page_numbers": "Case presentation, Full Text",
+        "verbatim_quote": "Western blot (WB) analysis of the post-CAR-T relapse bone marrow aspirate (BMA) confirmed the BRAF(V600E) mutation and further showed phosphorylation of ERK (pERK), consistent with activation of MAPK signaling, which was inhibited by combining the MEK inhibitor binimetinib with the BRAF(V600E) monomer inhibitor encorafenib.",
+        "extraction_confidence": 0.85,
+        "extraction_reasoning": "Ex vivo functional evidence demonstrating pathway inhibition with dual MAPK inhibition. Western blot confirmed BRAF V600E mutation and showed functional inhibition of pERK with combination therapy, supporting clinical actionability.",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": null,
+        "cancer_cell_fraction": 0.41,
+        "cohort_size": 1,
+        "source_title": "Triple MAPK inhibition salvaged a relapsed post-BCMA CAR-T cell therapy multiple myeloma patient with a BRAF V600E subclonal mutation",
+        "source_publication_year": 2022,
+        "source_journal": "Journal of Hematology & Oncology"
+      },
+      {
+        "feature_names": [
+          "BRAF"
+        ],
+        "feature_entrez_ids": [
+          673
+        ],
+        "variant_names": [
+          "V600E"
+        ],
+        "variant_hgvs_p": "p.Val600Glu",
+        "variant_origin": "SOMATIC",
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "E",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "REDUCED_TOXICITY",
+        "therapy_names": [
+          "Dabrafenib",
+          "Trametinib",
+          "Regorafenib"
+        ],
+        "therapy_rxcui_ids": [
+          "1424911",
+          "1425099",
+          "1312397"
+        ],
+        "therapy_ncit_ids": [
+          "NCIT:C82386",
+          "NCIT:C77908",
+          "NCIT:C184955"
+        ],
+        "evidence_description": "In BRAF V600E multiple myeloma patient, triple MAPK inhibition allowed use of lower doses of cardiotoxic trametinib (1.5 mg once daily initially) compared to standard dosing, with good tolerability (minimal side effects, grade 1 fatigue only), allowing patient to carry out daily activities and return to work during 110-day response period.",
+        "source_page_numbers": "Full Text",
+        "verbatim_quote": "Moreover, the patient has shown tolerability to the administered regimen, as the addition of regorafenib allowed lower doses of both dabrafenib and trametinib, the latter being cardiotoxic at higher doses. Furthermore, the patient had good tolerance to all three medications with minimal side effects (grade 1 fatigue) which allowed him to carry out activities of daily living and return to work.",
+        "extraction_confidence": 0.85,
+        "extraction_reasoning": "Case report demonstrating improved tolerability with triple combination allowing dose reduction. Clinical toxicity outcome documented with specific adverse event grading and quality of life assessment.",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": null,
+        "cancer_cell_fraction": 0.41,
+        "cohort_size": 1,
+        "source_title": "Triple MAPK inhibition salvaged a relapsed post-BCMA CAR-T cell therapy multiple myeloma patient with a BRAF V600E subclonal mutation",
+        "source_publication_year": 2022,
+        "source_journal": "Journal of Hematology & Oncology"
+      },
+      {
+        "feature_names": [
+          "BRAF"
+        ],
+        "feature_entrez_ids": [
+          673
+        ],
+        "variant_names": [
+          "V600E"
+        ],
+        "variant_hgvs_p": "p.Val600Glu",
+        "variant_origin": "SOMATIC",
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "PROGNOSTIC",
+        "evidence_level": "E",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "POOR_OUTCOME",
+        "therapy_names": null,
+        "therapy_rxcui_ids": null,
+        "therapy_ncit_ids": null,
+        "evidence_description": "BRAF V600E mutation persisted through multiple lines of therapy including BCMA CAR-T and ASCT in a multiple myeloma patient who achieved VGPR with CAR-T but progressed after 6 months with extramedullary disease (subcutaneous nodules). The mutation was detected in both bone marrow and cutaneous plasmacytoma at relapse (VAF 41%), indicating clonal persistence and aggressive disease behavior.",
+        "source_page_numbers": "Case presentation, Full Text",
+        "verbatim_quote": "Prior to CAR-T therapy, targeted and WES had identified a BRAF(V600E) mutation in his BM, which persisted throughout treatment and was also detected in a cutaneous nodule with a variant allele frequency (VAF) of 41% at relapse from CAR-T.",
+        "extraction_confidence": 0.8,
+        "extraction_reasoning": "Prognostic evidence showing BRAF V600E persistence through therapies and association with aggressive disease features (extramedullary disease, post-CAR-T relapse). While single case, demonstrates poor outcome associated with this alteration in this treatment context.",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": null,
+        "cancer_cell_fraction": 0.41,
+        "cohort_size": 1,
+        "source_title": "Triple MAPK inhibition salvaged a relapsed post-BCMA CAR-T cell therapy multiple myeloma patient with a BRAF V600E subclonal mutation",
+        "source_publication_year": 2022,
+        "source_journal": "Journal of Hematology & Oncology"
+      },
+      {
+        "feature_names": [
+          "BRAF"
+        ],
+        "feature_entrez_ids": [
+          673
+        ],
+        "variant_names": [
+          "V600E"
+        ],
+        "variant_hgvs_p": "p.Val600Glu",
+        "variant_origin": "SOMATIC",
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "evidence_type": "DIAGNOSTIC",
+        "evidence_level": "E",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "POSITIVE",
+        "therapy_names": null,
+        "therapy_rxcui_ids": null,
+        "therapy_ncit_ids": null,
+        "evidence_description": "BRAF V600E mutation identified in 7% of relapsed/refractory multiple myeloma patients and represents a targetable alteration within the MAPK signaling pathway. In this case, whole-exome sequencing identified BRAF V600E in both bone marrow and cutaneous plasmacytoma (VAF 41%), and western blot with BRAF V600E-specific antibody confirmed mutation presence, enabling precision medicine approach.",
+        "source_page_numbers": "Background, Case presentation",
+        "verbatim_quote": "About 53% of RRMM patients have shown emerging clones harboring mutations within the MAPK signaling pathway, including the targetable BRAF(V600E) in about 7% of cases. Based on whole-exome sequencing, we identified a BRAF (V600E) dominant subclone in both bone marrow and cutaneous plasmacytoma.",
+        "extraction_confidence": 0.85,
+        "extraction_reasoning": "Diagnostic evidence demonstrating utility of BRAF V600E testing for treatment selection in multiple myeloma. NGS and western blot methods successfully identified actionable mutation leading to targeted therapy selection.",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": null,
+        "cancer_cell_fraction": 0.41,
+        "cohort_size": 1,
+        "source_title": "Triple MAPK inhibition salvaged a relapsed post-BCMA CAR-T cell therapy multiple myeloma patient with a BRAF V600E subclonal mutation",
+        "source_publication_year": 2022,
+        "source_journal": "Journal of Hematology & Oncology"
+      }
+    ]
+  },
+  "plan": {
+    "paper_type": "CASE_REPORT",
+    "expected_items": 8,
+    "key_variants": "BRAF V600E (primary variant of interest, VAF 41% in cutaneous nodule), KRAS Q61R (emerging resistance clone post-triple MAPK inhibition)",
+    "key_therapies": "Triple MAPK inhibition (dabrafenib + trametinib + regorafenib), anti-BCMA CAR-T cell therapy, dabrafenib (BRAF monomer inhibitor), trametinib (MEK inhibitor), regorafenib (BRAF dimer inhibitor), encorafenib (BRAF monomer inhibitor), binimetinib (MEK inhibitor), copanlisib (PI3K inhibitor), ASCT (BCNU/Melphalan conditioning), bispecific treatment",
+    "key_diseases": "Multiple Myeloma (MM), Relapsed/Refractory Multiple Myeloma (RRMM), extramedullary disease (EMD) with subcutaneous nodules/cutaneous plasmacytoma, post-BCMA CAR-T relapse, penta-refractory MM (IgA lambda), ISS stage 3 with hyperdiploidy, gain of 1q21, del13",
+    "focus_sections": "Case presentation, Background, Discussion and conclusions, Abstract - These sections contain the clinical outcomes, treatment responses, and mechanistic rationale for the triple MAPK inhibition strategy",
+    "extraction_notes": "PRIMARY EVIDENCE ITEMS (8 anticipated):\n\n1. BRAF V600E + Triple MAPK inhibition (dabrafenib + trametinib + regorafenib) in post-CAR-T relapsed RRMM with EMD - SUPPORTS SENSITIVITY\n   - Response: VGPR with 80% reduction in FLC (from 126.4 to 27.5 mg/l), reduction in subcutaneous nodules\n   - Duration: 110 days\n   - Evidence Level: Case Study (Level D)\n   - Clinical significance: Bridged hospice-bound patient to clinical trial enrollment\n\n2. BRAF V600E + Dabrafenib monotherapy in RRMM - SUPPORTS SENSITIVITY (mechanism)\n   - In vitro WB analysis showed BRAF V600E mutation with pERK activation\n   - Evidence Level: Preclinical (Level E)\n\n3. BRAF V600E + Dabrafenib + Trametinib (double combo) in RRMM - SUPPORTS SENSITIVITY (mechanism)\n   - In vitro WB showed inhibition of MAPK signaling but residual activity remained\n   - Evidence Level: Preclinical (Level E)\n\n4. BRAF V600E + Triple therapy superior to double therapy - SUPPORTS SENSITIVITY (mechanism)\n   - Ex vivo single-cell mass response assays showed improved efficacy with regorafenib addition\n   - Addresses feedback reactivation via BRAF dimer formation\n   - Evidence Level: Preclinical (Level E)\n\n5. BRAF V600E persistence through anti-BCMA CAR-T therapy - SUPPORTS RESISTANCE\n   - BRAF V600E detected pre-CAR-T and persisted at relapse (VAF 41% in cutaneous nodule)\n   - Evidence Level: Case Study (Level D)\n\n6. KRAS Q61R emergence as resistance mechanism to triple MAPK inhibition - SUPPORTS RESISTANCE\n   - Newly emerging clone with KRAS Q61R detected at relapse from triple therapy\n   - Associated with increased MAPK activity at RNA level\n   - Evidence Level: Case Study (Level D)\n\n7. PI3K pathway activation at triple MAPK inhibition resistance - DOES NOT SUPPORT/RESISTANCE\n   - RNA analysis and WB showed increased PI3K pathway activation post-triple therapy\n   - Suggests potential benefit from copanlisib (PI3K inhibitor)\n   - Evidence Level: Preclinical (Level E)\n\n8. BRAF V600E + Bispecific antibody therapy post-triple MAPK bridging - OUTCOME (contextual)\n   - Patient achieved sCR (FLC 10.9 mg/l, ratio 0.49) after being bridged to bispecific trial\n   - Evidence Level: Case Study (Level D)\n\nKEY CHARACTERISTICS:\n- Single patient case report (N=1)\n- Post-CAR-T relapse setting is critical context\n- Extramedullary disease (cutaneous manifestations) important phenotype\n- Penta-refractory status indicates highly resistant disease\n- Multiple lines of prior therapy including immunomodulatory drugs, proteasome inhibitors, monoclonal antibodies\n- Combination therapy with mechanism-based rationale (feedback inhibition)\n- Clonal evolution tracked through serial WES\n- In vitro/ex vivo functional validation supports clinical findings\n\nCLINICAL SIGNIFICANCE:\n- First report of triple MAPK inhibition in MM context\n- Bridging therapy concept in post-CAR-T setting\n- Demonstrates precision medicine approach with NGS-guided treatment\n- Tolerability advantage (lower doses due to triple combination)\n- Limited durability (110 days) but clinically meaningful bridge to next therapy\n\nEXTRACTION CHALLENGES:\n- Single patient limits generalizability\n- Multiple therapy lines make attribution complex\n- Some evidence items are mechanistic (preclinical) vs clinical\n- Need to capture both efficacy and resistance mechanisms\n- Temporal sequence matters (pre-CAR-T \u2192 post-CAR-T \u2192 post-triple therapy)"
+  },
+  "final_critique": {
+    "overall_assessment": "APPROVE",
+    "item_feedback": "**Item 1 (BRAF V600E \u2192 Triple MAPK, PREDICTIVE/SENSITIVITY_RESPONSE)**: APPROVED - All required fields present, accurate statistics (80% FLC reduction from 126.4 to 27.5 mg/L, 110-day response, VAF 41%), verbatim quote matches paper, extended fields appropriately populated.\n\n**Item 2 (KRAS Q61R \u2192 Triple MAPK Resistance, PREDICTIVE/RESISTANCE)**: APPROVED - All required fields present, accurate resistance mechanism (emergence at relapse, increased MAPK activity), statistics correct (FLC 27.5 to 116.6 mg/L), verbatim quote matches paper exactly.\n\n**Item 3 (BRAF V600E \u2192 Encorafenib + Binimetinib, PREDICTIVE/SENSITIVITY_RESPONSE)**: APPROVED - Ex vivo context now properly clarified in evidence_description (\"Western blot analysis...ex vivo experiments\"), all required fields present, appropriate extended fields populated.\n\n**Item 4 (BRAF V600E \u2192 Reduced Toxicity, PREDICTIVE/REDUCED_TOXICITY)**: APPROVED - Valid clinical toxicity evidence with specific grading (grade 1 fatigue), dose reduction details, quality of life assessment (return to work), all fields correct.\n\n**Item 5 (BRAF V600E Prognostic, PROGNOSTIC/POOR_OUTCOME)**: APPROVED - Accurate prognostic evidence showing mutation persistence through multiple therapies, association with aggressive features (EMD, post-CAR-T relapse), therapy_names correctly null.\n\n**Item 6 (BRAF V600E Diagnostic, DIAGNOSTIC/POSITIVE)**: APPROVED - Valid diagnostic evidence with prevalence data (7% of RRMM), detection methodology (WES, WB), clinical utility demonstrated, therapy_names correctly null.",
+    "missing_items": "No missing items. All major clinical, prognostic, and diagnostic findings from this single-patient case report have been appropriately extracted. The paper focuses primarily on BRAF V600E with MAPK inhibition and KRAS Q61R resistance, both of which are comprehensively covered.",
+    "extra_items": "No extra items. The extractor successfully removed the two problematic items identified in iteration 1:\n- Former Item 4 (BRAF V600E FUNCTIONAL/PATHOGENIC - mechanism only, not actionable)\n- Former Item 7 (PI3KCA PATHWAY_ACTIVATION - invalid variant name, ex vivo only without clinical outcome)\n\nThe remaining 6 items all meet CIViC actionability and validity criteria.",
+    "summary": "APPROVED - All 6 evidence items are valid and ready for CIViC submission.\n\nThe extractor successfully addressed all feedback from iteration 1:\n\u2705 Removed Item 4 (FUNCTIONAL/PATHOGENIC - not actionable)\n\u2705 Removed Item 7 (PI3KCA PATHWAY_ACTIVATION - invalid variant, ex vivo only)\n\u2705 Clarified Item 3 ex vivo context\n\nAll remaining items demonstrate:\n- Complete required field coverage\n- Accurate evidence descriptions matching paper content\n- Correct statistics and verbatim quotes\n- Appropriate extended field population (variant_origin, hgvs_p, cancer_cell_fraction, cohort_size)\n- Valid evidence type/significance combinations\n- Proper therapy_names handling (present for PREDICTIVE, null for PROGNOSTIC/DIAGNOSTIC)\n\nThe extraction comprehensively captures the clinical utility of BRAF V600E testing and MAPK inhibition in multiple myeloma, resistance mechanisms via KRAS Q61R, and prognostic/diagnostic implications. Quality is high with extraction_confidence scores 0.8-0.95.\n\nNo further revisions needed. Ready for final output.",
+    "iteration": 2
+  },
+  "paper_content": {
+    "title": "Triple MAPK inhibition salvaged a relapsed post-BCMA CAR-T cell therapy multiple myeloma patient with a BRAF V600E subclonal mutation",
+    "authors": [
+      "Muhammad Elnaggar",
+      "Sarita Agte",
+      "Paula Restrepo",
+      "Meghana Ram",
+      "David Melnekoff",
+      "Christos Adamopoulos",
+      "Mark M. Stevens",
+      "Katerina Kappes",
+      "Violetta Leshchenko",
+      "Daniel Verina",
+      "Sundar Jagannath",
+      "Poulikos I. Poulikaos",
+      "Samir Parekh",
+      "Alessandro Lagan\u00e0"
+    ],
+    "journal": "Journal of Hematology & Oncology",
+    "year": 2022,
+    "paper_type": "CASE_REPORT",
+    "abstract": "Background: Multiple Myeloma (MM) is a progressive plasma cell neoplasm characterized by heterogeneous clonal expansion. Despite promising response rates achieved with anti-BCMA CAR-T cell therapy, patients may still relapse and there are currently no clear therapeutic options in post-CAR-T settings. In this report, we present a case of a post-BCMA CAR-T relapsed/refractory (RR) MM patient with skin extramedullary disease (EMD) in which a novel MAPK inhibition combinatorial strategy was implemented based on next-generation sequencing and in vitro experiments.\n\nCase presentation: A 61-year-old male with penta-refractory MM penta- (IgA lambda), ISS stage 3 with hyperdiploidy, gain of 1q21 and del13 was treated with anti-BCMA CAR-T cell therapy, achieving a best response of VGPR. He progressed after 6 months and was salvaged for a short period with autologous stem cell transplantation. Eventually, he progressed with extramedullary disease manifested as subcutaneous nodules. Based on whole-exome sequencing, we identified a BRAF (V600E) dominant subclone in both bone marrow and cutaneous plasmacytoma. Following in vitro experiments, and according to our previous studies, we implemented a triple MAPK inhibition strategy under which he patient achieved a very good partial response for 110 days, which allowed to bridge him to subsequent clinical trials and eventually achieve a stringent complete response (sCR).\n\nConclusion: Here, we show the applicability, effectiveness, and tolerability the triple MAPK inhibition strategy in the context of post-BCMA CAR-T failure in specific subset of patients. The triple therapy could bridge our hospice bound RRMM patient with BRAF (V600E) to further therapeutic options where sCR was achieved. We will further evaluate triple MAPK inhibition in patients with BRAF V600E in a precision medicine clinical trial launching soon.",
+    "sections": [
+      {
+        "name": "Full Text",
+        "page_numbers": [],
+        "content": "Background:\nRelapsed/Refractory Multiple Myeloma (RRMM) patients with extramedullary disease (EMD) have limited response to existing strategies like immunomodulatory drugs, proteasome inhibitors, and monoclonal antibodies. While anti-BCMA CAR-T has achieved prominent response in RRMM patients, post-CAR-T relapse represents a challenging therapeutic course with poor prognosis. About 53% of RRMM patients have shown emerging clones harboring mutations within the MAPK signaling pathway, including the targetable BRAF(V600E) in about 7% of cases. Targeting the MAPK signaling pathway with BRAF \u00b1 monomeric selective inhibitors \u00b1 MEK inhibitor has been frequently attempted with RRMM patients with equivocal outcome on both disease progression and survival. This could be ascribed to reactivation or recovery of the MAPK pathway via BRAF dimers induction. Our prior studies have revealed that the multi-kinase inhibitor regorafenib is a potent inhibitor of dimeric BRAF. Moreover, we have demonstrated that negative feedback can be overcome by inhibiting BRAF in both its monomeric and dimeric form in combination with MEK inhibition leading to more efficacious and tolerable treatment in preclinical BRAF (V600E) cancer models. Patients with BRAF V600E could benefit from targeted therapy with small molecules inhibitors of monomeric BRAF V600E in combination with MEK inhibition. This strategy, however, may fail due to feedback activation of the pathway via induction of BRAF dimer formation. Our recent study has shown efficacious pathway inhibition when the multi-kinase inhibitor regorafenib was added to the standard strategy. Regorafenib could potently inhibit dimeric BRAF and relieve the induced negative feedback. Based on these findings and assessment, the patient was started on targeted therapy with a combination of a BRAF monomer inhibitor, dabrafenib (100 mg, orally twice daily), a MEK inhibitor, trametinib (1.5 mg, orally 21/28 days daily), and a BRAF dimer inhibitor, regorafenib (40 mg, orally once daily). Within 3 months of treatment initiation, prompt reduction in subcutaneous lesions and 80% reduction in Lambda free light chain (\u03bbFLC) (27.5 mg/l) were observed. Furthermore, the patient had good tolerance to all three medications with minimal side effects (grade 1 fatigue) which allowed him to carry out activities of daily living and return to work. After more than three months of optimal treatment response, the patient's FLC started to gradually increase, indicating reduced response to the triple MAPK inhibition, albeit with no recurrence of the subcutaneous nodules. The triple MAPK inhibition dose was maximized to dabrafenib 150 mg (orally twice daily), trametinib 2 mg (orally once daily), and regorafenib 80 mg (orally once daily), for less than a month, and eventually discontinued since no response was observed with FLC peaking at 116.6 mg/l. The 110-day response period achieved by the triple MAPK inhibition allowed the patient to become eligible for clinical trials and is currently benefiting from bispecific treatment with a \u03bbFLC of 10.9 mg/l with FLC ratio of 0.49 indicating stringent complete response (sCR).\n\nCase presentation:\nA 61-year-old male with penta-refractory MM (IgA lambda), ISS stage 3 with hyperdiploidy, gain of 1q21 and del13 was treated with anti-BCMA CAR-T cell therapy, achieving a best response of VGPR. He progressed after 6 months and was temporarily salvaged with BCNU/Melphalan (carmustine 300 mg/m2 and melphalan 140 mg/m2) as conditioning regimen before ASCT, achieving a best response of PR until further progression with extramedullary disease (subcutaneous skin lesions and lower extremities) and elevated lambda free light chains (FLC, 126.4 mg/l) at 6 months. Prior to CAR-T therapy, targeted and WES had identified a BRAF(V600E) mutation in his BM, which persisted throughout treatment and was also detected in a cutaneous nodule with a variant allele frequency (VAF) of 41% at relapse from CAR-T. Western blot (WB) analysis of the post-CAR-T relapse bone marrow aspirate (BMA) confirmed the BRAF(V600E) mutation and further showed phosphorylation of ERK (pERK), consistent with activation of MAPK signaling, which was inhibited by combining the MEK inhibitor binimetinib with the BRAF(V600E) monomer inhibitor encorafenib. Imaging the BM again with longer exposure revealed small residual MAPK activity, which was abrogated by adding the BRAF dimer inhibitor regorafenib. Further assessment of ex vivo drug sensitivity of the patient's CD138+ MM cells post-CAR-T to different combinational assay based on measurements of single-cell mass response suggested high efficacy of the combination of trametinib at 5 \u03bcM and dabrafenib at 1 \u03bcM. Adding regorafenib at 1 \u03bcM indicated improved response compared to the double combination. According to our in vitro experimental results and previous literature on MAPK pathway homeostasis, phosphorylated ERK\u2014the downstream effector of activated MAPK pathway\u2014exerts a negative feedback inhibition on the receptor tyrosine Kinase (RTK). When pERK levels decrease upon RAF monomer inhibition \u00b1 MEK inhibition (standard approach), this negative feedback is eliminated, i.e., Relieve of negative feedback, resulting in RTK and subsequent MAPK activation, which is known as feedback recovery. This is mostly mediated by the formation of dimeric RAF. Therefore, adding a dimer selective inhibitor, i.e., regorafenib, overcomes this feedback recovery.\n\nDiscussion and conclusions:\nThe clinical case presented in this report describes a MM patient who progressed on both ASCT and anti-BCMA CAR-T cell therapy and presented with high levels of FLC and subcutaneous nodules. Relapsing BCMA CAR-T usually represents a difficult treatment course due to limited therapeutic options. Post-CAR-T relapse WES of the patient's BMA sample revealed persistence of a prior BRAF V600E mutation, which affects the MAPK pathway and is commonly present in solid tumors as well as 7% of RRMM. In our patient, in vitro Post-CAR-T relapse western blot signaling analysis on BMA CD138+ suggested an advantage of triple MAPK inhibition compared to the standard strategy. Triple MAPK inhibition was prescribed and orally administered to the patient. In three-month period, the patient has shown clinical improvement represented by 80% reduction in the subcutaneous nodules which also correlated to a drop of the FLC near to basal levels (27.5 mg/l). Moreover, the patient has shown tolerability to the administered regimen, as the addition of regorafenib allowed lower doses of both dabrafenib and trametinib, the latter being cardiotoxic at higher doses. After three months, the patient response to the triple therapy declined and was evident by gradual rise of the FLC but with no recurrence of the subcutaneous nodules. This indicates that the triple therapy could successfully eradicate the MM cell clones responsible for the cutaneous manifestation. WES analysis of the patient BMA at relapse from triple MAPK inhibition therapy has also shown a newly emerging clone harboring a KRAS Q61R mutation in addition to the previously existing BRAF V600E, which was associated with increased MAPK activity observed at the RNA level. This may explain the gradual decline of the patient response to the triple regimen. Furthermore, RNA analysis showed increased PI3K pathway activation and, concordantly, BMA CD138+ signaling analysis post-triple MAPK inhibition by WB indicated that the patient might benefit from copanlisib, a PI3K inhibitor, either as a single agent or in combination with triple MAPK inhibition. Copanlisib could efficiently inhibit the phosphorylation levels of AKT and showed clones dependence on PI3K evident by marked drop of phosphorylation of ribosomal S6 protein compared to MAPK inhibition that showed only a marginal drop. In this case study, we have shown the applicability, effectiveness, and tolerability of the triple MAPK inhibition in hematological malignancy context to salvage post-BCMA CAR-T cell therapy in a RRMM patient with V600E mutation. This represents proof-of-concept that, while not curative, targeted molecules may serve as potential bridging therapies to clinical trial enrollment. We have also demonstrated the power of routine NGS and WB signaling pathway analysis in tracking clonal evolution and identifying targetable pathways which allow tailoring of personalized therapeutics for MM patients.\n\nMethods:\nNext-generation sequencing: CD138+ selected cells were collected from BMA at multiple time points throughout the disease course from before CAR-T cell therapy to after relapse from triple MAPKi therapy. Genomic DNA was extracted from peripheral blood and sequenced as a matched normal control for variant calling. Additionally, a full BMA was collected from a patient's cutaneous plasmacytoma sample at CAR-T cell therapy relapse for targeted sequencing via the FoundationOne Heme panel.\n\nWhole-exome sequencing: Raw reads were trimmed and assessed for quality control using fastp. Trimmed reads were aligned with bwa-mem. Followed by processing via GATK best practices pipeline. Allele-specific copy number alterations were called using FACETS. Somatic mutations were called using a consensus method to reduce false positives, and bam-readcount was used to compute variant allele frequencies (VAFs). Variants called in at least two of three methods, Mutect2, Lancet, and Strelka2, with at least 10 reads supporting the alternate allele, were retained for further analysis. Pyclone-vi was used to cluster variants and their corresponding Copy Number Alterations (can) into subclonal populations across all sampled time points with the following parameters: 1000 grid points, 50 restarts, beta-binomial sampling density, and 20 maximum clusters. Clone phylogenies were computed using a modified version of ClonEvol as implemented by the REVOLVER package in R with default parameters. Downstream analysis, visualizations, and statistics were conducted using R.\n\nRNA-sequencing: Raw reads were trimmed and assessed for quality control using fastp, followed by alignment using STAR, and duplicate marking with Picard MarkDuplicates. Gene-level counts were quantified using subread featureCounts. The raw counts matrix was normalized with voom and batch corrected with the sva combat package. Pathway activation for the MAPK and PI3K/Akt pathways was assessed using the GSVA package in combined z-score mode. The pathway definition for PI3K/Akt activation was defined by the following genes as described in the literature: PI3KCA, IGF1, IGFR, AKT1, VEGF, VEGFR, and PDK1. The pathway definition for MAPK activation was defined by the following genes as previously described: ETV1, ETV4, ETV5, FOS, FOSB, FRA1, MYC, DUSP4, DUSP6.\n\nWestern blot (WB): Cells were washed with PBS and lysed on ice for 5 min in NP40 buffer (50 mmol/L Tris pH 7.5, 1% NP40, 150 mmol/L NaCl, 10% Glycerol 1 mmol/L EDTA) supplemented with protease and phosphatase inhibitors (Roche). Lysates were centrifuged at 15,000 rpm for 10 min, and the protein concentration was quantified using BCA (Pierce). Proteins were separated by NuPAGE and 4% to 12% Bis Tris Gel (Novex), and they were immunoblotted and transferred to nitrocellulose membranes (GE Healthcare) according to standard protocols. Membranes were immunoblotted overnight with primary antibodies against pERK1/2 Thr202/Tyr204 (D13.14.4E), pAKTSer473 (D9E), pS6 Ribosomal Protein Ser240/244 (D68F8) and \u03b2-actin (13E5) from Cell Signaling and anti-BRAF V600E from NewEast Biosciences. The next day, membranes were probed with anti-rabbit IgG or anti-mouse IgG secondary antibody (Cell Signaling), and chemiluminescent signals were detected on X-ray films.\n\nMass response measurements: RRMM patient's BMA selected CD138+ cells' sensitivity to MAPK inhibitors were assessed by Travera. Selected cells are incubated with different inhibitors at different concentrations and combinations for 15 h before having their single-cell mass distributions measured. Inhibitor efficiency is then characterized by the relative statistical difference (Hellinger distance) between each test condition and untreated controls.\n\nCompounds: Encorafenib, trametinib, copanlisib, binimetinib, regorafenib were obtained from Sellechem. Compounds were dissolved in DMSO to yield 10 mmol/L stock."
+      }
+    ],
+    "tables": "No formal tables present in the paper. The paper contains figures with data but no structured tables with headers and rows.",
+    "figures": "Figure 1: Timeline depicting the patient's clonal evolution, treatment regimens, and responses since diagnosis. Timeline is represented in days since the establishment of MM diagnosis. Treatment regimens are indicated with black arrows descending toward the upper side of the timeline. Diagnostic whole-exome sequencing (WES), RNA-sequencing (RNA-seq) or targeted panel and indicated as blue bars descending from the timeline. Red arrows indicate period of disease progression (PD), and different shades of green arrows indicate very good partial response (VGPR), complete response (CR), and stringent complete response (sCR). Lower part of the graph depicts the patient's lambda LC levels (mg/L) since the beginning of the triple therapy regimen (regorafenib, dabrafenib and encorafenib) until sCR achieved after antibody trial 2. ASCT: Autologous stem cell transplantation; Vcd: Velcade (Bortezomib), cyclophosphamide and dexamethasone; dexamethasone; anti-BCMA CAR-T: anti-B cell maturation antigen chimeric antigen receptor T cells; VdCEP: Velcade (Bortezomib), dexamethasone, cyclophosphamide, etoposide, and cisplatin; BCNU: Carmustine\n\nFigure 2: Triple MAPK inhibition effectively reduces phosphorylated ERK in BRAF (V600E) CD138+ plasma cells. A) WB of magnetic bead selected CD138+ plasma cells from RRMM patient's BMA after 48 h in vitro treatment with encorafenib (ENC; 50 nM) and binimetinib (BIN; 250 nM), regorafenib alone (REG; 1\u03bcM), or combination of the three drugs. B) Travera analysis on RRMM patient CD138+ cells showing sensitivity to trametinib (TRAM) in combination with dabrafenib (DAB) and regorafenib (REG) at varying concentrations. C) Relative pERK protein expression after quantification and normalization to actin\n\nFigure 3: Temporal evolution and trajectory of MAPK alterations. A) Clusters of subclonal mutations sampled over time with the mutational VAF represented as a proportion on the y axis show the trajectory of the subclone harboring the BRAF V600E mutation over time in response to treatment and the later emergence of a subclonal KRAS Q61R mutation after the end of triple MAPK inhibition. B) A reconstructed phylogenetic tree of subclones across all time points shows that the BRAF V600E is subclonal and ancestral to the clone that gives rise to a KRAS Q61R mutation. C) RNA expression analysis shows an increase in MAPK pathway activation, measured as a combined z-score, over time in response to treatment with triple MAPK inhibition therapy\n\nFigure 4: CD138+ BMA plasma cells shift their dependency to PI3K/AKT pathway with increased sensitivity to copanlisib. A) WB of magnetic bead selected CD138+ plasma cells from RRMM patient's BMA after 48 h in vitro treatment with with encorafenib (ENC; 50 nM) and binimetinib (BIN; 250 nM), regorafenib alone (REG; 1\u03bcM), combination of the three drugs or copanlisib alone (25 nM). B) Relative protein expression of pERK, pS6, pAKT and BRAF (V600E) after quantification and normalization to actin. C) CD138+ viability measurement after 48 h in vitro treatment with with encorafenib (ENC; 50 nM) binimetinib (BIN; 250 nM), regorafenib (REG; 1\u03bcM), combination of the three drugs or copanlisib alone (25 nM). D) RNA expression shows elevated PI3K/Akt pathway activation, measured as a combined z-score, throughout the course of treatment with triple MAPK inhibition therapy",
+    "statistics": "- Patient: 61-year-old male\n- MM stage: ISS stage 3 with hyperdiploidy, gain of 1q21 and del13\n- FLC at 6 months: 126.4 mg/l\n- VAF of BRAF(V600E) at relapse from CAR-T: 41%\n- Trametinib concentration: 5 \u03bcM\n- Dabrafenib concentration: 1 \u03bcM\n- Regorafenib concentration: 1 \u03bcM\n- Dabrafenib initial dose: 100 mg, orally twice daily\n- Trametinib initial dose: 1.5 mg, orally 21/28 days daily\n- Regorafenib initial dose: 40 mg, orally once daily\n- \u03bbFLC reduction: 80% (to 27.5 mg/l)\n- Side effects: grade 1 fatigue\n- Dabrafenib maximized dose: 150 mg (orally twice daily)\n- Trametinib maximized dose: 2 mg (orally once daily)\n- Regorafenib maximized dose: 80 mg (orally once daily)\n- FLC peak at end of treatment: 116.6 mg/l\n- Response period duration: 110 days\n- \u03bbFLC at sCR: 10.9 mg/l\n- FLC ratio at sCR: 0.49\n- VAF at CAR-T relapse: 12.8%\n- VAF prior to CAR-T: not detected to undetectable levels\n- VAF at relapse from triple MAPK inhibition: 2.7%\n- VAF 30 days later: 14.4%\n- Cutaneous plasmacytoma VAF: 40.7%\n- BRAF V600E VAF in bone marrow prior to triple MAPK: detected\n- About 53% of RRMM patients have emerging clones with MAPK signaling mutations\n- BRAF(V600E) present in about 7% of cases\n- BCNU dose: 300 mg/m2\n- Melphalan dose: 140 mg/m2\n- Encorafenib concentration in WB: 50 nM\n- Binimetinib concentration in WB: 250 nM\n- Regorafenib concentration in WB: 1 \u03bcM\n- Copanlisib concentration: 25 nM\n- Western blot lysis time: 5 min\n- NP40 buffer pH: 7.5\n- NP40 concentration: 1%\n- NaCl concentration: 150 mmol/L\n- Glycerol concentration: 10%\n- EDTA concentration: 1 mmol/L\n- Centrifugation: 15,000 rpm for 10 min\n- Bis Tris Gel: 4% to 12%\n- Incubation time for mass response: 15 h\n- Pyclone-vi parameters: 1000 grid points, 50 restarts, beta-binomial sampling density, 20 maximum clusters\n- Variants called requirement: at least 10 reads supporting the alternate allele\n- Variants called in at least 2 of 3 methods (Mutect2, Lancet, Strelka2)",
+    "genes": "BRAF, ERK, MEK, MAPK pathway genes (ETV1, ETV4, ETV5, FOS, FOSB, FRA1, MYC, DUSP4, DUSP6), PI3K pathway genes (PI3KCA, IGF1, IGFR, AKT1, VEGF, VEGFR, PDK1), KRAS, RTK (receptor tyrosine kinase), pERK1/2, pAKT, pS6 (ribosomal protein), BCMA",
+    "variants": "BRAF V600E, KRAS Q61R",
+    "diseases": "Multiple Myeloma (MM), Relapsed/Refractory Multiple Myeloma (RRMM), extramedullary disease (EMD), penta-refractory MM (IgA lambda), hyperdiploidy, gain of 1q21, del13, subcutaneous nodules, cutaneous plasmacytoma",
+    "therapies": "anti-BCMA CAR-T cell therapy, ASCT (autologous stem cell transplantation), BCNU (carmustine), Melphalan, encorafenib (BRAF monomer inhibitor), dabrafenib (BRAF monomer inhibitor), trametinib (MEK inhibitor), binimetinib (MEK inhibitor), regorafenib (BRAF dimer inhibitor, multi-kinase inhibitor), copanlisib (PI3K inhibitor), Velcade (Bortezomib), cyclophosphamide, dexamethasone, VdCEP, etoposide, cisplatin, immunomodulatory drugs, proteasome inhibitors, monoclonal antibodies, bispecific treatment",
+    "clinical_trials": "The patient was bridged to subsequent clinical trials after the 110-day response period. Mentioned that triple MAPK inhibition will be evaluated in patients with BRAF V600E in a precision medicine clinical trial launching soon. No specific NCT numbers provided."
+  },
+  "timing": {
+    "start": "2025-12-15T02:42:57.706027",
+    "end": "2025-12-15T02:55:10.997982",
+    "seconds": 733.291955
+  },
+  "log_file": "/Users/ali/Downloads/civic/civic_extraction_end_to_end/logs/Elnaggar_et_al_20251215_024257.log"
+}

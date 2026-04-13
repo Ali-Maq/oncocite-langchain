@@ -1,210 +1,174 @@
-# OncoCITE — LangGraph / LangChain Extraction Pipeline
+# OncoCITE — LangChain implementation
 
-Companion code for the OncoCITE manuscript
-([Research Square preprint, DOI 10.21203/rs.3.rs-9160944/v1](https://doi.org/10.21203/rs.3.rs-9160944/v1)):
-a multi-agent system for source-grounded extraction and harmonization of
-clinical genomic evidence from full-text oncology publications, intended
-to support reconstruction of the CIViC knowledge base.
+Companion code for the OncoCITE manuscript (Research Square preprint,
+[DOI 10.21203/rs.3.rs-9160944/v1](https://doi.org/10.21203/rs.3.rs-9160944/v1)):
+a multi-agent AI system for source-grounded extraction and harmonization
+of clinical genomic evidence from full-text oncology publications,
+designed to support reconstruction of the CIViC knowledge base.
 
-The pipeline is implemented as LangGraph `StateGraph`s orchestrating
-LangChain `@tool` functions, and runs against open models served by
-Fireworks AI (GLM-4 for reasoning, Qwen3-VL for vision over PDF pages).
+This repository is the **LangChain** implementation referenced in
+Section 6 (Code Availability) of the manuscript. The orchestration uses
+LangGraph `StateGraph`s over LangChain `@tool` functions, runs against
+open models served by Fireworks AI (GLM-4 for reasoning, Qwen3-VL for
+PDF vision), and ships with an **MCP server** exposing all 22 tools from
+Supplementary Table S15. A sibling implementation built on the Claude
+Agent SDK lives at
+[Ali-Maq/civic-extraction-agent](https://github.com/Ali-Maq/civic-extraction-agent).
 
-## Features
+## Highlights
 
-- **Reader**: Qwen3-VL vision model extracts structured content from PDF pages
-- **Planner → Extractor → Critic → Normalizer** agent loop with up to 4 critic-driven revision rounds
-- **Provenance tracking**: every evidence item carries source page, verbatim quote, and a confidence score
-- **Map-Reduce normalization**: parallel entity lookups against MyGene, MyVariant, and the EBI Ontology Lookup Service
-- **Retry + circuit breaker** on LLM calls; SQLite-backed LangGraph checkpointing for resume
-- **Graph visualization** (Mermaid) and full state-history export for debugging
+- **Multi-agent pipeline** — Reader → Planner → Extractor → Critic →
+  Normalizer, with a Critic-driven refinement loop capped at 3 iterations
+  (Section 2.2, Supplementary Figure S2)
+- **Source-grounded evidence** — every item carries a verbatim quote,
+  source page reference, and a 0–1 confidence score
+- **45-field JSON schema** — 25 Tier-1 extraction fields + 20 Tier-2
+  normalization fields (Supplementary Tables S17 and S18)
+- **Ontology normalization** — MyGene, MyVariant, EBI OLS (DOID / NCIt /
+  EFO / HPO), RxNorm, ClinicalTrials.gov, NCBI ID Converter
+  (Supplementary Table S21)
+- **MCP server** — all 22 paper-spec tools exposed over stdio
+  (Supplementary Table S15); any MCP-compatible client can drive the
+  pipeline end-to-end
+- **Reproducibility harness** — SQLite-backed LangGraph checkpointing,
+  retry policies with circuit breakers, Mermaid graph visualization,
+  deterministic inference settings
 
-## Quick Start
+## Quick start
 
-Requires Python 3.12, [`uv`](https://docs.astral.sh/uv/), and a Fireworks AI API key.
+Requires Python 3.11+ and [`uv`](https://docs.astral.sh/uv/) (or plain
+`pip`), plus a Fireworks AI API key.
 
 ```bash
 git clone https://github.com/Ali-Maq/oncocite-langchain.git
 cd oncocite-langchain
 
-# Install dependencies (creates .venv/)
+# Option 1 — uv (recommended)
 uv sync
+cp .env.example .env   # edit FIREWORKS_API_KEY=fw_...
 
-# Configure your API key
-cp .env.example .env
-# edit .env and set FIREWORKS_API_KEY=fw_...
+# Option 2 — plain pip (matches Supplementary Note S2.3)
+pip install -r requirements.txt
 
-# Run extraction on one of the 11 bundled validation papers
-uv run python scripts/run_extraction.py PMID_18528420
-
-# Or point at your own PDF corpus
-uv run python scripts/run_extraction.py <paper_id> \
-    --papers-dir /path/to/papers \
-    --output-dir /path/to/outputs
+# Run extraction on a bundled validation paper
+python run_extraction.py \
+    --input test_paper/triplet/PMID_18528420/PMID_18528420.pdf \
+    --output outputs/
 ```
 
-Outputs land in `outputs/{paper_id}/{YYYYMMDD_HHMMSS}/`.
+Outputs land in `outputs/{paper_id}/{YYYYMMDD_HHMMSS}/{paper_id}_extraction.json`.
 
-## Reproducing the Multiple Myeloma validation
+## MCP server (22 tools, Supplementary Table S15)
 
-The `test_paper/triplet/` directory ships 11 PMID-indexed PDFs with
-matching curator ground-truth JSON — the same corpus used for the
-three-way evaluation framework in the manuscript:
-
-```
-test_paper/triplet/
-  PMID_11050000/  PMID_11050000.pdf  PMID_11050000_ground_truth.json  ...
-  PMID_12483530/  ...
-  ...
-```
-
-To re-run end-to-end extraction across all 11 papers:
+The extraction and normalization pipeline is exposed as a Model Context
+Protocol server communicating over stdio. Launch it directly:
 
 ```bash
-for pmid in $(ls test_paper/triplet); do
-    uv run python scripts/run_extraction.py "$pmid"
-done
+python -m mcp_server
 ```
 
-## Project Structure
+To wire it into Claude Desktop or another MCP client, point the client
+at `python -m mcp_server` with the repository root as the working
+directory. See [`skills/oncocite.skill.json`](skills/oncocite.skill.json)
+for a ready-made skill manifest listing all 22 tools.
+
+## Docker
+
+```bash
+docker build -t oncocite-langchain:latest .
+docker run --rm \
+    -e FIREWORKS_API_KEY="$FIREWORKS_API_KEY" \
+    -v $(pwd)/test_paper:/app/data \
+    -v $(pwd)/outputs:/app/outputs \
+    oncocite-langchain:latest \
+    --input /app/data/triplet/PMID_18528420/PMID_18528420.pdf \
+    --output /app/outputs
+```
+
+Or via compose:
+
+```bash
+docker compose run --rm oncocite \
+    --input test_paper/triplet/PMID_18528420/PMID_18528420.pdf \
+    --output outputs/
+```
+
+## Reproducing the validation corpus
+
+`test_paper/` bundles all 15 papers evaluated in the manuscript:
+
+- `test_paper/triplet/` — 10 retrospective Multiple Myeloma papers
+  (CIViC-indexed) with source PDF, curator ground truth, OncoCITE
+  extraction, and three-way validation analysis (Section 2.6,
+  Supplementary Note S1)
+- `test_paper/prospective/` — 5 prospective-application papers (2022–2024)
+  with 0% CIViC coverage at extraction time (Section 2.8,
+  Supplementary Note S1.8)
+
+See [`test_paper/README.md`](test_paper/README.md) for the full corpus
+description and reproduction commands.
+
+## Pipeline wrappers
+
+- [`pipelines/nextflow/oncocite.nf`](pipelines/nextflow/oncocite.nf) —
+  DSL2 Nextflow workflow
+- [`pipelines/snakemake/Snakefile`](pipelines/snakemake/Snakefile) —
+  Snakemake workflow
+
+Both accept a directory of PDFs and emit per-paper
+`*_extraction.json` following the 45-field schema.
+
+## Repository layout
 
 ```
 oncocite-langchain/
-├── pyproject.toml          # Project configuration and dependencies
-├── .python-version         # Python 3.12
-├── .env                    # Environment configuration (Fireworks API)
-├── client.py               # Main entry point (CivicExtractionClient)
-│
-├── graphs/                 # LangGraph StateGraph definitions
-│   ├── __init__.py
-│   ├── state.py            # ExtractionGraphState, EvidenceProvenance TypedDicts
-│   ├── prompts.py          # Agent prompts with provenance requirements
-│   ├── reader_graph.py     # Phase 1: Vision → Structured Text
-│   └── extraction_graph.py # Phase 2: Planner → Extractor → Critic → Normalizer
-│
-├── runtime/                # Runtime utilities
-│   ├── __init__.py
-│   ├── llm.py              # LLM client factory (GLM-4, Qwen3-VL via Fireworks)
-│   ├── checkpointing.py    # LangGraph checkpointer factory
-│   ├── retry.py            # Retry policies with circuit breaker pattern
-│   ├── visualization.py    # Graph visualization (Mermaid) and state history
-│   └── map_reduce.py       # Parallel normalization with ordering preservation
-│
-├── config/                 # Configuration
-│   ├── __init__.py
-│   └── settings.py         # Environment and path settings
-│
-├── tools/                  # LangChain @tool functions
-│   ├── __init__.py
-│   ├── context.py          # ToolContext for state access in tools
-│   ├── tool_registry.py    # get_*_tools() functions per agent
-│   ├── paper_content_tools.py  # save_paper_content, get_paper_content
-│   ├── extraction_tools.py # save_extraction_plan, save_evidence_items, etc.
-│   ├── validation_tools.py # validate_evidence_item, check_actionability
-│   ├── normalization_tools.py  # lookup_* tools for external APIs
-│   └── schemas.py          # TIER_1_FIELDS, REQUIRED_FIELDS
-│
-├── hooks/                  # Observability
-│   ├── __init__.py
-│   └── logging_callbacks.py    # LangChain BaseCallbackHandler for logging
-│
-├── scripts/                # CLI entry points
-│   └── run_extraction.py   # Main CLI script
-│
-└── test/                   # Test files and outputs
-    ├── run_full_pipeline_test.py
-    ├── test_e2e_with_new_features.py
-    └── e2e_outputs/        # Test run artifacts
+├── run_extraction.py        # Paper-spec CLI entry point (--input / --output)
+├── client.py                # Programmatic entry point (CivicExtractionClient)
+├── config/                  # Settings, paths, env-var loading
+├── graphs/                  # LangGraph StateGraph definitions (Reader, Extractor)
+├── runtime/                 # LLM client, checkpointing, retry/circuit breaker, visualization
+├── tools/                   # LangChain @tool functions (superset of Table S15)
+├── hooks/                   # LangChain callback handlers (audit log)
+├── mcp_server/              # FastMCP wrapper — 22 tools from Table S15 over stdio
+├── skills/                  # Claude-desktop skill manifest
+├── pipelines/               # Nextflow and Snakemake wrappers
+├── scripts/                 # Additional CLIs (paper_id lookups, resume-from-checkpoint)
+├── tests/                   # pytest suite
+├── test_paper/              # 15-paper validation corpus
+│   ├── triplet/             # 10 retrospective MM papers
+│   └── prospective/         # 5 prospective papers
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt         # pinned deps (generated from uv.lock)
+├── pyproject.toml
+├── LICENSE                  # MIT
+└── ARCHITECTURE.md / COMPARISON.md  # Design documentation
 ```
-
-## Configuration
-
-Create `.env` file with your Fireworks API settings:
-
-```bash
-# Fireworks AI Configuration
-FIREWORKS_API_KEY=your_api_key_here
-FIREWORKS_BASE_URL=https://api.fireworks.ai/inference/v1
-FIREWORKS_MODEL_NAME=accounts/fireworks/models/glm-4p7
-FIREWORKS_VISION_MODEL=accounts/fireworks/models/qwen3-vl-235b-a22b-thinking
-
-# Extraction Settings
-MAX_ITERATIONS=3
-MAX_PAGES=20
-```
-
-## Output Files
-
-Each extraction run creates timestamped output files:
-```
-outputs/
-└── {paper_id}_{YYYYMMDD_HHMMSS}_extraction.json
-```
-
-The extraction JSON contains:
-- `paper_id`, `pdf_path`, `timestamp`, `duration_seconds`
-- `extraction.evidence_items` - Final normalized evidence items
-- `paper_info` - Title, authors, journal, year
-- `extraction_plan` - Planner's strategy
-- `critique` - Critic's assessment
-- `summary` - Statistics (item count, coverage, iterations)
-
-## Agent Pipeline
-
-- **Reader** — Qwen3-VL vision model reads PDF pages and emits structured content
-- **Planner** — analyzes the paper and produces an extraction strategy
-- **Extractor** — emits evidence items with full provenance metadata
-- **Critic** — validates items and may request revisions (up to `MAX_ITERATIONS` rounds)
-- **Normalizer** — maps entities to Entrez / DOID / RxNorm / NCIt via MyGene, MyVariant, and OLS
 
 ## Python API
 
-### Basic Extraction
 ```python
+import asyncio
 from client import CivicExtractionClient
 
 client = CivicExtractionClient(verbose=True)
-result = await client.run_extraction(
-    pdf_path="paper.pdf",
-    paper_id="PMID_12345",
+result = asyncio.run(client.run_extraction(
+    pdf_path="test_paper/triplet/PMID_18528420/PMID_18528420.pdf",
+    paper_id="PMID_18528420",
     max_iterations=3,
-)
+))
 print(f"Extracted {len(result['final_extractions'])} evidence items")
 ```
 
-### With Visualization
-```python
-from runtime.visualization import save_graph_visualization
-from graphs.extraction_graph import build_extraction_graph
-
-graph = build_extraction_graph()
-save_graph_visualization(graph, "extraction_graph.md", title="CIViC Pipeline")
-```
-
-### Get Retry Statistics
-```python
-from runtime.llm import get_llm_retry_stats
-stats = get_llm_retry_stats()
-print(f"Total retries: {stats['total_retries']}")
-```
-
-## Architecture
-
-See [`ARCHITECTURE.md`](ARCHITECTURE.md) for a detailed design walkthrough of
-the state graphs, tool registry, and checkpointing layer, and
-[`COMPARISON.md`](COMPARISON.md) for a node-by-node comparison with the
-original agent implementation described in the manuscript.
-
 ## Citation
 
-If you use this code, please cite the OncoCITE preprint:
-
-> Quidwai M., Thibaud S., Shasha D., Jagannath S., Parekh S., Laganà A.
-> *OncoCITE: Multimodal Multi-Agent Reconstruction of Clinical Oncology
-> Knowledge Bases from Scientific Literature.* Research Square (2026).
-> DOI: [10.21203/rs.3.rs-9160944/v1](https://doi.org/10.21203/rs.3.rs-9160944/v1)
+```
+Quidwai M., Thibaud S., Shasha D., Jagannath S., Parekh S., Laganà A.
+OncoCITE: Multimodal Multi-Agent Reconstruction of Clinical Oncology
+Knowledge Bases from Scientific Literature. Research Square (2026).
+DOI: 10.21203/rs.3.rs-9160944/v1
+```
 
 ## License
 
-Released under the terms in [`LICENSE`](LICENSE) (CC BY 4.0, matching the
-preprint license).
+[MIT](LICENSE) — matching Section 6 (Code Availability) of the manuscript.

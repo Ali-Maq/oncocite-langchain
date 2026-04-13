@@ -1,0 +1,46 @@
+# OncoCITE extraction as a Snakemake pipeline stage.
+#
+# Per Supplementary Note S5, this wrapper accepts publication PDFs (and
+# optionally VCF files for variant enrichment), runs the multi-agent
+# extraction pipeline, and emits annotated evidence items in JSON format.
+#
+# Usage:
+#   snakemake --cores 4 --config \
+#       input_dir=test_paper/triplet \
+#       outdir=outputs
+#
+# Each PDF in {input_dir}/{paper}/{paper}.pdf is processed into
+# {outdir}/{paper}/{paper}_extraction.json.
+
+from pathlib import Path
+
+INPUT_DIR = Path(config.get("input_dir", "test_paper/triplet"))
+OUTDIR    = Path(config.get("outdir", "outputs"))
+MAX_ITER  = int(config.get("max_iterations", 3))
+
+PAPERS = [p.name for p in INPUT_DIR.iterdir() if p.is_dir()]
+
+rule all:
+    input:
+        expand(str(OUTDIR / "{paper}" / "{paper}_extraction.json"), paper=PAPERS)
+
+rule extract:
+    input:
+        pdf = lambda wc: str(INPUT_DIR / wc.paper / f"{wc.paper}.pdf"),
+    output:
+        json = str(OUTDIR / "{paper}" / "{paper}_extraction.json"),
+    params:
+        max_iter = MAX_ITER,
+        outdir   = lambda wc, output: str(Path(output.json).parent.parent),
+    log:
+        str(OUTDIR / "{paper}" / "run.log"),
+    shell:
+        """
+        python run_extraction.py \
+            --input {input.pdf} \
+            --output {params.outdir} \
+            --paper-id {wildcards.paper} \
+            --max-iterations {params.max_iter} > {log} 2>&1
+        find {params.outdir}/{wildcards.paper} -name '{wildcards.paper}_extraction.json' \
+            -exec cp {{}} {output.json} \\;
+        """

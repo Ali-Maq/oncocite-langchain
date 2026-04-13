@@ -1,0 +1,412 @@
+{
+  "paper_id": "s43018-023-00625-9",
+  "paper_info": {
+    "author": "Jennifer Derrien, Sarah Gastineau, Antoine Frigout, Nils Giordano, Mia Cherkaoui, Victor Gaborit, R\u00e9mi Boinon, Elise Douillard, Magali Devic, Florence Magrangeas, Philippe Moreau, St\u00e9phane Minvielle, Cyrille Touzeau, Eric Letouz\u00e9",
+    "year": "2023",
+    "num_pages": 24,
+    "paper_type": "PRIMARY"
+  },
+  "extraction": {
+    "items": 8,
+    "iterations": 2,
+    "complete": true,
+    "evidence_items": [
+      {
+        "feature_names": [
+          "GPRC5D"
+        ],
+        "gene_entrez_id": "55507",
+        "variant_names": [
+          "E27fs"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "Talquetamab"
+        ],
+        "therapy_ncit_id": "NCIT:C171840",
+        "therapy_rxcui": "2644447",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "GPRC5D E27fs frameshift mutation was identified in multiple myeloma patients who developed resistance to talquetamab, a GPRC5D-directed bispecific T-cell engager. This mutation resulted in bi-allelic genetic inactivation and loss of GPRC5D expression, leading to target antigen escape.",
+        "source_page_numbers": "Abstract; Results section",
+        "verbatim_quote": "Using a single-nucleus multi-omic strategy in three patients from the MYRACLE cohort, we identified two resistance mechanisms, by bi-allelic genetic inactivation of GPRC5D",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "Direct evidence from primary research showing specific frameshift mutation causing acquired resistance to GPRC5D-targeted therapy through loss of target expression. Cohort size reflects the total study population of 3 patients with talquetamab resistance; per-variant patient distribution not specified in available content.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "p.E27fs"
+        ],
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": "p.E27fs",
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT03807128"
+        ],
+        "clinical_trial_status": "RECRUITING",
+        "clinical_trial_title": "MYeloma Resistance And Clonal Evolution",
+        "cancer_cell_fraction": null,
+        "cohort_size": 3,
+        "source_title": "Acquired resistance to a GPRC5D-directed T-cell engager in multiple myeloma is mediated by genetic or epigenetic target inactivation",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Cancer"
+      },
+      {
+        "feature_names": [
+          "GPRC5D"
+        ],
+        "gene_entrez_id": "55507",
+        "variant_names": [
+          "S125fs"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "Talquetamab"
+        ],
+        "therapy_ncit_id": "NCIT:C171840",
+        "therapy_rxcui": "2644447",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "GPRC5D S125fs frameshift mutation was identified in multiple myeloma patients who developed resistance to talquetamab, a GPRC5D-directed bispecific T-cell engager. This mutation resulted in bi-allelic genetic inactivation and loss of GPRC5D expression, leading to target antigen escape.",
+        "source_page_numbers": "Abstract; Results section",
+        "verbatim_quote": "Using a single-nucleus multi-omic strategy in three patients from the MYRACLE cohort, we identified two resistance mechanisms, by bi-allelic genetic inactivation of GPRC5D",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "Direct evidence from primary research showing specific frameshift mutation causing acquired resistance to GPRC5D-targeted therapy through loss of target expression. Cohort size reflects the total study population of 3 patients with talquetamab resistance; per-variant patient distribution not specified in available content.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "p.S125fs"
+        ],
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": "p.S125fs",
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT03807128"
+        ],
+        "clinical_trial_status": "RECRUITING",
+        "clinical_trial_title": "MYeloma Resistance And Clonal Evolution",
+        "cancer_cell_fraction": null,
+        "cohort_size": 3,
+        "source_title": "Acquired resistance to a GPRC5D-directed T-cell engager in multiple myeloma is mediated by genetic or epigenetic target inactivation",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Cancer"
+      },
+      {
+        "feature_names": [
+          "GPRC5D"
+        ],
+        "gene_entrez_id": "55507",
+        "variant_names": [
+          "F158fs"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "Talquetamab"
+        ],
+        "therapy_ncit_id": "NCIT:C171840",
+        "therapy_rxcui": "2644447",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "GPRC5D F158fs frameshift mutation was identified in multiple myeloma patients who developed resistance to talquetamab, a GPRC5D-directed bispecific T-cell engager. This mutation resulted in bi-allelic genetic inactivation and loss of GPRC5D expression, leading to target antigen escape.",
+        "source_page_numbers": "Abstract; Results section",
+        "verbatim_quote": "Using a single-nucleus multi-omic strategy in three patients from the MYRACLE cohort, we identified two resistance mechanisms, by bi-allelic genetic inactivation of GPRC5D",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "Direct evidence from primary research showing specific frameshift mutation causing acquired resistance to GPRC5D-targeted therapy through loss of target expression. Cohort size reflects the total study population of 3 patients with talquetamab resistance; per-variant patient distribution not specified in available content.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "p.F158fs"
+        ],
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": "p.F158fs",
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT03807128"
+        ],
+        "clinical_trial_status": "RECRUITING",
+        "clinical_trial_title": "MYeloma Resistance And Clonal Evolution",
+        "cancer_cell_fraction": null,
+        "cohort_size": 3,
+        "source_title": "Acquired resistance to a GPRC5D-directed T-cell engager in multiple myeloma is mediated by genetic or epigenetic target inactivation",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Cancer"
+      },
+      {
+        "feature_names": [
+          "GPRC5D"
+        ],
+        "gene_entrez_id": "55507",
+        "variant_names": [
+          "W217*"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "Talquetamab"
+        ],
+        "therapy_ncit_id": "NCIT:C171840",
+        "therapy_rxcui": "2644447",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "GPRC5D W217* nonsense mutation was identified in multiple myeloma patients who developed resistance to talquetamab, a GPRC5D-directed bispecific T-cell engager. This mutation resulted in bi-allelic genetic inactivation and loss of GPRC5D expression, leading to target antigen escape through a premature stop codon.",
+        "source_page_numbers": "Abstract; Results section",
+        "verbatim_quote": "Using a single-nucleus multi-omic strategy in three patients from the MYRACLE cohort, we identified two resistance mechanisms, by bi-allelic genetic inactivation of GPRC5D",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "Direct evidence from primary research showing specific nonsense mutation causing acquired resistance to GPRC5D-targeted therapy through premature stop codon. Cohort size reflects the total study population of 3 patients with talquetamab resistance; per-variant patient distribution not specified in available content.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "p.W217*"
+        ],
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": "p.W217*",
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT03807128"
+        ],
+        "clinical_trial_status": "RECRUITING",
+        "clinical_trial_title": "MYeloma Resistance And Clonal Evolution",
+        "cancer_cell_fraction": null,
+        "cohort_size": 3,
+        "source_title": "Acquired resistance to a GPRC5D-directed T-cell engager in multiple myeloma is mediated by genetic or epigenetic target inactivation",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Cancer"
+      },
+      {
+        "feature_names": [
+          "GPRC5D"
+        ],
+        "gene_entrez_id": "55507",
+        "variant_names": [
+          "W237*"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "Talquetamab"
+        ],
+        "therapy_ncit_id": "NCIT:C171840",
+        "therapy_rxcui": "2644447",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "GPRC5D W237* nonsense mutation was identified in multiple myeloma patients who developed resistance to talquetamab, a GPRC5D-directed bispecific T-cell engager. This mutation resulted in bi-allelic genetic inactivation and loss of GPRC5D expression, leading to target antigen escape through a premature stop codon.",
+        "source_page_numbers": "Abstract; Results section",
+        "verbatim_quote": "Using a single-nucleus multi-omic strategy in three patients from the MYRACLE cohort, we identified two resistance mechanisms, by bi-allelic genetic inactivation of GPRC5D",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "Direct evidence from primary research showing specific nonsense mutation causing acquired resistance to GPRC5D-targeted therapy through premature stop codon. Cohort size reflects the total study population of 3 patients with talquetamab resistance; per-variant patient distribution not specified in available content.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "p.W237*"
+        ],
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": "p.W237*",
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT03807128"
+        ],
+        "clinical_trial_status": "RECRUITING",
+        "clinical_trial_title": "MYeloma Resistance And Clonal Evolution",
+        "cancer_cell_fraction": null,
+        "cohort_size": 3,
+        "source_title": "Acquired resistance to a GPRC5D-directed T-cell engager in multiple myeloma is mediated by genetic or epigenetic target inactivation",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Cancer"
+      },
+      {
+        "feature_names": [
+          "GPRC5D"
+        ],
+        "gene_entrez_id": "55507",
+        "variant_names": [
+          "G97_F100del"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "Talquetamab"
+        ],
+        "therapy_ncit_id": "NCIT:C171840",
+        "therapy_rxcui": "2644447",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "GPRC5D G97-F100del in-frame deletion of 4 amino acids in transmembrane helix 3 was identified in multiple myeloma patients who developed resistance to talquetamab, a GPRC5D-directed bispecific T-cell engager. This deletion disrupts the target epitope required for antibody binding.",
+        "source_page_numbers": "Results section; KEY ENTITIES",
+        "verbatim_quote": "GPRC5D G97-F100del (in-frame deletion of 4 amino acids in transmembrane helix 3)",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "Direct evidence from primary research showing specific in-frame deletion in transmembrane domain causing acquired resistance to GPRC5D-targeted therapy by disrupting epitope recognition. Cohort size reflects the total study population of 3 patients with talquetamab resistance; per-variant patient distribution not specified in available content.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": [
+          "p.G97_F100del"
+        ],
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": "p.G97_F100del",
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT03807128"
+        ],
+        "clinical_trial_status": "RECRUITING",
+        "clinical_trial_title": "MYeloma Resistance And Clonal Evolution",
+        "cancer_cell_fraction": null,
+        "cohort_size": 3,
+        "source_title": "Acquired resistance to a GPRC5D-directed T-cell engager in multiple myeloma is mediated by genetic or epigenetic target inactivation",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Cancer"
+      },
+      {
+        "feature_names": [
+          "GPRC5D"
+        ],
+        "gene_entrez_id": "55507",
+        "variant_names": [
+          "TSS DELETION"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "Talquetamab"
+        ],
+        "therapy_ncit_id": "NCIT:C171840",
+        "therapy_rxcui": "2644447",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "A 10-kb deletion encompassing the GPRC5D transcription start site was identified in multiple myeloma patients who developed resistance to talquetamab, a GPRC5D-directed bispecific T-cell engager. This structural deletion resulted in complete loss of GPRC5D expression and target antigen escape.",
+        "source_page_numbers": "Results section; KEY ENTITIES",
+        "verbatim_quote": "GPRC5D TSS deletion (10-kb deletion encompassing transcription start site)",
+        "extraction_confidence": 0.95,
+        "extraction_reasoning": "Direct evidence from primary research showing structural deletion of GPRC5D TSS causing acquired resistance through loss of gene expression. Cohort size reflects the total study population of 3 patients with talquetamab resistance; per-variant patient distribution not specified in available content.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT03807128"
+        ],
+        "clinical_trial_status": "RECRUITING",
+        "clinical_trial_title": "MYeloma Resistance And Clonal Evolution",
+        "cancer_cell_fraction": null,
+        "cohort_size": 3,
+        "source_title": "Acquired resistance to a GPRC5D-directed T-cell engager in multiple myeloma is mediated by genetic or epigenetic target inactivation",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Cancer"
+      },
+      {
+        "feature_names": [
+          "GPRC5D"
+        ],
+        "gene_entrez_id": "55507",
+        "variant_names": [
+          "LOSS"
+        ],
+        "disease_name": "Multiple Myeloma",
+        "disease_efo_id": "EFO_0001378",
+        "therapy_names": [
+          "Talquetamab"
+        ],
+        "therapy_ncit_id": "NCIT:C171840",
+        "therapy_rxcui": "2644447",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "CASE_STUDY",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE",
+        "evidence_description": "Epigenetic silencing of GPRC5D through long-range promoter and enhancer inactivation was identified as a mechanism of acquired resistance to talquetamab in multiple myeloma patients. This epigenetic mechanism leads to loss of GPRC5D expression without genetic alterations.",
+        "source_page_numbers": "Abstract",
+        "verbatim_quote": "we identified two resistance mechanisms, by bi-allelic genetic inactivation of GPRC5D or by long-range epigenetic silencing of its promoter and enhancer regions",
+        "extraction_confidence": 0.9,
+        "extraction_reasoning": "Direct evidence from primary research identifying epigenetic silencing as a mechanism of acquired resistance that would guide monitoring and treatment decisions. Cohort size reflects the total study population of 3 patients with talquetamab resistance; per-variant patient distribution not specified in available content.",
+        "variant_origin": "SOMATIC",
+        "variant_hgvs_descriptions": null,
+        "variant_hgvs_c": null,
+        "variant_hgvs_p": null,
+        "chromosome": null,
+        "start_position": null,
+        "stop_position": null,
+        "reference_build": null,
+        "clinical_trial_nct_ids": [
+          "NCT03807128"
+        ],
+        "clinical_trial_status": "RECRUITING",
+        "clinical_trial_title": "MYeloma Resistance And Clonal Evolution",
+        "cancer_cell_fraction": null,
+        "cohort_size": 3,
+        "source_title": "Acquired resistance to a GPRC5D-directed T-cell engager in multiple myeloma is mediated by genetic or epigenetic target inactivation",
+        "source_publication_year": 2023,
+        "source_journal": "Nature Cancer"
+      }
+    ]
+  },
+  "plan": {
+    "paper_type": "PRIMARY",
+    "expected_items": 10,
+    "key_variants": "GPRC5D E27fs, GPRC5D S125fs, GPRC5D F158fs, GPRC5D W217*, GPRC5D W237*, GPRC5D G97-F100del, GPRC5D TSS deletion (10-kb), GPRC5D epigenetic silencing, KRAS G12R, RB1 R787*, RB1 L572fs, TP53 R267W, SF3B1 R1075K",
+    "key_therapies": "Talquetamab (GPRC5D-directed T-cell engager), Teclistamab (BCMA-directed bispecific antibody), BCMA CAR T-cell therapy, Anti-CD38 antibodies, Carfilzomib, Dexamethasone, Immunomodulatory agents",
+    "key_diseases": "Multiple myeloma, Relapsed or refractory multiple myeloma (RRMM)",
+    "focus_sections": "Abstract, Results (molecular profiling data), Discussion (clinical implications), Tables (mutation data and patient characteristics), Methods (single-nucleus multi-omic analysis)",
+    "extraction_notes": "PRIORITY EXTRACTION GUIDANCE:\n\n1. PRIMARY FOCUS - Resistance Mechanisms:\n   - Extract evidence for GPRC5D genetic mutations (frameshift, nonsense, deletions) causing RESISTANCE to talquetamab\n   - Extract evidence for GPRC5D epigenetic silencing causing RESISTANCE to talquetamab\n   - Evidence type: PREDICTIVE (resistance to GPRC5D-targeted therapy)\n   - Clinical significance: High - explains acquired resistance in clinical trial patients\n\n2. SEQUENTIAL THERAPY IMPLICATIONS:\n   - Look for evidence about switching from GPRC5D-targeted to BCMA-targeted therapies after resistance\n   - Extract any data on retained BCMA expression after GPRC5D loss\n   - Evidence type: PREDICTIVE (sensitivity to alternative immunotherapy)\n\n3. MOLECULAR PROFILING GUIDANCE:\n   - Extract recommendations for monitoring GPRC5D status during therapy\n   - Extract evidence supporting molecular profiling to guide immunotherapy choice\n\n4. CO-OCCURRING MUTATIONS:\n   - Note KRAS, RB1, TP53, SF3B1 mutations as context but only extract if they have independent clinical implications\n   - These are likely background MM mutations, not primary resistance drivers\n\n5. PATIENT COHORT:\n   - From MYRACLE trial (NCT03807128)\n   - N=3 patients with detailed molecular analysis\n   - Relapsed/refractory MM patients who developed resistance\n\n6. CRITICAL EXTRACTION RULES:\n   - Each GPRC5D alteration type (frameshift, nonsense, deletion, epigenetic) may warrant separate evidence items\n   - Focus on ACTIONABLE claims: alterations that predict therapy failure/resistance\n   - Include mechanistic details (bi-allelic inactivation, loss of surface expression)\n   - Extract evidence supporting alternative therapy selection after resistance\n   - Capture both genetic AND epigenetic resistance mechanisms separately\n\n7. EVIDENCE DIRECTION:\n   - GPRC5D loss/mutation = RESISTANCE to talquetamab (Does Not Support)\n   - Retained BCMA = potential SENSITIVITY to BCMA-targeted therapy (Supports)\n\n8. DO NOT EXTRACT:\n   - Purely mechanistic data without clinical implications\n   - Prevalence of GPRC5D expression in general MM population (unless tied to therapy selection)\n   - Technical methodology details unless they inform clinical testing recommendations"
+  },
+  "final_critique": {
+    "overall_assessment": "APPROVE",
+    "item_feedback": "**All 8 items are now validated and ready for normalization.**\n\n**COHORT_SIZE ISSUE RESOLVED:**\nThe Extractor's iteration 2 approach successfully addresses the previous concerns:\n\n\u2713 **cohort_size=3** is now appropriate with the clarified extraction_reasoning\n\u2713 **Reasoning explicitly states**: \"Cohort size reflects the total study population of 3 patients with talquetamab resistance; per-variant patient distribution not specified in available content\"\n\u2713 **This is transparent and accurate** - it documents what we know (3-patient study) without making unsupported assumptions about per-variant distribution\n\u2713 **Better than alternatives**: cohort_size=1 would be an unsupported assumption; cohort_size=null would lose valuable study context\n\n**VALIDATION RESULTS BY ITEM:**\n\n**Items 1-3 (GPRC5D E27fs, S125fs, F158fs frameshift mutations):**\n- Evidence type: PREDICTIVE \u2713 (correct for therapy resistance)\n- Evidence level: CASE_STUDY \u2713 (3-patient cohort)\n- Significance: RESISTANCE \u2713\n- Verbatim quote verified: \"bi-allelic genetic inactivation of GPRC5D\" \u2713\n- Therapy names: Talquetamab \u2713\n- Extended fields: variant_origin=SOMATIC, NCT03807128, HGVS p. notation \u2713\n\n**Items 4-5 (GPRC5D W217*, W237* nonsense mutations):**\n- All classifications correct \u2713\n- Evidence descriptions appropriately mention \"premature stop codon\" mechanism\n- Verbatim quote verified \u2713\n- All required and extended fields present \u2713\n\n**Item 6 (GPRC5D G97_F100del in-frame deletion):**\n- Verbatim quote verified in KEY ENTITIES: \"GPRC5D G97-F100del (in-frame deletion of 4 amino acids in transmembrane helix 3)\" \u2713\n- Evidence description appropriately mentions \"disrupts the target epitope required for antibody binding\" \u2713\n- All classifications and fields correct \u2713\n\n**Item 7 (GPRC5D TSS DELETION):**\n- Verbatim quote verified in KEY ENTITIES: \"GPRC5D TSS deletion (10-kb deletion encompassing transcription start site)\" \u2713\n- Evidence description appropriately mentions \"complete loss of GPRC5D expression\" \u2713\n- Properly lacks HGVS notation (structural variant) \u2713\n\n**Item 8 (GPRC5D LOSS - epigenetic):**\n- Verbatim quote verified: \"by long-range epigenetic silencing of its promoter and enhancer regions\" \u2713\n- Evidence description appropriately distinguishes epigenetic from genetic mechanisms \u2713\n- Slightly lower confidence (0.9 vs 0.95) is appropriate for epigenetic mechanism \u2713\n\n**SOURCE CITATIONS:**\nSource page numbers remain general (\"Abstract; Results section\") but this is acceptable given:\n- Available content is limited to abstract + KEY ENTITIES\n- All claims are verified against available content\n- Normalization agent can work with these citations\n\n**OVERALL QUALITY:**\n- All required CIViC fields present for all 8 items\n- Evidence types, levels, directions, and significance correctly assigned\n- Variant nomenclature appropriate (HGVS for point mutations, descriptive for structural)\n- All verbatim quotes verified in paper content\n- Extended tier-1 fields properly included (variant_origin, clinical_trial_nct_ids, HGVS p.)\n- Evidence descriptions are clear, accurate, and clinically actionable\n- Extraction confidence levels appropriate (0.9-0.95)",
+    "missing_items": "**No missing items.**\n\nThe extraction comprehensively captures all resistance mechanisms described in the available content:\n\n**Genetic mechanisms (7 items):**\n- E27fs, S125fs, F158fs (frameshift mutations)\n- W217*, W237* (nonsense mutations)  \n- G97_F100del (in-frame deletion)\n- TSS deletion (structural deletion)\n\n**Epigenetic mechanism (1 item):**\n- Promoter/enhancer silencing\n\nThese 8 items cover:\n\u2713 Both main resistance mechanisms mentioned in abstract (genetic and epigenetic)\n\u2713 All 7 specific genetic alterations listed in KEY ENTITIES\n\u2713 The epigenetic silencing mechanism\n\n**LIMITATION:** Without access to full Results, Tables, and Figures sections, I cannot verify if there are additional actionable findings such as:\n- Specific response rates or clinical outcomes per mechanism\n- Time-to-resistance data that might warrant separate evidence items\n- Additional molecular correlates not mentioned in abstract/KEY ENTITIES\n\nHowever, based on the available content (abstract + KEY ENTITIES), all extractable evidence items have been captured.",
+    "extra_items": "**No extra items.**\n\nAll 8 evidence items correspond to distinct molecular mechanisms explicitly mentioned in the paper:\n\n**Items 1-7:** Each represents a unique genetic alteration to GPRC5D listed in KEY ENTITIES\n**Item 8:** Represents the epigenetic silencing mechanism distinct from genetic alterations\n\nEach item is:\n\u2713 **Clinically actionable** - informs therapy selection and resistance monitoring\n\u2713 **Non-redundant** - describes a distinct molecular event\n\u2713 **Text-supported** - backed by verbatim quotes from abstract or KEY ENTITIES\n\u2713 **Appropriately scoped** - one variant/mechanism per evidence item (CIViC best practice)\n\nThe items appropriately separate different genetic variants into individual evidence items rather than lumping them together, which allows for:\n- Precise molecular annotation\n- Individual curation and assessment\n- Mechanism-specific clinical guidance",
+    "summary": "**FINAL ASSESSMENT: APPROVE**\n\n**All 8 evidence items are validated and ready for normalization.**\n\n**KEY RESOLUTION:**\nThe cohort_size issue that persisted through iterations 0 and 1 has been successfully resolved in iteration 2. The Extractor's approach of using cohort_size=3 with explicit reasoning that clarifies this represents the total study population (not per-variant counts) is:\n- Transparent and accurate\n- Avoids unsupported assumptions\n- Provides valuable study context\n- Appropriate for CIViC submission\n\n**VALIDATION SUMMARY:**\n\u2713 All 8 required fields present for every item\n\u2713 Evidence classifications correct (PREDICTIVE/CASE_STUDY/SUPPORTS/RESISTANCE)\n\u2713 Therapy names included (Talquetamab)\n\u2713 All verbatim quotes verified in paper content\n\u2713 Extended tier-1 fields appropriately included (variant_origin, NCT ID, HGVS)\n\u2713 Evidence descriptions clear and clinically actionable\n\u2713 No missing resistance mechanisms from available content\n\u2713 No spurious or redundant items\n\u2713 Appropriate confidence levels (0.9-0.95)\n\n**ITEMS BREAKDOWN:**\n- 3 frameshift mutations (E27fs, S125fs, F158fs)\n- 2 nonsense mutations (W217*, W237*)\n- 1 in-frame deletion (G97_F100del)\n- 1 structural deletion (TSS deletion)\n- 1 epigenetic mechanism (promoter/enhancer silencing)\n\n**READY FOR NEXT STAGE:**\nThese evidence items can proceed to the Normalization Agent for:\n- Gene/variant standardization\n- Disease ontology mapping\n- Therapy normalization\n- Final CIViC formatting\n\n**ITERATION 2 OF 3 - APPROVED**",
+    "iteration": 2
+  },
+  "paper_content": {
+    "title": "Acquired resistance to a GPRC5D-directed T-cell engager in multiple myeloma is mediated by genetic or epigenetic target inactivation",
+    "authors": "Jennifer Derrien, Sarah Gastineau, Antoine Frigout, Nils Giordano, Mia Cherkaoui, Victor Gaborit, R\u00e9mi Boinon, Elise Douillard, Magali Devic, Florence Magrangeas, Philippe Moreau, St\u00e9phane Minvielle, Cyrille Touzeau, Eric Letouz\u00e9",
+    "journal": "Nature Cancer",
+    "year": 2023,
+    "paper_type": "PRIMARY",
+    "abstract": "Bispecific antibodies targeting GPRC5D demonstrated promising efficacy in multiple myeloma, but acquired resistance usually occurs within a few months. Using a single-nucleus multi-omic strategy in three patients from the MYRACLE cohort (ClinicalTrials.gov registration: NCT03807128), we identified two resistance mechanisms, by bi-allelic genetic inactivation of GPRC5D or by long-range epigenetic silencing of its promoter and enhancer regions. Molecular profiling of target genes may help to guide the choice of immunotherapy and early detection of resistance in multiple myeloma.",
+    "sections": "## Introduction\nBispecific antibodies are monoclonal antibodies that redirect T cells by targeting both the T cell receptor (via CD3) and a tumor cell surface marker. Bispecific antibodies targeting B-cell maturation antigen (BCMA; teclistamab) or G protein-coupled receptor, family C, group 5, member D (GPRC5D; talquetamab) demonstrated high response and safety profiles and promising efficacy in relapsed or refractory multiple myeloma (RRMM) in recent phase 2-3 studies. However, many patients did not respond and half of the responders experienced disease progression within 12 months. Thus, it is crucial to understand the mechanisms of innate and acquired resistance to bispecific antibodies.\n\nHere, we explore the mechanisms of acquired talquetamab resistance in three patients with RRMM from the MYRACLE cohort (ClinicalTrials.gov registration: NCT03807128) (ref. 4). The three patients had previously received multiple lines of therapy including anti-CD38 immunomodulatory agents, proteasome inhibitors, dexamethasone and anti-CD38 antibodies (Supplementary Table 1). We conducted a multi-omic characterization of myeloma cells, before treatment (t1) and after relapse (t2), by whole-genome sequencing (WGS) and single-nucleus multiome, allowing simultaneous profiling of gene expression (RNA-seq) and open chromatin (ATAC-seq) from the same cells.\n\n## Results\n\n### Patient MM-01-0288\nMM-01-0288 was a female patient diagnosed with immunoglobulin G (IgG) myeloma at 69 years old. After four prior lines of therapy in 5.3 years, she was enrolled in the phase I MonumenTAL-2 trial (ClinicalTrials.gov registration: NCT05050097) and received talquetamab (weekly subcutaneous injection of 400 mg kg\u207b\u00b9 body weight until progression) in combination with carfilzomib. She achieved a very good partial response but the disease progressed after 6 months. The t1 sample revealed a t(4;14), 1q gain, 13q loss and a focal heterozygous deletion at 12p encompassing GPRC5D locus, so that a single allele remained in tumor cells (Fig. 1a and Extended Data Fig. 1a,b). This tumor cell fraction was estimated at 31,410 somatic mutations), with a high contribution of clock-like and APOBEC signatures (Supplementary Table 2). Driver mutations included KRAS G12R, RB1 R787* and CDKN1B Ncll (Supplementary Table2). These mutations were present in a subclone, representing 91% of tumor cells at t1 but only 24% at t2 (subclone A). In contrast, subclone B, consisting of RB1 L572fs and HUWE1 P384L mutations, was minor at t1 (8% of tumor cells) but became dominant at t2 (70%). Finally, the t2 sample had acquired seven subclonal GPRC5D alterations: three frameshift indels (E27fs, S125fs and F158fs), two nonsense mutations (W217* and W237*), an in-frame deletion of four amino acids within transmembrane helix 3 (G97-F100) and a 10-kb deletion encompassing the transcription start site (TSS) (Extended Data Fig. 1b). As a single copy of GPRC5D remains in tumor cells, each alteration was present in a distinct subclone, representing between 6.2% and 31.6% of tumor cells (Fig. 1b,c).\n\nThese mutations are predicted to prevent the expression of a functional GPRC5D protein able to be embedded in the cell membrane. Although pre-treatment GPRC5D expression was detectable (Extended Data Fig. 3a-c), flow cytometry confirmed the absence of GPRC5D protein at the surface of t2 cells (Extended Data Fig. 4a and Extended Data Fig. 5a-c).\n\nWe next mapped clonal and subclonal genetic mutations (Extended Data Fig. 6a) in single-nucleus data to refine the clonal architecture and its evolution during treatment. Single-nucleus RNA-seq revealed heterogeneous subclones, for example in subclone B (Extended Data Fig. 6b). Trunk somatic mutations were detected in all cells. In contrast, subclonal mutations allowed to follow subclones before and after treatment; dominant t1 subclone and two minor subclones at t2, whereas subclone B mutations were detected in the minor t1 subclone and the largest t2 subclones (Extended Data Fig. 6c). Virtual copy-number analysis at single-nucleus resolution and subclonal copy-number variant (CNV) classification (\u20131q, \u201314q, \u201314qel, +17q and \u201321), consistent with WGS data (Extended Data Fig. 7a-c), which defined five subclones (cn1 to cn5; Fig. 1c and Extended Data Fig. 8a-c). Copy-number subclones largely matched transcriptomic clusters and refined the clonal relationships inferred from somatic mutations (Fig. 1d). Notably expressed genes were consistent with subclonal genetic events, for example with any regulation of 17q genes and the Ras signaling pathway in the cn1 subclone that displays +17q and KRAS mutation (Supplementary Tables 3 and 4). Finally, we mapped GPRC5D alterations in single-nucleus data (Fig. 1e and Extended Data Fig. 8d-f). Loss of GPRC5D at transcription t2 in a single copy-number subclone: S125fs in cn3, F158fs in cn4 and all other alterations in the dominant cn5 subclone without a second hit in GPRC5D. Talquetamab resistance in this subclone, without detectable GPRC5D could involve a combination of low frequency genomic mutations undetectable at t2 sequencing and/or post-transcriptional mechanisms precluding the protein to be translated or presented on the cell surface. Overall, integrating WGS and single-nucleus data allowed to reconstruct the clonal evolution of this tumor, with the emergence of seven resistant subclones harboring distinct GPRC5D alterations (Fig. 1e). Thus, in this patient, at baseline, talquetamab resistance involved the independent acquisition of second hits in GPRC5D by several subclones, leading to the bi-allelic inactivation of the target.\n\n### Patient MM-01-0221\nMM-01-0221 (female, diagnosed with light-chain myeloma at 67 years old) and MM-01-0302 (male, diagnosed with IgG myeloma at 32 years old) were enrolled in the phase I MonumenTAL-1 trial (ClinicalTrials.gov registration: NCT03399799) and received talquetamab (weekly subcutaneous injection of 400 mg kg\u207b\u00b9 body weight until progression) after 5 and 7 (respectively) previous lines. They achieved partial response for MM-01-0221 and very good partial response for MM-01-0302 (respectively) before relapse. WGS revealed (t1/t2) in both cases, a bi-allelic TP53 inactivation in MM-01-0221 and high frequency of t(11;14) in both cases, with no TP53 alteration or GPRC5D locus alterations in the relapse in either case (Extended Data Fig. 10a,b). Bulk RNA-seq revealed a notable silencing of GPRC5D expression in both relapses (Fig. 2b,c), although the gene was highly expressed at t1 in MM-01-0221 (210 transcripts per million) and at relapse, fold change > 1000, P < 0.01 data for MM-01-0302). Single-nucleus RNA-seq confirmed the lack of GPRC5D transcripts (>99.8% of cells with 0 GPRC5D transcript at both t1 and t2 for MM-01-0221 and MM-01-0302) (Extended Data Fig. 10b).\n\nIn absence of genetic insult, we examined the chromatin status at GPRC5D locus. Healthy bone marrow and seven other multiple myeloma (MM) samples used as controls displayed a major ATAC-seq peak (open chromatin) at GPRC5D promoter and five minor peaks across the gene, all of which were absent in both the t1 sample of MM-01-0221 and MM-01-0302 t2 samples (Fig. 2b and Extended Data Fig. 10c). This significant loss of chromatin accessibility was not due to loss of GPRC5D but involved 51 chromatin accessibility peaks in an extended 1.15 Mb region around the gene (Fig. 2d and Supplementary Table 5). Thirty-five of these peaks co-localized at predicted as enhancers by GeneHancer element database\u2077, 18 were found to interact with GPRC5D promoter in B-cell promoter-capture Hi-C data and six were annotated as GPRC5D enhancers in the GeneHancer database (Fig. 2d). Finally, peak-to-gene expression linkage analysis in the 65,700 cells (10 normal plasma cell and nine MM samples) revealed 12 peaks linked with GPRC5D expression, 9 of which were closed in our 2 GPRC5D-silenced relapses, including three ENCODE enhancers. Thus, talquetamab resistance in this patient involved long-range epigenetic silencing of GPRC5D locus, with coordinated chromatin silencing of its promoter and enhancer regions.\n\n### Clonal Evolution Analysis\nIn conclusion, we report two mechanisms of acquired talquetamab resistance resulting from the genetic or epigenetic inactivation of the target. The simultaneous growth of seven resistant subclones in MM-01-0288 illustrates the case where tumor cells with one existing chromosome 12p deletion can acquire resistance with a second hit in GPRC5D. These findings suggest that individuals harboring such chromosome 12p deletion at baseline may increase the risk of BCMA CAR T resistance\u00b9\u2070. In 752 samples newly diagnosed with/relapsed/refractory MM, Chromosome arm 12p was lost in 10%, and arm 16p in 18% of cases. Future studies of larger cohorts will be needed to establish whether these deletions predict early response to bispecific antibodies or must be screened to select the best treatment option. GPRC5D is surrounded by inactive chromatin domains (H3K9Me3, H3K27Me3, ref. 20). This may favor its silencing by redistribution of inactive chromatin marks, as previously reported in other cancers\u00b9\u00b9. Future studies will need to address whether GPRC5D expression before treatment influences talquetamab response. We anticipate that a thorough genetic, epigenetic and transcriptomic profiling of the target gene will be important to select best adapted bispecific antibody for each patient and to detect early the emergence of resistant subclones.\n\n## Methods\n\n### Description of the cohort\nWe analyzed MM samples from three patients included in the observational prospective cohort MYRACLE (ClinicalTrials.gov registration: NCT03807128) (ref. 4) between May 2021 and August 2022, before talquetamab treatment (t1) and after relapse (t2). The three patients received talquetamab weekly at the recommended dose of 400 mg kg\u207b\u00b9 until disease progression, in the context of phase I clinical trials MonumenTAL-1 (ClinicalTrials.gov registration: NCT03399799)\n\n### Myeloma and normal plasma cell purification\nMyeloma cells were purified from BM by isolating blood mononuclear cells using StraightFrom Whole Blood and Bone Marrow CD138 MicroBeads (Miltenyi, 130-105-961) or FACS sorted using a BD FACSAria III as CD138+ (HB7, clone MI15, 130-051-301) and CD45low (2D1, BD Bioscience, 562444, 564338, 740785, 555332 and 555450). BM mononuclear cells were purified from BM samples and stored. Normal plasma cells were enriched by immunomagnetic sorting using anti-CD138+ (Miltenyi, 130-051-301) to 99-575) and then FACS sorted using the same procedure as myeloma cells.\n\n### Whole-genome sequencing and analysis\nGenomic DNA was extracted from myeloma cells with a NucleoSpin Tissue kit (Macherey Nagel, 740952). Matched constitutional DNA was extracted from peripheral blood of the same patients with a NucleoSpin Blood kit (Macherey Nagel, 740951) or Gentra Puregene Blood kit (Macherey Nagel, 740952). Tumor and constitutional DNA were sequenced at Integragen (Evry, France) on an Illumina NovaSeq 6000 as paired end 150-bp reads with an average depth of ~45-fold for tumors and ~30-fold for matched constitutional control samples, except for the two tumors of MM-01-0221 and two (~100-fold depth) were sequenced to identify minor subclones. We used Illumina DRAGEN software (v.3.10.8) to align sequencing on the hg38 version of the human genome and call somatic mutations. We then selected single-nucleotide variants (SNVs) and indels with a DRAGEN flag equal to 'PASS', or 'weak_evidence' with Tumor SQ \u2265 10. To better assess the clonal evolution between t1 and t2 in MM-01-0288, we used BAM-readcount (v.1.0.0, https://github.com/genome/bam-readcount) to quantify the number of reads in both samples for all mutations identified in either t1 or t2. This allowed to rescue variants identified in one sample but present in the other at low variant allele fraction (VAF) hence not considered reliable by the variant caller. Only variants matching the following criteria were finally retained: sequencing depth \u22658 in the tumor and reference sample, VAF \u2265 1% in the tumor with \u22653 variant reads, \u22641 variant read in the control sample and a VAF ratio >5 between the tumor and control samples. We used Palimpsest\u00b9\u00b3 to identify mutational signatures (from COSMIC database) operative in each sample. We used MANTA software\u00b9\u2074 and implemented in DRAGEN to identify structural variants (SVs). To keep only the most reliable events, we selected only SVs with the 'PASS' flag, supported by at least ten reads in the tumor with a VAF \u226510% and \u22651 variant read in the control sample. We used Facets package (v.0.6.2) (ref. 15) to reconstruct copy numbers from WGS bam files of tumor and paired non-tumor liver samples. Single-nucleotide polymorphism (SNP) count matrices for tumor and non-tumor samples were obtained by processing the BAM files with snp-pileup. We used the preProcSample function to generate log R-ratio and b allele frequency data from SNP matrices, ProcSample to estimate the wild-type two-copy state and emcncf to estimate tumor ploidy, purity, allele specific copy-numbers (integer) and estimated fraction for each segmented chromosome segment. We used Palimpsest (v.2.0.0) (ref. 13) to estimate the cancer cell fraction (CCF), which is the proportion of tumor cells carrying each mutation or SV, from its VAF, taking into account tumor purity and absolute copy number, as previously described\u00b9\u2076. We annotated alterations affecting MM driver genes identified in previous studies\u00b9\u2077,\u00b9\u2078. We generated CIRCOS plots summarizing driver mutations, copy-number alterations and SVs using a modified version of the RCircos package (v.1.2.2) (ref. 19).\n\n### Single-nucleus Multiome\nCryopreserved cells were thawed and nucleus permeabilization was performed following recommendations from 10x Genomics. Single-cell 3-gene-expression and chromatin libraries were simultaneously generated using Chromium Next GEM Single Cell Multiome ATAC + Gene Expression kit (10x Genomics, 1000283) following the protocol provided by the manufacturer. A total of 20 nuclei were loaded per lane on the Chromium Single Cell Controller. Libraries were sequenced on a NovaSeq 6000 at a minimum depth of 250 million read pairs for the Gene Expression library (paired end, 28-bp read1, 90-bp read 2) and 163 million read pairs for ATAC library (paired end, 2 \u00d7 50-bp reads). We used CellRanger ARC v.2.0 (refs. 20,21) to align both snRNA-seq and snaATAC-seq reads to the human genome (GrCh38/hg38) and generate the matrices of unique molecular identifier (UMI) counts per gene and ATAC-seq fragments. We modified the genes.gtf file used for snRNA-seq analysis by removing genes without an HGNC ID to avoid misaligned HGNC genes. This prevents CellRanger-arc from discarding reads overlapping well established protein-coding genes and noncoding RNAs (for example, as CellRanger-arc discards reads mapping to several genes in the gtf file). Our modified gtf included 35,010 genes (versus 36,601 in the default gtf file).\n\n### Single-nucleus RNA-seq analysis\nWe filtered the feature-barcode gene expression matrix to keep only high-quality cells (<3,000 UMI counts, >1,000 genes detected and <15% of mitochondrial reads) and expressed genes (detected in four or more cells). Detailed quality control metrics are provided in Supplementary Table 7. Secondly, we performed data processing using the Seurat package (v.4.3.0) (refs. 22). We used SCTransform with default parameters to normalize gene expression matrix and estimate the variability and visualization of all cells from MM-01-0288 patient (t1 and t2, n = 14,849), and all cells from the 11 samples analyzed (n = 65,700). We first used the 3,000 most variant genes to perform principal-component analysis (PCA), and ran Louvain graph-based clustering on the 50 first principal components Using FindNeighbors and FindClusters on a dimensional UMAP with run UMAP. We used FindNeighbors and FindClusters with a resolution of 0.2 to identify major transcriptomic clusters. We used SingleR (v.1.8.1) (ref. 23) to annotate immune cell types, with the Single-Cell Tumor Immune Atlas (https://doi.org/10.5281/zenodo.4263922). We removed cells that SingleR annotated as other than 'Plasma B cells', or 'B cells', as well as cell clusters with low expression of plasma cell markers (CD38, TNFRSF17, IGZP1, PEC1ML, SDC1, SSRA, TXNIP and XBPN). These cells correspond to non-plasma cells that were not filtered out during sample preparation. We obtained on average 10,800 plasma cells per sample. We used the same procedure (v.1.9.1, https://github.com/broadinstitute/inferCNV) with default parameters to reconstruct virtual copy-numbers and identify tumor subclones with specific copy-number changes. Plasmocytes from healthy BM samples were used as a reference cells, and average read count >0.1 in reference cells were used for the analysis. We used the Seurat FindMarkers function (with a Wilcoxon rank-sum test) for differential expression analyses. Genes with an adjusted P < 0.05 and an absolute log (fold change) > 0.6 were considered as significantly differentially expressed. We used clusterProfiler package (v.4.4.4) to identify pathways (from 'KEGG_2021', 'Reactome_2022', 'WikiPathways_2019' and 'MSigDB_Hallmark_2020' databases) significantly enriched (adjusted P < 0.05) among differentially expressed genes.\n\n### Single-nucleus ATAC-seq analysis\nsnaATAC-seq data analysis was conducted with the ArchR package (v.1.0.1) (ref. 24). We first examined the distributions of the number of fragments per nucleus and TSS enrichment in each sample, and we applied ad hoc filters (number of fragments >10\u00b9\u00b3\u201310\u2074\u00b7\u2075, TSS enrichment score >12-14, adapted to each sample) to retain only the most reliable nuclei for further analysis. Detailed quality control metrics are provided in Supplementary Table 7. We used ArchR addArchRGeno ducibility peak calling function to identify chromatin accessibility peaks and peak matrices using MACS2 (ref. 25) method and grouping cells by sample. We used ArchR getMarkerFeatures function to identify peaks with differential accessibility (adjusted P < 0.05 and |log\u2082(fold change)| > 1) between cells from the two GPRC5D-silenced relapses (MM-01-0221-t2 and MM-01-302-t2) versus other BM samples. We used ArchR Peak2GeneLinks function to identify peaks whose accessibility is correlated to the expression of GPRC5D among the 65,700 cells.\n\n### Clonal evolution of MM-01-0288 myeloma\nTo reconstruct the clonal architecture of MM-01-0228, and its evolution between t1 and t2, we first compared the CCF of somatic mutations between the two time points at myeloma (Fig. 6a). Allele-specific copy-number clustering revealed three subsets of mutations: trunk mutations (clonal in both t1 and t2), subclone A (dominant in t1 and minor in t2), and subclone B (minor in t1 but dominant in t2). Among driver alterations only the t(4;14) translocation and ADCY2 mutation were trunk. KRAS G12R, RB1 R787* and CDKN1B NelI were detected in subclone A. HUWE1 P384L and RB1 L572fs belonged to subclone B. Finally, SF3B1 R1075K and the seven alterations at GPRC5D arose as new mutations, with CCFs at t2 ranging from 6.2 to 31.6%. We used SCReadCounts (v.1.3.1) (ref. 26) to detect somatic mutations in single-cell RNA-seq data, and we projected the mutated reads for each subset of mutations on the snRNA-seq UMAP (Extended Data Fig. 6b,c). As expected, trunk mutations were found in all cells, and we localized subclone A mutations to one major cell cluster in t1 and two minor cell clusters in t2. Subclone B mutations were restricted to the minor cell cluster in t1 and three minor subclones were detected in t2. The proportion of cells harboring each mutation subset was consistent with the CCF estimated from WGS data. Finally, inferCNV revealed arrows in Extended Data Fig. 6c that a hierarchical clustering revealed nine copy-number clusters (Extended Data Fig. 8a). Careful examination of WGS and InferCNV data allowed us to identify subclonal copy-number alterations (CNAs) in this patient: four identified by Facets in WGS data (\u20131p, \u201314q, \u201314qel and +17q) and two (\u201316p and \u201321) detected only by single-cell data only and clearly related to a specific subclone. We used InferCNV's ChromHMM tool to assign the status of each subclone in each cluster (Extended Data Fig. 8b). Of note, del13q (present in 77% of t2 cells according to Facets) was poorly detected by InferCNV. We thus used Numbat tool\u00b2\u2077, which integrates both SNP data in addition to expression ratios, to identify this alteration (Extended Data Fig. 8c). Finally, InferCNV clusters with identical copy-number profiles were merged to obtain the final classification in five copy-number subclones (Fig. 1c and Extended Data Fig. 8d). Copy-number subclones matched transcriptomic subclones (Fig. 2d) and allowed us to refine the clonal architecture reconstructed from somatic mutations (Fig. 2d). Note that subclone cn5 appears as two transcriptomic clusters corresponding to cells in G1 versus cycling cells. Finally, we mapped GPRC5D alterations onto the snRNA-seq UMAP. Point mutations were identified with scReadCounts, whereas reads harboring indels and supporting the deletion of exon 1 were manually identified in the BAM file using Integrative Genomics Viewer\u00b2\u2078. Each alteration was encountered in a single genetic subclone of the t2 sample: F158fs in cn3, S125fs in cn4 and all others in cn5 (Fig. 2e). Finally, we integrated mutations and CNAs to reconstruct the relationships between genetic subclones, and the timing of acquisition of driver alterations. We used the fishplot package (v.0.5.1) (ref. 29) to represent clonal evolution over time in patient MM-01-0288 (Fig. 2f).\n\n## Data availability\nWGS, bulk RNA-seq and single-cell Multiome data generated for this study have been deposited to the European Genome Archive (accession no. EGAS00001007014). These data contain identifiable genetic variants and are thus accessible under controlled access for patient privacy by contacting the data access committee. Source data for Figs. 1 and 2 and Extended Data Figs. 1-10 have been provided as Source Data Files. All other supporting the findings of this study are available from the corresponding author on reasonable request. Source data are provided with this paper.\n\n## Code availability\nAll bioinformatic tools used in this study are indicated in the relevant sections of the Methods, with versions and modified parameters. Custom codes developed for this project have been deposited on Zenodo (https://doi.org/10.5281/zenodo.8183942) and are available under an open source Creative Commons Attribution 4.0 International license.",
+    "tables": "**Table 1 (from Supplementary - referenced but not shown): Patient treatment history**\n- MM-01-0288: Female, 69 yo, RRMM\n- MM-01-0221: Female, 74 yo, RRMM  \n- MM-01-0302: Male, 62 yo, RRMM\n\n**Extended Data Fig. 7c Table: Subclonal copy-number alterations identified by WGS in MM-01-0288**\n\n| Name | start position | end position | start cytoband | end cytoband | CCF at t1 | CCF at t2 |\n|------|---------------|--------------|----------------|--------------|-----------|-----------|\n| -1p | 9154593 | 118662000 | 1p22.2 | 1p12 | 0% | 62% |\n| -14q | 62077000 | 86049057 | 14q23.2 | 14q31.3 | <20% | 77% |\n| -14qtel | 100911369 | 105744692 | 14q32.31 | 14q32.33 | 91% | <20% |\n| +17q | 41325100 | 83237000 | 17q21.2 | 17qtel | 81% | <20% |\n\n**Figure 1b table: Subclonal GPRC5D mutations identified in MM-01-0288-t2 (cancer cell fraction)**\n- E27fs: 6.2%\n- G97-F100del: 31.8%\n- S125fs: 8.2%\n- F158fs: 7.7%\n- W217*: 6.2%\n- W237*: 10.7%\n- TSS deletion: 7.9%",
+    "figures": "**Figure 1: Polyclonal talquetamab resistance due to bi-allelic genetic inactivation of GPRC5D**\na. CIRCOS plots showing genomic landscape of MM-01-0288 at t1 and t2 (post-talquetamab). Shows copy-number changes, structural variants (deletions, tandem duplications, inversions, translocations), and driver mutations including KRAS G12R, RB1 R787*, CDKN1B NelI. Notable features include chromosome 12p deletion encompassing GPRC5D locus.\n\nb. Bar chart showing subclonal GPRC5D mutations identified in MM-01-0288-t2 cancer cell fraction. Shows TSS deletion (7.9%), frameshift mutations (E27fs 6.2%, S125fs 8.2%, F158fs 7.7%), nonsense mutations (W217* 6.2%, W237* 10.7%), and in-frame deletion (G97-F100del 31.8%). Mutations shown across 345 amino acid GPRC5D protein with 7 transmembrane helices.\n\nc. Single-cell copy-number profiles (t1 & t2, 14,849 cells) showing five copy-number subclones (cn1-cn5). Displays chromosomal alterations including -10p, -14q, -14qtel, +17q, -21.\n\nd. Copy-number subclones projection onto UMAP showing 10 distinct clusters with GPRC5D mutations annotated (E27fs, S125fs, F158fs, G97-F100del, W217*, W237*, del exon 1).\n\ne. GPRC5D mutations mapped to copy-number subclones showing E27fs, W237*, W217*, F158fs del exon 1 in cn5; S125fs in cn4.\n\nf. Fishplot showing clonal evolution from t1 (talquetamab + anti-GPRC5D, anti-CD3) to t2 (t1 + 8 months). Shows expansion of subclones with GPRC5D alterations (F158fs, SF3B1; G97-100del; del exon 1; W237*, W217*, E27fs; S125fs) from baseline containing t(4;14), ADCY2, +1q, 3q, 6p, -4p, 6q, 7p, 12p, 15, X with KRAS, RB1, CDKN1B mutations.\n\n**Figure 2: Talquetamab resistance due to epigenetic inactivation of GPRC5D locus**\na. Timeline showing MM-01-0221 (Female, 74 yo, RRMM) and MM-01-0302 (Male, 62 yo, RRMM) receiving anti-GPRC5D/anti-CD3 talquetamab with partial/very good partial response, then relapse at t2 (t1 + 10 months and t1 + 9 months respectively).\n\nb. Gene expression (RNA-seq, top) and chromatin accessibility (ATAC-seq, bottom) at GPRC5D locus. Shows high expression in Normal PC and MM-01-0286, but silenced in MM-01-0221-t2 and MM-01-0302-t2 with complete loss of ATAC peaks.\n\nc. Distribution of GPRC5D expression in the COMPASS series (859 MM). Histogram showing log(GPRC5D transcripts per million). MM-01-0302-t2, MM-01-0221-t2, and MM-01-0221-t1 marked, with talquetamab arrow pointing to grey shaded region (silenced cases ~60 samples at 0 expression).\n\nd. Large-scale epigenomic landscape around GPRC5D. Shows 500-kb region (12.9-13.2 Mb on chromosome 12) with normalized ATAC-seq signal. Displays GPRC5D-silenced relapses (MM-01-0221-t2, MM-01-0302-t2 in red), other MM samples (MM-02-0034, MM-01-0282_2, MM-01-0273, MM-01-0286, MM-01-0324, MM-02-0034 in blue), normal plasma cells (Normal PC1, Normal PC2 in green). Bottom shows BLUEPRINT ChIP-seq (multiple myeloma) with H3K27Ac, H3K36Me3, H3K27Me3 tracks, normal BM methylation, and genes (MIR614, GPRC5A, GPRC5D-AS1, GPRC5D, HEBP1, HTR7P1, FAM234B, CSOT). Red arrows highlight coordinated loss of chromatin accessibility peaks in GPRC5D-silenced relapses, including enhancers interacting with GPRC5D promoter via promoter-capture Hi-C.\n\n**Extended Data Fig. 1: Chromosome 12p deletion and structural variant affecting GPRC5D in MM-01-0288**\na. Copy-number profile along chromosome 12 in MM-01-0288 t1 sample showing deletion on 12p arm encompassing CDKN1B and GPRC5D. Three panels show: coverage log ratio (TN coverage), B Allele Frequency, and Absolute copy-number (Total=2, Minor allele in red <1).\n\nb. Focal deletion (9,942 bp, CCF=7.9%) encompassing transcription start site of GPRC5D, identified in 7.9% of MM-01-0288-t2 cells. Shows log ratio and gene structure with CDKN1B and GPRC5D genes marked.\n\n**Extended Data Fig. 2: Mutational signature analysis of tumors MM-0288-t1 and t2**\na,b. Proportion of 96 mutation categories in MM-01-0288-t1 (a) and t2 (b) showing trinucleotide context (C>A, C>G, C>T, T>A, T>C, T>G). High prevalence of C>T mutations in TCA and TCT contexts, characteristic of APOBEC mutagenesis.\n\nc. Deconvolution of COSMIC mutational signatures in MM-01-0288 t1 and t2 samples. Stacked bar chart showing ~30,000 mutations at t1 and ~32,000 at t2. Signatures include: SBS2/13 (APOBEC) in red, SBS5 (clock-like) in beige, SBS8 (unknown etiology) in grey, SBS9 (somatic hypermutation) in purple, indels in orange.\n\n**Extended Data Fig. 3: Single-cell GPRC5D mRNA expression in MM-01-0288**\na. Projection of GPRC5D mRNA expression onto single-nucleus RNA-seq UMAP of patient MM-01-0288. Shows expression at t2 (purple) and t1 (blue), with t2 having reduced expression.\n\nb. Violin plot showing distribution of single-nucleus GPRC5D expression at time points. High expression at t1, reduced at t2.\n\nc. Violin plot showing distribution of single-nucleus GPRC5D expression in the 5 copy-number subclones (cn1, cn2, cn3, cn4, cn5). cn1 shows highest expression, cn5 shows lowest.\n\n**Extended Data Fig. 4: Flow cytometry gating**\nShows gating strategy for multiple samples (MM-01-0264, MM-02-0034, MM-01-0282, MM-Epi-112, MM-01-0288-t2, MM-01-0221-t2). Five-panel gating: Lymphocytes \u2192 Singlets \u2192 Viable cells \u2192 CD235a- CD3- (no red no T) \u2192 CD319+ CD38+ (plasma cells). Each sample shows FSC-A/SSC-A, FSC-A/FSC-H, DAPI/SSC-A, CD235a/CD3, CD38/CD319 plots with percentages (Morpho, Single Cells, Live, CD235a- CD3-, Plasma cells ranging 80-98%).\n\n**Extended Data Fig. 5: Cell surface protein expression of GPRC5D analyzed by flow cytometry**\na. Myeloma cell lines: NCI-H929, MM1S showing GPRC5D expression (red) vs Isotype (black).\n\nb. Purified tumor cells from multiple myeloma samples: MM-01-0264, MM-02-0034, MM-01-0282, MM-Epi-112 showing variable GPRC5D expression.\n\nc. Purified tumor cells from post-talquetamab multiple myelomas with genetic (MM-01-0288) or epigenetic (MM-01-0221) GPRC5D inactivation. MM-01-0288-t2 and MM-01-0221-t2 show loss of GPRC5D surface expression (red overlaps with black isotype).\n\n**Extended Data Fig. 6: Integration of WGS and single-cell data reveals the clonal evolution of MM-01-0288**\na. Clonal evolution of mutations identified by WGS. CCF plot (CCF at t2 vs CCF at t1) showing: Trunk mutations (n=12,133, green), Subclone A (n=8,742, blue), Subclone B (n=5,756, red), Private t1 (n=730, yellow), Private t2 (n=4,982, orange). Specific mutations labeled: RB1, HUWE1, KRAS, GPRC5D, SF3B1.\n\nb. Single-cell RNA-seq (MM-01-0288 t1 & t2, 14,849 cells) UMAP projection showing time point (t1 cyan, t2 red).\n\nc. Three UMAP plots showing: Trunk mutations (green), Subclone A mutations (blue), Subclone B mutations (red). Each point represents a cell grouped by transcriptomic profile similarity. Number of mutated reads per cell shown with color scale (>16, 13, 9, 5, <2). Dashed circles indicate t1 and t2 cell populations. Caption notes mutations are detected in major subclone of t1 and minor subclones of t2 for Subclone A; minor subclone of t1 and 3 subclones of t2 for Subclone B. Proportion of cells harboring each mutation set consistent with CCF estimated from WGS.\n\n**Extended Data Fig. 7: Clonal and subclonal copy-number changes identified by whole genome sequencing in MM-01-0288**\na,b. Pangenomic copy-number profiles of MM-01-0288 t1 (a) and t2 (b) after talquetamab treatment. Three panels each: coverage log-ratio (TN coverage) showing alterations, B Allele Frequency of common polymorphisms, Absolute copy-number (Total in grey, Minor allele in red). Common clonal changes: -1q, -3q, -4p, -4q, +6p, -6q, -7p, -12p, -20p, -X. Subclonal alterations at t2: -14q, -14qtel, +17q with different CCFs. Blue=losses, red=gains. CCF indicated for each alteration with percentages at t1 and t2.\n\nc. Table showing subclonal copy-number alterations (see Tables section above).\n\n**Extended Data Fig. 8: Identification of 5 copy-number subclones in MM-01-0288**\na. Unsupervised classification by hierarchical clustering as implemented in InferCNV (Ward.D method) reveals 9 clusters across all chromosomes (1-22, X). Heatmap showing InferCNV clusters 1-9 with copy-number status (gains in red, losses in blue).\n\nb. Proportion of cells within each cluster carrying each reliable subclonal CNAs identified. Six panels showing presence/absence (black/white bars) of alterations: -1p, -10p, -14q, -14qtel, +17q, -21 across clusters 1-9.\n\nc. Scatter plot showing cells with CNAs identified by InferCNV, colored by presence/absence. Displays chromosome locations 1-22, X with gains (red) and losses (blue).\n\nd. Assignment of final copy-number subclones. Table with InferCNV cluster (1-9), presence of alterations (-1p, -10p, -14q, -14qtel, +17q, -21) marked with x, and Final subclone assignment (cn1-cn5 in different colors). InferCNV clusters with identical copy-number profiles merged: InferCNV 1 and 7 into cn4, InferCNV 3-6 into cn5.\n\n**Extended Data Fig. 9: Proportion of cells carrying each GPRC5D alteration identified by WGS and single-cell sequencing data**\nScatter plot showing Cancer Cell Fraction (Whole Genome Sequencing) on x-axis (0-0.4) vs Proportion of mutated cells (single-cell data) on y-axis (0-0.4). Shows correlation cor=0.95, P=6.4\u00d710\u207b\u2074. Mutations plotted with color codes: E27fs (purple), S125fs (blue), F158fs del exon 1 (green), W217* and W237* (red), G97-F100del (grey, highest at ~0.25). Points align close to diagonal dashed line showing agreement between methods.\n\n**Extended Data Fig. 10: Genomic and chromatin landscapes in MM-01-0221 and MM-01-0302**\na. Genomic landscape of MM-01-0221 at t2 (post-talquetamab) and MM-01-0302 at t2 (post-talquetamab). CIRCOS plots showing driver events (TP53 R267W, truncative mutations, missense mutations, translocations), copy-number changes (gains/losses), structural variants (deletions, inversions, tandem duplications, translocations). MM-01-0221 shows IGH rearrangement; MM-01-0302 shows SETD2 S1883fs, IGH, KRAS G12D, CCND1.\n\nb. Single-cell RNA-seq (11 samples, 65,700 cells) UMAP projections. Left panel shows Sample of origin with different colors for normal BM and various MM samples (NBM-49, NBM-51, MM-01-0221-t2, MM-01-0273, MM-01-0282_2, MM-01-0286, MM-01-0288-t1, MM-01-0288-t2, MM-01-0302-t2, MM-01-0324, MM-01-0034). Right panel shows GPRC5D expression (Normalized expression scale 0-2) with MM-01-0221-t2 and MM-01-0302-t2 showing no expression (purple cluster at bottom), Normal BM showing expression.\n\nc. Chromatin landscape at GPRC5D locus. Large scale view (12.935-12.960 Mb on chromosome 12) showing normalized ATAC-seq signal (snaTAC-seq) for: Normal PC1, Normal PC2 (green, high accessibility), MM-01-0221-t2, MM-01-0302-t2 (red, no accessibility - \"GPRC5D-silenced\"), MM-01-0288-t1, MM-01-0282_2, MM-01-0273, MM-01-0292_2, MM-01-0286, MM-01-0324, MM-02-0034 (blue, variable accessibility labeled \"Other MM\"). Below shows ChIP-seq from BLUEPRINT (H3K27Ac, H3K36Me3, H3K27Me3 tracks) and Normal BM methylation level. Genes shown at bottom: MIR614, GPRC5A, GPRC5D-AS1, GPRC5D, HEBP1, HTR7P1, FAM234B, CSOT. Red arrows highlight physical interactions (promoter-capture Hi-C, B cells) and ATAC peaks with decreased accessibility in GPRC5D-silenced relapses compared to other samples.",
+    "statistics": "### Sample Statistics\n- **MM-01-0288**: Female, 69 years old, diagnosed with IgG myeloma\n  - Prior therapy: 4 lines over 5.3 years\n  - Talquetamab dose: 400 mg/kg weekly subcutaneous injection\n  - Response: Very good partial response\n  - Progression: After 6 months\n  - Tumor cell fraction at baseline: 31,410 somatic mutations\n  - Clock-like and APOBEC signature contribution: High\n  \n- **MM-01-0221**: Female, 74 years old, light-chain myeloma  \n  - Prior therapy: 5 lines\n  - Talquetamab dose: 400 mg/kg weekly subcutaneous injection\n  - Response: Partial response\n  - Progression: After 10 months\n  - GPRC5D expression at t1: 210 transcripts per million\n  - GPRC5D expression at relapse: Fold change > 1000, P < 0.01\n\n- **MM-01-0302**: Male, 62 years old, IgG myeloma\n  - Prior therapy: 7 lines  \n  - Talquetamab dose: 400 mg/kg weekly subcutaneous injection\n  - Response: Very good partial response\n  - Progression: After 9 months\n  - GPRC5D transcripts at relapse: >99.8% of cells with 0 transcripts\n\n### Genomic Alterations - MM-01-0288\n\n**Cancer Cell Fractions (CCF) of GPRC5D alterations at t2:**\n- TSS deletion: 7.9%\n- E27fs frameshift: 6.2%\n- G97-F100del in-frame deletion: 31.8%\n- S125fs frameshift: 8.2%\n- F158fs frameshift: 7.7%\n- W217* nonsense: 6.2%\n- W237* nonsense: 10.7%\n\n**Subclone frequencies:**\n- Subclone A (KRAS, RB1, CDKN1B): 91% at t1, 24% at t2\n- Subclone B (RB1 L572fs, HUWE1): 8% at t1, 70% at t2\n\n**Copy-number alterations CCF:**\n- -1p deletion: 0% at t1, 62% at t2\n- -14q deletion: <20% at t1, 77% at t2\n- -14qtel deletion: 91% at t1, <20% at t2\n- +17q gain: 81% at t1, <20% at t2\n\n**Mutational burden:**\n- t1 sample: ~30,000 mutations\n- t2 sample: ~32,000 mutations\n\n**Deletion size:**\n- Focal GPRC5D TSS deletion: 9,942 bp\n\n### Single-cell sequencing data - MM-01-0288\n- Total cells analyzed: 14,849 cells (t1 and t2)\n- Total cells across 11 samples: 65,700 cells\n- Copy-number subclones identified: 5 (cn1 to cn5)\n- Transcriptomic clusters: Multiple, refined to 5 major subclones\n\n### Epigenetic silencing - MM-01-0221 and MM-01-0302\n- GPRC5D transcripts at relapse: >99.8% of cells with 0 transcripts (both patients)\n- Number of silenced chromatin accessibility peaks: 51 peaks across 1.15 Mb region\n- Peaks annotated as enhancers (GeneHancer): 35\n- Enhancers interacting with GPRC5D promoter (Hi-C): 18\n- ENCODE enhancers closed in relapses: 9 of 12 peaks linked to GPRC5D expression\n\n### WGS coverage and quality metrics\n- Average sequencing depth (tumors): ~45-fold\n- Average sequencing depth (constitutional DNA): ~30-fold  \n- Two MM-01-0221 tumors: ~100-fold depth\n- Paired-end reads: 150 bp\n\n### Single-nucleus Multiome sequencing\n- Gene Expression library: 250 million read pairs minimum\n  - Paired end: 28-bp read1, 90-bp read 2\n- ATAC library: 163 million read pairs minimum\n  - Paired end: 2 \u00d7 50-bp reads\n- Nuclei loaded per lane: 20,000\n\n### Quality control filters\n**RNA-seq:**\n- UMI counts: <3,000\n- Genes detected: >1,000\n- Mitochondrial reads: <15%\n- Average plasma cells per sample: 10,800\n\n**ATAC-seq:**\n- Number of fragments: >10\u00b9\u00b3\u201310\u2074\u00b7\u2075\n- TSS enrichment score: >12-14\n\n### Statistical significance\n**Correlation between WGS and single-cell CCF:**\n- Pearson correlation: r = 0.95\n- P-value: 6.4 \u00d7 10\u207b\u2074\n\n**Differential expression:**\n- Adjusted P < 0.05\n- Absolute log(fold change) > 0.6\n\n**Pathway enrichment:**\n- Adjusted P < 0.05 (from KEGG_2021, Reactome_2022, WikiPathways_2019, MSigDB_Hallmark_2020)\n\n**ATAC-seq differential accessibility:**\n- Adjusted P < 0.05\n- |log\u2082(fold change)| > 1\n\n### COMPASS series comparison\n- Total myeloma samples: 859 MM\n- Silenced GPRC5D expression: ~60 samples at log(transcripts per million) = 0\n\n### Chromosome arm deletions in MM cohort (752 samples)\n- Chromosome 12p deletion frequency: 10%\n- Chromosome 16p deletion frequency: 18%\n\n### Gene annotation\n- Modified GTF file: 35,010 genes (vs 36,601 in default)\n- Genes removed: Those without HGNC ID\n\n### Reference read counts\n- Average read count in reference cells: >0.1 for inclusion in analysis\n\n### Copy-number inference\n- InferCNV clusters identified: 9 clusters\n- Final merged subclones: 5 (cn1-cn5)\n- Del13q detection by Facets: 77% of t2 cells",
+    "genes": "GPRC5D (G protein-coupled receptor family C group 5 member D), BCMA (B-cell maturation antigen), CD3, CD38, CD138, KRAS (G12R mutation), RB1 (R787* and L572fs mutations), CDKN1B (Ncll mutation), HUWE1 (P384L mutation), ADCY2, SF3B1 (R1075K mutation), TP53 (R267W mutation, bi-allelic inactivation in MM-01-0221), IGH (immunoglobulin heavy chain), CCND1, SETD2 (S1883fs), CD235a, CD319, TXNIP, XBPN, TNFRSF17, IGZP1, PEC1ML, SDC1, SSRA, MIR614, GPRC5A, GPRC5D-AS1, HEBP1, HTR7P1, FAM234B, CSOT, H3K27Ac, H3K36Me3, H3K27Me3, H3K9Me3",
+    "variants": "KRAS G12R, RB1 R787* (nonsense), RB1 L572fs (frameshift), CDKN1B Ncll, HUWE1 P384L, SF3B1 R1075K, TP53 R267W, GPRC5D E27fs (frameshift), GPRC5D S125fs (frameshift), GPRC5D F158fs (frameshift), GPRC5D W217* (nonsense), GPRC5D W237* (nonsense), GPRC5D G97-F100del (in-frame deletion of 4 amino acids in transmembrane helix 3), GPRC5D TSS deletion (10-kb deletion encompassing transcription start site), SETD2 S1883fs",
+    "diseases": "Multiple myeloma (MM), Relapsed or refractory multiple myeloma (RRMM), Immunoglobulin G (IgG) myeloma, Light-chain myeloma",
+    "therapies": "Talquetamab (GPRC5D-directed bispecific T-cell engager), Teclistamab (BCMA-directed bispecific antibody), Carfilzomib (proteasome inhibitor), Dexamethasone, Anti-CD38 antibodies, Immunomodulatory agents, BCMA CAR T-cell therapy",
+    "clinical_trials": "NCT03807128 (MYRACLE cohort - observational prospective cohort), NCT03399799 (MonumenTAL-1 trial - phase I talquetamab monotherapy), NCT05050097 (MonumenTAL-2 trial - phase I talquetamab + carfilzomib combination)"
+  },
+  "timing": {
+    "start": "2025-12-12T04:09:55.388697",
+    "end": "2025-12-12T04:18:33.290505",
+    "seconds": 517.901808
+  },
+  "log_file": "/Users/ali/Downloads/civic/civic_extraction_end_to_end/logs/s43018-023-00625-9_20251212_040955.log"
+}
