@@ -234,35 +234,63 @@ async def enrich_item(e: Enricher, item: Dict[str, Any], paper_id: str) -> Dict[
     return out
 
 
+def _locate_items_slot(data: Any) -> Tuple[Optional[List[Dict[str, Any]]], Optional[callable]]:
+    """Find the evidence_items list within the nested output structure and
+    return (items, setter) so the enricher can write back in place."""
+    if not isinstance(data, dict):
+        return None, None
+    # Common shapes produced by the Claude Agent SDK and LangChain clients.
+    # Order matters: check the deepest wrapper first.
+    if isinstance(data.get("extraction"), dict):
+        ext = data["extraction"]
+        if isinstance(ext.get("evidence_items"), list):
+            return ext["evidence_items"], lambda v: ext.__setitem__("evidence_items", v)
+        if isinstance(ext.get("final_extractions"), list):
+            return ext["final_extractions"], lambda v: ext.__setitem__("final_extractions", v)
+        if isinstance(ext.get("draft_extractions"), list):
+            return ext["draft_extractions"], lambda v: ext.__setitem__("draft_extractions", v)
+    if isinstance(data.get("evidence_items"), list):
+        return data["evidence_items"], lambda v: data.__setitem__("evidence_items", v)
+    if isinstance(data.get("final_extractions"), list):
+        return data["final_extractions"], lambda v: data.__setitem__("final_extractions", v)
+    return None, None
+
+
+async def enrich_dict(
+    data: Dict[str, Any],
+    paper_id: str,
+    concurrency: int = 20,
+) -> Dict[str, Any]:
+    """Enrich an in-memory extraction output dict. Mutates and returns it."""
+    items, setter = _locate_items_slot(data)
+    if not items:
+        return {"paper_id": paper_id, "items": 0, "fields_before": 0, "fields_after": 0, "delta": 0}
+    before_filled = sum(sum(1 for v in it.values() if v not in (None, "", [])) for it in items)
+    async with Enricher(concurrency=concurrency) as e:
+        enriched = [await enrich_item(e, it, paper_id) for it in items]
+    after_filled = sum(sum(1 for v in it.values() if v not in (None, "", [])) for it in enriched)
+    setter(enriched)
+    return {
+        "paper_id": paper_id,
+        "items": len(enriched),
+        "fields_before": before_filled,
+        "fields_after": after_filled,
+        "delta": after_filled - before_filled,
+    }
+
+
 async def enrich_file(e: Enricher, path: Path, outdir: Path) -> Dict[str, Any]:
     paper_id = path.stem.replace("_extraction", "")
     data = json.loads(path.read_text())
-
-    # The extraction items might live at different nesting depths — find them.
-    target = None
-    if isinstance(data, dict):
-        ext = data.get("extraction") if "extraction" in data else data
-        if isinstance(ext, dict) and isinstance(ext.get("evidence_items"), list):
-            target = ext["evidence_items"]
-        elif isinstance(ext, dict) and isinstance(ext.get("final_extractions"), list):
-            target = ext["final_extractions"]
-        elif isinstance(data.get("evidence_items"), list):
-            target = data["evidence_items"]
-    if not target:
+    items, setter = _locate_items_slot(data)
+    if not items:
         logger.warning("no evidence_items in %s", path)
-        return {"paper_id": paper_id, "items_before": 0, "items_after": 0}
+        return {"paper_id": paper_id, "items": 0, "fields_before": 0, "fields_after": 0, "delta": 0}
 
-    before_filled = sum(sum(1 for v in it.values() if v not in (None, "", [])) for it in target)
-    enriched = [await enrich_item(e, it, paper_id) for it in target]
+    before_filled = sum(sum(1 for v in it.values() if v not in (None, "", [])) for it in items)
+    enriched = [await enrich_item(e, it, paper_id) for it in items]
     after_filled = sum(sum(1 for v in it.values() if v not in (None, "", [])) for it in enriched)
-
-    # Re-nest into original structure.
-    if data.get("extraction", {}).get("evidence_items"):
-        data["extraction"]["evidence_items"] = enriched
-    elif data.get("extraction", {}).get("final_extractions"):
-        data["extraction"]["final_extractions"] = enriched
-    elif data.get("evidence_items"):
-        data["evidence_items"] = enriched
+    setter(enriched)
 
     outdir.mkdir(parents=True, exist_ok=True)
     out_path = outdir / path.name
@@ -274,6 +302,13 @@ async def enrich_file(e: Enricher, path: Path, outdir: Path) -> Dict[str, Any]:
         "fields_after": after_filled,
         "delta": after_filled - before_filled,
     }
+
+
+def enrich_output_sync(data: Dict[str, Any], paper_id: str, concurrency: int = 20) -> Dict[str, Any]:
+    """Synchronous wrapper for enrich_dict, suitable for calling from
+    non-async code like run_extraction.py after the main extraction
+    completes."""
+    return asyncio.run(enrich_dict(data, paper_id, concurrency=concurrency))
 
 
 async def main() -> int:
