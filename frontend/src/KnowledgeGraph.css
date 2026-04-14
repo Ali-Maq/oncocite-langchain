@@ -157,6 +157,10 @@
   background: #fff;
   overflow: hidden;
   position: relative;
+  /* Make sure the canvas has breathing room so the force layout actually
+     settles rather than piling all nodes into a tight 700px box. */
+  min-height: 640px;
+  flex: 1 1 auto;
 }
 
 .kg-graph-canvas canvas {

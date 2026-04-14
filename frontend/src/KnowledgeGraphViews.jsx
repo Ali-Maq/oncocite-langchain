@@ -308,10 +308,27 @@ export function AtlasView({ paperGraph, onPaperClick }) {
 
 export function ClinicalMapView({ clinicalGraph, onAssertionClick }) {
   const fgRef = useRef();
+  const canvasRef = useRef();
   const [selectedNode, setSelectedNode] = useState(null);
   const [selectedEdge, setSelectedEdge] = useState(null);
-  const [minStrength, setMinStrength] = useState(30);
+  // Bumped default from 30 → 50 so the first render is less crowded for
+  // papers with a dense biomarker × therapy fan-out.
+  const [minStrength, setMinStrength] = useState(50);
   const [showLabels, setShowLabels] = useState(true);
+  // Responsive canvas size — drives ForceGraph2D width/height from the
+  // container's measured bounds instead of a hardcoded 1200×700.
+  const [canvasSize, setCanvasSize] = useState({ w: 960, h: 640 });
+  useEffect(() => {
+    if (!canvasRef.current) return;
+    const ro = new ResizeObserver(([entry]) => {
+      const { width, height } = entry.contentRect;
+      if (width > 0 && height > 0) {
+        setCanvasSize({ w: Math.floor(width), h: Math.max(520, Math.floor(height)) });
+      }
+    });
+    ro.observe(canvasRef.current);
+    return () => ro.disconnect();
+  }, []);
 
   const filteredData = useMemo(() => {
     if (!clinicalGraph?.links) return { nodes: [], links: [] };
@@ -331,31 +348,38 @@ export function ClinicalMapView({ clinicalGraph, onAssertionClick }) {
     return { nodes: filteredNodes, links: filteredLinks };
   }, [clinicalGraph, minStrength]);
 
-  // Configure forces and zoom to fit when data changes
+  // Configure forces and zoom to fit when data changes.
+  // Layout tuning per the first-principles audit: the previous settings
+  // caused a center-pile-up when the biomarker hub attracted many therapy
+  // nodes. Stronger repulsion, label-aware collision, weaker center pull,
+  // and a gentle axis force give each entity breathing room.
   useEffect(() => {
     if (fgRef.current && filteredData.nodes.length) {
       const fg = fgRef.current;
-      // Moderate repulsion - not too extreme
-      fg.d3Force('charge').strength(-400).distanceMax(500);
+      fg.d3Force('charge').strength(-700).distanceMax(700);
       fg.d3Force('link')
         .distance(link => {
-          if (link.type === 'has_biomarker') return 80;
-          return 120 + (200 - Math.min(link.strength || 0, 150)) * 0.5;
+          if (link.type === 'has_biomarker') return 90;
+          return 140 + (200 - Math.min(link.strength || 0, 150)) * 0.6;
         })
-        .strength(link => link.type === 'has_biomarker' ? 0.3 : 0.6);
-      fg.d3Force('center', d3Force.forceCenter(0, 0).strength(0.1));
-      fg.d3Force('collision', d3Force.forceCollide().radius(node => {
-        if (node.kind === 'biomarker') return 30;
-        if (node.kind === 'therapy') return 25;
-        return 20;
-      }).strength(0.8));
-      
-      // KEY FIX: Zoom to fit after simulation settles
+        .strength(link => link.type === 'has_biomarker' ? 0.25 : 0.5);
+      fg.d3Force('center', d3Force.forceCenter(0, 0).strength(0.03));
+      fg.d3Force('collision', d3Force.forceCollide()
+        .radius(node => {
+          const base = node.kind === 'biomarker' ? 34 : node.kind === 'therapy' ? 28 : 24;
+          const labelPad = showLabels ? Math.min((node.label || node.id || '').length, 18) * 3 : 0;
+          return base + labelPad;
+        })
+        .strength(1)
+        .iterations(2));
+      fg.d3Force('x', d3Force.forceX().strength(0.02));
+      fg.d3Force('y', d3Force.forceY().strength(0.02));
+
       setTimeout(() => {
-        fg.zoomToFit(400, 60);
-      }, 800);
+        fg.zoomToFit(500, 80);
+      }, 1200);
     }
-  }, [filteredData]);
+  }, [filteredData, showLabels]);
 
   const paintNode = useCallback((node, ctx, globalScale) => {
     const isSelected = selectedNode?.id === node.id;
@@ -491,12 +515,12 @@ export function ClinicalMapView({ clinicalGraph, onAssertionClick }) {
           { color: EDGE_COLORS.RESISTANCE, label: 'Resistance', shape: 'line' },
         ]} />
 
-        <div className="kg-graph-canvas">
+        <div className="kg-graph-canvas" ref={canvasRef}>
           <ForceGraph2D
             ref={fgRef}
             graphData={filteredData}
-            width={1200}
-            height={700}
+            width={canvasSize.w}
+            height={canvasSize.h}
             nodeCanvasObject={paintNode}
             nodePointerAreaPaint={(node, color, ctx) => {
               ctx.beginPath();
@@ -526,10 +550,12 @@ export function ClinicalMapView({ clinicalGraph, onAssertionClick }) {
                 fgRef.current.zoomToFit(300, 50);
               }
             }}
-            cooldownTicks={300}
-            warmupTicks={50}
-            d3AlphaDecay={0.02}
-            d3VelocityDecay={0.3}
+            cooldownTicks={400}
+            warmupTicks={100}
+            d3AlphaDecay={0.0228}
+            d3VelocityDecay={0.4}
+            minZoom={0.2}
+            maxZoom={6}
           />
         </div>
       </div>

@@ -15,6 +15,31 @@ import { buildKnowledgeGraphs } from "./knowledgeGraph";
 import { ClinicalMapView, MatrixView } from "./KnowledgeGraphViews";
 import LandingPage from "./LandingPage";
 
+// Paper ID → human-readable citation. Raw folder IDs (DOIs, lab-named slugs)
+// are unreadable for reviewers; this maps them to "Author et al., Year
+// (Venue)" form. PMID folders are rendered as "PMID 12345678".
+const PAPER_CITATIONS = {
+  "s41591-023-02491-5":               { author: "Da Vià et al.",    year: 2023, venue: "Nature Medicine" },
+  "s43018-023-00625-9":               { author: "Derrien et al.",   year: 2023, venue: "Nature Cancer" },
+  "Dutta_et_al-2024-Blood_Neoplasia": { author: "Dutta et al.",     year: 2024, venue: "Blood Neoplasia" },
+  "Restrepo_et_al_selinexor":         { author: "Restrepo et al.",  year: 2022, venue: "JCO Precision Oncology" },
+  "Elnaggar_et_al":                   { author: "Elnaggar et al.",  year: 2022, venue: "J Hematol Oncol" },
+};
+
+const formatPaperTitle = (id) => {
+  if (!id) return "";
+  if (id.startsWith("PMID_")) return id.replace("PMID_", "PMID ");
+  const c = PAPER_CITATIONS[id];
+  return c ? `${c.author}, ${c.year}` : id;
+};
+
+const formatPaperVenue = (id) => {
+  if (!id) return "";
+  if (id.startsWith("PMID_")) return null;
+  const c = PAPER_CITATIONS[id];
+  return c ? c.venue : null;
+};
+
 // Error Boundary Component
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -1773,10 +1798,10 @@ function App() {
           )}
         </div>
 
-        <h2>Myeloma Evidence Papers</h2>
+        <h2>Corpus</h2>
         <div className="paper-list">
           {papers.filter((p) => p.id.startsWith("PMID_")).length > 0 && (
-            <div className="section-label">CIViC PMIDs (with ground truth)</div>
+            <div className="section-label">Retrospective — CIViC curated</div>
           )}
           {papers
             .filter((p) => p.id.startsWith("PMID_"))
@@ -1786,29 +1811,32 @@ function App() {
                 className={`paper-btn ${selected === p.id ? "active" : ""}`}
                 onClick={() => { console.log("[Paper] Selected:", p.id); setSelected(p.id); }}
               >
-                <div className="paper-title">{p.id.replace("PMID_", "PMID ")}</div>
+                <div className="paper-title">{formatPaperTitle(p.id)}</div>
                 <div className="paper-meta">
                   CIViC · {p.hasOutput ? "✅ Output" : "…"} · {p.hasCheckpoints ? "💾 Checkpoints" : "…"}
                 </div>
               </button>
             ))}
           {papers.filter((p) => !p.id.startsWith("PMID_")).length > 0 && (
-            <div className="section-label">New Papers (beyond CIViC)</div>
+            <div className="section-label">Prospective — recent literature</div>
           )}
           {papers
             .filter((p) => !p.id.startsWith("PMID_"))
-            .map((p) => (
-            <button
-              key={p.id}
-              className={`paper-btn ${selected === p.id ? "active" : ""}`}
-              onClick={() => { console.log("[Paper] Selected:", p.id); setSelected(p.id); }}
-            >
-              <div className="paper-title">{p.id}</div>
-              <div className="paper-meta">
-                  New · {p.hasOutput ? "✅ Output" : "…"} · {p.hasCheckpoints ? "💾 Checkpoints" : "…"}
-              </div>
-            </button>
-          ))}
+            .map((p) => {
+              const venue = formatPaperVenue(p.id);
+              return (
+                <button
+                  key={p.id}
+                  className={`paper-btn ${selected === p.id ? "active" : ""}`}
+                  onClick={() => { console.log("[Paper] Selected:", p.id); setSelected(p.id); }}
+                >
+                  <div className="paper-title">{formatPaperTitle(p.id)}</div>
+                  <div className="paper-meta">
+                    {venue ? `${venue} · ` : ""}{p.hasOutput ? "✅ Output" : "…"} · {p.hasCheckpoints ? "💾 Checkpoints" : "…"}
+                  </div>
+                </button>
+              );
+            })}
           {!papers.length && <div className="muted">No papers found.</div>}
         </div>
       </aside>
@@ -1816,12 +1844,11 @@ function App() {
       <main className="main">
         <header className="header">
           <div>
-            <h1>Reader-First Multi-Agent Evidence Extraction System</h1>
+            <h1>OncoCITE — Clinical genomic evidence extraction</h1>
             <p className="muted">
-              Multiple Myeloma validation corpus: 10 CIViC baseline papers + 5 additional papers demonstrating
-              <strong> 81.8% superiority over manual curation</strong> (60 vs 33 items, p&lt;0.001, Cohen's d=1.31)
+              Multiple myeloma validation corpus: 10 CIViC-curated papers (retrospective)
+              and 5 recent papers (prospective).
             </p>
-            <p className="muted small">Four-Phase Architecture: 01 Reader → 02 Planner → 03 Extractor-Critic → 04 Normalizer</p>
           </div>
           <div className="header-pills">
             {loading && <Pill>Loading…</Pill>}
@@ -1835,16 +1862,16 @@ function App() {
           <div className="content">
             <div className="tab-bar">
               <button className={`tab-btn ${activeTab === "pdf" ? "active" : ""}`} onClick={() => { console.log("[Tab] Switching to: pdf"); setActiveTab("pdf"); }}>
-                📄 Original PDF
+                📄 Source PDF
               </button>
               <button className={`tab-btn ${activeTab === "insights" ? "active" : ""}`} onClick={() => { console.log("[Tab] Switching to: insights"); setActiveTab("insights"); }}>
-                📊 Insights
+                📊 Extracted evidence
               </button>
             </div>
 
             {activeTab === "pdf" && (
               <div className="pane">
-                <SectionHeader title="Original PDF" />
+                <SectionHeader title="Source PDF" />
                 {currentPaper?.pdfPath && (
                   <div className="muted small">Resolved path: {currentPaper.pdfPath}</div>
                 )}
@@ -1856,11 +1883,11 @@ function App() {
               <div className="pane">
                 <div className="sub-tab-bar">
                   <button className={`sub-tab-btn ${insightsSubTab === "overview" ? "active" : ""}`}
-                          onClick={() => setInsightsSubTab("overview")}>Overview</button>
+                          onClick={() => setInsightsSubTab("overview")}>Summary</button>
                   <button className={`sub-tab-btn ${insightsSubTab === "evidence" ? "active" : ""}`}
-                          onClick={() => setInsightsSubTab("evidence")}>Evidence</button>
+                          onClick={() => setInsightsSubTab("evidence")}>Evidence items</button>
                   <button className={`sub-tab-btn ${insightsSubTab === "matrix" ? "active" : ""}`}
-                          onClick={() => setInsightsSubTab("matrix")}>Matrix</button>
+                          onClick={() => setInsightsSubTab("matrix")}>Knowledge graph</button>
                   <button className={`sub-tab-btn ${insightsSubTab === "provenance" ? "active" : ""}`}
                           onClick={() => setInsightsSubTab("provenance")}>Provenance</button>
                 </div>
@@ -1937,13 +1964,13 @@ function App() {
                     className={`kg-view-btn ${kgView === 'clinical' ? 'active' : ''}`}
                     onClick={() => setKgView('clinical')}
                   >
-                    🔬 Clinical Map
+                    🔬 Entity graph
                   </button>
                   <button
                     className={`kg-view-btn ${kgView === 'matrix' ? 'active' : ''}`}
                     onClick={() => setKgView('matrix')}
                   >
-                    📊 Evidence Matrix
+                    📊 Feature × therapy matrix
                   </button>
 
                   {/* Stats summary */}
