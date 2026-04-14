@@ -40,6 +40,8 @@ dependencies = [
     "pandas>=3.0.2",
     "anthropic[bedrock]>=0.94.1",
     "boto3>=1.42.89",
+    "matplotlib>=3.10.8",
+    "seaborn>=0.13.2",
 ]
 
 [project.optional-dependencies]
