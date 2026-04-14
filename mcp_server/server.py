@@ -182,33 +182,33 @@ def build_server() -> FastMCP:
     # ----- Normalizer (ontology lookups) -----
 
     @server.tool(name="lookup_gene_entrez", description="Resolve a gene symbol to its NCBI Entrez Gene ID.")
-    def lookup_gene_entrez(symbol: str) -> str:
-        return _invoke(_lookup_gene_entrez, symbol=symbol)
+    def lookup_gene_entrez(gene_symbol: str) -> str:
+        return _invoke(_lookup_gene_entrez, gene_symbol=gene_symbol)
 
     @server.tool(name="lookup_rxnorm", description="Resolve a drug name to its RxNorm concept identifier.")
-    def lookup_rxnorm(name: str) -> str:
-        return _invoke(_lookup_rxnorm, name=name)
+    def lookup_rxnorm(drug_name: str) -> str:
+        return _invoke(_lookup_rxnorm, drug_name=drug_name)
 
     @server.tool(
         name="lookup_therapy_ncit",
         description="Resolve a therapy name to its NCI Thesaurus (NCIt) code via OLS.",
     )
-    def lookup_therapy_ncit(name: str) -> str:
-        return _invoke(_lookup_therapy_ncit, name=name)
+    def lookup_therapy_ncit(therapy_name: str) -> str:
+        return _invoke(_lookup_therapy_ncit, therapy_name=therapy_name)
 
     @server.tool(
         name="lookup_efo",
         description="Resolve a disease name to an Experimental Factor Ontology (EFO) ID via OLS.",
     )
-    def lookup_efo(name: str) -> str:
-        return _invoke(_lookup_efo, name=name)
+    def lookup_efo(disease_name: str) -> str:
+        return _invoke(_lookup_efo, disease_name=disease_name)
 
     @server.tool(
         name="lookup_disease_doid",
         description="Resolve a disease name to a Disease Ontology (DOID) identifier via OLS.",
     )
-    def lookup_disease_doid(name: str) -> str:
-        return _invoke(_lookup_disease_doid, name=name)
+    def lookup_disease_doid(disease_name: str) -> str:
+        return _invoke(_lookup_disease_doid, disease_name=disease_name)
 
     @server.tool(
         name="lookup_clinical_trial",
@@ -223,8 +223,8 @@ def build_server() -> FastMCP:
             "Look up genomic coordinates, ClinVar accession, and HGVS for a variant via MyVariant.info."
         ),
     )
-    def lookup_variant_info(query: str) -> str:
-        return _invoke(_lookup_variant_info, query=query)
+    def lookup_variant_info(gene_symbol: str, variant_name: str) -> str:
+        return _invoke(_lookup_variant_info, gene_symbol=gene_symbol, variant_name=variant_name)
 
     # ----- Orchestrator / workflow management -----
 
