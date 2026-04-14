@@ -160,6 +160,25 @@ result = asyncio.run(client.run_extraction(
 print(f"Extracted {len(result['final_extractions'])} evidence items")
 ```
 
+## Normalized CIViC database (11,316 items, 45 fields each)
+
+The full normalized CIViC corpus referenced in Section 2.4 and Section 5
+of the manuscript ships as a release asset on the `v1.0-preprint` tag:
+
+- **Download:** [`civic_normalized_evidence_v1.jsonl.gz`](https://github.com/Ali-Maq/oncocite-langchain/releases/download/v1.0-preprint/civic_normalized_evidence_v1.jsonl.gz) (2.9 MB → 24 MB uncompressed)
+- **Coverage report:** [`civic_normalized_coverage_report.md`](https://github.com/Ali-Maq/oncocite-langchain/releases/download/v1.0-preprint/civic_normalized_coverage_report.md) — per-field resolution matrix (Supp Table S24 analogue)
+
+To regenerate locally from a fresh CIViC v2 GraphQL snapshot:
+
+```bash
+python scripts/normalize_civic_corpus.py \
+    --input-csv civic_evidence_denormalized.csv \
+    --output-jsonl data/normalized/civic_normalized_evidence_v1.jsonl \
+    --coverage-report data/normalized/civic_normalized_coverage_report.md \
+    --transport direct          # ~8 min for the 11,316-item corpus
+    # --transport mcp           # routes every lookup through the MCP server
+```
+
 ## Manuscript snapshot
 
 The analyses reported in the manuscript correspond to release
