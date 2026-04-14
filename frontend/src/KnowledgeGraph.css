@@ -1,0 +1,1117 @@
+/* ============================================================================
+   KNOWLEDGE GRAPH VIEWS - REDESIGNED CSS
+   Add this to your App.css or import separately
+   ============================================================================ */
+
+/* --------------------------------------------------------------------------
+   SHARED COMPONENTS
+   -------------------------------------------------------------------------- */
+
+/* Stats bar */
+.kg-stats-bar {
+  display: flex;
+  gap: 16px;
+  padding: 8px 12px;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.kg-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.kg-stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+  font-variant-numeric: tabular-nums;
+}
+
+.kg-stat-label {
+  font-size: 11px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+}
+
+/* Legend */
+.kg-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 10px 14px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+.kg-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #475569;
+}
+
+.kg-legend-dot {
+  flex-shrink: 0;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Empty state */
+.kg-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  color: #94a3b8;
+  text-align: center;
+  padding: 40px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.kg-empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.kg-empty-text {
+  font-size: 14px;
+}
+
+/* Graph header */
+.kg-graph-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.kg-graph-header h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Graph controls */
+.kg-graph-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.kg-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #475569;
+}
+
+.kg-control input[type="range"] {
+  width: 100px;
+  height: 4px;
+  cursor: pointer;
+  accent-color: #3b82f6;
+}
+
+.kg-control-value {
+  min-width: 28px;
+  padding: 2px 6px;
+  background: #f1f5f9;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+}
+
+.kg-control-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #475569;
+  cursor: pointer;
+}
+
+.kg-control-checkbox input {
+  cursor: pointer;
+}
+
+/* Graph canvas container */
+.kg-graph-canvas {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.kg-graph-canvas canvas {
+  display: block;
+}
+
+/* Detail card */
+.kg-detail-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.kg-detail-card h5 {
+  margin: 0 0 12px 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.kg-detail-card h6 {
+  margin: 12px 0 8px 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Placeholder */
+.kg-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f8fafc;
+  border: 2px dashed #e2e8f0;
+  border-radius: 10px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+.kg-placeholder-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+  opacity: 0.6;
+}
+
+.kg-placeholder-text {
+  font-size: 13px;
+}
+
+/* --------------------------------------------------------------------------
+   ATLAS VIEW (Paper Clusters)
+   -------------------------------------------------------------------------- */
+
+.kg-atlas-container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 16px;
+  height: 600px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.kg-atlas-graph {
+  display: flex;
+  flex-direction: column;
+}
+
+.kg-atlas-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+}
+
+.kg-sidebar-section {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.kg-sidebar-section h5 {
+  margin: 0 0 12px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Cluster cards */
+.kg-cluster-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.kg-cluster-card {
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  background: #fff;
+}
+
+.kg-cluster-card:hover {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+
+.kg-cluster-card.selected {
+  border-color: #3b82f6;
+  background: #eff6ff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.kg-cluster-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.kg-cluster-topic {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.kg-cluster-count {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background: #3b82f6;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.kg-cluster-meta {
+  display: flex;
+  gap: 6px;
+  font-size: 11px;
+  color: #64748b;
+}
+
+/* Paper detail */
+.kg-paper-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kg-paper-id {
+  font-weight: 700;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.kg-paper-title {
+  font-size: 12px;
+  color: #475569;
+  line-height: 1.4;
+}
+
+.kg-paper-stats {
+  display: flex;
+  gap: 6px;
+}
+
+.kg-stat-pill {
+  font-size: 11px;
+  padding: 3px 8px;
+  background: #dbeafe;
+  color: #1e40af;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.kg-paper-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.kg-topic-tag {
+  font-size: 10px;
+  padding: 2px 6px;
+  background: #f1f5f9;
+  color: #475569;
+  border-radius: 3px;
+  border: 1px solid #e2e8f0;
+}
+
+/* --------------------------------------------------------------------------
+   CLINICAL MAP VIEW
+   -------------------------------------------------------------------------- */
+
+.kg-clinical-container {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 16px;
+  height: 750px;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.kg-clinical-graph {
+  display: flex;
+  flex-direction: column;
+}
+
+.kg-clinical-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+}
+
+/* Assertion summary */
+.kg-assertion-summary {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Meta badges */
+.kg-assertion-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.kg-sig-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.kg-sig-badge.sensitivity,
+.kg-sig-badge.better_outcome,
+.kg-sig-badge.response {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #86efac;
+}
+
+.kg-sig-badge.resistance,
+.kg-sig-badge.poor_outcome {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+.kg-sig-badge.no_benefit {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+}
+
+.kg-level-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.kg-strength-badge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+/* Assertion stats */
+.kg-assertion-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+
+.kg-stat-item {
+  text-align: center;
+}
+
+.kg-stat-num {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.kg-stat-item .kg-stat-label {
+  font-size: 10px;
+}
+
+/* Evidence list */
+.kg-evidence-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.kg-evidence-item {
+  padding: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.kg-evidence-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.kg-pmid {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.kg-cohort {
+  font-size: 11px;
+  color: #64748b;
+  background: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid #e2e8f0;
+}
+
+.kg-evidence-quote {
+  font-size: 11px;
+  color: #64748b;
+  font-style: italic;
+  line-height: 1.4;
+  padding-left: 10px;
+  border-left: 2px solid #e2e8f0;
+}
+
+/* Node details */
+.kg-node-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.kg-node-detail {
+  font-size: 12px;
+  color: #475569;
+  margin-bottom: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   MATRIX VIEW
+   -------------------------------------------------------------------------- */
+
+.kg-matrix-container {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 16px;
+  height: 600px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.kg-matrix-main {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.kg-matrix-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.kg-matrix-header h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.kg-matrix-controls {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: #475569;
+}
+
+.kg-matrix-controls label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kg-matrix-controls select {
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.kg-matrix-scroll {
+  flex: 1;
+  overflow: auto;
+  padding: 0;
+}
+
+.kg-matrix-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 11px;
+}
+
+.kg-matrix-table th,
+.kg-matrix-table td {
+  padding: 8px;
+  border-bottom: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+}
+
+.kg-matrix-corner {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background: #f8fafc;
+  font-size: 10px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  min-width: 140px;
+}
+
+.kg-matrix-therapy-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #f8fafc;
+  min-width: 100px;
+  max-width: 120px;
+}
+
+.kg-matrix-therapy-label {
+  font-weight: 600;
+  color: #0f172a;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kg-matrix-biomarker {
+  position: sticky;
+  left: 0;
+  z-index: 5;
+  background: #fff;
+  font-weight: 600;
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+.kg-matrix-cell {
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  min-width: 60px;
+}
+
+.kg-matrix-cell:hover {
+  outline: 2px solid #3b82f6;
+  outline-offset: -2px;
+}
+
+.kg-matrix-cell.selected {
+  outline: 3px solid #1d4ed8;
+  outline-offset: -3px;
+  z-index: 1;
+}
+
+.kg-matrix-cell-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.kg-matrix-sig {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.kg-matrix-sig.sensitivity,
+.kg-matrix-sig.sen {
+  color: #166534;
+}
+
+.kg-matrix-sig.resistance,
+.kg-matrix-sig.res {
+  color: #991b1b;
+}
+
+.kg-matrix-count {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.kg-matrix-legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  font-size: 11px;
+  color: #475569;
+}
+
+.kg-matrix-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.kg-matrix-legend-box {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.kg-matrix-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+}
+
+/* Association details */
+.kg-association-pair {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.kg-biomarker-tag {
+  padding: 6px 12px;
+  background: #ddd6fe;
+  color: #5b21b6;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.kg-therapy-tag {
+  padding: 6px 12px;
+  background: #d1fae5;
+  color: #065f46;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.kg-arrow {
+  color: #94a3b8;
+  font-size: 18px;
+}
+
+.kg-association-sig {
+  margin-bottom: 12px;
+}
+
+.kg-assertions-list {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.kg-assertion-item {
+  padding: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.kg-assertion-summary-small {
+  font-size: 12px;
+  font-weight: 500;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.kg-assertion-papers {
+  font-size: 11px;
+  color: #64748b;
+}
+
+/* --------------------------------------------------------------------------
+   DISEASE EVOLUTION VIEW
+   -------------------------------------------------------------------------- */
+
+.kg-evolution-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px;
+}
+
+/* Timeline */
+.kg-evolution-timeline {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.kg-evolution-stage {
+  flex: 1;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  min-width: 140px;
+}
+
+.kg-evolution-stage:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.kg-evolution-stage.expanded {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.kg-stage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.kg-stage-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.kg-stage-count {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background: #3b82f6;
+  padding: 2px 10px;
+  border-radius: 10px;
+  min-width: 28px;
+  text-align: center;
+}
+
+.kg-stage-stats {
+  display: flex;
+  gap: 12px;
+  font-size: 11px;
+  color: #64748b;
+}
+
+.kg-stage-details {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.kg-stage-biomarkers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.kg-mini-tag {
+  font-size: 10px;
+  padding: 2px 6px;
+  background: #fff;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  border-radius: 3px;
+}
+
+.kg-mini-tag.more {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.kg-evolution-arrow {
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  font-size: 24px;
+  color: #94a3b8;
+}
+
+/* Transition content */
+.kg-evolution-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.kg-transitions-panel {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.kg-transitions-panel h5 {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.kg-transitions-desc {
+  margin: 0 0 14px 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.kg-transitions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.kg-transition-card {
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  background: #fff;
+}
+
+.kg-transition-card:hover {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+
+.kg-transition-card.selected {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.kg-transition-biomarker {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.kg-transition-states {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.kg-transition-state {
+  font-size: 11px;
+  padding: 2px 8px;
+  background: #f1f5f9;
+  color: #475569;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.kg-transition-arrow {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.kg-no-transitions {
+  padding: 20px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* Transition detail */
+.kg-transition-detail {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.kg-transition-detail h5 {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.kg-transition-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kg-transition-state-block {
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 3px solid #3b82f6;
+}
+
+.kg-state-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.kg-state-assertions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kg-mini-assertion {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 8px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.kg-mini-sig {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.kg-mini-sig.sensitivity,
+.kg-mini-sig.better_outcome {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.kg-mini-sig.resistance,
+.kg-mini-sig.poor_outcome {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.kg-mini-therapy {
+  font-size: 11px;
+  padding: 2px 8px;
+  background: #d1fae5;
+  color: #065f46;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.kg-mini-papers {
+  font-size: 10px;
+  color: #64748b;
+  margin-left: auto;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE ADJUSTMENTS
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1200px) {
+  .kg-atlas-container,
+  .kg-clinical-container,
+  .kg-matrix-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  
+  .kg-atlas-graph,
+  .kg-clinical-graph {
+    min-height: 500px;
+  }
+  
+  .kg-evolution-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .kg-evolution-timeline {
+    flex-wrap: wrap;
+  }
+  
+  .kg-evolution-stage {
+    min-width: calc(50% - 20px);
+  }
+}
