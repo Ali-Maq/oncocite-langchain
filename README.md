@@ -179,6 +179,20 @@ python scripts/normalize_civic_corpus.py \
     # --transport mcp           # routes every lookup through the MCP server
 ```
 
+## Provenance note
+
+The OncoCITE project maintains two parallel implementations (see
+Sec 6, Code Availability): the primary Claude Agent SDK implementation
+at [`civic-extraction-agent`](https://github.com/Ali-Maq/civic-extraction-agent),
+which was under continuous version control throughout manuscript
+preparation (first commit 2025-12-10), and this LangChain implementation,
+which was developed on a local machine in parallel and pushed to a
+public GitHub remote after the preprint was posted. Both implementations
+share the same multi-agent architecture and 45-field evidence schema;
+the LangChain path was included in the manuscript primarily to
+demonstrate framework-agnostic reproducibility with open-weights models
+(GLM-4 / Qwen3-VL via Fireworks AI).
+
 ## Manuscript snapshot
 
 The analyses reported in the manuscript correspond to release

@@ -50,6 +50,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 import fitz  # PyMuPDF
+import anthropic
 from anthropic import AnthropicBedrock
 
 logger = logging.getLogger("three_way_analysis")
@@ -336,10 +337,22 @@ def invoke_agent(
     model: str,
     temperature: float,
     max_tokens: int,
-    aws_profile: str,
-    aws_region: str,
+    backend: str,
+    aws_profile: Optional[str],
+    aws_region: Optional[str],
 ) -> Tuple[str, Dict[str, int]]:
-    client = AnthropicBedrock(aws_profile=aws_profile, aws_region=aws_region)
+    if backend == "anthropic":
+        # Direct Anthropic API — the path used for the manuscript analyses.
+        api_key = os.environ.get("ANTHROPIC_API_KEY")
+        if not api_key:
+            raise RuntimeError(
+                "ANTHROPIC_API_KEY not set. Either export it, or rerun with "
+                "--backend bedrock and AWS credentials."
+            )
+        client = anthropic.Anthropic(api_key=api_key)
+    else:
+        # AWS Bedrock fallback (e.g., for Mount Sinai Bedrock access).
+        client = AnthropicBedrock(aws_profile=aws_profile, aws_region=aws_region)
     t0 = time.time()
     msg = client.messages.create(
         model=model,
@@ -382,15 +395,38 @@ def main() -> int:
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--paper-id", default=None)
     parser.add_argument(
+        "--backend",
+        choices=["anthropic", "bedrock"],
+        default="anthropic",
+        help=(
+            "Which model provider to call. Default `anthropic` uses the "
+            "direct Anthropic API (reads ANTHROPIC_API_KEY) — this is the "
+            "path used for the manuscript analyses per Supp Table S20b. "
+            "`bedrock` routes through AWS Bedrock for environments that "
+            "have Claude 3.5 Sonnet available that way."
+        ),
+    )
+    parser.add_argument(
         "--model",
-        default="apac.anthropic.claude-3-5-sonnet-20241022-v2:0",
-        help="Bedrock inference profile ID. Default matches paper Supp S3.4 model.",
+        default=None,
+        help=(
+            "Model ID. Defaults to `claude-3-5-sonnet-20241022` for "
+            "--backend anthropic (matches Supp Table S20b), or to the "
+            "APAC Bedrock inference profile for --backend bedrock."
+        ),
     )
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--max-tokens", type=int, default=16000)
-    parser.add_argument("--aws-profile", default="mssm-bedrock")
-    parser.add_argument("--aws-region", default="ap-south-1")
+    parser.add_argument("--aws-profile", default=None)
+    parser.add_argument("--aws-region", default=None)
     args = parser.parse_args()
+
+    if args.model is None:
+        args.model = (
+            "claude-3-5-sonnet-20241022"
+            if args.backend == "anthropic"
+            else "apac.anthropic.claude-3-5-sonnet-20241022-v2:0"
+        )
 
     logging.basicConfig(
         level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s"
@@ -420,13 +456,14 @@ def main() -> int:
         precomputed_matches=matches,
     )
 
-    logger.info("invoking Bedrock (%s, region=%s)", args.model, args.aws_region)
+    logger.info("invoking %s backend (model=%s)", args.backend, args.model)
     text, usage = invoke_agent(
         SYSTEM_PROMPT,
         user_prompt,
         model=args.model,
         temperature=args.temperature,
         max_tokens=args.max_tokens,
+        backend=args.backend,
         aws_profile=args.aws_profile,
         aws_region=args.aws_region,
     )
@@ -453,6 +490,7 @@ def main() -> int:
             model=args.model,
             temperature=args.temperature,
             max_tokens=args.max_tokens,
+            backend=args.backend,
             aws_profile=args.aws_profile,
             aws_region=args.aws_region,
         )
