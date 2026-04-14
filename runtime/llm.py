@@ -113,7 +113,7 @@ def get_llm(
         base_url=FIREWORKS_BASE_URL,
         model=model or FIREWORKS_MODEL_NAME,
         max_tokens=max_tokens or DEFAULT_MAX_TOKENS,
-        temperature=temperature if temperature is not None else 0.6,  # Optimal for thinking
+        temperature=temperature if temperature is not None else DEFAULT_TEMPERATURE,  # Supp Table S20b: 0.0 default
         top_p=0.95,  # Optimal for thinking mode
         **kwargs,
     )
@@ -169,7 +169,7 @@ def get_reader_llm(
         base_url=FIREWORKS_BASE_URL,
         model=FIREWORKS_VISION_MODEL,  # Use vision model with thinking enabled
         max_tokens=max_tokens or 16384,  # Higher for detailed extraction
-        temperature=0.6,  # Recommended for thinking mode
+        temperature=DEFAULT_TEMPERATURE,  # Supp Table S20b: 0.0 default
         top_p=0.95,  # Recommended for thinking mode
         **kwargs,
     )
@@ -205,7 +205,7 @@ def get_planner_llm(
     """
     return get_llm(
         max_tokens=max_tokens or 16384,  # Increased for larger structured plans
-        temperature=0.6,  # Optimal for thinking mode
+        temperature=DEFAULT_TEMPERATURE,  # Supp Table S20b: 0.0 default
         enable_retry=enable_retry,
         retry_policy="llm",
         circuit_breaker_name=CIRCUIT_BREAKER_NAMES["planner"],
@@ -234,7 +234,7 @@ def get_extractor_llm(
     """
     return get_llm(
         max_tokens=max_tokens or 16384,  # Higher for thinking + multiple items
-        temperature=0.6,  # Optimal for thinking mode
+        temperature=DEFAULT_TEMPERATURE,  # Supp Table S20b: 0.0 default
         enable_retry=enable_retry,
         retry_policy="llm",
         circuit_breaker_name=CIRCUIT_BREAKER_NAMES["extractor"],
@@ -263,7 +263,7 @@ def get_critic_llm(
     """
     return get_llm(
         max_tokens=max_tokens or 8192,  # Increased for thinking + feedback
-        temperature=0.6,  # Optimal for thinking mode
+        temperature=DEFAULT_TEMPERATURE,  # Supp Table S20b: 0.0 default
         enable_retry=enable_retry,
         retry_policy="llm",
         circuit_breaker_name=CIRCUIT_BREAKER_NAMES["critic"],
@@ -295,7 +295,7 @@ def get_normalizer_llm(
     """
     return get_llm(
         max_tokens=max_tokens or 8192,
-        temperature=0.6,  # Optimal for thinking mode
+        temperature=DEFAULT_TEMPERATURE,  # Supp Table S20b: 0.0 default
         enable_retry=enable_retry,
         retry_policy="normalization",  # Shorter delays for normalization
         circuit_breaker_name=CIRCUIT_BREAKER_NAMES["normalizer"],
