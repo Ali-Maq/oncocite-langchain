@@ -78,14 +78,49 @@ class Enricher:
     async def mygene_lookup(self, symbol: str) -> Dict[str, Any]:
         if not symbol:
             return {}
-        data = await self._get(MYGENE, {"q": f"symbol:{symbol}", "fields": "name,type_of_gene,entrezgene", "species": "human", "size": 1})
+        data = await self._get(MYGENE, {"q": f"symbol:{symbol}", "fields": "name,type_of_gene,entrezgene,HGNC", "species": "human", "size": 1})
         if not data or not data.get("hits"):
             return {}
         hit = data["hits"][0]
         return {
             "feature_full_name": hit.get("name"),
             "feature_type": (hit.get("type_of_gene") or "protein-coding").upper().replace("-", "_") if hit.get("type_of_gene") else "GENE",
+            "entrez_id": str(hit["entrezgene"]) if hit.get("entrezgene") else None,
         }
+
+    async def rxnorm_lookup(self, drug_name: str) -> Optional[str]:
+        if not drug_name:
+            return None
+        # RxNorm approximate-term endpoint used by the production Normalizer.
+        url = "https://rxnav.nlm.nih.gov/REST/approximateTerm.json"
+        data = await self._get(url, {"term": drug_name, "maxEntries": 1})
+        if not data:
+            return None
+        try:
+            cands = (data.get("approximateGroup") or {}).get("candidate") or []
+            if cands:
+                rx = cands[0].get("rxcui")
+                return str(rx) if rx else None
+        except (AttributeError, TypeError):
+            pass
+        return None
+
+    async def ncit_therapy_lookup(self, drug_name: str) -> Optional[str]:
+        if not drug_name:
+            return None
+        data = await self._get(OLS, {
+            "q": drug_name, "ontology": "ncit", "type": "class",
+            "rows": 1, "exact": "false",
+            "fieldList": "short_form,obo_id",
+        })
+        if not data:
+            return None
+        docs = (data.get("response") or {}).get("docs") or []
+        if docs:
+            sf = docs[0].get("short_form") or docs[0].get("obo_id")
+            if sf:
+                return sf.replace("_", ":") if "_" in sf else sf
+        return None
 
     async def myvariant_lookup(self, gene: str, variant: str) -> Dict[str, Any]:
         if not gene or not variant:
@@ -204,13 +239,41 @@ async def enrich_item(e: Enricher, item: Dict[str, Any], paper_id: str) -> Dict[
 
     # --- External API enrichment --------------------------------------------
 
-    # MyGene → feature_full_names
-    if gene and not item.get("feature_full_names"):
+    # MyGene → feature_full_names, feature_types, and Entrez gene ID
+    if gene:
         mg = await e.mygene_lookup(gene)
-        if mg.get("feature_full_name"):
+        if mg.get("feature_full_name") and not item.get("feature_full_names"):
             out["feature_full_names"] = mg["feature_full_name"]
-        if mg.get("feature_type"):
+        if mg.get("feature_type") and out.get("feature_types") in (None, "", "GENE"):
             out["feature_types"] = mg["feature_type"]
+        # Populate gene_entrez_ids AND the legacy feature_entrez_ids slot
+        # (paper Fig 4D reports this at 100% — Supp Table S18 field name
+        # is gene_entrez_ids; the pipeline historically wrote to
+        # feature_entrez_ids. We fill both so either accessor resolves.)
+        if mg.get("entrez_id"):
+            if not item.get("gene_entrez_ids"):
+                out["gene_entrez_ids"] = [mg["entrez_id"]]
+            if not item.get("feature_entrez_ids"):
+                out["feature_entrez_ids"] = [mg["entrez_id"]]
+
+    # RxNorm + NCIt lookup for each named therapy (paper Fig 4D targets
+    # 85% drug-ontology coverage; Supp Table S21 uses both RxNorm and OLS/NCIt).
+    if therapies:
+        rxcuis = list(item.get("therapy_rxnorm_ids") or [])
+        ncits  = list(item.get("therapy_ncit_ids") or [])
+        for drug in therapies:
+            if not rxcuis:
+                rx = await e.rxnorm_lookup(drug)
+                if rx and rx not in rxcuis:
+                    rxcuis.append(rx)
+            if not ncits:
+                nc = await e.ncit_therapy_lookup(drug)
+                if nc and nc not in ncits:
+                    ncits.append(nc)
+        if rxcuis:
+            out["therapy_rxnorm_ids"] = rxcuis
+        if ncits:
+            out["therapy_ncit_ids"] = ncits
 
     # MyVariant → all genomic / ClinVar / rsID / MANE / ref+alt fields
     if gene and variant:
