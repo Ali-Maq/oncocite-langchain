@@ -160,6 +160,12 @@ result = asyncio.run(client.run_extraction(
 print(f"Extracted {len(result['final_extractions'])} evidence items")
 ```
 
+## Manuscript snapshot
+
+The analyses reported in the manuscript correspond to release
+**`v1.0-preprint`**, commit
+[`9868e47`](https://github.com/Ali-Maq/oncocite-langchain/commit/9868e47de3ef5bba3b94f872d928e11436195f7d).
+
 ## Citation
 
 ```
