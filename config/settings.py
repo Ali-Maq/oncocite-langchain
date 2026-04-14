@@ -85,7 +85,7 @@ FIREWORKS_VISION_MODEL = os.getenv(
 # Model settings
 DEFAULT_MODEL = FIREWORKS_MODEL_NAME
 DEFAULT_MAX_TOKENS = int(os.getenv("DEFAULT_MAX_TOKENS", "4096"))
-DEFAULT_TEMPERATURE = float(os.getenv("DEFAULT_TEMPERATURE", "0.6"))
+DEFAULT_TEMPERATURE = float(os.getenv("DEFAULT_TEMPERATURE", "0.0"))
 
 # =============================================================================
 # QWEN3-VL IMAGE BUDGET (PIXELS)
