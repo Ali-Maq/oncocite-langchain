@@ -1127,8 +1127,16 @@ function EvidenceDetailPanel({ item }) {
 
 // Evidence Split-Pane Component
 function EvidenceSplitPane({ items, pdfUrl, filters, onFilterChange }) {
+  // Default to first evidence item selected and PDF context pane open, so a
+  // reviewer landing on the page sees the full system in one view without
+  // needing to click through multiple UI states.
   const [selectedEvidence, setSelectedEvidence] = useState(null);
-  const [showPdfPane, setShowPdfPane] = useState(false);
+  const [showPdfPane, setShowPdfPane] = useState(true);
+  useEffect(() => {
+    if (!selectedEvidence && items && items.length > 0) {
+      setSelectedEvidence(items[0]);
+    }
+  }, [items, selectedEvidence]);
 
   return (
     <div className="split-pane-container">
@@ -1199,7 +1207,10 @@ function EvidenceSplitPane({ items, pdfUrl, filters, onFilterChange }) {
 }
 
 function App() {
-  const [showLanding, setShowLanding] = useState(true);
+  // Skip the marketing landing page by default — reviewers clicking the URL
+  // in the paper land directly on the extraction workspace with a paper
+  // pre-selected, the PDF pane open, and the first evidence item highlighted.
+  const [showLanding, setShowLanding] = useState(false);
   const [papers, setPapers] = useState([]);
   const [selected, setSelected] = useState(null);
   const [output, setOutput] = useState(null);
@@ -1220,7 +1231,10 @@ function App() {
   const [error, setError] = useState("");
   const [jsonModal, setJsonModal] = useState({ open: false, title: "", data: null });
   const [activeTab, setActiveTab] = useState("insights");
-  const [insightsSubTab, setInsightsSubTab] = useState("overview");
+  // Default to the Evidence sub-tab so reviewers land on the split-pane view
+  // (evidence list + PDF context side-by-side) — the canonical "see everything"
+  // state shown in the paper's Supplementary Figure S3.
+  const [insightsSubTab, setInsightsSubTab] = useState("evidence");
   const [kgView, setKgView] = useState("clinical"); // clinical, matrix
   const [viewMode, setViewMode] = useState("table");
   const [evidenceTypeFilter, setEvidenceTypeFilter] = useState("ALL");
