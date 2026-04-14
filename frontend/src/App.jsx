@@ -40,7 +40,9 @@ const formatPaperVenue = (id) => {
   return c ? c.venue : null;
 };
 
-// Error Boundary Component
+// Error Boundary Component — graceful fallback instead of a scary red banner
+// when the PDF viewer or a child component throws transiently (common during
+// React 19 concurrent double-renders while the PDF.js worker is initializing).
 class ErrorBoundary extends Component {
   constructor(props) {
     super(props);
@@ -58,16 +60,45 @@ class ErrorBoundary extends Component {
 
   render() {
     if (this.state.hasError) {
+      const fallbackUrl = this.props.fallbackUrl;
       return (
-        <div style={{ padding: "20px", background: "#fee", border: "2px solid #f00", margin: "20px" }}>
-          <h2>Something went wrong!</h2>
-          <details style={{ whiteSpace: "pre-wrap" }}>
-            <summary>Error Details</summary>
-            {this.state.error && this.state.error.toString()}
-            <br />
-            {this.state.errorInfo && this.state.errorInfo.componentStack}
-          </details>
-          <button onClick={() => window.location.reload()}>Reload Page</button>
+        <div style={{
+          padding: "18px 16px",
+          background: "#fff8f1",
+          border: "1px solid #f3d9bf",
+          borderRadius: "8px",
+          margin: "8px",
+          fontSize: "13px",
+          lineHeight: "1.5",
+          color: "#3f2e1a",
+        }}>
+          <div style={{ fontWeight: 600, marginBottom: "6px" }}>
+            PDF viewer hiccup
+          </div>
+          <div className="muted small" style={{ marginBottom: "10px" }}>
+            This component recovered from a transient render error (often a React
+            concurrent double-render while PDF.js is initializing). The paper and
+            the extracted evidence are still available.
+          </div>
+          <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+            {fallbackUrl && (
+              <a className="pill link-pill" href={fallbackUrl} target="_blank" rel="noreferrer">
+                Open PDF in new tab
+              </a>
+            )}
+            <button
+              className="pill"
+              onClick={() => this.setState({ hasError: false, error: null, errorInfo: null })}
+            >
+              Retry
+            </button>
+            <button
+              className="pill"
+              onClick={() => window.location.reload()}
+            >
+              Reload workspace
+            </button>
+          </div>
         </div>
       );
     }
@@ -285,7 +316,7 @@ function PdfViewer({ url, onError }) {
         </a>
       </div>
       <div className="pdf-canvas">
-        <ErrorBoundary key={url}>
+        <ErrorBoundary key={url} fallbackUrl={url}>
           <Document
             key={url}
             file={{ url, httpHeaders: { Accept: "application/pdf" }, withCredentials: false }}
