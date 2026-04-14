@@ -266,6 +266,8 @@ async def enrich_records(
     concurrency: int,
     mcp_command: str,
     mcp_args: List[str],
+    checkpoint_path: Optional[Path] = None,
+    checkpoint_every: int = 500,
 ) -> None:
     """Drive the Tier-2 enrichment through the OncoCITE MCP server."""
 
@@ -274,6 +276,27 @@ async def enrich_records(
         args=mcp_args,
         env={**os.environ},
     )
+
+    # Resume support: read any existing checkpoint and mark those as done.
+    done_ids: set = set()
+    if checkpoint_path and checkpoint_path.exists():
+        by_id = {}
+        with checkpoint_path.open() as fh:
+            for line in fh:
+                try:
+                    rec = json.loads(line)
+                    by_id[rec.get("evidence_id")] = rec
+                except ValueError:
+                    continue
+        logger.info("resuming from %d checkpointed records at %s", len(by_id), checkpoint_path)
+        for rec in records:
+            if rec["evidence_id"] in by_id:
+                saved = by_id[rec["evidence_id"]]
+                rec["variant_rsid"] = saved.get("variant_rsid")
+                rec["disease_efo_id"] = saved.get("disease_efo_id")
+                rec["therapy_rxnorm_ids"] = saved.get("therapy_rxnorm_ids")
+                done_ids.add(rec["evidence_id"])
+
     async with stdio_client(params) as (read, write):
         async with ClientSession(read, write) as session:
             init = await session.initialize()
@@ -287,6 +310,8 @@ async def enrich_records(
             client = McpLookupClient(session=session, concurrency=concurrency)
 
             async def enrich_one(rec: Dict[str, Any]) -> None:
+                if rec["evidence_id"] in done_ids:
+                    return
                 gene = _first_name(rec.get("feature_names"))
                 variant = _first_name(rec.get("variant_names"))
                 disease = rec.get("disease_name")
@@ -317,28 +342,47 @@ async def enrich_records(
                 rec["disease_efo_id"] = efo
                 rec["therapy_rxnorm_ids"] = rx if rx else None
 
-            batch = 100
+            batch = 50
             total = len(records)
-            for start in range(0, total, batch):
-                chunk = records[start : start + batch]
-                await asyncio.gather(*(enrich_one(r) for r in chunk))
-                if (start // batch) % 5 == 0 or start + batch >= total:
-                    logger.info(
-                        "enriched %d / %d  "
-                        "(rxnorm %d/%d, efo %d/%d, rsid %d/%d, "
-                        "cache rx=%d efo=%d rsid=%d)",
-                        min(start + batch, total),
-                        total,
-                        client.stats["rxnorm_calls"],
-                        client.stats["rxnorm_hits"],
-                        client.stats["efo_calls"],
-                        client.stats["efo_hits"],
-                        client.stats["rsid_calls"],
-                        client.stats["rsid_hits"],
-                        len(client.rxnorm_cache),
-                        len(client.efo_cache),
-                        len(client.rsid_cache),
-                    )
+            processed = len(done_ids)
+            checkpoint_fh = None
+            if checkpoint_path:
+                checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
+                # open in append so resume preserves previous state
+                checkpoint_fh = checkpoint_path.open("a")
+
+            try:
+                for start in range(0, total, batch):
+                    chunk = records[start : start + batch]
+                    await asyncio.gather(*(enrich_one(r) for r in chunk))
+                    processed += sum(1 for r in chunk if r["evidence_id"] not in done_ids)
+                    if checkpoint_fh:
+                        for r in chunk:
+                            if r["evidence_id"] not in done_ids:
+                                checkpoint_fh.write(json.dumps(r, default=str) + "\n")
+                                done_ids.add(r["evidence_id"])
+                        if processed % checkpoint_every < batch:
+                            checkpoint_fh.flush()
+                    if start % (batch * 5) == 0 or start + batch >= total:
+                        logger.info(
+                            "enriched %d / %d  "
+                            "(rxnorm %d/%d, efo %d/%d, rsid %d/%d, "
+                            "cache rx=%d efo=%d rsid=%d)",
+                            min(start + batch, total),
+                            total,
+                            client.stats["rxnorm_calls"],
+                            client.stats["rxnorm_hits"],
+                            client.stats["efo_calls"],
+                            client.stats["efo_hits"],
+                            client.stats["rsid_calls"],
+                            client.stats["rsid_hits"],
+                            len(client.rxnorm_cache),
+                            len(client.efo_cache),
+                            len(client.rsid_cache),
+                        )
+            finally:
+                if checkpoint_fh:
+                    checkpoint_fh.close()
 
 
 # --------------------------------------------------------------------------
@@ -459,6 +503,12 @@ def main(argv: Optional[List[str]] = None) -> int:
         default=["-m", "mcp_server"],
         help="Arguments to launch the MCP server with.",
     )
+    parser.add_argument(
+        "--checkpoint-every",
+        type=int,
+        default=500,
+        help="Write a JSONL checkpoint every N items so a crashed run can resume.",
+    )
     args = parser.parse_args(argv)
 
     logging.basicConfig(
@@ -489,12 +539,15 @@ def main(argv: Optional[List[str]] = None) -> int:
             "dbSNP rsID), concurrency=%d",
             args.concurrency,
         )
+        checkpoint_path = args.output_jsonl.with_suffix(".checkpoint.jsonl")
         asyncio.run(
             enrich_records(
                 records,
                 concurrency=args.concurrency,
                 mcp_command=args.mcp_command,
                 mcp_args=args.mcp_args,
+                checkpoint_path=checkpoint_path,
+                checkpoint_every=args.checkpoint_every,
             )
         )
 
