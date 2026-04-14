@@ -1207,10 +1207,12 @@ function EvidenceSplitPane({ items, pdfUrl, filters, onFilterChange }) {
 }
 
 function App() {
-  // Skip the marketing landing page by default — reviewers clicking the URL
-  // in the paper land directly on the extraction workspace with a paper
-  // pre-selected, the PDF pane open, and the first evidence item highlighted.
-  const [showLanding, setShowLanding] = useState(false);
+  // Landing page is shown first so reviewers clicking the paper's demo URL
+  // see the OncoCITE title card (paper, authors, DOI) before entering the
+  // workspace. A single click on "Get Started" takes them to the three-pane
+  // view with a paper pre-selected, PDF pane already open, and the first
+  // evidence item highlighted — so the workspace is fully loaded on arrival.
+  const [showLanding, setShowLanding] = useState(true);
   const [papers, setPapers] = useState([]);
   const [selected, setSelected] = useState(null);
   const [output, setOutput] = useState(null);
