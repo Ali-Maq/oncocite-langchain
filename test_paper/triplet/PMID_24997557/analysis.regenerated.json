@@ -1,0 +1,142 @@
+{
+  "paper_id": "PMID_24997557",
+  "total_true_items_in_paper_estimate": 3,
+  "ai_evidence_item_count": 3,
+  "gt_evidence_item_count": 2,
+  "alignment": [
+    {
+      "tuple_id": "BRAF|V600E|Multiple Myeloma|Vemurafenib",
+      "paper_evidence": {
+        "summary": "Patient 1 with BRAF V600E mutated multiple myeloma showed initial response to vemurafenib with pain reduction and paraprotein decrease within 4 days, but progressed after 7 weeks with CNS involvement",
+        "location": "Case Presentations - Patient 1",
+        "quantitative_data": "IgG \u03ba fell from 2.5 to 1.3 g/dL and \u03ba free light chain fell from 41 to 7 mg/dL within 1 month",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "SENSITIVITY/RESPONSE"
+      },
+      "ai_items": [
+        {
+          "ai_index": 0,
+          "fields": {}
+        }
+      ],
+      "gt_items": [
+        {
+          "evidence_id": 1698
+        }
+      ],
+      "field_status": {
+        "feature_names": "EXACT_MATCH_WITH_PAPER",
+        "variant_names": "EXACT_MATCH_WITH_PAPER",
+        "disease_name": "EXACT_MATCH_WITH_PAPER",
+        "therapy_names": "EXACT_MATCH_WITH_PAPER",
+        "evidence_type": "EXACT_MATCH_WITH_PAPER",
+        "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+        "evidence_significance": "EXACT_MATCH_WITH_PAPER"
+      },
+      "match_level_gt_to_paper": "L1",
+      "match_level_ai_to_paper": "L1",
+      "notes": "Both AI and GT accurately captured the case details, though AI provided more granular quantitative response data"
+    },
+    {
+      "tuple_id": "BRAF|V600E|Multiple Myeloma|Vemurafenib",
+      "paper_evidence": {
+        "summary": "Patient 2 with BRAF V600E mutated multiple myeloma showed dramatic response to vemurafenib with 90% reduction in \u03ba light chains within 1 month and near-resolution of lesions at 2 months",
+        "location": "Case Presentations - Patient 2",
+        "quantitative_data": "90% decrease in \u03ba free light chain level within 1 month",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "SENSITIVITY/RESPONSE"
+      },
+      "ai_items": [
+        {
+          "ai_index": 1,
+          "fields": {}
+        }
+      ],
+      "gt_items": [
+        {
+          "evidence_id": 1699
+        }
+      ],
+      "field_status": {
+        "feature_names": "EXACT_MATCH_WITH_PAPER",
+        "variant_names": "EXACT_MATCH_WITH_PAPER",
+        "disease_name": "EXACT_MATCH_WITH_PAPER",
+        "therapy_names": "EXACT_MATCH_WITH_PAPER",
+        "evidence_type": "EXACT_MATCH_WITH_PAPER",
+        "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+        "evidence_significance": "EXACT_MATCH_WITH_PAPER"
+      },
+      "match_level_gt_to_paper": "L1",
+      "match_level_ai_to_paper": "L1",
+      "notes": "Both AI and GT accurately captured the case details, with AI providing more specific response metrics"
+    },
+    {
+      "tuple_id": "BRAF|V600E|Multiple Myeloma|",
+      "paper_evidence": {
+        "summary": "BRAF V600E mutations in multiple myeloma are associated with aggressive phenotype, extramedullary disease, and short duration of response to conventional therapy",
+        "location": "Discussion section",
+        "quantitative_data": "4 of 7 patients with extramedullary disease in referenced study",
+        "evidence_type": "PROGNOSTIC",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "POOR OUTCOME"
+      },
+      "ai_items": [
+        {
+          "ai_index": 2,
+          "fields": {}
+        }
+      ],
+      "gt_items": [],
+      "field_status": {
+        "feature_names": "EXACT_MATCH_WITH_PAPER",
+        "variant_names": "EXACT_MATCH_WITH_PAPER",
+        "disease_name": "EXACT_MATCH_WITH_PAPER",
+        "evidence_type": "EXACT_MATCH_WITH_PAPER",
+        "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+        "evidence_significance": "EXACT_MATCH_WITH_PAPER"
+      },
+      "match_level_gt_to_paper": "NONE",
+      "match_level_ai_to_paper": "L1",
+      "notes": "AI correctly identified prognostic significance that was missing from GT"
+    }
+  ],
+  "missing_from_ai": [],
+  "ai_hallucinated_items": [],
+  "ai_improvements_over_gt": [
+    {
+      "ai_index": 2,
+      "tuple_id": "BRAF|V600E|Multiple Myeloma|",
+      "improvement_type": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+      "paper_support": "Discussion section clearly states prognostic significance of BRAF V600E in multiple myeloma with supporting data from referenced study"
+    }
+  ],
+  "overall_judgement": {
+    "summary": "The AI extraction demonstrated high accuracy in capturing both the predictive evidence from the two patient cases and the prognostic significance of BRAF V600E in multiple myeloma. The AI provided more comprehensive extraction than the ground truth by including the prognostic evidence and more detailed quantitative response data.",
+    "strengths": [
+      "Accurate capture of clinical response details for both patients",
+      "Inclusion of quantitative response metrics",
+      "Recognition of prognostic significance missing from ground truth",
+      "Clear differentiation between predictive and prognostic evidence types"
+    ],
+    "weaknesses": [
+      "Some clinical trial IDs mentioned may need verification",
+      "Safety profile information included but not directly supported by paper text"
+    ]
+  },
+  "_meta": {
+    "model": "apac.anthropic.claude-3-5-sonnet-20241022-v2:0",
+    "temperature": 0.0,
+    "aws_region": "ap-south-1",
+    "usage": {
+      "input_tokens": 9062,
+      "output_tokens": 1667,
+      "elapsed_sec": 29.2
+    },
+    "method": "OncoCITE Sec 4.5 three-way validation"
+  }
+}

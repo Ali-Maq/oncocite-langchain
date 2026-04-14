@@ -1,0 +1,105 @@
+{
+  "paper_id": "PMID_23480694",
+  "total_true_items_in_paper_estimate": 4,
+  "ai_evidence_item_count": 4,
+  "gt_evidence_item_count": 1,
+  "alignment": [
+    {
+      "tuple_id": "CRBN|Q99*|Multiple Myeloma|Lenalidomide,Pomalidomide",
+      "paper_evidence": {
+        "summary": "A 37-year-old MM patient with Q99* truncating CRBN mutation showed resistance to IMiDs including lenalidomide and pomalidomide. This was the first documented CRBN mutation in primary myeloma.",
+        "location": "Page 1-2, Results section",
+        "quantitative_data": "",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "C",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE"
+      },
+      "ai_items": [
+        {
+          "ai_index": 0,
+          "fields": {
+            "feature_names": [
+              "CRBN"
+            ],
+            "variant_names": [
+              "Q99*"
+            ],
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": [
+              "Thalidomide",
+              "Lenalidomide"
+            ]
+          }
+        }
+      ],
+      "gt_items": [
+        {
+          "evidence_id": 1766,
+          "feature_names": "CRBN",
+          "variant_names": "Mutation",
+          "disease_name": "Multiple Myeloma",
+          "therapy_names": "Lenalidomide|Pomalidomide"
+        }
+      ],
+      "field_status": {
+        "feature_names": "EXACT_MATCH_WITH_PAPER",
+        "variant_names": "OVER_SPECIFIED_BEYOND_PAPER",
+        "disease_name": "EXACT_MATCH_WITH_PAPER",
+        "therapy_names": "PARTIAL_MATCH_OR_UNDER_SPECIFIED",
+        "evidence_type": "EXACT_MATCH_WITH_PAPER",
+        "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+        "evidence_significance": "EXACT_MATCH_WITH_PAPER"
+      },
+      "match_level_gt_to_paper": "L2",
+      "match_level_ai_to_paper": "L1",
+      "notes": "AI correctly captured specific Q99* variant while GT used generic 'Mutation'. AI missed pomalidomide in therapy list."
+    }
+  ],
+  "missing_from_ai": [],
+  "ai_hallucinated_items": [],
+  "ai_improvements_over_gt": [
+    {
+      "ai_index": 1,
+      "tuple_id": "CRBN|R283K|Multiple Myeloma|IMiDs",
+      "improvement_type": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+      "paper_support": "Page 2: 'a Q99* truncating mutation as well as a R283K point mutation were observed in CRBN'"
+    },
+    {
+      "ai_index": 2,
+      "tuple_id": "PSMG2|E171K|Multiple Myeloma|Bortezomib",
+      "improvement_type": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+      "paper_support": "Page 2: 'nonsynonymous point mutation in proteasome assembly chaperone 2, PSMG2 (E171K)...possibly explaining this patient's bortezomib-refractory disease'"
+    },
+    {
+      "ai_index": 3,
+      "tuple_id": "NR3C1|G369A|Multiple Myeloma|Dexamethasone",
+      "improvement_type": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+      "paper_support": "Page 2: 'NR3C1 (G369A)...has been associated with resistance to steroid therapy, which this patient received and proved refractory'"
+    }
+  ],
+  "overall_judgement": {
+    "summary": "The AI extraction significantly outperformed the ground truth by identifying all four clinically relevant resistance mutations described in the paper (CRBN Q99*, CRBN R283K, PSMG2 E171K, and NR3C1 G369A), while the ground truth only captured CRBN mutations generically. The AI accurately captured specific variants, associated therapies, and resistance implications with strong support from the paper text.",
+    "strengths": [
+      "Comprehensive identification of all resistance-associated mutations",
+      "Accurate capture of specific variant details",
+      "Clear linking of mutations to specific drug resistance mechanisms",
+      "Well-supported evidence levels and significance claims"
+    ],
+    "weaknesses": [
+      "Minor incompleteness in therapy lists (e.g., missing pomalidomide for CRBN mutations)",
+      "Some therapy associations could be more explicitly specified in descriptions"
+    ]
+  },
+  "_meta": {
+    "model": "apac.anthropic.claude-3-5-sonnet-20241022-v2:0",
+    "temperature": 0.0,
+    "aws_region": "ap-south-1",
+    "usage": {
+      "input_tokens": 9556,
+      "output_tokens": 1256,
+      "elapsed_sec": 23.6
+    },
+    "method": "OncoCITE Sec 4.5 three-way validation"
+  }
+}

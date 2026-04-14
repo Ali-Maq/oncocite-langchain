@@ -1,0 +1,93 @@
+{
+  "paper_id": "PMID_23612012",
+  "total_true_items_in_paper_estimate": 3,
+  "ai_evidence_item_count": 3,
+  "gt_evidence_item_count": 1,
+  "alignment": [
+    {
+      "tuple_id": "BRAF|V600E|Multiple Myeloma|",
+      "paper_evidence": {
+        "summary": "BRAF V600E mutation is associated with significantly shorter overall survival in multiple myeloma patients",
+        "location": "Results section, page 864",
+        "quantitative_data": "45 months (range 6-54) vs 105 months (range 4-227), p=0.04",
+        "evidence_type": "PROGNOSTIC",
+        "evidence_level": "B",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "POOR_OUTCOME"
+      },
+      "ai_items": [
+        {
+          "ai_index": 0,
+          "fields": {
+            "feature_names": [
+              "BRAF"
+            ],
+            "variant_names": [
+              "V600E"
+            ],
+            "disease_name": "Multiple Myeloma",
+            "evidence_type": "PROGNOSTIC"
+          }
+        }
+      ],
+      "gt_items": [
+        {
+          "evidence_id": 463,
+          "evidence_type": "PROGNOSTIC",
+          "evidence_direction": "SUPPORTS",
+          "evidence_significance": "POOR_OUTCOME"
+        }
+      ],
+      "field_status": {
+        "feature_names": "EXACT_MATCH_WITH_PAPER",
+        "variant_names": "EXACT_MATCH_WITH_PAPER",
+        "disease_name": "EXACT_MATCH_WITH_PAPER",
+        "evidence_type": "EXACT_MATCH_WITH_PAPER",
+        "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+        "evidence_significance": "EXACT_MATCH_WITH_PAPER"
+      },
+      "match_level_gt_to_paper": "L1",
+      "match_level_ai_to_paper": "L1",
+      "notes": "Both AI and GT accurately capture the survival association"
+    }
+  ],
+  "missing_from_ai": [],
+  "ai_hallucinated_items": [],
+  "ai_improvements_over_gt": [
+    {
+      "ai_index": 1,
+      "tuple_id": "BRAF|V600E|Multiple Myeloma|",
+      "improvement_type": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+      "paper_support": "Four of seven BRAF-mutated patients (57%) developed extramedullary disease vs 17% of controls (p=0.02)"
+    },
+    {
+      "ai_index": 2,
+      "tuple_id": "BRAF|V600E|Multiple Myeloma|Vemurafenib",
+      "improvement_type": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+      "paper_support": "Patient with BRAF V600E achieved partial response to vemurafenib with tumor regression and durable response"
+    }
+  ],
+  "overall_judgement": {
+    "summary": "The AI extraction performed very well on this paper, capturing all key evidence items with high accuracy. It identified two additional clinically relevant findings missing from the ground truth - the association with extramedullary disease and the therapeutic response to vemurafenib. All extracted items are well-supported by the paper text.",
+    "strengths": [
+      "Comprehensive capture of prognostic significance",
+      "Accurate extraction of quantitative data",
+      "Identification of additional clinically relevant findings",
+      "Clear delineation between prognostic and predictive evidence"
+    ],
+    "weaknesses": [
+      "Some extracted details like cohort sizes could be more consistently reported across items"
+    ]
+  },
+  "_meta": {
+    "model": "apac.anthropic.claude-3-5-sonnet-20241022-v2:0",
+    "temperature": 0.0,
+    "aws_region": "ap-south-1",
+    "usage": {
+      "input_tokens": 14357,
+      "output_tokens": 944,
+      "elapsed_sec": 18.1
+    },
+    "method": "OncoCITE Sec 4.5 three-way validation"
+  }
+}

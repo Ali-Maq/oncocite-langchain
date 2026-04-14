@@ -1,0 +1,117 @@
+{
+  "paper_id": "PMID_19381019",
+  "total_true_items_in_paper_estimate": 9,
+  "ai_evidence_item_count": 8,
+  "gt_evidence_item_count": 6,
+  "alignment": [
+    {
+      "tuple_id": "FGFR3|OVEREXPRESSION|Multiple Myeloma|R3Mab",
+      "paper_evidence": {
+        "summary": "R3Mab shows efficacy against t(4;14)-positive multiple myeloma cells with FGFR3 overexpression through dual mechanisms: FGFR3 signaling inhibition and ADCC. Complete tumor growth inhibition in OPM2 and KMS11 xenografts.",
+        "location": "Figure 8A-B, G-H; p.1224-1225",
+        "quantitative_data": "Nearly complete abolishment of xenograft tumor growth",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "SENSITIVITY_RESPONSE"
+      },
+      "ai_items": [
+        {
+          "ai_index": 2
+        }
+      ],
+      "gt_items": [
+        {
+          "evidence_id": 10363
+        },
+        {
+          "evidence_id": 10364
+        }
+      ],
+      "field_status": {
+        "feature_names": "EXACT_MATCH_WITH_PAPER",
+        "variant_names": "EXACT_MATCH_WITH_PAPER",
+        "disease_name": "EXACT_MATCH_WITH_PAPER",
+        "therapy_names": "EXACT_MATCH_WITH_PAPER",
+        "evidence_type": "EXACT_MATCH_WITH_PAPER",
+        "evidence_level": "EXACT_MATCH_WITH_PAPER",
+        "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+        "evidence_significance": "EXACT_MATCH_WITH_PAPER"
+      },
+      "match_level_gt_to_paper": "L1",
+      "match_level_ai_to_paper": "L1",
+      "notes": "Strong alignment between paper, GT and AI for this core finding"
+    },
+    {
+      "tuple_id": "FGFR3|S249C|Bladder Carcinoma|R3Mab",
+      "paper_evidence": {
+        "summary": "R3Mab shows efficacy against bladder cancer cells expressing FGFR3 S249C mutation through inhibition of constitutive receptor dimerization and signaling. Demonstrated in UMUC-14 cells and xenografts.",
+        "location": "Figure 5C-E, Figure 7D-E",
+        "quantitative_data": "55% reduction in colonies >120\u03bcm; significant xenograft growth inhibition",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "SENSITIVITY_RESPONSE"
+      },
+      "ai_items": [
+        {
+          "ai_index": 0
+        }
+      ],
+      "gt_items": [],
+      "field_status": {
+        "feature_names": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+        "variant_names": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+        "disease_name": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+        "therapy_names": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+        "evidence_type": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+        "evidence_level": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+        "evidence_direction": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+        "evidence_significance": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH"
+      },
+      "match_level_gt_to_paper": "NONE",
+      "match_level_ai_to_paper": "L1",
+      "notes": "Important evidence missing from GT but correctly captured by AI"
+    }
+  ],
+  "missing_from_ai": [],
+  "ai_hallucinated_items": [],
+  "ai_improvements_over_gt": [
+    {
+      "ai_index": 0,
+      "tuple_id": "FGFR3|S249C|Bladder Carcinoma|R3Mab",
+      "improvement_type": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+      "paper_support": "Figure 5C-E, Figure 7D-E showing efficacy against S249C mutant bladder cancer"
+    },
+    {
+      "ai_index": 7,
+      "tuple_id": "FGFR3|EXPRESSION|Bladder Carcinoma|null",
+      "improvement_type": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+      "paper_support": "Figure 1A-D showing oncogenic role through knockdown studies"
+    }
+  ],
+  "overall_judgement": {
+    "summary": "The AI extraction shows high accuracy in capturing both predictive and oncogenic evidence from this paper, with several improvements over the ground truth. It correctly identified key findings about R3Mab efficacy against both bladder cancer and multiple myeloma, including specific FGFR3 mutations and mechanisms of action. The extraction maintained high precision while achieving better recall than the ground truth.",
+    "strengths": [
+      "Comprehensive capture of FGFR3 mutation-specific evidence",
+      "Accurate representation of dual mechanism of action (signaling inhibition and ADCC)",
+      "Inclusion of quantitative efficacy data",
+      "Identification of important oncogenic evidence missing from ground truth"
+    ],
+    "weaknesses": [
+      "Some redundancy in multiple myeloma evidence items that could be consolidated",
+      "Variant nomenclature not fully standardized across items"
+    ]
+  },
+  "_meta": {
+    "model": "apac.anthropic.claude-3-5-sonnet-20241022-v2:0",
+    "temperature": 0.0,
+    "aws_region": "ap-south-1",
+    "usage": {
+      "input_tokens": 26033,
+      "output_tokens": 1495,
+      "elapsed_sec": 26.7
+    },
+    "method": "OncoCITE Sec 4.5 three-way validation"
+  }
+}

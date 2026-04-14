@@ -1,0 +1,118 @@
+{
+  "paper_id": "PMID_11050000",
+  "total_true_items_in_paper_estimate": 9,
+  "ai_evidence_item_count": 8,
+  "gt_evidence_item_count": 4,
+  "alignment": [
+    {
+      "tuple_id": "KRAS|CODON_12|MULTIPLE_MYELOMA|MELPHALAN",
+      "paper_evidence": {
+        "summary": "Activating mutations in KRAS codon 12 provide significant protection from melphalan-induced apoptosis in ANBL6 myeloma cells",
+        "location": "Results section, Figure 4",
+        "quantitative_data": "",
+        "evidence_type": "PREDICTIVE",
+        "evidence_level": "D",
+        "evidence_direction": "SUPPORTS",
+        "evidence_significance": "RESISTANCE"
+      },
+      "ai_items": [
+        {
+          "ai_index": 7,
+          "fields": {
+            "feature_names": [
+              "KRAS"
+            ],
+            "variant_names": [
+              "CODON 12 ACTIVATING MUTATION"
+            ],
+            "disease_name": "Multiple Myeloma",
+            "therapy_names": [
+              "Melphalan"
+            ]
+          }
+        }
+      ],
+      "gt_items": [
+        {
+          "evidence_id": 2012,
+          "feature_names": "KRAS",
+          "variant_names": "G12A",
+          "disease_name": "Multiple Myeloma",
+          "therapy_names": "Melphalan"
+        },
+        {
+          "evidence_id": 2250,
+          "feature_names": "KRAS",
+          "variant_names": "G12D",
+          "disease_name": "Multiple Myeloma",
+          "therapy_names": "Melphalan"
+        },
+        {
+          "evidence_id": 2261,
+          "feature_names": "KRAS",
+          "variant_names": "G12C",
+          "disease_name": "Multiple Myeloma",
+          "therapy_names": "Melphalan"
+        },
+        {
+          "evidence_id": 2277,
+          "feature_names": "KRAS",
+          "variant_names": "G12S",
+          "disease_name": "Multiple Myeloma",
+          "therapy_names": "Melphalan"
+        }
+      ],
+      "field_status": {
+        "feature_names": "EXACT_MATCH_WITH_PAPER",
+        "variant_names": "PARTIAL_MATCH_OR_UNDER_SPECIFIED",
+        "disease_name": "EXACT_MATCH_WITH_PAPER",
+        "therapy_names": "EXACT_MATCH_WITH_PAPER",
+        "evidence_type": "EXACT_MATCH_WITH_PAPER",
+        "evidence_direction": "EXACT_MATCH_WITH_PAPER",
+        "evidence_significance": "EXACT_MATCH_WITH_PAPER"
+      },
+      "match_level_gt_to_paper": "L3",
+      "match_level_ai_to_paper": "L2",
+      "notes": "AI correctly captures codon-level variant while GT over-specifies specific amino acid changes not mentioned in paper"
+    }
+  ],
+  "missing_from_ai": [],
+  "ai_hallucinated_items": [],
+  "ai_improvements_over_gt": [
+    {
+      "ai_index": 2,
+      "tuple_id": "NRAS|CODON_12|MULTIPLE_MYELOMA|MELPHALAN",
+      "improvement_type": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+      "paper_support": "Figure 4 shows N-ras12 provides protection from melphalan-induced apoptosis"
+    },
+    {
+      "ai_index": 0,
+      "tuple_id": "TP53|WILD_TYPE|MULTIPLE_MYELOMA|DOXORUBICIN",
+      "improvement_type": "CORRECT_BUT_MISSING_IN_GROUND_TRUTH",
+      "paper_support": "Expression of wt p53 significantly suppresses Dox-induced apoptosis (26% vs 55%)"
+    }
+  ],
+  "overall_judgement": {
+    "summary": "The AI extraction successfully captured the key molecular predictive evidence from this paper, including KRAS/NRAS codon 12 mutations conferring drug resistance and TP53 status affecting response. The AI appropriately maintained codon-level variant descriptions where the paper did not specify amino acid changes. The ground truth over-specified KRAS variants and missed several valid evidence items.",
+    "strengths": [
+      "Appropriate granularity in variant descriptions matching paper content",
+      "Comprehensive capture of predictive evidence across multiple genes",
+      "Accurate extraction of quantitative data where available"
+    ],
+    "weaknesses": [
+      "Some evidence items could have been more clearly linked to specific figures/experiments",
+      "Variant origin (somatic) was assumed rather than explicitly supported by paper"
+    ]
+  },
+  "_meta": {
+    "model": "apac.anthropic.claude-3-5-sonnet-20241022-v2:0",
+    "temperature": 0.0,
+    "aws_region": "ap-south-1",
+    "usage": {
+      "input_tokens": 17031,
+      "output_tokens": 1265,
+      "elapsed_sec": 22.6
+    },
+    "method": "OncoCITE Sec 4.5 three-way validation"
+  }
+}
